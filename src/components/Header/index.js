@@ -23,7 +23,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          JSConf Hawaii
         </Link>
       </h1>
     </div>

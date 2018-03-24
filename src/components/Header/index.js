@@ -1,24 +1,24 @@
 import React from 'react'
 import Nav from '../Nav'
 import Link from 'gatsby-link'
+import styled from "styled-components";
+
+const HeaderWrapper = styled.div`
+  background: white;
+  border-bottom: 1px solid #00bcd4;
+`;
+
+const HeaderContent = styled.div`
+  margin: 0 auto;
+  padding: 1.45rem 1.0875rem;
+`; 
 
 const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
+  <HeaderWrapper>
+    <HeaderContent>
       <Nav />
-    </div>
-  </div>
+    </HeaderContent>
+  </HeaderWrapper>
 )
 
 export default Header

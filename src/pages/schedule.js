@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const SecondPage = () => (
+const Schedule = () => (
   <div>
     <h1>Schedule</h1>
     <p>Welcome to schedule</p>
@@ -9,4 +9,4 @@ const SecondPage = () => (
   </div>
 )
 
-export default SecondPage
+export default Schedule

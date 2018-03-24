@@ -1,14 +1,30 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Hero from '../components/Hero'
+import styled from "styled-components";
+
+const Container = styled.div`
+  max-width: 960px;
+  margin: 0 auto;
+`;
+
+const Section = styled.div`
+  margin-top: 3em;
+`;
 
 const IndexPage = () => (
   <div>
-    <h1>Welcome</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/call-for-speakers/">CFP</Link>
-    <Link to="/sponsors/">Sponsors</Link>
-    <Link to="/schedule/">Schedule</Link>
+    <Hero />
+    <Container>
+      <Section>
+        <h2>Call for Speakers</h2>
+        <p>Some info about speaking</p>
+      </Section>
+      <Section>
+        <h2>Sponsorships</h2>
+        <p>Some info about sponsoring</p>
+      </Section>
+    </Container>
   </div>
 )
 

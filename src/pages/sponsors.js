@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const SecondPage = () => (
+const Sponsors = () => (
   <div>
     <h1>Sponsors</h1>
-    <p>Welcome to page 2</p>
+    <p>Welcome to Sponsors page</p>
     <Link to="/">Go back to the homepage</Link>
   </div>
 )
 
-export default SecondPage
+export default Sponsors

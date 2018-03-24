@@ -11,7 +11,10 @@ injectGlobal`
   body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
+    font-size: 18px;
   }
+  a { color: #038091; }
+  p { line-height: 2em; margin: 1em 0;}
 `;
 
 const TemplateWrapper = ({ children }) => (

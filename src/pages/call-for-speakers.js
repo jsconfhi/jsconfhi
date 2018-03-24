@@ -1,11 +1,17 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from "styled-components";
+
+const Container = styled.div`
+  max-width: 960px;
+  margin: 0 auto;
+`;
 
 const CFP = () => (
-  <div>
+  <Container>
     <h1>Call for Speakers</h1>
     <Link to="/">Go back to the homepage</Link>
-  </div>
+  </Container>
 )
 
 export default CFP

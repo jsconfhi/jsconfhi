@@ -2,6 +2,7 @@ import React from 'react'
 import Nav from '../Nav'
 import Link from 'gatsby-link'
 import styled from 'styled-components';
+import PropTypes from "prop-types";
 import hawaiiImage from '../../img/hawaii3.jpg'
 
 const ImageContainer = styled.div`
@@ -16,29 +17,36 @@ const Image = styled.div`
   height: 280px;
 `;
 
-const Heading = styled.h1`
+const TextContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 3.5em;
+`;
+
+const Title = styled.h1`
   font-size: 3em;
   font-weight: bold;
-  position: absolute;
-  top: 2em;
-  left: calc(50% - 200px);
 `;
 
-const Subheading = styled.h2`
-  font-size: 0.5em;
+const Subtitle = styled.h2`
+  font-weight: 300;
+  font-size: 1.5em;
   margin-top: 0.5em;
-  margin-left: 80px;
 `;
 
-const Hero = () => (
+const Hero = ({ title, subtitle, secondarySubtitle}) => (
   <ImageContainer>
     <Image />
-    <Heading>
-      JSConf Hawaii
-      <Subheading>February, 2019</Subheading>
-    </Heading>
-    
+    <TextContainer>
+      <Title> {title}</Title>
+      <Subtitle>{subtitle}</Subtitle>
+      {secondarySubtitle ? <Subtitle>{secondarySubtitle}</Subtitle> : null}
+    </TextContainer>
   </ImageContainer>
 )
-
+Hero.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string
+};
 export default Hero

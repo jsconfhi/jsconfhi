@@ -1,4 +1,5 @@
 import React from 'react'
+import Nav from '../Nav'
 import Link from 'gatsby-link'
 
 const Header = () => (
@@ -15,17 +16,7 @@ const Header = () => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          JSConf Hawaii
-        </Link>
-      </h1>
+      <Nav />
     </div>
   </div>
 )

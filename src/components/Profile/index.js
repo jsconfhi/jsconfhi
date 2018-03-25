@@ -16,18 +16,19 @@ const Image = styled.img`
   height: 150px;
   width: 150px;
   float: left;
-  margin: 0 20px;
+  margin: 20px 20px 20px 0;
 `;
 
 const TextContainer = styled.div`
+  text-align: center;
 `;
 
-const Name = styled.h2`
-  font-size: 2em;
+const Name = styled.div`
+  font-size: 1.2em;
   font-weight: bold;
 `;
 
-const Description = styled.h3`
+const Description = styled.div`
   font-weight: 300;
   margin-top: 0.5em;
 `;

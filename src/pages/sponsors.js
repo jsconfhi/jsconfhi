@@ -9,9 +9,11 @@ const Container = styled.div`
 
 const Sponsors = () => (
   <Container>
-    <h1>Sponsors</h1>
-    <p>Welcome to Sponsors page</p>
-    <Link to="/">Go back to the homepage</Link>
+    <h1>Our Sponsors</h1>
+    <p>At JSConf HI 2019, the best JS programmers will gather for a single track, two day conference
+      that will showcase the future of JavaScript and we want you there as a sponsor!</p>
+    <p>To learn more about sponsorship opportunities, read our <a href="#">prospectus</a> or 
+       contact us at <a href="mailto:sponsor@jsconfhi.com">sponsor@jsconfhi.com</a>!</p>
   </Container>
 )
 

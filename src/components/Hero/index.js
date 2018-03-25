@@ -27,9 +27,11 @@ const TextContainer = styled.div`
 const Title = styled.h1`
   font-size: 3em;
   font-weight: bold;
+  margin: 0;
+  color: black;
 `;
 
-const Subtitle = styled.h2`
+const Subtitle = styled.div`
   font-weight: 300;
   font-size: 1.5em;
   margin-top: 0.5em;

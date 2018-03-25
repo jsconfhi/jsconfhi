@@ -16,6 +16,7 @@ injectGlobal`
   }
   a { color: #038091; }
   p { line-height: 2em; margin: 1em 0;}
+  h1, h2 { margin: 1.5em 0; font-size: 1.5em;  color: #038091; }
 `;
 
 const Wrapper = styled.div`
@@ -27,7 +28,7 @@ const Wrapper = styled.div`
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="JSConf Hawaii"
       meta={[
         { name: "description", content: "JS Conf Hawaii" },
         { name: "keywords", content: "JS, JavaScript, Conference, Hawaii, Tech" }

@@ -3,7 +3,7 @@ import Nav from '../Nav'
 import Link from 'gatsby-link'
 import styled from 'styled-components';
 import PropTypes from "prop-types";
-import hawaiiImage from '../../img/hawaii3.jpg'
+import hawaiiImage from '../../img/ocean.jpg'
 
 const ImageContainer = styled.div`
   height: 280px;

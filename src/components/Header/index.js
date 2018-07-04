@@ -2,12 +2,23 @@ import React from 'react'
 import Nav from '../Nav'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import theme from '../../theme'
+
+export const headerHeight = 30
 
 const HeaderWrapper = styled.div`
-  background: white;
-  border-bottom: 1px solid #eee;
+  background: ${theme.colors.background};
+  color: ${theme.colors.textYellow};
+  height: ${headerHeight}px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  padding: 0;
+  height: ${headerHeight}px;
+  width: 100%;
 `
-//border-bottom: 1px solid #eee or #ff3c3c
 
 const HeaderContent = styled.div`
   margin: 0 auto;
@@ -16,9 +27,7 @@ const HeaderContent = styled.div`
 
 const Header = () => (
   <HeaderWrapper>
-    <HeaderContent>
-      <Nav />
-    </HeaderContent>
+    JSConf: Hawai'i | 09-11 February 2019 | Honolulu, HI
   </HeaderWrapper>
 )
 

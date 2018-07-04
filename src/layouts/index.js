@@ -5,7 +5,7 @@ import { injectGlobal } from 'styled-components'
 import reset from 'styled-reset'
 import styled from 'styled-components'
 
-import Header from '../components/Header'
+import Header, { headerHeight } from '../components/Header'
 import Footer, { footerHeight } from '../components/Footer'
 injectGlobal`
   ${reset}
@@ -34,6 +34,7 @@ const Wrapper = styled.div`
 }`
 
 const MainContent = styled.div`
+  padding-top: ${headerHeight}px;
   padding-bottom: ${footerHeight}px;
 `
 
@@ -42,25 +43,55 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="JSConf: Hawaiʻi"
       meta={[
-        { name: 'description', content: 'A two day, single track conference dedicated to web development, JavaScript and building a community. February 2019 in Honolulu.' },
+        {
+          name: 'description',
+          content:
+            'A two day, single track conference dedicated to web development, JavaScript and building a community. February 2019 in Honolulu.',
+        },
         {
           name: 'keywords',
           content: 'JS, JavaScript, Conference, Hawaii, Tech',
         },
-        { name: 'theme-color', content: '#03282c'},
-        { name: 'viewport', content: 'width=device-width, initial-scale=1'},
-        { name: 'twitter:card', content: 'summary'},
-        { name: 'twitter:site', content: '@JSConfHi'},
-        { name: 'og:title', content: 'JSConf: Hawaiʻi'},
-        { name: 'og:description', content: 'A two day, single track conference dedicated to web development, JavaScript and building a community. February 2019 in Honolulu.'},
-        { name: 'og:image', content: 'https://www.jsconfhi.com/android-chrome-512x512.png'}
+        { name: 'theme-color', content: '#03282c' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:site', content: '@JSConfHi' },
+        { name: 'og:title', content: 'JSConf: Hawaiʻi' },
+        {
+          name: 'og:description',
+          content:
+            'A two day, single track conference dedicated to web development, JavaScript and building a community. February 2019 in Honolulu.',
+        },
+        {
+          name: 'og:image',
+          content: 'https://www.jsconfhi.com/android-chrome-512x512.png',
+        },
       ]}
     >
       <html lang="en" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href="/favicon-192x192.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
     </Helmet>
     <Wrapper>
       <Header style={{ flex: 1 }} />

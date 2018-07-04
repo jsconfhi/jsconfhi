@@ -3,52 +3,16 @@ import Nav from '../Nav'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import hawaiiImage from '../../img/ocean.jpg'
+import hawaiiImage from '../../img/header.jpg'
+import theme from '../../theme'
 
 const ImageContainer = styled.div`
-  height: 280px;
+  min-height: 280px;
   width: 100%;
-  position: relative;
-`
-const Image = styled.div`
+  background-color: ${theme.colors.background};
   background-image: url(${hawaiiImage});
   background-size: cover;
-  background-position: center bottom;
-  height: 280px;
+  background-position: center center;
 `
-
-const TextContainer = styled.div`
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 3.5em;
-`
-
-const Title = styled.h1`
-  font-size: 3em;
-  font-weight: bold;
-  margin: 0;
-  color: black;
-`
-
-const Subtitle = styled.div`
-  font-weight: 300;
-  font-size: 1.5em;
-  margin-top: 0.5em;
-`
-
-const Hero = ({ title, subtitle, secondarySubtitle }) => (
-  <ImageContainer>
-    <Image />
-    <TextContainer>
-      <Title> {title}</Title>
-      <Subtitle>{subtitle}</Subtitle>
-      {secondarySubtitle ? <Subtitle>{secondarySubtitle}</Subtitle> : null}
-    </TextContainer>
-  </ImageContainer>
-)
-Hero.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-}
+const Hero = ({ children }) => <ImageContainer>{children}</ImageContainer>
 export default Hero

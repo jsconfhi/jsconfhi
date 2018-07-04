@@ -3,19 +3,24 @@ import Nav from '../Nav'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
+import {
+  faFacebook,
+  faInstagram,
+  faTwitterSquare,
+} from '@fortawesome/free-brands-svg-icons'
+import theme from '../../theme'
 
+export const footerHeight = 40
 
-export const footerHeight = 40;
-
+// Note the footer is inverted coloring
 const FooterWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0;
   padding: 0 1em;
-  color: #03282c;
-  background: #f2dc1a;
+  color: ${theme.colors.background};
+  background: ${theme.colors.textYellow};
   flex-shrink: 1;
   height: ${footerHeight}px;
   font-size: 0.9em;
@@ -66,13 +71,25 @@ const Footer = () => (
       </li>
     </FooterLinks>
     <FooterSocials>
-      <FooterSocialLink aria-label="Instagram" href="https://www.instagram.com/jsconfhi" target="_blank">
+      <FooterSocialLink
+        aria-label="Instagram"
+        href="https://www.instagram.com/jsconfhi"
+        target="_blank"
+      >
         <FontAwesomeIcon icon={faInstagram} />
       </FooterSocialLink>
-      <FooterSocialLink aria-label="Twitter" href="https://www.twitter.com/jsconfhi" target="_blank">
+      <FooterSocialLink
+        aria-label="Twitter"
+        href="https://www.twitter.com/jsconfhi"
+        target="_blank"
+      >
         <FontAwesomeIcon icon={faTwitterSquare} />
       </FooterSocialLink>
-      <FooterSocialLink aria-label="Facebook" href="https://www.facebook.com/JSConfHi" target="_blank">
+      <FooterSocialLink
+        aria-label="Facebook"
+        href="https://www.facebook.com/JSConfHi"
+        target="_blank"
+      >
         <FontAwesomeIcon icon={faFacebook} />
       </FooterSocialLink>
     </FooterSocials>

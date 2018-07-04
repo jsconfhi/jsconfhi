@@ -3,7 +3,6 @@ import Nav from '../Nav'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import hawaiiImage from '../../img/ocean.jpg'
 
 const ProfileWrapper = styled.div`
   float: left;

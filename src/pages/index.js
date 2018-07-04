@@ -28,11 +28,7 @@ const ButtonLink = styled.a`
 
 const IndexPage = () => (
   <div>
-    <Hero
-      title="JSConf Hawaii"
-      subtitle="February 7th-8th, 2019"
-      secondarySubtitle="Honolulu, HI"
-    />
+    <Hero />
     <Container>
       <Section>
         <H2>Call for Speakers</H2>

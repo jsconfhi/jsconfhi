@@ -7,6 +7,8 @@ import hawaiiImage from '../../img/header.jpg'
 import theme from '../../theme'
 
 const ImageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   min-height: 280px;
   width: 100%;
   padding: ${theme.spaces.medium} ${theme.spaces.large};
@@ -17,7 +19,7 @@ const ImageContainer = styled.div`
 `
 
 const PageTitle = styled.h2`
-  color: ${theme.colors.text};
+  color: ${theme.colors.textWhite};
   margin-top: ${theme.spaces.small};
   font-size: ${theme.fontSizes.jumbo};
   font-weight: bold;

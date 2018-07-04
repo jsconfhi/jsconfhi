@@ -2,7 +2,8 @@ export default {
   colors: {
     background: '#03282c',
     textYellow: '#f2dc1a',
-    text: '#FFFFFF',
+    textWhite: '#FFFFFF',
+    text: '#000'
   },
   fontSizes: {
     small: '.8rem',

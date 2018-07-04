@@ -54,7 +54,7 @@ const NavRoot = styled.nav`
 `
 
 const Nav = ({ withBorder }) => (
-  <NavRoot style={withBorder ? { borderBottom: `1px solid ${theme.colors.text}` } : null}>
+  <NavRoot style={withBorder ? { borderBottom: `1px solid ${theme.colors.textWhite}` } : null}>
     <List>
       <NavLink style={{ margin: 0, marginRight: '1em' }} to="/">
         <Logo src={logo} alt="home" />

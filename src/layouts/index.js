@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import { injectGlobal } from "styled-components";
-import reset from "styled-reset";
-import styled from 'styled-components';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { injectGlobal } from 'styled-components'
+import reset from 'styled-reset'
+import styled from 'styled-components'
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 injectGlobal`
   ${reset}
   body {
@@ -17,7 +17,7 @@ injectGlobal`
   a { color: #038091; }
   p { line-height: 2em; margin: 1em 0;}
   h1, h2 { margin: 1.5em 0; font-size: 1.5em;  color: #038091; }
-`;
+`
 
 const Wrapper = styled.div`
   display: flex;
@@ -30,24 +30,25 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="JSConf Hawaii"
       meta={[
-        { name: "description", content: "JS Conf Hawaii" },
-        { name: "keywords", content: "JS, JavaScript, Conference, Hawaii, Tech" }
+        { name: 'description', content: 'JS Conf Hawaii' },
+        {
+          name: 'keywords',
+          content: 'JS, JavaScript, Conference, Hawaii, Tech',
+        },
       ]}
     >
       <html lang="en" />
     </Helmet>
     <Wrapper>
-      <Header style={{ flex: 1 }}/>
-      <div style={{ flex: 1, flexGrow: 1}}>
-        {children()}
-      </div>
-      <Footer style={{ flex: 1 }}/>
+      <Header style={{ flex: 1 }} />
+      <div style={{ flex: 1, flexGrow: 1 }}>{children()}</div>
+      <Footer style={{ flex: 1 }} />
     </Wrapper>
   </div>
-);
+)
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func
-};
+  children: PropTypes.func,
+}
 
-export default TemplateWrapper;
+export default TemplateWrapper

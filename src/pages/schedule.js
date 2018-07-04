@@ -1,35 +1,35 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const Container = styled.div`
   max-width: 960px;
   margin: 0 auto;
-`;
+`
 
 const DayHeading = styled.h2`
   color: black;
   font-size: 1.2em;
-`;
+`
 const Table = styled.table`
   width: 600px;
   margin-bottom: 3em;
-`;
+`
 
 const TableHeading = styled.thead`
   font-weight: bold;
-`;
+`
 
 const Row = styled.tr`
   &:nth-child(odd) {
     background: #eee;
   }
-`;
+`
 
 const Cell = styled.td`
   border: 1px solid #ccc;
   padding: 0.5em;
-`;
+`
 
 const Schedule = () => (
   <Container>
@@ -74,7 +74,7 @@ const Schedule = () => (
       </Row>
     </Table>
     <DayHeading>Day 2</DayHeading>
-        <Table>
+    <Table>
       <TableHeading>
         <Cell>Time</Cell>
         <Cell>Schedule</Cell>

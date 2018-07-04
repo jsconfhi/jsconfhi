@@ -1,22 +1,24 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import PropTypes from "prop-types"
 import logo from '../../img/logo.png'
+import theme from '../../theme'
 
 const List = styled.ul`
   display: flex;
-  justify-content: space-between;
   align-items: center;
 `
 
-const NavLinkContainer = styled.div`
-  flex: 1;
-`
+
 const NavLink = styled(Link)`
-  color: black;
+  color: ${theme.colors.textYellow};
+  font-size: ${theme.fontSizes.large};
+  font-weight: bold;
+  margin: 0 ${theme.spaces.medium};
   text-decoration: none;
   &:hover {
-    color: #00bcd4;
+    text-decoration: underline;
   }
 `
 
@@ -27,31 +29,49 @@ const PrimaryNavContainer = styled.div`
 `
 
 const Logo = styled.img`
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
 `
 
-const Nav = () => (
-  <nav>
+const TicketLink = styled(Link)`
+  background-color: ${theme.colors.textYellow};
+  color: ${theme.colors.background};
+  font-weight: bold;
+  padding: ${theme.spaces.medium};
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid ${theme.colors.background};
+  }
+`
+
+const NavRoot = styled.nav`
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+`
+
+const Nav = ({ withBorder }) => (
+  <NavRoot style={withBorder ? { borderBottom: `1px solid ${theme.colors.text}` } : null}>
     <List>
-      <NavLinkContainer>
-        <NavLink style={{ flex: 1 }} to="/">
-          <Logo src={logo} alt="home" />
-        </NavLink>
-      </NavLinkContainer>
+      <NavLink style={{ margin: 0, marginRight: '1em' }} to="/">
+        <Logo src={logo} alt="home" />
+      </NavLink>
       <PrimaryNavContainer>
-        <NavLinkContainer>
-          <NavLink to="/call-for-speakers/">Speak</NavLink>
-        </NavLinkContainer>
-        <NavLinkContainer>
-          <NavLink to="/schedule/">Schedule</NavLink>
-        </NavLinkContainer>
-        <NavLinkContainer>
-          <NavLink to="/sponsors/">Sponsors</NavLink>
-        </NavLinkContainer>
+        <NavLink to="/attend/">Attend</NavLink>
+        <NavLink to="/call-for-speakers/">Speakers</NavLink>
+        <NavLink to="/sponsors/">Sponsors</NavLink>
+        <NavLink to="/organizers/">About</NavLink>
       </PrimaryNavContainer>
     </List>
-  </nav>
+    <TicketLink to="/tickets/">Buy Tickets</TicketLink>
+  </NavRoot>
 )
+
+Nav.propTypes = {
+  navTitle: PropTypes.string
+};
 
 export default Nav

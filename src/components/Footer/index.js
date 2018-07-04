@@ -18,12 +18,12 @@ const FooterWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 0;
-  padding: 0 1em;
+  padding: 0 ${theme.spaces.medium};
   color: ${theme.colors.background};
   background: ${theme.colors.textYellow};
   flex-shrink: 1;
   height: ${footerHeight}px;
-  font-size: 0.9em;
+  font-size: ${theme.fontSizes.medium};
   font-weight: bold;
   width: 100%;
   position: fixed;
@@ -42,7 +42,7 @@ const FooterSocials = styled.div`
 
 const FooterLink = styled.a`
   color: #03282c;
-  padding: 0 1em;
+  padding: 0 ${theme.spaces.medium};
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -51,7 +51,7 @@ const FooterLink = styled.a`
 
 const FooterSocialLink = styled.a`
   color: #03282c;
-  padding: 0 0.3em;
+  padding: 0 ${theme.spaces.micro};
   text-decoration: none;
   &:hover {
     text-decoration: underline;

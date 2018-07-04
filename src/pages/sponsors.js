@@ -1,14 +1,11 @@
+import Hero from '../components/Hero'
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-const Container = styled.div`
-  max-width: 960px;
-  margin: 0 auto;
-`
-
 const Sponsors = () => (
-  <Container>
+  <div>
+    <Hero navTitle="Sponsors" />
     <h1>Our Sponsors</h1>
     <p>
       At JSConf HI 2019, the best JS programmers will gather for a single track,
@@ -20,7 +17,7 @@ const Sponsors = () => (
       <a href="#">prospectus</a> or contact us at{' '}
       <a href="mailto:sponsor@jsconfhi.com">sponsor@jsconfhi.com</a>!
     </p>
-  </Container>
+  </div>
 )
 
 export default Sponsors

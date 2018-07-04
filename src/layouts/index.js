@@ -17,7 +17,6 @@ injectGlobal`
   }
   a { color: #038091; }
   p { line-height: 2em; margin: 1em 0;}
-  h1, h2 { margin: 1.5em 0; font-size: 1.5em;  color: #038091; }
   *,
   *::after,
   *::before {

@@ -1,10 +1,6 @@
+import Hero from '../components/Hero'
 import React from 'react'
 import styled from 'styled-components'
-
-const Container = styled.div`
-  max-width: 960px;
-  margin: 0 auto;
-`
 
 const List = styled.ul`
   line-height: 2em;
@@ -16,8 +12,8 @@ const Emphasized = styled.p`
   font-weight: bold;
 `
 const CFP = () => (
-  <Container>
-    <h1>Call for Speakers</h1>
+  <div>
+    <Hero navTitle="Call for Speakers" />
     <Emphasized>
       We will be opening our Call for Speakers in June, 2018!
     </Emphasized>
@@ -89,7 +85,7 @@ const CFP = () => (
       into account. This ensures a diverse speaker line-up of people from all
       backgrounds and speaking experience.
     </p>
-  </Container>
+  </div>
 )
 
 export default CFP

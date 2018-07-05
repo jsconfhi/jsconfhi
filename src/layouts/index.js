@@ -16,7 +16,7 @@ injectGlobal`
     box-sizing: border-box;
   }
   a { color: #038091; }
-  p { line-height: 2em; margin: 1em 0;}
+  p { line-height: 1.5em; margin: 1em 0;}
   *,
   *::after,
   *::before {

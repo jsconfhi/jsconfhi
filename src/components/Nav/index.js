@@ -1,3 +1,4 @@
+import Button from '../Button'
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
@@ -33,19 +34,6 @@ const Logo = styled.img`
   width: 60px;
 `
 
-const TicketLink = styled(Link)`
-  background-color: ${theme.colors.textYellow};
-  color: ${theme.colors.background};
-  font-weight: bold;
-  padding: ${theme.spaces.medium};
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 1px solid transparent;
-  &:hover {
-    border: 1px solid ${theme.colors.background};
-  }
-`
-
 const NavRoot = styled.nav`
   align-items: center;
   display: flex;
@@ -66,7 +54,7 @@ const Nav = ({ withBorder }) => (
         <NavLink to="/organizers/">About</NavLink>
       </PrimaryNavContainer>
     </List>
-    <TicketLink to="/tickets/">Buy Tickets</TicketLink>
+    <Button isPrimary to="/tickets/">Buy Tickets</Button>
   </NavRoot>
 )
 

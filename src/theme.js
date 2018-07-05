@@ -1,6 +1,7 @@
 export default {
   colors: {
     background: '#03282c',
+    background90: 'rgba(3, 40, 44, 0.9)',
     textYellow: '#f2dc1a',
     textWhite: '#FFFFFF',
     text: '#000'

@@ -1,3 +1,4 @@
+import Button from '../components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faFacebook,
@@ -10,17 +11,34 @@ import Hero from '../components/Hero'
 import styled from 'styled-components'
 import theme from '../theme'
 
+const ContainerHolder = styled.div`
+  background-color: ${theme.colors.background};
+  color: ${theme.colors.textYellow};
+  width: 100%;
+`
+
 const Container = styled.div`
   max-width: 960px;
   margin: 0 auto;
+  display: flex;
 `
 
 const Section = styled.div`
-  margin-top: 3em;
+  background-color: ${theme.colors.background};
+  flex: 1;
+  margin: ${theme.spaces.large} ${theme.spaces.medium};
+  & + & {
+    border-left: 1px dashed ${theme.colors.textYellow};
+    padding-left: ${theme.spaces.large};
+  }
 `
 
 const H2 = styled.h2`
-  margin: 0.5em 0;
+  color: ${theme.colors.textWhite};
+  font-size: ${theme.fontSizes.large};
+  font-weight: bold;
+  margin-bottom: ${theme.spaces.small} 0;
+  text-transform: uppercase;
 `
 
 const ButtonLink = styled.a`
@@ -35,7 +53,7 @@ const ButtonLink = styled.a`
 
 const HeroContent = styled.div`
   align-self: center;
-  background-color: ${theme.colors.background};
+  background-color: ${theme.colors.background90};
   color: ${theme.colors.textYellow};
   max-width: 800px;
   margin: ${theme.spaces.large} ${theme.spaces.jumbo};
@@ -114,62 +132,55 @@ const IndexPage = () => (
         }
         <div class="Hero-newsletter">
           <div id="mc_embed_signup">
-              <form action="https://twitter.us18.list-manage.com/subscribe/post?u=c9c542019e2372811b2b8cd10&amp;id=affde4125d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-                  <label for="mce-EMAIL">Sign up for updates</label>
-                  <EmailSignupForm class="signup-form">
-                    <EmailFormInput type="email" placeholder="Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
-                    <EmailFormButton type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button" />
-                  </EmailSignupForm>
-                  <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style={{ display: 'none'}}></div>
-                    <div class="response" id="mce-success-response" style={{ display: 'none'}}></div>
-                    <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
-                      <input type="text" name="b_c9c542019e2372811b2b8cd10_affde4125d" tabindex="-1" value="" />
-                    </div>
+            <form action="https://twitter.us18.list-manage.com/subscribe/post?u=c9c542019e2372811b2b8cd10&amp;id=affde4125d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Sign up for updates</label>
+                <EmailSignupForm class="signup-form">
+                  <EmailFormInput type="email" placeholder="Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
+                  <EmailFormButton type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button" />
+                </EmailSignupForm>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style={{ display: 'none'}}></div>
+                  <div class="response" id="mce-success-response" style={{ display: 'none'}}></div>
+                  <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
+                    <input type="text" name="b_c9c542019e2372811b2b8cd10_affde4125d" tabindex="-1" value="" />
                   </div>
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
+          </div>
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js' />
         </div>
       </HeroContent>
     </Hero>
-    <Container>
-      <Section>
-        <H2>Call for Speakers</H2>
-        <p>We will be opening our Call for Speakers in June, 2018!</p>
-        <p>
-          Read more about our CFP process that is designed to shine the
-          spotlight on the latest ideas and future leaders of the JavaScript
-          world.
-        </p>
-        <ButtonLink href="/call-for-speakers">Learn More</ButtonLink>
-      </Section>
-      <Section>
-        <H2>Sponsorships</H2>
-        <p>
-          We are currently offering <a href="/sponsors">sponsorship</a> packages
-          for the inauguaral JSConf Hawaii coming February 2019. We’re looking
-          forward to working with all of our great sponsors to find the best way
-          to connect each of you with our attendees in unique and meaningful
-          ways.
-        </p>
-        <p>
-          <a href="mailto:sponsor@jsconfhi.com">Contact us</a> to learn more
-          about our available packages!
-        </p>
-      </Section>
-      <Section>
-        <H2>Code of Conduct</H2>
-        <p>
-          All attendees, speakers, sponsors and volunteers at our conference are
-          required to agree with the following code of conduct.{' '}
-          <a href="http://jsconf.com/codeofconduct.html" target="_blank">
-            Read the Code of Conduct
-          </a>.
-        </p>
-      </Section>
-    </Container>
+    <ContainerHolder>
+      <Container>
+        <Section>
+          <H2>Call for Speakers</H2>
+          <p>We will be opening our Call for Speakers in June, 2018!</p>
+          <p>
+            Read more about our CFP process that is designed to shine the
+            spotlight on the latest ideas and future leaders of the JavaScript
+            world.
+          </p>
+          <Button href="/call-for-speakers">Learn More</Button>
+        </Section>
+        <Section>
+          <H2>Sponsorships</H2>
+          <p>
+            We are currently offering <a href="/sponsors">sponsorship</a> packages
+            for the inauguaral JSConf Hawaii coming February 2019. We’re looking
+            forward to working with all of our great sponsors to find the best way
+            to connect each of you with our attendees in unique and meaningful
+            ways.
+          </p>
+          <p>
+            <a href="mailto:sponsor@jsconfhi.com">Contact us</a> to learn more
+            about our available packages!
+          </p>
+        </Section>
+      </Container>
+    </ContainerHolder>
   </div>
 )
 

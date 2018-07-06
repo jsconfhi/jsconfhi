@@ -26,9 +26,11 @@ const PageTitle = styled.h2`
   text-transform: uppercase;
 `
 
-const Hero = ({ children, navTitle }) => <ImageContainer>
-  <Nav withBorder={!!navTitle} />
-  {navTitle ? <PageTitle>{navTitle}</PageTitle>  : null}
-  {children}
-</ImageContainer>
+const Hero = ({ children, navTitle }) => (
+  <ImageContainer>
+    <Nav withBorder={!!navTitle} />
+    {navTitle ? <PageTitle>{navTitle}</PageTitle> : null}
+    {children}
+  </ImageContainer>
+)
 export default Hero

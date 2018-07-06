@@ -67,7 +67,7 @@ const Footer = () => (
         </FooterLink>
       </li>
       <li>
-        <FooterLink href="/organizers">Organizers</FooterLink>
+        <FooterLink href="/about#organizers">Organizers</FooterLink>
       </li>
     </FooterLinks>
     <FooterSocials>

@@ -1,4 +1,4 @@
-import Button from '../components/Button';
+import Button from '../components/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faFacebook,
@@ -79,11 +79,11 @@ const EmailSignupForm = styled.div`
   align-item: center;
   display: flex;
   margin-top: ${theme.spaces.small};
-`;
+`
 
 const EmailFormInput = styled.input`
   flex-grow: 1;
-  font-size: ${theme.fontSizes.small  };
+  font-size: ${theme.fontSizes.small};
   padding: ${theme.spaces.small};
 `
 
@@ -94,62 +94,118 @@ const EmailFormButton = styled.input`
   padding: ${theme.spaces.small};
 `
 
-
 const IndexPage = () => (
   <div>
     <Hero>
       <HeroContent>
-        <div style={{ fontSize: theme.fontSizes.large, marginBottom: theme.spaces.xSmall, textTransform: 'uppercase' }}>Announcing</div>
-        <h3 style={{ fontSize: '2.5rem', fontWeight: 'bold', textTransform: 'uppercase' }}>JSConf: Hawaiʻi</h3>
+        <div
+          style={{
+            fontSize: theme.fontSizes.large,
+            marginBottom: theme.spaces.xSmall,
+            textTransform: 'uppercase',
+          }}
+        >
+          Announcing
+        </div>
+        <h3
+          style={{
+            fontSize: '2.5rem',
+            fontWeight: 'bold',
+            textTransform: 'uppercase',
+          }}
+        >
+          JSConf: Hawaiʻi
+        </h3>
         <DatesAndSocials>
           <span>Feb 7th + 8th 2019</span>&nbsp;&nbsp;|&nbsp;&nbsp;
           <span>Honolulu, HI</span>&nbsp;&nbsp;|&nbsp;&nbsp;
           <span>
-          <SocialLink
-            aria-label="Instagram"
-            href="https://www.instagram.com/jsconfhi"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faInstagram} />
-          </SocialLink>
-          <SocialLink
-            aria-label="Twitter"
-            href="https://www.twitter.com/jsconfhi"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faTwitterSquare} />
-          </SocialLink>
-          <SocialLink
-            aria-label="Facebook"
-            href="https://www.facebook.com/JSConfHi"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faFacebook} />
-          </SocialLink>
+            <SocialLink
+              aria-label="Instagram"
+              href="https://www.instagram.com/jsconfhi"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faInstagram} />
+            </SocialLink>
+            <SocialLink
+              aria-label="Twitter"
+              href="https://www.twitter.com/jsconfhi"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faTwitterSquare} />
+            </SocialLink>
+            <SocialLink
+              aria-label="Facebook"
+              href="https://www.facebook.com/JSConfHi"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faFacebook} />
+            </SocialLink>
           </span>
         </DatesAndSocials>
-        { // TODO: Fix this newsletter signup again and deal with styling
+        {
+          // TODO: Fix this newsletter signup again and deal with styling
         }
         <div class="Hero-newsletter">
           <div id="mc_embed_signup">
-            <form action="https://twitter.us18.list-manage.com/subscribe/post?u=c9c542019e2372811b2b8cd10&amp;id=affde4125d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <form
+              action="https://twitter.us18.list-manage.com/subscribe/post?u=c9c542019e2372811b2b8cd10&amp;id=affde4125d"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="validate"
+              target="_blank"
+              novalidate
+            >
               <div id="mc_embed_signup_scroll">
                 <label for="mce-EMAIL">Sign up for updates</label>
                 <EmailSignupForm class="signup-form">
-                  <EmailFormInput type="email" placeholder="Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
-                  <EmailFormButton type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button" />
+                  <EmailFormInput
+                    type="email"
+                    placeholder="Email Address"
+                    value=""
+                    name="EMAIL"
+                    class="required email"
+                    id="mce-EMAIL"
+                  />
+                  <EmailFormButton
+                    type="submit"
+                    value="Sign up"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="button"
+                  />
                 </EmailSignupForm>
                 <div id="mce-responses" class="clear">
-                  <div class="response" id="mce-error-response" style={{ display: 'none'}}></div>
-                  <div class="response" id="mce-success-response" style={{ display: 'none'}}></div>
-                  <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
-                    <input type="text" name="b_c9c542019e2372811b2b8cd10_affde4125d" tabindex="-1" value="" />
+                  <div
+                    class="response"
+                    id="mce-error-response"
+                    style={{ display: 'none' }}
+                  />
+                  <div
+                    class="response"
+                    id="mce-success-response"
+                    style={{ display: 'none' }}
+                  />
+                  <div
+                    style={{ position: 'absolute', left: '-5000px' }}
+                    aria-hidden="true"
+                  >
+                    <input
+                      type="text"
+                      name="b_c9c542019e2372811b2b8cd10_affde4125d"
+                      tabindex="-1"
+                      value=""
+                    />
                   </div>
                 </div>
               </div>
             </form>
           </div>
-          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js' />
+          <script
+            type="text/javascript"
+            src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+          />
         </div>
       </HeroContent>
     </Hero>
@@ -168,11 +224,11 @@ const IndexPage = () => (
         <Section>
           <H2>Sponsorships</H2>
           <p>
-            We are currently offering <a href="/sponsors">sponsorship</a> packages
-            for the inauguaral JSConf Hawaii coming February 2019. We’re looking
-            forward to working with all of our great sponsors to find the best way
-            to connect each of you with our attendees in unique and meaningful
-            ways.
+            We are currently offering <a href="/sponsors">sponsorship</a>{' '}
+            packages for the inauguaral JSConf Hawaii coming February 2019.
+            We’re looking forward to working with all of our great sponsors to
+            find the best way to connect each of you with our attendees in
+            unique and meaningful ways.
           </p>
           <p>
             <a href="mailto:sponsor@jsconfhi.com">Contact us</a> to learn more

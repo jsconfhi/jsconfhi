@@ -6,11 +6,6 @@ import PropTypes from 'prop-types'
 import logo from '../../img/logo.png'
 import theme from '../../theme'
 
-const List = styled.ul`
-  display: flex;
-  align-items: center;
-`
-
 const NavLink = styled(Link)`
   color: ${theme.colors.textYellow};
   font-size: ${theme.fontSizes.large};
@@ -20,11 +15,14 @@ const NavLink = styled(Link)`
   &:hover {
     text-decoration: underline;
   }
+  @media (max-width: ${theme.breakpoints.medium}) {
+    font-size: ${theme.fontSizes.medium};
+    margin: 0 ${theme.spaces.small};
+  }
 `
 
 const PrimaryNavContainer = styled.div`
   display: flex;
-  justify-content: space-between;
   flex: 4;
 `
 
@@ -48,18 +46,16 @@ const Nav = ({ withBorder }) => (
         : null
     }
   >
-    <List>
-      <NavLink style={{ margin: 0, marginRight: '1em' }} to="/">
-        <Logo src={logo} alt="home" />
-      </NavLink>
-      <PrimaryNavContainer>
-        <NavLink to="/attend/">Attend</NavLink>
-        <NavLink to="/call-for-speakers/">Speakers</NavLink>
-        <NavLink to="/sponsors/">Sponsors</NavLink>
-        <NavLink to="/about/">About</NavLink>
-      </PrimaryNavContainer>
-    </List>
-    <Button isPrimary to="/tickets/">
+    <NavLink style={{ margin: 0, marginRight: '1em' }} to="/">
+      <Logo src={logo} alt="home" />
+    </NavLink>
+    <PrimaryNavContainer>
+      <NavLink to="/attend/">Attend</NavLink>
+      <NavLink to="/call-for-speakers/">Speakers</NavLink>
+      <NavLink to="/sponsors/">Sponsors</NavLink>
+      <NavLink to="/about/">About</NavLink>
+    </PrimaryNavContainer>
+    <Button isPrimary to="/attend/">
       Buy Tickets
     </Button>
   </NavRoot>

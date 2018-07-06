@@ -28,6 +28,9 @@ const FooterWrapper = styled.div`
   width: 100%;
   position: fixed;
   bottom: 0;
+  @media (max-width: ${theme.breakpoints.small}) {
+    font-size: ${theme.fontSizes.small};
+  }
 `
 
 const FooterLinks = styled.ul`
@@ -40,12 +43,15 @@ const FooterSocials = styled.div`
   font-size: 2em;
 `
 
-const FooterLink = styled.a`
+const FooterLink = styled(Link)`
   color: #03282c;
   padding: 0 ${theme.spaces.medium};
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+  }
+  @media (max-width: ${theme.breakpoints.small}) {
+    padding: 0 ${theme.spaces.small};
   }
 `
 
@@ -61,14 +67,8 @@ const FooterSocialLink = styled.a`
 const Footer = () => (
   <FooterWrapper>
     <FooterLinks>
-      <li>
-        <FooterLink href="http://jsconf.com/codeofconduct.html" target="_blank">
-          Code of Conduct
-        </FooterLink>
-      </li>
-      <li>
-        <FooterLink href="/about#organizers">Organizers</FooterLink>
-      </li>
+      <FooterLink to="/about#coc">Code of Conduct</FooterLink>
+      <FooterLink to="/about">Organizers</FooterLink>
     </FooterLinks>
     <FooterSocials>
       <FooterSocialLink

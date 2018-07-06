@@ -21,8 +21,8 @@ const Button = styled(Link)`
   }
 `
 
-const ButtonComponent = ({ children, href, isPrimary }) => (
-  <Button href={href} isPrimary={isPrimary}>
+const ButtonComponent = ({ children, to, isPrimary }) => (
+  <Button to={to} isPrimary={isPrimary}>
     {children}
   </Button>
 )

@@ -17,6 +17,7 @@ injectGlobal`
   }
   a { color: #038091; }
   p { line-height: 1.5em; margin: 1em 0;}
+  li { list-style-type: disc; margin-left: 2em; margin-top: 0.5em; }
   *,
   *::after,
   *::before {

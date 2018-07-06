@@ -219,7 +219,7 @@ const IndexPage = () => (
             spotlight on the latest ideas and future leaders of the JavaScript
             world.
           </p>
-          <Button href="/call-for-speakers">Learn More</Button>
+          <Button to="/call-for-speakers">Learn More</Button>
         </Section>
         <Section>
           <H2>Sponsorships</H2>

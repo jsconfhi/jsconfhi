@@ -20,4 +20,8 @@ export default {
     large: '2rem',
     xLarge: '4rem',
   },
+  breakpoints: {
+    small: '500px',
+    medium: '800px',
+  },
 }

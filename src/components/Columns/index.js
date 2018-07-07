@@ -25,7 +25,7 @@ const Section = styled.div`
 `
 
 const H2 = styled.h2`
-  color: ${theme.colors.text};
+  color: ${(props) => props.color};
   font-size: ${theme.fontSizes.large};
   font-weight: bold;
   margin-bottom: ${theme.spaces.small} 0;
@@ -41,7 +41,7 @@ const Columns = ({
 }) => (
   <div>
     <ContainerHolder backgroundColor={backgroundColor} color={color}>
-      { title && <H2>{title}</H2> }
+      { title && <H2 color={color}>{title}</H2> }
       <Container>
         {children}
       </Container>

@@ -102,6 +102,20 @@ const Organizers = () => (
         />
       </Profiles>
     </Hero>
+    <Columns title="Values">
+      <Column>
+        <H3>Value 1</H3>
+        <p>TODO</p>
+      </Column>
+      <Column>
+        <H3>Value 2</H3>
+        <p>TODO</p>
+      </Column>
+      <Column>
+        <H3>Value 3</H3>
+        <p>TODO</p>
+      </Column>
+    </Columns>
     <InfoBlock id="coc" title="Code of Conduct">
       <InfoBlockH2>Purpose</InfoBlockH2>
       <p>

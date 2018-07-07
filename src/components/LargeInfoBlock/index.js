@@ -31,7 +31,7 @@ export const InfoBlockH3 = styled.h3`
 
 const LargeInfoBlock = ({ children, id, title }) => (
   <InfoBlock id={id}>
-    <Title>Code of Conduct</Title>
+    <Title>{title}</Title>
     <div>{children}</div>
   </InfoBlock>
 )

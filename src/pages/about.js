@@ -1,9 +1,13 @@
+import Button from '../components/Button'
 import InfoBlock, {
   InfoBlockH2,
   InfoBlockH3,
 } from '../components/LargeInfoBlock'
+import Columns, { Column } from '../components/Columns'
 import Hero from '../components/Hero'
 import HeroContentLabel from '../components/Hero/contentLabel'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 import Link from 'gatsby-link'
 import Profile from '../components/Profile'
@@ -24,6 +28,15 @@ const Profiles = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: ${theme.spaces.large};
+`
+const H3 = styled.h3`
+  font-weight: bold;
+`
+const Centered = styled.div`
+  text-align: center;
+`
+const Li = styled.li`
+  list-style-type: none;
 `
 
 const Organizers = () => (
@@ -270,6 +283,28 @@ const Organizers = () => (
         <a href="http://confcodeofconduct.com/">Conference Code of Conduct</a>.
       </p>
     </InfoBlock>
+    <Centered>
+      <Columns
+        backgroundColor={theme.colors.gray}
+        color={theme.colors.text}
+        title="Need to file a report?"
+      >
+        <Column>
+          <H3>Anonymous report</H3>
+          <p>Use this form to file a code of conduct violation anonymously</p>
+          <Button color={theme.colors.text} to="#">File a report</Button>
+        </Column>
+        <Column>
+          <H3>Personal report</H3>
+          <p>You can file a personal report using one of the below methods:</p>
+          <ul>
+            <Li><FontAwesomeIcon icon={faEnvelope} /> report@jsconfhi.com</Li>
+            <Li><FontAwesomeIcon icon={faUsers} /> Report to a STAFF member</Li>
+            <Li><FontAwesomeIcon icon={faPhone} /> To be announced</Li>
+          </ul>
+        </Column>
+      </Columns>
+    </Centered>
   </div>
 )
 

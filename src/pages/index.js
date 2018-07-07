@@ -8,30 +8,9 @@ import {
 import React from 'react'
 import Link from 'gatsby-link'
 import Hero from '../components/Hero'
+import Columns, { Column } from '../components/Columns'
 import styled from 'styled-components'
 import theme from '../theme'
-
-const ContainerHolder = styled.div`
-  background-color: ${theme.colors.background};
-  color: ${theme.colors.textYellow};
-  width: 100%;
-`
-
-const Container = styled.div`
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-`
-
-const Section = styled.div`
-  background-color: ${theme.colors.background};
-  flex: 1;
-  margin: ${theme.spaces.large} ${theme.spaces.medium};
-  & + & {
-    border-left: 1px dashed ${theme.colors.textYellow};
-    padding-left: ${theme.spaces.large};
-  }
-`
 
 const H2 = styled.h2`
   color: ${theme.colors.textWhite};
@@ -209,34 +188,32 @@ const IndexPage = () => (
         </div>
       </HeroContent>
     </Hero>
-    <ContainerHolder>
-      <Container>
-        <Section>
-          <H2>Call for Speakers</H2>
-          <p>We will be opening our Call for Speakers in June, 2018!</p>
-          <p>
-            Read more about our CFP process that is designed to shine the
-            spotlight on the latest ideas and future leaders of the JavaScript
-            world.
-          </p>
-          <Button to="/call-for-speakers">Learn More</Button>
-        </Section>
-        <Section>
-          <H2>Sponsorships</H2>
-          <p>
-            We are currently offering <a href="/sponsors">sponsorship</a>{' '}
-            packages for the inauguaral JSConf Hawaii coming February 2019.
-            We’re looking forward to working with all of our great sponsors to
-            find the best way to connect each of you with our attendees in
-            unique and meaningful ways.
-          </p>
-          <p>
-            <a href="mailto:sponsor@jsconfhi.com">Contact us</a> to learn more
-            about our available packages!
-          </p>
-        </Section>
-      </Container>
-    </ContainerHolder>
+    <Columns>
+      <Column>
+        <H2>Call for Speakers</H2>
+        <p>We will be opening our Call for Speakers in June, 2018!</p>
+        <p>
+          Read more about our CFP process that is designed to shine the
+          spotlight on the latest ideas and future leaders of the JavaScript
+          world.
+        </p>
+        <Button to="/call-for-speakers">Learn More</Button>
+      </Column>
+      <Column>
+        <H2>Sponsorships</H2>
+        <p>
+          We are currently offering <a href="/sponsors">sponsorship</a>{' '}
+          packages for the inauguaral JSConf Hawaii coming February 2019.
+          We’re looking forward to working with all of our great sponsors to
+          find the best way to connect each of you with our attendees in
+          unique and meaningful ways.
+        </p>
+        <p>
+          <a href="mailto:sponsor@jsconfhi.com">Contact us</a> to learn more
+          about our available packages!
+        </p>
+      </Column>
+    </Columns>
   </div>
 )
 

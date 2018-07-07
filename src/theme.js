@@ -2,6 +2,7 @@ export default {
   colors: {
     background: '#03282c',
     background90: 'rgba(3, 40, 44, 0.9)',
+    gray: '#bdc0cf',
     textYellow: '#f2dc1a',
     textWhite: '#FFFFFF',
     text: '#000',

@@ -8,7 +8,7 @@ import theme from '../../theme'
 
 const NavLink = styled(Link)`
   color: ${theme.colors.textYellow};
-  font-size: ${theme.fontSizes.large};
+  font-size: ${theme.fontSizes.medium};
   font-weight: bold;
   margin: 0 ${theme.spaces.medium};
   text-decoration: none;
@@ -16,7 +16,6 @@ const NavLink = styled(Link)`
     text-decoration: underline;
   }
   @media (max-width: ${theme.breakpoints.medium}) {
-    font-size: ${theme.fontSizes.medium};
     margin: 0 ${theme.spaces.small};
   }
 `

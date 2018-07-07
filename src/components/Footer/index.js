@@ -23,7 +23,7 @@ const FooterWrapper = styled.div`
   background: ${theme.colors.textYellow};
   flex-shrink: 1;
   height: ${footerHeight}px;
-  font-size: ${theme.fontSizes.medium};
+  font-size: ${theme.fontSizes.small};
   font-weight: bold;
   width: 100%;
   position: fixed;

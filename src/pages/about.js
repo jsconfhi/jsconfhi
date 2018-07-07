@@ -306,7 +306,7 @@ const Organizers = () => (
         <Column>
           <H3>Anonymous report</H3>
           <p>Use this form to file a code of conduct violation anonymously</p>
-          <Button color={theme.colors.text} to="#">File a report</Button>
+          <Button color="dark" to="#">File a report</Button>
         </Column>
         <Column>
           <H3>Personal report</H3>

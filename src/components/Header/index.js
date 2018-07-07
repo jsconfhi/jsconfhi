@@ -11,6 +11,7 @@ const HeaderWrapper = styled.div`
   color: ${theme.colors.textYellow};
   height: ${headerHeight}px;
   position: fixed;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-around;

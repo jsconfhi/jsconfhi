@@ -27,6 +27,7 @@ const FooterWrapper = styled.div`
   font-weight: bold;
   width: 100%;
   position: fixed;
+  z-index: 2;
   bottom: 0;
   @media (max-width: ${theme.breakpoints.small}) {
     font-size: ${theme.fontSizes.small};

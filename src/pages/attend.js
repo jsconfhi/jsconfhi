@@ -124,12 +124,12 @@ const Sponsors = () => (
 
 
     <AccomodationsBlock>
-      <AccomodationsBlockLabel>Venue + Accomodations</AccomodationsBlockLabel>
+      <AccomodationsBlockLabel>Venue + Hotel Accomodations</AccomodationsBlockLabel>
       <AccomodationsContainer>
         <div style={{ flex: 1 }}>
           <H2>Waikiki Beach Marriott Resort</H2>
-          <p>The Marriott Resort is located on the southern end of Waikiki and will be both our home for both the daily sessions as well as primary accomodations. It features 5 restaurants, 2 outdoor pools and a spa! Attendees for the conference will recieve a special room rate, however you MUST use the link below to book and receive this great rate for the upgraded Ocean View room.</p>
-          <ul>
+          <p>The Marriott Resort is located on the southern end of Waikiki and will be both our home for both the daily sessions as well as primary accomodations. It features 5 restaurants, 2 outdoor pools and a spa! Attendees for the conference will recieve a special room rate, however, we have limited availability and you MUST use the link below to book and receive the special rate for the upgraded Ocean View room.</p>
+          <ul style={{ color: 'white'}}>
             <li>$209 + tax (~25%) per night</li>
             <li>Discounted $15/night Resort Fee</li>
             <li>Includes an Ocean View Room upgrade</li>
@@ -138,7 +138,7 @@ const Sponsors = () => (
             <li>Wifi, daily fitness classes, spa discounts, and free intro snorkel/scuba lessons included!</li>
           </ul>
           <p>Note: The mandatory resort fee is dicounted to $15/night for attendees. However, the booking website will automatically state that the resort fee is $37, you can disregard the message.</p>
-          <Button>Reserve Now</Button>
+          <Button href="https://book.passkey.com/e/49726942">Reserve Hotel Now</Button>
         </div>
         <GMap src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8165.245471646006!2d-157.8284631816718!3d21.27458201138188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c007270cf4e263b%3A0x17efa11682def01b!2sWaikiki+Beach+Marriott+Resort+%26+Spa!5e0!3m2!1sen!2sus!4v1530977110820" width="600" height="450" frameBorder="0" allowFullScreen />
       </AccomodationsContainer>

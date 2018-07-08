@@ -22,7 +22,7 @@ const NavLink = styled(Link)`
 
 const PrimaryNavContainer = styled.div`
   display: flex;
-  flex: 4;
+  flex: 1;
 `
 
 const Logo = styled.img`
@@ -34,6 +34,7 @@ const NavRoot = styled.nav`
   align-items: center;
   display: flex;
   justify-content: space-between;
+  max-width: ${theme.containerWidth};
   width: 100%;
 `
 

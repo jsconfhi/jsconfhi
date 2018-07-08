@@ -28,7 +28,7 @@ const HeaderContent = styled.div`
 
 const Header = () => (
   <HeaderWrapper>
-    JSConf: Hawai'i | 07-08 February 2019 | Honolulu, HI
+    JSConf: Hawaiʻi &nbsp;|&nbsp; 07-08 February 2019 &nbsp;|&nbsp; Honolulu, HI
   </HeaderWrapper>
 )
 

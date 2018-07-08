@@ -7,16 +7,22 @@ import hawaiiImage from '../../img/header.jpg'
 import theme from '../../theme'
 
 const ImageContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  background-color: ${theme.colors.background};
+  background-image: url(${hawaiiImage});
+  background-size: cover;
+  background-position: center center;
+`
+
+const Container = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
   min-height: 280px;
   width: 100%;
-  padding: ${theme.spaces.medium} ${theme.spaces.large};
-  background-color: ${theme.colors.background};
-  background-image: url(${hawaiiImage});
-  background-size: cover;
-  background-position: center center;
+  max-width: ${theme.containerWidth};
+  margin: ${theme.spaces.medium} ${theme.spaces.large};
 `
 
 const PageTitle = styled.h2`
@@ -30,9 +36,11 @@ const PageTitle = styled.h2`
 
 const Hero = ({ children, navTitle }) => (
   <ImageContainer>
-    <Nav withBorder={!!navTitle} />
-    {navTitle ? <PageTitle>{navTitle}</PageTitle> : null}
-    {children}
+    <Container>
+      <Nav withBorder={!!navTitle} />
+      {navTitle ? <PageTitle>{navTitle}</PageTitle> : null}
+      {children}
+    </Container>
   </ImageContainer>
 )
 export default Hero

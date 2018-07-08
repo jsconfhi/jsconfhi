@@ -10,7 +10,7 @@ const ContainerHolder = styled.div`
 `
 
 const Container = styled.div`
-  max-width: ${theme.conatinerWidth};
+  max-width: ${theme.containerWidth};
   margin: 0 auto;
   display: flex;
   @media (max-width: ${theme.breakpoints.small}) {
@@ -51,14 +51,12 @@ const Columns = ({
   color = theme.colors.textYellow,
   title
 }) => (
-  <div>
-    <ContainerHolder backgroundColor={backgroundColor} color={color}>
-      { title && <H2 color={color}>{title}</H2> }
-      <Container>
-        {children}
-      </Container>
-    </ContainerHolder>
-  </div>
+  <ContainerHolder backgroundColor={backgroundColor} color={color}>
+    { title && <H2 color={color}>{title}</H2> }
+    <Container>
+      {children}
+    </Container>
+  </ContainerHolder>
 )
 
 export const Column = ({ children }) => (

@@ -7,7 +7,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "JSConf Hawaii",
+        name: "JSConf: Hawaii",
         short_name: "JSConf:HI",
         start_url: "/",
         background_color: "#03282c",

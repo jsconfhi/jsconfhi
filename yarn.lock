@@ -3236,7 +3236,7 @@ gatsby-module-loader@^1.0.11:
     babel-runtime "^6.26.0"
     loader-utils "^0.2.16"
 
-gatsby-plugin-manifest@^1.0.14:
+gatsby-plugin-manifest@^1.0.27:
   version "1.0.27"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-1.0.27.tgz#148327ebfaf9a0a6791012cc5b5363356ee16ddf"
   dependencies:
@@ -3244,7 +3244,7 @@ gatsby-plugin-manifest@^1.0.14:
     bluebird "^3.5.0"
     sharp "^0.20.1"
 
-gatsby-plugin-offline@^1.0.14:
+gatsby-plugin-offline@^1.0.18:
   version "1.0.18"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-1.0.18.tgz#2ee2a24d2f69fcc43a015132f07141b69295318d"
   dependencies:
@@ -3277,7 +3277,7 @@ gatsby-react-router-scroll@^1.0.18:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@^1.9.247:
+gatsby@^1.9.273:
   version "1.9.273"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.273.tgz#bf3d685cbd5112a55514ca0450888d2da95d4444"
   dependencies:

@@ -6,6 +6,9 @@ import PropTypes from 'prop-types'
 import logo from '../../img/logo.png'
 import theme from '../../theme'
 
+// Needs to collapse based on text-size not screen width
+const navWidthBreak = '620px';
+
 const NavLink = styled(Link)`
   color: ${theme.colors.textYellow};
   font-size: ${theme.fontSizes.medium};
@@ -23,19 +26,39 @@ const NavLink = styled(Link)`
 const PrimaryNavContainer = styled.div`
   display: flex;
   flex: 1;
+  grid-area: menu;
+  @media (max-width: ${navWidthBreak}) {
+    justify-content: space-between;
+  }
 `
 
 const Logo = styled.img`
   height: 60px;
   width: 60px;
+  grid-area: logo;
+  margin-right: ${theme.spaces.small};
+  @media (max-width: ${navWidthBreak}) {
+    height: 50px;
+    width: 50px;
+  }
 `
 
+// Use Grid to move things better, fallback to flexbox
 const NavRoot = styled.nav`
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "logo menu tickets";
   max-width: ${theme.containerWidth};
   width: 100%;
+  @media (max-width: ${navWidthBreak}) {
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 50px 50px;
+    grid-template-areas: "logo 1 tickets"
+                         "menu menu menu";
+  }
 `
 
 const Nav = ({ withBorder }) => (
@@ -46,7 +69,7 @@ const Nav = ({ withBorder }) => (
         : null
     }
   >
-    <NavLink style={{ margin: 0, marginRight: '1em' }} to="/">
+    <NavLink style={{ margin: 0 }} to="/">
       <Logo src={logo} alt="home" />
     </NavLink>
     <PrimaryNavContainer>
@@ -55,9 +78,7 @@ const Nav = ({ withBorder }) => (
       <NavLink to="/sponsors/">Sponsors</NavLink>
       <NavLink to="/about/">About</NavLink>
     </PrimaryNavContainer>
-    <Button isPrimary to="/attend/">
-      Buy Tickets
-    </Button>
+    <Button isPrimary style={{ gridArea: "tickets" }} to="/attend/">Buy Tickets</Button>
   </NavRoot>
 )
 

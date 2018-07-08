@@ -12,6 +12,7 @@ const style = `
   padding: ${theme.spaces.medium};
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   border: 1px solid transparent;
   &:hover {
   }

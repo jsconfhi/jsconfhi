@@ -10,17 +10,29 @@ const ContainerHolder = styled.div`
 `
 
 const Container = styled.div`
-  max-width: 960px;
+  max-width: ${theme.conatinerWidth};
   margin: 0 auto;
   display: flex;
+  @media (max-width: ${theme.breakpoints.small}) {
+    flex-direction: column;
+  }
 `
 
 const Section = styled.div`
   flex: 1;
   margin: ${theme.spaces.large} ${theme.spaces.medium};
   & + & {
-    border-left: ${(props) => `1px dashed`}
+    border-left: ${(props) => `1px dashed`};
     padding-left: ${theme.spaces.large};
+  }
+  @media (max-width: ${theme.breakpoints.small}) {
+    margin: ${theme.spaces.medium} ${theme.spaces.medium};
+    & + & {
+      border-top: ${(props) => `1px dashed`};
+      border-left: none;
+      padding-top: ${theme.spaces.large};
+      padding-left: 0;
+    }
   }
 `
 
@@ -28,7 +40,7 @@ const H2 = styled.h2`
   color: ${(props) => props.color};
   font-size: ${theme.fontSizes.large};
   font-weight: bold;
-  margin-bottom: ${theme.spaces.small} 0;
+  margin-bottom: ${theme.spaces.medium};
   text-align: center;
   text-transform: uppercase;
 `

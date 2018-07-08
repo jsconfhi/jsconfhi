@@ -26,4 +26,5 @@ export default {
     small: '500px',
     medium: '800px',
   },
+  containerWidth: '960px'
 }

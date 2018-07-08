@@ -54,6 +54,7 @@ const TicketContainer = styled.div`
 `;
 
 const Ticket = styled.div`
+  align-items: flex-start;
   background-color: white;
   color: ${theme.colors.textGray};
   display: flex;
@@ -72,10 +73,6 @@ const TicketCost = styled.div`
   font-size: ${theme.fontSizes.large};
 `;
 
-const ticketButtonStyle = {
-  alignSelf: 'flex-start'
-};
-
 const Sponsors = () => (
   <div>
     <Hero navTitle="Attend">
@@ -85,20 +82,20 @@ const Sponsors = () => (
           <TicketName>Scholarship</TicketName>
           <TicketCost>$0</TicketCost>
           <p>We deeply believe in creating an inclusive and diverse conference and want to make sure that everyone is able to participate.</p>
-          <p style={{flexGrow: 1}}>We're now accepting applications from diverse groups to attend for free, and for some with hotel and/or airfare included.</p>
-          <Button color="dark" style={ticketButtonStyle} href="https://docs.google.com/forms/d/1_R7x-UDpC-vi62D43nWfOKJQoIxwilKqdBNvJo5h3QM/edit">Apply</Button>
+          <p style={{flexGrow: 1}}>We're now accepting applications from diverse groups to attend for free, and for some, with hotel and/or airfare included.</p>
+          <Button color="dark" href="https://docs.google.com/forms/d/1_R7x-UDpC-vi62D43nWfOKJQoIxwilKqdBNvJo5h3QM/edit">Apply</Button>
         </Ticket>
         <Ticket>
           <TicketName>Hawaiʻi Scholarship</TicketName>
           <TicketCost>$200</TicketCost>
           <p style={{flexGrow: 1}}>We also want to make sure that local students and other low-income groups are able to attend. We have a very limited number of tickets available at a discounted rate for those not on the mainland. If you are financially able, please purchase a full price ticket instead to help ensure those who need discounts are able to receive them!</p>
-          <Button color="dark" style={ticketButtonStyle} href="https://docs.google.com/forms/d/1_R7x-UDpC-vi62D43nWfOKJQoIxwilKqdBNvJo5h3QM/edit">Apply</Button>
+          <Button color="dark" href="https://docs.google.com/forms/d/1_R7x-UDpC-vi62D43nWfOKJQoIxwilKqdBNvJo5h3QM/edit">Apply</Button>
         </Ticket>
         <Ticket>
           <TicketName>Early Bird</TicketName>
           <TicketCost>$450</TicketCost>
           <p style={{flexGrow: 1}}>For being an early adopter, and one of the first to buy a ticket for JSConf: Hawaiʻi, you'll recieve a discounted ticket. Once these tickets are gone, so is the great rate!</p>
-          <Button color="dark" style={ticketButtonStyle} href="https://ti.to/jsconf-hawaii/2019">Buy Now!</Button>
+          <Button color="dark" href="https://ti.to/jsconf-hawaii/2019">Buy Now!</Button>
         </Ticket>
         <Ticket>
           <TicketName>Bulk 4-Pack</TicketName>
@@ -117,7 +114,7 @@ const Sponsors = () => (
           <TicketCost>$900+</TicketCost>
           <p>We strongly believe in diversity and hope you do too; JSConf:Hawaiʻi is built on it!</p>
           <p style={{flexGrow: 1}}>Buying this ticket and making a diversity contribution will help us bring an even more diverse group of attendees and provide even more travel assistance to them. There's no cap on how much you can donate, and we'll periodically release more of these.</p>
-          <Button color="dark" style={ticketButtonStyle} href="https://ti.to/jsconf-hawaii/2019">Buy Now!</Button>
+          <Button color="dark" href="https://ti.to/jsconf-hawaii/2019">Buy Now!</Button>
         </Ticket>
       </TicketContainer>
     </Hero>

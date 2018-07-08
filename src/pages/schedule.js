@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import theme from '../theme'
 
 const Container = styled.div`
-  max-width: 960px;
+  max-width: ${theme.containerWidth};
   margin: 0 auto;
 `
 

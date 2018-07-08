@@ -1,90 +1,123 @@
+import Button from '../components/Button'
 import Hero from '../components/Hero'
+import HeroLabel from '../components/Hero/contentLabel'
 import React from 'react'
+import Link from 'gatsby-link'
 import styled from 'styled-components'
+import theme from '../theme'
 
-const List = styled.ul`
-  line-height: 2em;
-  list-style-type: circle;
-  margin-left: 2em;
+const Callout = styled.div`
+  background-color: white;
+  display: flex;
+  max-width: ${theme.containerWidth};
+  padding: ${theme.spaces.medium};
+  width: 100%;
+  @media (max-width: ${theme.breakpoints.medium}) {
+    flex-direction: column;
+  }
 `
 
-const Emphasized = styled.p`
+const Guidelines = styled.div`
+  background-color: ${theme.colors.background};
+  color: ${theme.colors.textYellow};
+  padding: ${theme.spaces.large};
+`
+const GuidelinesContainer = styled.div`
+  margin: 0 auto;
+  max-width: ${theme.containerWidth};
+`
+
+const CalloutTitle = styled.div`
+  font-size: ${theme.fontSizes.jumbo};
+  font-weight: bold;
+  color: ${theme.colors.background};
+`
+
+const CalloutRail = styled.div`
+  align-items: flex-start;
+  display: flex;
+  flex-basis: 0;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-right: ${theme.spaces.large};
+  @media (max-width: ${theme.breakpoints.medium}) {
+    flex-basis: auto;
+  }
+`
+
+const CalloutText = styled.div`
+  flex-basis: 0;
+  flex-grow: 3;
+  flex-shrink: 1;
+`
+
+const H1 = styled.h1`
+  font-size: ${theme.fontSizes.jumbo};
+  font-weight: bold;
+  text-align: center;
+  color: ${theme.colors.textWhite};
+  margin-bottom: ${theme.spaces.large};
+  text-transform: uppercase;
+`
+
+const H2 = styled.h2`
   font-weight: bold;
 `
-const CFP = () => (
-  <div>
-    <Hero navTitle="Call for Speakers" />
-    <Emphasized>
-      We will be opening our Call for Speakers in June, 2018!
-    </Emphasized>
-    <p>
-      We are seeking out new ideas and concepts that push the boundaries of
-      JavaScript and the JavaScript community. We welcome strange and unusual
-      presentations as long as they remain within the boundaries of our
-      well-established{' '}
-      <a href="http://jsconf.com/codeofconduct.html" target="_blank">
-        Code of Conduct
-      </a>. We are looking for talks focused on all parts of JavaScript,
-      including but not limited to:
-    </p>
-    <List>
-      <li>Mobile Web</li>
-      <li>The Future of JavaScript</li>
-      <li>Web Security</li>
-      <li>WebAssembly</li>
-      <li>Life of a Developer</li>
-      <li>Server-Side JavaScript</li>
-      <li>Performance and Optimization</li>
-      <li>IoT, Hardware, and Embedded JavaScript</li>
-      <li>Artificial Intelligence and Machine Learning</li>
-      <li>Education and Outreach of Computer Programming</li>
-      <li>Putting JavaScript into places no one expected</li>
-      <li>Your Passion!</li>
-    </List>
-    <h2>Inverse Call for Speakers</h2>
-    <p>
-      In additional to the typical "Call for Speakers" process, we also offer an
-      "Inverse Call for Speakers". If you want to nominate a person and idea
-      that you would like to see, you can submit that as well with the submissio
-      form. If you are submitting yourself, which is completely cool and
-      encouraged, please mark your submission as "this is me", so we can write
-      to let you know whether or not your submission was accepted.
-    </p>
 
-    <h2>Selection Process</h2>
-    <p>
-      All submissions are anonymized in an attempt to remove any conscious or
-      unconscious biases towards the submitter.
-    </p>
-    <p>
-      All submissions are reviewed and voted for by our organizers and
-      volunteers. Each talk is categorized in one of several categories:
-    </p>
-    <List>
-      <li>Design</li>
-      <li>Infrastructure</li>
-      <li>AI/ML</li>
-      <li>UX/UI</li>
-      <li>JS Library</li>
-      <li>Mobile</li>
-      <li>Other</li>
-      <li>Server-Side</li>
-    </List>
-    <p>
-      Each talk is rated on a scale from 1 to 10, taking into account the
-      following criteria:
-    </p>
-    <List>
-      <li>Coherence and clarity of proposal</li>
-      <li>Relevance to the JavaScript community</li>
-      <li>Novelty and originality of the topic</li>
-      <li>Reasonably communicable in the time allotted</li>
-    </List>
-    <p>
-      The top submissions are then de-anonymized so we can take speaker details
-      into account. This ensures a diverse speaker line-up of people from all
-      backgrounds and speaking experience.
-    </p>
+const CFP = () => (
+  <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+    <Hero navTitle="Speakers">
+      <HeroLabel>Call for Speakers</HeroLabel>
+      <Callout>
+        <CalloutRail>
+          <CalloutTitle>Present in Hawaiʻi</CalloutTitle>
+          <Button color="dark">Apply / Suggest Now</Button>
+        </CalloutRail>
+        <CalloutText>
+          <H2>Topics</H2>
+          <p>
+            We are seeking out new ideas and concepts, along with novel usages, that push the boundaries of
+            JavaScript or help strengthen the JavaScript community. We welcome strange, unusual, non-traditional,
+            or even non-JS presentations as long as they remain within the boundaries of our
+            well-established{' '}
+            <Link to="/about#coc">
+              Code of Conduct
+            </Link>. More information can be found in the guidelines section.
+          </p>
+
+          <H2>Nominate a Speakers</H2>
+          <p>
+            If you want to nominate a person and idea that you would like to see,
+            you can submit them via our submission
+            form. Please be sure to include valid contact information so that we can reach out to
+            your suggested speaker.
+          </p>
+
+          <H2>Selection Process</H2>
+          <p>
+            All submissions are anonymized before review in an attempt to remove any conscious or
+            unconscious biases towards the submitter.
+          </p>
+          <p>
+            Due to the volume of requests we receive and logistics of organizing,
+            we may not be able to provide specific feedback to applications we do not select.
+            Many submissions will simply be duplicative in terms of material convered.
+          </p>
+          <p>
+            The top submissions are then de-anonymized so we can take speaker details
+            into account. This ensures a diverse speaker line-up of people from all
+            backgrounds and speaking experience.
+          </p>
+        </CalloutText>
+      </Callout>
+    </Hero>
+    <Guidelines>
+      <GuidelinesContainer>
+        <H1>Guidelines</H1>
+        <p>What else is there to be said?</p>
+      </GuidelinesContainer>
+    </Guidelines>
   </div>
 )
 

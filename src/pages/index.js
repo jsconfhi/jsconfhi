@@ -35,18 +35,40 @@ const HeroContent = styled.div`
   background-color: ${theme.colors.background90};
   color: ${theme.colors.textYellow};
   max-width: 800px;
-  margin: ${theme.spaces.large} ${theme.spaces.jumbo};
+  margin: ${theme.spaces.large} 0;
   padding: ${theme.spaces.large} 6rem;
+  @media (max-width: ${theme.breakpoints.medium}) {
+    padding: ${theme.spaces.large};
+  }
 }
 `
 
 // Sized to exactly fit
 const DatesAndSocials = styled.div`
+  display: flex;
+  justify-content: space-between;
   margin: ${theme.spaces.medium} 0;
-  padding: ${theme.spaces.medium} 0;
   border-top: 1px dashed ${theme.colors.textYellow};
   border-bottom: 1px dashed ${theme.colors.textYellow};
   text-transform: uppercase;
+  @media (max-width: ${theme.breakpoints.small}) {
+    flex-direction: column;
+  }
+`
+
+const DatesAndSocialsItem = styled.div`
+  margin: ${theme.spaces.medium} 0;
+  padding: 0 ${theme.spaces.small};
+  & + & {
+    border-left: 1px solid ${theme.colors.textYellow};
+  }
+  @media (max-width: ${theme.breakpoints.small}) {
+    margin: ${theme.spaces.small} 0;
+    padding: 0;
+    & + & {
+      border-left: none;
+    }
+  }
 `
 
 const SocialLink = styled.a`
@@ -96,9 +118,9 @@ const IndexPage = () => (
           JSConf: Hawaiʻi
         </h3>
         <DatesAndSocials>
-          <span>Feb 7th + 8th 2019</span>&nbsp;&nbsp;|&nbsp;&nbsp;
-          <span>Honolulu, HI</span>&nbsp;&nbsp;|&nbsp;&nbsp;
-          <span>
+          <DatesAndSocialsItem>Feb 7th + 8th 2019</DatesAndSocialsItem>
+          <DatesAndSocialsItem>Honolulu, HI</DatesAndSocialsItem>
+          <DatesAndSocialsItem style={{ flexShrink: 0 }}>
             <SocialLink
               aria-label="Instagram"
               href="https://www.instagram.com/jsconfhi"
@@ -120,7 +142,7 @@ const IndexPage = () => (
             >
               <FontAwesomeIcon icon={faFacebook} />
             </SocialLink>
-          </span>
+          </DatesAndSocialsItem>
         </DatesAndSocials>
         {
           // TODO: Fix this newsletter signup again and deal with styling

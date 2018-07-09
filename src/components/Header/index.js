@@ -1,6 +1,4 @@
 import React from 'react'
-import Nav from '../Nav'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
 import theme from '../../theme'
 
@@ -19,11 +17,6 @@ const HeaderWrapper = styled.div`
   padding: 0;
   height: ${headerHeight}px;
   width: 100%;
-`
-
-const HeaderContent = styled.div`
-  margin: 0 auto;
-  padding: 1.45rem 1.0875rem;
 `
 
 const Header = () => (

@@ -6,7 +6,7 @@ import {
   faTwitterSquare,
 } from '@fortawesome/free-brands-svg-icons'
 import React from 'react'
-import Link from 'gatsby-link'
+import Layout from '../components/layout'
 import Hero from '../components/Hero'
 import Columns, { Column } from '../components/Columns'
 import styled from 'styled-components'
@@ -17,16 +17,6 @@ const H2 = styled.h2`
   font-size: ${theme.fontSizes.large};
   font-weight: bold;
   margin-bottom: ${theme.spaces.small} 0;
-  text-transform: uppercase;
-`
-
-const ButtonLink = styled.a`
-  display: inline-block;
-  text-decoration: none;
-  margin-top: 18px;
-  padding: 18px 24px;
-  color: white;
-  background-color: #ff3c3c;
   text-transform: uppercase;
 `
 
@@ -96,7 +86,7 @@ const EmailFormButton = styled.input`
 `
 
 const IndexPage = () => (
-  <div>
+  <Layout>
     <Hero>
       <HeroContent>
         <div
@@ -224,11 +214,11 @@ const IndexPage = () => (
       <Column>
         <H2>Sponsorships</H2>
         <p>
-          We are currently offering <a href="/sponsors">sponsorship</a>{' '}
-          packages for the inauguaral JSConf Hawaii coming February 2019.
-          We’re looking forward to working with all of our great sponsors to
-          find the best way to connect each of you with our attendees in
-          unique and meaningful ways.
+          We are currently offering <a href="/sponsors">sponsorship</a> packages
+          for the inauguaral JSConf Hawaii coming February 2019. We’re looking
+          forward to working with all of our great sponsors to find the best way
+          to connect each of you with our attendees in unique and meaningful
+          ways.
         </p>
         <p>
           <a href="mailto:sponsor@jsconfhi.com">Contact us</a> to learn more
@@ -236,7 +226,7 @@ const IndexPage = () => (
         </p>
       </Column>
     </Columns>
-  </div>
+  </Layout>
 )
 
 export default IndexPage

@@ -94,7 +94,7 @@ const TemplateWrapper = ({ children }) => (
     </Helmet>
     <Wrapper>
       <Header style={{ flex: 1 }} />
-      <MainContent style={{ flex: 1, flexGrow: 1 }}>{children()}</MainContent>
+      <MainContent style={{ flex: 1, flexGrow: 1 }}>{children}</MainContent>
       <Footer style={{ flex: 1 }} />
     </Wrapper>
   </div>

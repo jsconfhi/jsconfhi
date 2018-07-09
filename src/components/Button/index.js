@@ -1,6 +1,5 @@
 import React from 'react'
-import Nav from '../Nav'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import theme from '../../theme'
@@ -21,27 +20,52 @@ const style = `
 const Button = styled(Link)([style])
 const ExternalButton = styled.a([style])
 
-const ButtonComponent = ({ children, href, to, isPrimary, color, style = {} }) => {
-  const Component = to ? Button : ExternalButton;
+const ButtonComponent = ({
+  children,
+  href,
+  to,
+  isPrimary,
+  color,
+  style = {},
+}) => {
+  const Component = to ? Button : ExternalButton
 
-  const styleColor = isPrimary ? theme.colors.background : (color === 'dark' ? theme.colors.background : theme.colors.textYellow);
-  const styleBorderColor = isPrimary ? 'transparent' : (color === 'dark' ? theme.colors.background : theme.colors.textYellow);
-  const styleBgColor = isPrimary ? theme.colors.textYellow : 'transparent';
+  const styleColor = isPrimary
+    ? theme.colors.background
+    : color === 'dark'
+      ? theme.colors.background
+      : theme.colors.textYellow
+  const styleBorderColor = isPrimary
+    ? 'transparent'
+    : color === 'dark'
+      ? theme.colors.background
+      : theme.colors.textYellow
+  const styleBgColor = isPrimary ? theme.colors.textYellow : 'transparent'
   const props = {
     color,
     isPrimary,
     href,
     target: href ? '_blank' : undefined,
-    to
-  };
-  return (<Component {...props} style={{ color: styleColor, backgroundColor: styleBgColor, borderColor: styleBorderColor, ...style }}>
-    {children}
-  </Component>)
+    to,
+  }
+  return (
+    <Component
+      {...props}
+      style={{
+        color: styleColor,
+        backgroundColor: styleBgColor,
+        borderColor: styleBorderColor,
+        ...style,
+      }}
+    >
+      {children}
+    </Component>
+  )
 }
 
 ButtonComponent.propTypes = {
   isPrimary: PropTypes.bool,
-  color: PropTypes.oneOf(['dark', 'light'])
-};
+  color: PropTypes.oneOf(['dark', 'light']),
+}
 
 export default ButtonComponent

@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import theme from '../../theme'
 
 const ContainerHolder = styled.div`
-  background-color: ${(props) => props.backgroundColor};
-  color: ${(props) => props.color};
+  background-color: ${props => props.backgroundColor};
+  color: ${props => props.color};
   padding-top: 2em;
   width: 100%;
 `
@@ -22,13 +22,13 @@ const Section = styled.div`
   flex: 1;
   margin: ${theme.spaces.large} ${theme.spaces.medium};
   & + & {
-    border-left: ${(props) => `1px dashed`};
+    border-left: ${props => `1px dashed`};
     padding-left: ${theme.spaces.large};
   }
   @media (max-width: ${theme.breakpoints.small}) {
     margin: ${theme.spaces.medium} ${theme.spaces.medium};
     & + & {
-      border-top: ${(props) => `1px dashed`};
+      border-top: ${props => `1px dashed`};
       border-left: none;
       padding-top: ${theme.spaces.large};
       padding-left: 0;
@@ -37,7 +37,7 @@ const Section = styled.div`
 `
 
 const H2 = styled.h2`
-  color: ${(props) => props.color};
+  color: ${props => props.color};
   font-size: ${theme.fontSizes.large};
   font-weight: bold;
   margin-bottom: ${theme.spaces.medium};
@@ -49,18 +49,14 @@ const Columns = ({
   children,
   backgroundColor = theme.colors.background,
   color = theme.colors.textYellow,
-  title
+  title,
 }) => (
   <ContainerHolder backgroundColor={backgroundColor} color={color}>
-    { title && <H2 color={color}>{title}</H2> }
-    <Container>
-      {children}
-    </Container>
+    {title && <H2 color={color}>{title}</H2>}
+    <Container>{children}</Container>
   </ContainerHolder>
 )
 
-export const Column = ({ children }) => (
-  <Section>{children}</Section>
-)
+export const Column = ({ children }) => <Section>{children}</Section>
 
 export default Columns

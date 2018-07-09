@@ -9,7 +9,7 @@ import HeroContentLabel from '../components/Hero/contentLabel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
-import Link from 'gatsby-link'
+import Layout from '../components/layout'
 import Profile from '../components/Profile'
 import styled from 'styled-components'
 import kellyAvatar from '../img/kng.jpg'
@@ -40,7 +40,7 @@ const Li = styled.li`
 `
 
 const Organizers = () => (
-  <div>
+  <Layout>
     <Hero navTitle="About">
       <HeroContentLabel id="organizers">Organizers</HeroContentLabel>
       <Profiles>
@@ -259,6 +259,7 @@ const Organizers = () => (
         <a
           href="https://www.autistichoya.com/p/ableist-words-and-terms-to-avoid.html"
           target="_blank"
+          rel="noopener noreferrer"
         >
           this guide
         </a>.
@@ -277,6 +278,7 @@ const Organizers = () => (
         <a
           href="http://geekfeminism.wikia.com/wiki/Nonsexist_language"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Geek Feminism wiki guide
         </a>.
@@ -306,20 +308,28 @@ const Organizers = () => (
         <Column>
           <H3>Anonymous report</H3>
           <p>Use this form to file a code of conduct violation anonymously</p>
-          <Button color="dark" to="#">File a report</Button>
+          <Button color="dark" to="#">
+            File a report
+          </Button>
         </Column>
         <Column>
           <H3>Personal report</H3>
           <p>You can file a personal report using one of the below methods:</p>
           <ul>
-            <Li><FontAwesomeIcon icon={faEnvelope} /> report@jsconfhi.com</Li>
-            <Li><FontAwesomeIcon icon={faUsers} /> Report to a STAFF member</Li>
-            <Li><FontAwesomeIcon icon={faPhone} /> To be announced</Li>
+            <Li>
+              <FontAwesomeIcon icon={faEnvelope} /> report@jsconfhi.com
+            </Li>
+            <Li>
+              <FontAwesomeIcon icon={faUsers} /> Report to a STAFF member
+            </Li>
+            <Li>
+              <FontAwesomeIcon icon={faPhone} /> To be announced
+            </Li>
           </ul>
         </Column>
       </Columns>
     </Centered>
-  </div>
+  </Layout>
 )
 
 export default Organizers

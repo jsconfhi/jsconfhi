@@ -2,6 +2,8 @@
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 .cache/
+# Generated build content
+public/
 # Build directory
 .DS_Store
 yarn-error.log

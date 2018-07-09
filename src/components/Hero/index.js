@@ -1,8 +1,6 @@
 import React from 'react'
 import Nav from '../Nav'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
 import hawaiiImage from '../../img/header.jpg'
 import theme from '../../theme'
 

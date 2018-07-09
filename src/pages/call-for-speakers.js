@@ -2,7 +2,8 @@ import Button from '../components/Button'
 import Hero from '../components/Hero'
 import HeroLabel from '../components/Hero/contentLabel'
 import React from 'react'
-import Link from 'gatsby-link'
+import Layout from '../components/layout'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 import theme from '../theme'
 
@@ -66,7 +67,7 @@ const H2 = styled.h2`
 `
 
 const CFP = () => (
-  <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+  <Layout style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
     <Hero navTitle="Speakers">
       <HeroLabel>Call for Speakers</HeroLabel>
       <Callout>
@@ -77,37 +78,38 @@ const CFP = () => (
         <CalloutText>
           <H2>Topics</H2>
           <p>
-            We are seeking out new ideas and concepts, along with novel usages, that push the boundaries of
-            JavaScript or help strengthen the JavaScript community. We welcome strange, unusual, non-traditional,
-            or even non-JS presentations as long as they remain within the boundaries of our
-            well-established{' '}
-            <Link to="/about#coc">
-              Code of Conduct
-            </Link>. More information can be found in the guidelines section.
+            We are seeking out new ideas and concepts, along with novel usages,
+            that push the boundaries of JavaScript or help strengthen the
+            JavaScript community. We welcome strange, unusual, non-traditional,
+            or even non-JS presentations as long as they remain within the
+            boundaries of our well-established{' '}
+            <Link to="/about#coc">Code of Conduct</Link>. More information can
+            be found in the guidelines section.
           </p>
 
           <H2>Nominate a Speakers</H2>
           <p>
-            If you want to nominate a person and idea that you would like to see,
-            you can submit them via our submission
-            form. Please be sure to include valid contact information so that we can reach out to
-            your suggested speaker.
+            If you want to nominate a person and idea that you would like to
+            see, you can submit them via our submission form. Please be sure to
+            include valid contact information so that we can reach out to your
+            suggested speaker.
           </p>
 
           <H2>Selection Process</H2>
           <p>
-            All submissions are anonymized before review in an attempt to remove any conscious or
-            unconscious biases towards the submitter.
+            All submissions are anonymized before review in an attempt to remove
+            any conscious or unconscious biases towards the submitter.
           </p>
           <p>
-            Due to the volume of requests we receive and logistics of organizing,
-            we may not be able to provide specific feedback to applications we do not select.
-            Many submissions will simply be duplicative in terms of material convered.
+            Due to the volume of requests we receive and logistics of
+            organizing, we may not be able to provide specific feedback to
+            applications we do not select. Many submissions will simply be
+            duplicative in terms of material convered.
           </p>
           <p>
-            The top submissions are then de-anonymized so we can take speaker details
-            into account. This ensures a diverse speaker line-up of people from all
-            backgrounds and speaking experience.
+            The top submissions are then de-anonymized so we can take speaker
+            details into account. This ensures a diverse speaker line-up of
+            people from all backgrounds and speaking experience.
           </p>
         </CalloutText>
       </Callout>
@@ -118,7 +120,7 @@ const CFP = () => (
         <p>What else is there to be said?</p>
       </GuidelinesContainer>
     </Guidelines>
-  </div>
+  </Layout>
 )
 
 export default CFP

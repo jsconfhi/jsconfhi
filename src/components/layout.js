@@ -45,11 +45,11 @@ const TemplateWrapper = ({ children }) => (
         {
           name: 'description',
           content:
-            'A two day, single track conference dedicated to web development, JavaScript and building a community. February 2019 in Honolulu.',
+            'A two day, single track conference dedicated to web development, JavaScript and building a community. February 7th + 8th 2019 in Honolulu, Hawaiʻi.',
         },
         {
           name: 'keywords',
-          content: 'JS, JavaScript, Conference, Hawaii, Tech',
+          content: 'JS, JavaScript, Conference, Hawaii, Tech, Web',
         },
         { name: 'theme-color', content: '#03282c' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -59,7 +59,7 @@ const TemplateWrapper = ({ children }) => (
         {
           name: 'og:description',
           content:
-            'A two day, single track conference dedicated to web development, JavaScript and building a community. February 2019 in Honolulu.',
+            'A two day, single track conference dedicated to web development, JavaScript and building a community. February 7th + 8th 2019 in Honolulu, Hawaiʻi.',
         },
         {
           name: 'og:image',

@@ -60,6 +60,12 @@
   dependencies:
     "@babel/types" "7.0.0-beta.51"
 
+"@babel/helper-annotate-as-pure@^7.0.0-beta.37":
+  version "7.0.0-beta.52"
+  resolved "https://registry.yarnpkg.com/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.0.0-beta.52.tgz#4d5bff58385f13b15b2257c5fa9dfa2d2998e615"
+  dependencies:
+    "@babel/types" "7.0.0-beta.52"
+
 "@babel/helper-builder-binary-assignment-operator-visitor@7.0.0-beta.51":
   version "7.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/@babel/helper-builder-binary-assignment-operator-visitor/-/helper-builder-binary-assignment-operator-visitor-7.0.0-beta.51.tgz#2133fffe3e2f71591e42147b947291ca2ad39237"
@@ -695,6 +701,14 @@
 "@babel/types@7.0.0-beta.51":
   version "7.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0-beta.51.tgz#d802b7b543b5836c778aa691797abf00f3d97ea9"
+  dependencies:
+    esutils "^2.0.2"
+    lodash "^4.17.5"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@7.0.0-beta.52":
+  version "7.0.0-beta.52"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0-beta.52.tgz#a3e5620b1534b253a50abcf2222b520e23b16da2"
   dependencies:
     esutils "^2.0.2"
     lodash "^4.17.5"
@@ -1432,6 +1446,14 @@ babel-plugin-dynamic-import-node@^1.2.0:
 babel-plugin-remove-graphql-queries@^2.0.2-beta.4:
   version "2.0.2-beta.4"
   resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.0.2-beta.4.tgz#a3f4403257dea2686f869419fd786abc0ea2e7ba"
+
+babel-plugin-styled-components@>1.5.0:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.5.1.tgz#31dbeb696d1354d1585e60d66c7905f5e474afcd"
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.0.0-beta.37"
+    babel-types "^6.26.0"
+    stylis "^3.0.0"
 
 babel-plugin-syntax-class-properties@^6.8.0:
   version "6.13.0"
@@ -4022,6 +4044,12 @@ gatsby-plugin-page-creator@^2.0.0-beta.2:
 gatsby-plugin-react-helmet@next:
   version "3.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.0.0-beta.3.tgz#916ad68ff19de9d084a35cbda4a32ea88fe4b7e9"
+  dependencies:
+    "@babel/runtime" "7.0.0-beta.51"
+
+gatsby-plugin-styled-components@next:
+  version "3.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.0.0-beta.2.tgz#2e925bd56ecd51be50770b3455ffb9e95585c37e"
   dependencies:
     "@babel/runtime" "7.0.0-beta.51"
 
@@ -8068,7 +8096,7 @@ stylis-rule-sheet@^0.0.10:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/stylis-rule-sheet/-/stylis-rule-sheet-0.0.10.tgz#44e64a2b076643f4b52e5ff71efc04d8c3c4a430"
 
-stylis@^3.5.0:
+stylis@^3.0.0, stylis@^3.5.0:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.5.1.tgz#fd341d59f57f9aeb412bc14c9d8a8670b438e03b"
 

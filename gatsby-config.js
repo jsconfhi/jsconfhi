@@ -28,6 +28,10 @@ module.exports = {
         icon: "src/img/logo.png"
       },
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {},
+    },
     'gatsby-plugin-offline'
   ],
 };

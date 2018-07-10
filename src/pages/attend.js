@@ -73,7 +73,7 @@ const TicketCost = styled.div`
   font-size: ${theme.fontSizes.large};
 `
 
-const Sponsors = () => (
+const Attend = () => (
   <Layout>
     <Hero navTitle="Attend">
       <HeroContentLabel>Tickets</HeroContentLabel>
@@ -273,4 +273,4 @@ const Sponsors = () => (
   </Layout>
 )
 
-export default Sponsors
+export default Attend

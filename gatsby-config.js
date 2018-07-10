@@ -1,3 +1,5 @@
+const theme = require('./src/theme');
+
 module.exports = {
   siteMetadata: {
     title: 'JSConf: Hawaii',
@@ -22,8 +24,8 @@ module.exports = {
         name: "JSConf: Hawaii",
         short_name: "JSConf:HI",
         start_url: "/",
-        background_color: "#03282c",
-        theme_color: "#03282c",
+        background_color: theme.colors.background,
+        theme_color: theme.colors.background,
         display: "minimal-ui",
         icon: "src/img/logo.png"
       },

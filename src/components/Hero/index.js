@@ -11,6 +11,7 @@ const ImageContainer = styled.div`
   background-image: url(${hawaiiImage});
   background-size: cover;
   background-position: center center;
+  flex-grow: 1;
 `
 
 const Container = styled.div`

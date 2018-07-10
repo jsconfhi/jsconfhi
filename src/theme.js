@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   colors: {
     background: '#03282c',
     background90: 'rgba(3, 40, 44, 0.9)',

@@ -4,12 +4,14 @@ import Helmet from 'react-helmet'
 import { injectGlobal } from 'styled-components'
 import reset from 'styled-reset'
 import styled from 'styled-components'
+import theme from '../theme'
 
 import Header, { headerHeight } from '../components/Header'
 import Footer, { footerHeight } from '../components/Footer'
 injectGlobal`
   ${reset}
   body {
+    background-color: ${theme.colors.background};
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     box-sizing: border-box;
@@ -27,12 +29,13 @@ injectGlobal`
 `
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
   height: 100vh;
 }`
 
 const MainContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   padding-top: ${headerHeight}px;
   padding-bottom: ${footerHeight}px;
 `
@@ -94,14 +97,17 @@ const TemplateWrapper = ({ children }) => (
     </Helmet>
     <Wrapper>
       <Header style={{ flex: 1 }} />
-      <MainContent style={{ flex: 1, flexGrow: 1 }}>{children}</MainContent>
+      <MainContent>{children}</MainContent>
       <Footer style={{ flex: 1 }} />
     </Wrapper>
   </div>
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
+  ]).isRequired
 }
 
 export default TemplateWrapper

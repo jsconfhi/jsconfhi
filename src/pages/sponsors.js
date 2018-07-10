@@ -56,7 +56,7 @@ const ContactLink = styled.a`
 `
 
 const Sponsors = () => (
-  <Layout style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+  <Layout>
     <Hero navTitle="Sponsors">
       <HeroLabel>Sponsorship Opportunities</HeroLabel>
       <Callout>

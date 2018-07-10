@@ -87,7 +87,7 @@ const EmailFormButton = styled.input`
 
 const IndexPage = () => (
   <Layout>
-    <Hero>
+    <Hero style={{ flexGrow: 1 }}>
       <HeroContent>
         <div
           style={{
@@ -137,26 +137,26 @@ const IndexPage = () => (
         {
           // TODO: Fix this newsletter signup again and deal with styling
         }
-        <div class="Hero-newsletter">
+        <div>
           <div id="mc_embed_signup">
             <form
               action="https://twitter.us18.list-manage.com/subscribe/post?u=c9c542019e2372811b2b8cd10&amp;id=affde4125d"
               method="post"
               id="mc-embedded-subscribe-form"
               name="mc-embedded-subscribe-form"
-              class="validate"
+              className="validate"
               target="_blank"
-              novalidate
+              noValidate
             >
               <div id="mc_embed_signup_scroll">
-                <label for="mce-EMAIL">Sign up for updates</label>
-                <EmailSignupForm class="signup-form">
+                <label htmlFor="mce-EMAIL">Sign up for updates</label>
+                <EmailSignupForm className="signup-form">
                   <EmailFormInput
                     type="email"
                     placeholder="Email Address"
                     value=""
                     name="EMAIL"
-                    class="required email"
+                    className="required email"
                     id="mce-EMAIL"
                   />
                   <EmailFormButton
@@ -164,17 +164,17 @@ const IndexPage = () => (
                     value="Sign up"
                     name="subscribe"
                     id="mc-embedded-subscribe"
-                    class="button"
+                    className="button"
                   />
                 </EmailSignupForm>
-                <div id="mce-responses" class="clear">
+                <div id="mce-responses" className="clear">
                   <div
-                    class="response"
+                    className="response"
                     id="mce-error-response"
                     style={{ display: 'none' }}
                   />
                   <div
-                    class="response"
+                    className="response"
                     id="mce-success-response"
                     style={{ display: 'none' }}
                   />
@@ -185,7 +185,7 @@ const IndexPage = () => (
                     <input
                       type="text"
                       name="b_c9c542019e2372811b2b8cd10_affde4125d"
-                      tabindex="-1"
+                      tabIndex="-1"
                       value=""
                     />
                   </div>

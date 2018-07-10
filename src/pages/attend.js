@@ -61,7 +61,6 @@ const TicketContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 700px;
   padding: 0 ${theme.spaces.medium};
 `
 
@@ -88,21 +87,28 @@ const TicketMini = styled.div`
   margin: ${theme.spaces.medium};
 `
 
-const TicketName = styled.h3`
+const TicketName = styled.div`
   color: ${theme.colors.background};
-  flex-grow: 1;
+  flex: 1;
   font-size: ${theme.fontSizes.large};
+  @media (max-width: ${theme.breakpoints.small}) {
+    font-size: ${theme.fontSizes.medium};
+  }
 `
 
 const TicketCost = styled.div`
-  font-size: ${theme.fontSizes.large};
   margin-right: ${theme.spaces.medium};
+  font-size: ${theme.fontSizes.large};
+  @media (max-width: ${theme.breakpoints.small}) {
+    font-size: ${theme.fontSizes.medium};
+  }
 `
 
 const ComingSoonOrPurchase = styled.div`
+  font-size: ${theme.fontSizes.small};
   font-weight: bold;
   text-align: center;
-  width: 120px;
+  width: 110px;
 `
 
 const Attend = () => (

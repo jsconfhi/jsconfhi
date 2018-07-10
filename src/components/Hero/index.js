@@ -31,6 +31,9 @@ const PageTitle = styled.h2`
   font-size: ${theme.fontSizes.jumbo};
   font-weight: bold;
   text-transform: uppercase;
+  @media (max-width: ${theme.breakpoints.small}) {
+    font-size: ${theme.fontSizes.medium};
+  }
 `
 
 const Hero = ({ children, navTitle }) => (

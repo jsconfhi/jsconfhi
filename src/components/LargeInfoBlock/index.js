@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import theme from '../../theme'
 
 const InfoBlock = styled.div`
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: ${theme.spaces.large};

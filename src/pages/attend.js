@@ -10,10 +10,17 @@ import React from 'react'
 import styled from 'styled-components'
 import theme from '../theme'
 
-const AccomodationsBlock = styled.div`
+const AccomodationsContainer = styled.div`
   background-color: ${theme.colors.background};
+  display: flex;
+  justify-content: space-around;
+`
+
+const AccomodationsBlock = styled.div`
   color: ${theme.colors.textYellow};
-  padding: ${theme.spaces.large};
+  width: ${theme.containerWidth};
+  max-width: 100%;
+  margin: ${theme.spaces.large};
 `
 
 const AccomodationsBlockLabel = styled.h1`
@@ -25,9 +32,11 @@ const AccomodationsBlockLabel = styled.h1`
   text-transform: uppercase;
 `
 
-const AccomodationsContainer = styled.div`
+const AccomodationsContentContainer = styled.div`
+  align-items: flex-start;
   display: flex;
-  @media (max-width: ${theme.breakpoints.small}) {
+  @media (max-width: ${theme.breakpoints.medium}) {
+    align-items: center;
     flex-direction: column;
   }
 `
@@ -36,7 +45,7 @@ const GMap = styled.iframe`
   border: 0;
   flex: 1;
   margin-left: ${theme.spaces.large};
-  @media (max-width: ${theme.breakpoints.small}) {
+  @media (max-width: ${theme.breakpoints.medium}) {
     margin-left: 0;
     max-width: 100%;
   }
@@ -48,29 +57,52 @@ const H2 = styled.h2`
 `
 
 const TicketContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: ${theme.spaces.large};
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  padding: 0 ${theme.spaces.medium};
 `
 
 const Ticket = styled.div`
-  align-items: flex-start;
+  align-items: center;
+  background-color: white;
+  color: ${theme.colors.textGray};
+  display: flex;
+  flex-direction: row;
+  padding: ${theme.spaces.small};
+  height: 70px;
+  & + & {
+    border-top: 1px dashed ${theme.colors.textYellow};
+  }
+`
+
+const TicketMini = styled.div`
   background-color: white;
   color: ${theme.colors.textGray};
   display: flex;
   flex-direction: column;
-  justifyContent:
-  font-size: 1rem;
+  flex: 1;
   padding: ${theme.spaces.medium};
+  margin: ${theme.spaces.medium};
 `
 
 const TicketName = styled.h3`
   color: ${theme.colors.background};
+  flex-grow: 1;
   font-size: ${theme.fontSizes.large};
 `
 
 const TicketCost = styled.div`
   font-size: ${theme.fontSizes.large};
+  margin-right: ${theme.spaces.medium};
+`
+
+const ComingSoonOrPurchase = styled.div`
+  font-weight: bold;
+  text-align: center;
+  width: 120px;
 `
 
 const Attend = () => (
@@ -79,135 +111,129 @@ const Attend = () => (
       <HeroContentLabel>Tickets</HeroContentLabel>
       <TicketContainer>
         <Ticket>
-          <TicketName>Scholarship</TicketName>
-          <TicketCost>$0</TicketCost>
-          <p>
-            We deeply believe in creating an inclusive and diverse conference
-            and want to make sure that everyone is able to participate.
-          </p>
-          <p style={{ flexGrow: 1 }}>
-            We're now accepting applications from diverse groups to attend for
-            free, and for some, with hotel and/or airfare included.
-          </p>
-          <Button
-            color="dark"
-            href="https://docs.google.com/forms/d/1_R7x-UDpC-vi62D43nWfOKJQoIxwilKqdBNvJo5h3QM/edit"
-          >
-            Apply
-          </Button>
-        </Ticket>
-        <Ticket>
-          <TicketName>Hawaiʻi Scholarship</TicketName>
-          <TicketCost>$200</TicketCost>
-          <p style={{ flexGrow: 1 }}>
-            We also want to make sure that local students and other low-income
-            groups are able to attend. We have a very limited number of tickets
-            available at a discounted rate for those not on the mainland. If you
-            are financially able, please purchase a full price ticket instead to
-            help ensure those who need discounts are able to receive them!
-          </p>
-          <Button
-            color="dark"
-            href="https://docs.google.com/forms/d/1_R7x-UDpC-vi62D43nWfOKJQoIxwilKqdBNvJo5h3QM/edit"
-          >
-            Apply
-          </Button>
-        </Ticket>
-        <Ticket>
           <TicketName>Early Bird</TicketName>
           <TicketCost>$450</TicketCost>
-          <p style={{ flexGrow: 1 }}>
-            For being an early adopter, and one of the first to buy a ticket for
-            JSConf: Hawaiʻi, you'll recieve a discounted ticket. Once these
-            tickets are gone, so is the great rate!
-          </p>
-          <Button color="dark" href="https://ti.to/jsconf-hawaii/2019">
-            Buy Now!
-          </Button>
+          <ComingSoonOrPurchase>
+            <Button
+              color="dark"
+              href="https://ti.to/jsconf-hawaii/2019"
+              style={{ margin: 0 }}
+            >
+              Buy Now!
+            </Button>
+          </ComingSoonOrPurchase>
         </Ticket>
         <Ticket>
           <TicketName>Bulk 4-Pack</TicketName>
           <TicketCost>$500</TicketCost>
-          <p style={{ flexGrow: 1 }}>
-            Interested in bringing you whole team or a bunch of friends from
-            your OSS Project? Bulk pricing is for you. If you buy 4 tickets,
-            you'll receive a 20% discount!
-          </p>
-          <TicketCost>Not yet available</TicketCost>
+          <ComingSoonOrPurchase>Coming Soon</ComingSoonOrPurchase>
         </Ticket>
         <Ticket>
-          <TicketName>Regular Price</TicketName>
+          <TicketName>Regular</TicketName>
           <TicketCost>$600</TicketCost>
-          <p style={{ flexGrow: 1 }}>
-            Just your run of the mill vanilla ticket!
-          </p>
-          <TicketCost>Not yet available</TicketCost>
+          <ComingSoonOrPurchase>Coming Soon</ComingSoonOrPurchase>
         </Ticket>
         <Ticket>
           <TicketName>Diversity Supporter</TicketName>
-          <TicketCost>$900+</TicketCost>
-          <p>
-            We strongly believe in diversity and hope you do too; JSConf:Hawaiʻi
-            is built on it!
-          </p>
-          <p style={{ flexGrow: 1 }}>
-            Buying this ticket and making a diversity contribution will help us
-            bring an even more diverse group of attendees and provide even more
-            travel assistance to them. There's no cap on how much you can
-            donate, and we'll periodically release more of these.
-          </p>
-          <Button color="dark" href="https://ti.to/jsconf-hawaii/2019">
-            Buy Now!
-          </Button>
+          <TicketCost>$900</TicketCost>
+          <ComingSoonOrPurchase>
+            <Button
+              color="dark"
+              href="https://ti.to/jsconf-hawaii/2019"
+              style={{ margin: 0 }}
+            >
+              Buy Now!
+            </Button>
+          </ComingSoonOrPurchase>
         </Ticket>
       </TicketContainer>
     </Hero>
 
-    <AccomodationsBlock>
-      <AccomodationsBlockLabel>
-        Venue + Hotel Accomodations
-      </AccomodationsBlockLabel>
-      <AccomodationsContainer>
-        <div style={{ flex: 1 }}>
-          <H2>Waikiki Beach Marriott Resort</H2>
-          <p>
-            The Marriott Resort is located on the southern end of Waikiki and
-            will be both our home for both the daily sessions as well as primary
-            accomodations. It features 5 restaurants, 2 outdoor pools and a spa!
-            Attendees for the conference will recieve a special room rate,
-            however, we have limited availability and you MUST use the link
-            below to book and receive the special rate for the upgraded Ocean
-            View room.
-          </p>
-          <ul style={{ color: 'white' }}>
-            <li>$209 + tax (~25%) per night</li>
-            <li>Discounted $15/night Resort Fee</li>
-            <li>Includes an Ocean View Room upgrade</li>
-            <li>$299 for a triple, or $389 for a quad</li>
-            <li>Rate available 3 days before and after event</li>
-            <li>
-              Wifi, daily fitness classes, spa discounts, and free intro
-              snorkel/scuba lessons included!
-            </li>
-          </ul>
-          <p>
-            Note: The mandatory resort fee is dicounted to $15/night for
-            attendees. However, the booking website will automatically state
-            that the resort fee is $37, you can disregard the message.
-          </p>
-          <Button href="https://book.passkey.com/e/49726942">
-            Reserve Hotel Now
-          </Button>
-        </div>
-        <GMap
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8165.245471646006!2d-157.8284631816718!3d21.27458201138188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c007270cf4e263b%3A0x17efa11682def01b!2sWaikiki+Beach+Marriott+Resort+%26+Spa!5e0!3m2!1sen!2sus!4v1530977110820"
-          width="600"
-          height="450"
-          frameBorder="0"
-          allowFullScreen
-        />
-      </AccomodationsContainer>
-    </AccomodationsBlock>
+    <AccomodationsContainer>
+      <AccomodationsBlock>
+        <AccomodationsBlockLabel>Scholarships</AccomodationsBlockLabel>
+        <AccomodationsContentContainer>
+          <div style={{ flex: 1, flexBasis: 0 }}>
+            <p>
+              We deeply believe in creating an inclusive and diverse conference
+              and want to make sure that everyone is able to participate.
+            </p>
+            <p>
+              We're now accepting applications from diverse groups to attend for
+              free, and for some, with hotel and/or airfare included.
+            </p>
+            <p>
+              We also want to make sure that local students and others residents
+              are able to attend. We have two options, a reduced price
+              "Kama’aina" ticket, or scholarships available via our diversity
+              applications.
+            </p>
+          </div>
+          <TicketMini>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <TicketName>Diversity</TicketName>
+              <TicketCost>$0</TicketCost>
+            </div>
+            <p>Airfare and hotel costs may be covered based on need as well!</p>
+            <Button
+              color="dark"
+              href="https://docs.google.com/forms/d/1_R7x-UDpC-vi62D43nWfOKJQoIxwilKqdBNvJo5h3QM/edit"
+              style={{ margin: 0 }}
+            >
+              Apply Now!
+            </Button>
+          </TicketMini>
+        </AccomodationsContentContainer>
+      </AccomodationsBlock>
+    </AccomodationsContainer>
+
+    <AccomodationsContainer>
+      <AccomodationsBlock>
+        <AccomodationsBlockLabel>
+          Venue + Hotel Accomodations
+        </AccomodationsBlockLabel>
+        <AccomodationsContentContainer>
+          <div style={{ flex: 1 }}>
+            <H2>Waikiki Beach Marriott Resort</H2>
+            <p>
+              The Marriott Resort is located on the southern end of Waikiki and
+              will be both our home for both the daily sessions as well as
+              primary accomodations. It features 5 restaurants, 2 outdoor pools
+              and a spa! Attendees for the conference will recieve a special
+              room rate, however, we have limited availability and you MUST use
+              the link below to book and receive the special rate for the
+              upgraded Ocean View room.
+            </p>
+            <ul style={{ color: 'white' }}>
+              <li>$209 + tax (~25%) per night</li>
+              <li>Discounted $15/night Resort Fee</li>
+              <li>Includes an Ocean View Room upgrade</li>
+              <li>$299 for a triple, or $389 for a quad</li>
+              <li>Rate available 3 days before and after event</li>
+              <li>
+                Wifi, daily fitness classes, spa discounts, and free intro
+                snorkel/scuba lessons included!
+              </li>
+            </ul>
+            <p>
+              Note: The mandatory resort fee is dicounted to $15/night for
+              attendees. However, the booking website will automatically state
+              that the resort fee is $37, you can disregard the message.
+            </p>
+            <Button href="https://book.passkey.com/e/49726942">
+              Reserve Hotel Now
+            </Button>
+          </div>
+          <GMap
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8165.245471646006!2d-157.8284631816718!3d21.27458201138188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c007270cf4e263b%3A0x17efa11682def01b!2sWaikiki+Beach+Marriott+Resort+%26+Spa!5e0!3m2!1sen!2sus!4v1530977110820"
+            width="600"
+            height="450"
+            frameBorder="0"
+            allowFullScreen
+          />
+        </AccomodationsContentContainer>
+      </AccomodationsBlock>
+    </AccomodationsContainer>
     <InfoBlock id="coc" title="About the Venue">
       <InfoBlockH2>Getting there</InfoBlockH2>
       <p>

@@ -7,7 +7,7 @@ const H1 = styled.h1`
   font-weight: bold;
   text-align: center;
   color: ${theme.colors.textYellow};
-  margin: ${theme.spaces.xLarge} 0 ${theme.spaces.large};
+  margin: ${theme.spaces.large} 0 ${theme.spaces.large};
   text-transform: uppercase;
 `
 

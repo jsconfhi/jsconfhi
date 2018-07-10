@@ -106,8 +106,8 @@ const TemplateWrapper = ({ children }) => (
 TemplateWrapper.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element)
-  ]).isRequired
+    PropTypes.arrayOf(PropTypes.element),
+  ]).isRequired,
 }
 
 export default TemplateWrapper

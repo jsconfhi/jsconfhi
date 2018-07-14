@@ -92,7 +92,7 @@ const CFP = () => (
             Our goal in this process is to select a broad range of topics
             that would appeal to as many JavaScript developers as possible.
             We welcome unusual, strange, non-traditional, or even non-JS presentations
-            as long as they remain within the boundaries of our
+            as long as they remain within the boundaries of our{' '}
             <Link to="/about#coc">Code of Conduct</Link>.
           </p>
 

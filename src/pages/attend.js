@@ -199,7 +199,7 @@ const Attend = () => (
               href="https://docs.google.com/forms/d/1_R7x-UDpC-vi62D43nWfOKJQoIxwilKqdBNvJo5h3QM/edit"
               style={{ margin: 0 }}
             >
-              Apply Now!
+              Apply for a scholarship!
             </Button>
           </TicketMini>
         </AccomodationsContentContainer>
@@ -240,7 +240,7 @@ const Attend = () => (
               that the resort fee is $37, you can disregard the message.
             </p>
             <Button href="https://book.passkey.com/e/49726942">
-              Reserve Hotel Now
+              Reserve Hotel
             </Button>
           </div>
           <GMap

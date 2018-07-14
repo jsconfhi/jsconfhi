@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import theme from '../../theme'
 
 const style = `
+  cursor: pointer;
   display: inline-block;
   font-weight: bold;
   margin: ${theme.spaces.medium} 0;
@@ -12,8 +13,10 @@ const style = `
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  user-select: none;
   border: 1px solid transparent;
   &:hover {
+    outline: 1px solid ${theme.colors.background};
   }
 `
 

@@ -81,7 +81,7 @@ const CFP = () => (
         <CalloutRail>
           <CalloutTitle>Present in Hawaiʻi</CalloutTitle>
           <div>
-            <div><Button color="dark">Apply Now</Button></div>
+            <div><Button color="dark" href="https://sessionize.com/jsconf-hawaii-2019/">Apply Now</Button></div>
             <B>Open until Aug 10</B>
           </div>
         </CalloutRail>

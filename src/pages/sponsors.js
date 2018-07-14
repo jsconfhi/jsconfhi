@@ -62,7 +62,7 @@ const Sponsors = () => (
       <Callout>
         <CalloutRail>
           <CalloutTitle>Join us as a Sponsor</CalloutTitle>
-          <Button color="dark">Learn More</Button>
+          <Button color="dark">Learn More (Coming soon)</Button>
         </CalloutRail>
         <CalloutText>
           <p>Become a founding partner of JSConf: Hawaiʻi!</p>

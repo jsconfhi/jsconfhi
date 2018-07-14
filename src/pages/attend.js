@@ -118,7 +118,20 @@ const Attend = () => (
       <TicketContainer>
         <Ticket>
           <TicketName>Early Bird</TicketName>
-          <TicketCost>$450</TicketCost>
+          <TicketCost>$500</TicketCost>
+          <ComingSoonOrPurchase>
+            <Button
+              color="dark"
+              href="https://ti.to/jsconf-hawaii/2019"
+              style={{ margin: 0 }}
+            >
+              Buy Now!
+            </Button>
+          </ComingSoonOrPurchase>
+        </Ticket>
+        <Ticket>
+          <TicketName>Kamaʻaina</TicketName>
+          <TicketCost>$500</TicketCost>
           <ComingSoonOrPurchase>
             <Button
               color="dark"
@@ -131,17 +144,17 @@ const Attend = () => (
         </Ticket>
         <Ticket>
           <TicketName>Bulk 4-Pack</TicketName>
-          <TicketCost>$500</TicketCost>
+          <TicketCost>$550</TicketCost>
           <ComingSoonOrPurchase>Coming Soon</ComingSoonOrPurchase>
         </Ticket>
         <Ticket>
           <TicketName>Regular</TicketName>
-          <TicketCost>$600</TicketCost>
+          <TicketCost>$650</TicketCost>
           <ComingSoonOrPurchase>Coming Soon</ComingSoonOrPurchase>
         </Ticket>
         <Ticket>
           <TicketName>Diversity Supporter</TicketName>
-          <TicketCost>$900</TicketCost>
+          <TicketCost>$975</TicketCost>
           <ComingSoonOrPurchase>
             <Button
               color="dark"
@@ -240,7 +253,61 @@ const Attend = () => (
         </AccomodationsContentContainer>
       </AccomodationsBlock>
     </AccomodationsContainer>
-    <InfoBlock id="coc" title="About the Venue">
+    <InfoBlock title="About the Conference">
+      <InfoBlockH2>What is it?</InfoBlockH2>
+      <p>
+        JSConf: Hawaiʻi is the newest in the family of JSConf events.
+        For our inaugaral year, we're planning to bring about 300 people
+        together for a two-day single track conference. Our goal is that by
+        the time you leave, you'll have seen some new ideas, learned some more
+        JavaScript, and made new friends to keep in touch with.
+      </p>
+
+      <InfoBlockH2>Being at the conference</InfoBlockH2>
+      <p>
+        The small, single-track nature of the conference means that it's easy to figure out what to do!
+        We'll have lots of time to meet your fellow attendees and share ideas outside of the sessions.
+      </p>
+
+      <InfoBlockH3>Schedule</InfoBlockH3>
+      <p>We won't have an exact schedule ready until after we've finalized our speaker lineup.
+        But for travel planning purposes, a high level overview is included.</p>
+      <p>
+        On Wednesday night, we'll have check-in and badge pickup in the late-evening along with
+        a casual meetup for you to meet your fellow attendees as they arrive.
+      </p>
+      <p>
+        Don't forget to get some rest as each day will start around 8:00am.
+        We plan on finishing around 5pm, with a few short breaks in the morning and afternoon,
+        along with a longer hour-long break for lunch in the middle; plenty of time to
+        hop in the ocean if you are so inclined.
+      </p>
+      <p>
+        Thursday evening, post-dinner, we'll have a party for all attendees. We haven't finalized plans
+        yet, so more info closer to the date. We know many of you may be travelling with a companion,
+        and we'll let you know closer to the date if this event will be open to them as well.
+      </p>
+
+      <InfoBlockH3>Amenities</InfoBlockH3>
+      <p>
+        You can read more about the resort further on, but the location is fairly
+        central to the tourist area of Honolulu, meaning there's a beach across the street,
+        and a Hard Rock Cafe just a few blocks away. Anyone travelling with you will have tons
+        of options available to them nearby from surf lessons, to shopping, to spas.
+      </p>
+      <p>
+        If you are staying at the venue using our discounted rates, you room will be just an
+        elevator ride away should you need to step out and take a break. In addition, we'll
+        have the theater area sectioned off from our "lounge" area, so if you need snacks, coffee,
+        or just want to meet up with a friend, we'll have space for that
+      </p>
+      <p>
+        There's still a lot of specifics to figure out, but live captioning of the sessions
+        will be available. And on request, we'll have childcare available either on-site or nearby
+        for children.
+      </p>
+    </InfoBlock>
+    <InfoBlock title="About the Venue">
       <InfoBlockH2>Getting there</InfoBlockH2>
       <p>
         Hawaiʻi is a chain of islands, so there's really only one way to get

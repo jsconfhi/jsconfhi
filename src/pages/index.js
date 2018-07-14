@@ -203,11 +203,9 @@ const IndexPage = () => (
     <Columns>
       <Column>
         <H2>Call for Speakers</H2>
-        <p>We will be opening our Call for Speakers in June, 2018!</p>
+        <p>Our call for speakers is now open!</p>
         <p>
-          Read more about our CFP process that is designed to shine the
-          spotlight on the latest ideas and future leaders of the JavaScript
-          world.
+          Read more about our CFP process, presenting at JSConf:Hawaiʻi, and apply to speak now.
         </p>
         <Button to="/call-for-speakers">Learn More</Button>
       </Column>
@@ -216,7 +214,7 @@ const IndexPage = () => (
         <p>
           We are currently offering <a href="/sponsors">sponsorship</a> packages
           for the inauguaral JSConf Hawaii coming February 2019. We’re looking
-          forward to working with all of our great sponsors to find the best way
+          forward to working with our sponsors to find the best way
           to connect each of you with our attendees in unique and meaningful
           ways.
         </p>

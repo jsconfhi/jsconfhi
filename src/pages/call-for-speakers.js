@@ -82,7 +82,7 @@ const CFP = () => (
           <CalloutTitle>Present in Hawaiʻi</CalloutTitle>
           <div>
             <div><Button color="dark">Apply Now</Button></div>
-            <B>Open until Aug 14</B>
+            <B>Open until Aug 10</B>
           </div>
         </CalloutRail>
         <CalloutText>

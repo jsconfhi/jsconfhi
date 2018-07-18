@@ -153,15 +153,12 @@ const IndexPage = () => (
         <H2>Sponsorships</H2>
         <p>
           We are currently offering{" "}
-          <LightLink href="/sponsors">sponsorship</LightLink> packages for the
+          sponsorship packages for the
           inauguaral JSConf Hawaiʻi coming February 2019. We’re looking forward
           to working with our sponsors to find the best way to connect each of
           you with our attendees in unique and meaningful ways.
         </p>
-        <p>
-          <LightLink href="mailto:sponsor@jsconfhi.com">Contact us</LightLink>{" "}
-          to learn more about our available packages!
-        </p>
+        <Button to="/sponsors">Learn More</Button>
       </Column>
     </Columns>
   </Layout>

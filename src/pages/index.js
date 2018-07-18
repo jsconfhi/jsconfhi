@@ -48,6 +48,8 @@ const DatesAndSocials = styled.div`
 
 const DatesAndSocialsItem = styled.div`
   margin: ${theme.spaces.medium} 0;
+  flex: 1;
+  text-align: center;
   padding: 0 ${theme.spaces.small};
   & + & {
     border-left: 1px solid ${theme.colors.textYellow};
@@ -127,6 +129,14 @@ const IndexPage = () => (
             </SocialLink>
           </DatesAndSocialsItem>
         </DatesAndSocials>
+        <p>
+          Our mission: Provide a fun, unique and welcoming environment where
+          diversity thrives and attendees can come together to discuss
+          JavaScript as a technology and grow it as a community.
+        </p>
+        <Button isPrimary style={{ gridArea: "tickets" }} to="/attend/">
+          Learn more
+        </Button>
       </HeroContent>
     </Hero>
     <Columns>

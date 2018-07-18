@@ -134,7 +134,7 @@ const IndexPage = () => (
         <H2>Call for Speakers</H2>
         <p>Our call for speakers is now open!</p>
         <p>
-          Read more about our CFP process, presenting at JSConf:Hawaiʻi, and
+          Read more about our CFP process, presenting at JSConf: Hawaiʻi, and
           apply to speak now.
         </p>
         <Button to="/call-for-speakers">Learn More</Button>
@@ -144,7 +144,7 @@ const IndexPage = () => (
         <p>
           We are currently offering{" "}
           <LightLink href="/sponsors">sponsorship</LightLink> packages for the
-          inauguaral JSConf Hawaii coming February 2019. We’re looking forward
+          inauguaral JSConf Hawaiʻi coming February 2019. We’re looking forward
           to working with our sponsors to find the best way to connect each of
           you with our attendees in unique and meaningful ways.
         </p>

@@ -100,7 +100,7 @@ const CFP = () => (
         <CalloutText>
           <H2>Speaking</H2>
           <p>
-            JSConf Hawaii does not have a specific themes for talks. Our goal in
+            JSConf Hawaiʻi does not have a specific themes for talks. Our goal in
             this process is to select a broad range of topics that would appeal
             to as many JavaScript developers as possible. We welcome unusual,
             strange, non-traditional, or even non-JS presentations as long as
@@ -116,13 +116,12 @@ const CFP = () => (
           </p>
           <p>
             <I>
-              If you are selected to speak, you will have the full cost of your
-              ticket refunded. So please do not let applying to speak cause you
+              If you are selected to speak, you will have the full cost of your ticket refunded. In our first year, JS Conf Hawaiʻi will have limited speaking opportunities and a smaller audience. To avoid missing out on attending the conference, we encourage you to purchase your ticket first if you plan to <Link to="/attend">attend<Link>.
               to miss out on <Link to="/attend">attending</Link>.
             </I>
           </p>
 
-          <H2>Nominate a Speakers</H2>
+          <H2>Nominate a Speaker</H2>
           <p>
             If you want to nominate a person and idea that you would like to
             see, you can email{" "}
@@ -150,7 +149,7 @@ const CFP = () => (
       <GuidelinesContainer>
         <H2>Details</H2>
         <p>
-          We are inviting the JS community to help us make JSConf Hawaii an
+          We are inviting the JS community to help us make JSConf Hawaiʻi an
           amazing experience by submitting your talk for consideration at our
           inaugural conference February 7-8, 2019. We are looking to uncover new
           ideas and concepts, along with novel usages, that push the boundaries
@@ -159,7 +158,7 @@ const CFP = () => (
 
         <H2>Topics</H2>
         <p>
-          JSConf Hawaii does not have a specific themes for talks. Our goal in
+          JSConf Hawaiʻi does not have a specific themes for talks. Our goal in
           this process is to select a broad range of topics that would appeal to
           as many JavaScript developers as possible. We welcome unusual,
           strange, non-traditional, or even non-JS presentations as long as they

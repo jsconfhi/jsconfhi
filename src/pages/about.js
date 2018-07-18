@@ -148,7 +148,7 @@ const Organizers = () => (
     <InfoBlock id="coc" title="Code of Conduct">
       <InfoBlockH2>Purpose</InfoBlockH2>
       <p>
-        JSConf Hawaii is dedicated to providing a harassment-free conference
+        JSConf Hawaiʻi is dedicated to providing a harassment-free conference
         experience for everyone, regardless of gender, gender identity and
         expression, sexual orientation, disability, physical appearance, body
         size, race, age, religion or lack thereof. We do not tolerate harassment

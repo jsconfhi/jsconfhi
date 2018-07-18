@@ -329,7 +329,7 @@ const Organizers = () => (
           <p>You can file a personal report using one of the below methods:</p>
           <ReportOptions>
             <Li>
-              <FAIcon icon={faEnvelope} /> Report@jsconfhi.com
+              <FAIcon icon={faEnvelope} /> <a href="mailto:report@jsconfhi.com">report@jsconfhi.com</a>
             </Li>
             <Li>
               <FAIcon icon={faUsers} /> Report to a STAFF member

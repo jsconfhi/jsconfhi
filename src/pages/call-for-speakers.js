@@ -116,7 +116,7 @@ const CFP = () => (
           <H2>Nominate a Speakers</H2>
           <p>
             If you want to nominate a person and idea that you would like to
-            see, you can email <Link href="mailto:speakers@jsconfhi.com">attending</Link>. Please be sure to
+            see, you can email <a href="mailto:speakers@jsconfhi.com">attending</a>. Please be sure to
             include valid contact information so that we can reach out to your
             suggested speaker.
           </p>
@@ -152,7 +152,7 @@ const CFP = () => (
           Our goal in this process is to select a broad range of topics that would appeal to as
           many JavaScript developers as possible. We welcome unusual, strange, non-traditional,
           or even non-JS presentations as long as they remain within the
-          boundaries of our{' '}<Link to="/about#coc">Code of Conduct</Link>{' '}
+          boundaries of our{' '}<Link style={{ color: theme.colors.textYellow }} to="/about#coc">Code of Conduct</Link>{' '}
           and in general benefit this community.
         </p>
 

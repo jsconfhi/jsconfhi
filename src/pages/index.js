@@ -66,23 +66,9 @@ const SocialLink = styled.a`
   margin: 0 ${theme.spaces.micro};
 `
 
-const EmailSignupForm = styled.div`
-  align-item: center;
-  display: flex;
-  margin-top: ${theme.spaces.small};
-`
-
-const EmailFormInput = styled.input`
-  flex-grow: 1;
-  font-size: ${theme.fontSizes.small};
-  padding: ${theme.spaces.small};
-`
-
-const EmailFormButton = styled.input`
-  background-color: ${theme.colors.textYellow};
-  color: ${theme.colors.background};
-  font-weight: bold;
-  padding: ${theme.spaces.small};
+const LightLink = styled.a`
+  color: ${theme.colors.textYellow};
+  text-decoration: underline;
 `
 
 const IndexPage = () => (
@@ -151,14 +137,14 @@ const IndexPage = () => (
       <Column>
         <H2>Sponsorships</H2>
         <p>
-          We are currently offering <a href="/sponsors">sponsorship</a> packages
+          We are currently offering <LightLink href="/sponsors">sponsorship</LightLink> packages
           for the inauguaral JSConf Hawaii coming February 2019. We’re looking
           forward to working with our sponsors to find the best way
           to connect each of you with our attendees in unique and meaningful
           ways.
         </p>
         <p>
-          <a href="mailto:sponsor@jsconfhi.com">Contact us</a> to learn more
+          <LightLink href="mailto:sponsor@jsconfhi.com">Contact us</LightLink> to learn more
           about our available packages!
         </p>
       </Column>

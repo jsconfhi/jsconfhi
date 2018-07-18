@@ -52,6 +52,7 @@ const CalloutText = styled.div`
 `
 
 const ContactLink = styled.a`
+  color: ${theme.colors.background};
   text-decoration: none;
 `
 
@@ -62,10 +63,10 @@ const Sponsors = () => (
       <Callout>
         <CalloutRail>
           <CalloutTitle>Join us as a Sponsor</CalloutTitle>
-          <Button color="dark">(Coming soon)</Button>
+          <Button color="dark">Coming soon</Button>
         </CalloutRail>
         <CalloutText>
-          <p>Become a founding partner of JSConf: Hawaiʻi!</p>
+          <p>Become a founding partner of JSConf Hawaiʻi!</p>
           <p>
             With over 300 developers from around the world attending, and
             hundreds more following along at home, sponsoring the conference is

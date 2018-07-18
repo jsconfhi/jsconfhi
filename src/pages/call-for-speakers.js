@@ -24,8 +24,13 @@ const Guidelines = styled.div`
   padding: ${theme.spaces.large};
 `
 const GuidelinesContainer = styled.div`
+  column-count: 2;
+  column-gap: ${theme.spaces.xLarge};
   margin: 0 auto;
   max-width: ${theme.containerWidth};
+  @media (max-width: ${theme.breakpoints.medium}) {
+    column-count: 1;
+  }
 `
 
 const CalloutTitle = styled.div`
@@ -88,7 +93,7 @@ const CFP = () => (
         <CalloutText>
           <H2>Speaking</H2>
           <p>
-            JSConf: Hawaii does not have a specific themes for talks.
+            JSConf Hawaii does not have a specific themes for talks.
             Our goal in this process is to select a broad range of topics
             that would appeal to as many JavaScript developers as possible.
             We welcome unusual, strange, non-traditional, or even non-JS presentations
@@ -130,8 +135,8 @@ const CFP = () => (
       </Callout>
     </Hero>
     <Guidelines>
+      <H1>Guidelines and details</H1>
       <GuidelinesContainer>
-        <H1>Guidelines and details</H1>
         <H2>Details</H2>
         <p>
           We are inviting the JS community to help us make JSConf Hawaii

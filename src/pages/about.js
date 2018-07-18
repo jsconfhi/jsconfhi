@@ -31,12 +31,24 @@ const Profiles = styled.div`
 `
 const H3 = styled.h3`
   font-weight: bold;
+  text-align: center;
 `
 const Centered = styled.div`
   text-align: center;
 `
+
+const ReportOptions = styled.ul`
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+`
+
 const Li = styled.li`
   list-style-type: none;
+`
+
+const FAIcon = styled(FontAwesomeIcon)`
+  width: 1.3em !important;
 `
 
 const Organizers = () => (
@@ -104,16 +116,16 @@ const Organizers = () => (
     </Hero>
     <Columns title="Values">
       <Column>
-        <H3>Value 1</H3>
-        <p>TODO</p>
+        <H3>Community</H3>
+        <p>We hope to create an environment that encourages new connections and invigorates old ones, where individuals can come together to discuss JavaScript as a technology and grow it as a community.</p>
       </Column>
       <Column>
-        <H3>Value 2</H3>
-        <p>TODO</p>
+        <H3>Diversity</H3>
+        <p>Our mission is to provide a space that is welcoming and inclusive of all identities and backgrounds, to support under-represented communities, and bring together all the supporters of the JavaScript community.</p>
       </Column>
       <Column>
-        <H3>Value 3</H3>
-        <p>TODO</p>
+        <H3>Fun</H3>
+        <p>We don’t take ourselves too seriously. We believe a fun and authentic atmosphere is the most reflective of our community and our passion. It is our hope that our lively and honest nature shines through.</p>
       </Column>
     </Columns>
     <InfoBlock id="coc" title="Code of Conduct">
@@ -315,17 +327,17 @@ const Organizers = () => (
         <Column>
           <H3>Personal report</H3>
           <p>You can file a personal report using one of the below methods:</p>
-          <ul>
+          <ReportOptions>
             <Li>
-              <FontAwesomeIcon icon={faEnvelope} /> report@jsconfhi.com
+              <FAIcon icon={faEnvelope} /> Report@jsconfhi.com
             </Li>
             <Li>
-              <FontAwesomeIcon icon={faUsers} /> Report to a STAFF member
+              <FAIcon icon={faUsers} /> Report to a STAFF member
             </Li>
             <Li>
-              <FontAwesomeIcon icon={faPhone} /> To be announced
+              <FAIcon icon={faPhone} /> To be announced
             </Li>
-          </ul>
+          </ReportOptions>
         </Column>
       </Columns>
     </Centered>

@@ -1,6 +1,6 @@
 {
   "name": "jsconfhi",
-  "description": "JSConf: Hawai'i Gatsby Site",
+  "description": "JSConf Hawai'i Gatsby Site",
   "version": "1.0.0",
   "author": "JSConf Hawaii <hello@jsconfhi.com>",
   "dependencies": {

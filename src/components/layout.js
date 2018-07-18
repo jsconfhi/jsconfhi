@@ -43,7 +43,7 @@ const MainContent = styled.div`
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="JSConf: Hawaiʻi"
+      title="JSConf Hawaiʻi"
       meta={[
         {
           name: 'description',
@@ -58,7 +58,7 @@ const TemplateWrapper = ({ children }) => (
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:site', content: '@JSConfHi' },
-        { name: 'og:title', content: 'JSConf: Hawaiʻi' },
+        { name: 'og:title', content: 'JSConf Hawaiʻi' },
         {
           name: 'og:description',
           content:

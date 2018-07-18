@@ -196,7 +196,7 @@ const Attend = () => (
             <p>Airfare and hotel costs may be covered based on need as well!</p>
             <Button
               color="dark"
-              href="https://docs.google.com/forms/d/1_R7x-UDpC-vi62D43nWfOKJQoIxwilKqdBNvJo5h3QM/edit"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeoZwa4cODl_zYLv_SO6HiEOJKv5OXBDZbahHX9BHT76dbtiQ/viewform"
               style={{ margin: 0 }}
             >
               Apply for a scholarship!
@@ -256,7 +256,7 @@ const Attend = () => (
     <InfoBlock title="About the Conference">
       <InfoBlockH2>What is it?</InfoBlockH2>
       <p>
-        JSConf: Hawaiʻi is the newest in the family of JSConf events.
+        JSConf Hawaiʻi is the newest in the family of JSConf events.
         For our inaugaral year, we're planning to bring about 300 people
         together for a two-day single track conference. Our goal is that by
         the time you leave, you'll have seen some new ideas, learned some more

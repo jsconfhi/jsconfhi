@@ -45,6 +45,10 @@ const SocialLink = styled.a`
   text-decoration: none;
 `
 
+const FAIcon = styled(FontAwesomeIcon)`
+  width: 1.3em !important;
+`
+
 const Profile = ({ name, description, email, image, twitter }) => (
   <ProfileWrapper>
     <NameContainer>
@@ -54,13 +58,13 @@ const Profile = ({ name, description, email, image, twitter }) => (
     <TextContainer>
       <p>{description}</p>
       <p>
-        <FontAwesomeIcon icon={faTwitter} />{' '}
+        <FAIcon icon={faTwitter} />{' '}
         <SocialLink href={`https://twitter.com/${twitter}`} target="_blank">
           @{twitter}
         </SocialLink>
       </p>
       <p>
-        <FontAwesomeIcon icon={faEnvelope} />{' '}
+        <FAIcon icon={faEnvelope} />{' '}
         <SocialLink href={`mailto:${email}`} target="_blank">
           {email}
         </SocialLink>

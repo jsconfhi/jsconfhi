@@ -105,7 +105,7 @@ const IndexPage = () => (
             textTransform: 'uppercase',
           }}
         >
-          JSConf: Hawaiʻi
+          JSConf Hawaiʻi
         </h3>
         <DatesAndSocials>
           <DatesAndSocialsItem>Feb 7th + 8th 2019</DatesAndSocialsItem>
@@ -134,70 +134,9 @@ const IndexPage = () => (
             </SocialLink>
           </DatesAndSocialsItem>
         </DatesAndSocials>
-        {
-          // TODO: Fix this newsletter signup again and deal with styling
-        }
-        <div>
-          <div id="mc_embed_signup">
-            <form
-              action="https://twitter.us18.list-manage.com/subscribe/post?u=c9c542019e2372811b2b8cd10&amp;id=affde4125d"
-              method="post"
-              id="mc-embedded-subscribe-form"
-              name="mc-embedded-subscribe-form"
-              className="validate"
-              target="_blank"
-              noValidate
-            >
-              <div id="mc_embed_signup_scroll">
-                <label htmlFor="mce-EMAIL">Sign up for updates</label>
-                <EmailSignupForm className="signup-form">
-                  <EmailFormInput
-                    type="email"
-                    placeholder="Email Address"
-                    value=""
-                    name="EMAIL"
-                    className="required email"
-                    id="mce-EMAIL"
-                  />
-                  <EmailFormButton
-                    type="submit"
-                    value="Sign up"
-                    name="subscribe"
-                    id="mc-embedded-subscribe"
-                    className="button"
-                  />
-                </EmailSignupForm>
-                <div id="mce-responses" className="clear">
-                  <div
-                    className="response"
-                    id="mce-error-response"
-                    style={{ display: 'none' }}
-                  />
-                  <div
-                    className="response"
-                    id="mce-success-response"
-                    style={{ display: 'none' }}
-                  />
-                  <div
-                    style={{ position: 'absolute', left: '-5000px' }}
-                    aria-hidden="true"
-                  >
-                    <input
-                      type="text"
-                      name="b_c9c542019e2372811b2b8cd10_affde4125d"
-                      tabIndex="-1"
-                      value=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <script
-            type="text/javascript"
-            src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-          />
-        </div>
+        <Button isPrimary style={{ gridArea: 'tickets' }} to="/attend/">
+          Buy Tickets
+        </Button>
       </HeroContent>
     </Hero>
     <Columns>

@@ -2,7 +2,7 @@ const theme = require('./src/theme');
 
 module.exports = {
   siteMetadata: {
-    title: 'JSConf: Hawaii',
+    title: 'JSConf Hawaii',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -21,7 +21,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "JSConf: Hawaii",
+        name: "JSConf Hawaii",
         short_name: "JSConf:HI",
         start_url: "/",
         background_color: theme.colors.background,

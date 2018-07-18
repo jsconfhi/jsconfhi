@@ -71,6 +71,11 @@ const LightLink = styled.a`
   text-decoration: underline;
 `
 
+const Sup = styled.sup`
+  vertical-align: super;
+  font-size: 0.6em;
+`
+
 const IndexPage = () => (
   <Layout>
     <Hero style={{ flexGrow: 1 }}>
@@ -94,7 +99,7 @@ const IndexPage = () => (
           JSConf Hawaiʻi
         </h3>
         <DatesAndSocials>
-          <DatesAndSocialsItem>Feb 7th + 8th 2019</DatesAndSocialsItem>
+          <DatesAndSocialsItem>Feb 7<Sup>th</Sup> + 8<Sup>th</Sup> 2019</DatesAndSocialsItem>
           <DatesAndSocialsItem>Honolulu, HI</DatesAndSocialsItem>
           <DatesAndSocialsItem style={{ flexShrink: 0 }}>
             <SocialLink

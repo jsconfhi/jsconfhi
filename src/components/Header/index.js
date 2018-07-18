@@ -19,9 +19,14 @@ const HeaderWrapper = styled.div`
   width: 100%;
 `
 
+const Sup = styled.sup`
+  vertical-align: super;
+  font-size: 0.6em;
+`
+
 const Header = () => (
   <HeaderWrapper>
-    JSConf Hawaiʻi &nbsp;|&nbsp; 07-08 February 2019 &nbsp;|&nbsp; Honolulu, HI
+    <span>JSConf Hawaiʻi &nbsp;|&nbsp; Feb 7<Sup>th</Sup> + 8<Sup>th</Sup> 2019 &nbsp;|&nbsp; Honolulu, HI</span>
   </HeaderWrapper>
 )
 

@@ -100,11 +100,11 @@ const CFP = () => (
         <CalloutText>
           <H2>Speaking</H2>
           <p>
-            JSConf Hawaiʻi does not have a specific themes for talks. Our goal in
-            this process is to select a broad range of topics that would appeal
-            to as many JavaScript developers as possible. We welcome unusual,
-            strange, non-traditional, or even non-JS presentations as long as
-            they remain within the boundaries of our{" "}
+            JSConf Hawaiʻi does not have a specific themes for talks. Our goal
+            in this process is to select a broad range of topics that would
+            appeal to as many JavaScript developers as possible. We welcome
+            unusual, strange, non-traditional, or even non-JS presentations as
+            long as they remain within the boundaries of our{" "}
             <Link to="/about#coc">Code of Conduct</Link>.
           </p>
 
@@ -116,8 +116,12 @@ const CFP = () => (
           </p>
           <p>
             <I>
-              If you are selected to speak, you will have the full cost of your ticket refunded. In our first year, JS Conf Hawaiʻi will have limited speaking opportunities and a smaller audience. To avoid missing out on attending the conference, we encourage you to purchase your ticket first if you plan to <Link to="/attend">attend<Link>.
-              to miss out on <Link to="/attend">attending</Link>.
+              If you are selected to speak, you will have the full cost of your
+              ticket refunded. In our first year, JS Conf Hawaiʻi will have
+              limited speaking opportunities and a smaller audience. To avoid
+              missing out on attending the conference, we encourage you to
+              purchase your ticket first if you plan to{" "}
+              <Link to="/attend">attend</Link>.
             </I>
           </p>
 

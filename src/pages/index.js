@@ -1,16 +1,16 @@
-import Button from '../components/Button'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Button from "../components/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faInstagram,
-  faTwitterSquare,
-} from '@fortawesome/free-brands-svg-icons'
-import React from 'react'
-import Layout from '../components/layout'
-import Hero from '../components/Hero'
-import Columns, { Column } from '../components/Columns'
-import styled from 'styled-components'
-import theme from '../theme'
+  faTwitterSquare
+} from "@fortawesome/free-brands-svg-icons";
+import React from "react";
+import Layout from "../components/layout";
+import Hero from "../components/Hero";
+import Columns, { Column } from "../components/Columns";
+import styled from "styled-components";
+import theme from "../theme";
 
 const H2 = styled.h2`
   color: ${theme.colors.textWhite};
@@ -18,20 +18,20 @@ const H2 = styled.h2`
   font-weight: bold;
   margin-bottom: ${theme.spaces.small} 0;
   text-transform: uppercase;
-`
+`;
 
 const HeroContent = styled.div`
   align-self: center;
   background-color: ${theme.colors.background90};
   color: ${theme.colors.textYellow};
   max-width: 800px;
-  margin: ${theme.spaces.large} 0;
+  margin: ${theme.spaces.xLarge} 0;
   padding: ${theme.spaces.large} 6rem;
   @media (max-width: ${theme.breakpoints.medium}) {
     padding: ${theme.spaces.large};
   }
 }
-`
+`;
 
 // Sized to exactly fit
 const DatesAndSocials = styled.div`
@@ -44,7 +44,7 @@ const DatesAndSocials = styled.div`
   @media (max-width: ${theme.breakpoints.small}) {
     flex-direction: column;
   }
-`
+`;
 
 const DatesAndSocialsItem = styled.div`
   margin: ${theme.spaces.medium} 0;
@@ -59,22 +59,22 @@ const DatesAndSocialsItem = styled.div`
       border-left: none;
     }
   }
-`
+`;
 
 const SocialLink = styled.a`
   color: ${theme.colors.textYellow};
   margin: 0 ${theme.spaces.micro};
-`
+`;
 
 const LightLink = styled.a`
   color: ${theme.colors.textYellow};
   text-decoration: underline;
-`
+`;
 
 const Sup = styled.sup`
   vertical-align: super;
   font-size: 0.6em;
-`
+`;
 
 const IndexPage = () => (
   <Layout>
@@ -84,22 +84,24 @@ const IndexPage = () => (
           style={{
             fontSize: theme.fontSizes.large,
             marginBottom: theme.spaces.xSmall,
-            textTransform: 'uppercase',
+            textTransform: "uppercase"
           }}
         >
           Announcing
         </div>
         <h3
           style={{
-            fontSize: '2.5rem',
-            fontWeight: 'bold',
-            textTransform: 'uppercase',
+            fontSize: "2.5rem",
+            fontWeight: "bold",
+            textTransform: "uppercase"
           }}
         >
           JSConf Hawaiʻi
         </h3>
         <DatesAndSocials>
-          <DatesAndSocialsItem>Feb 7<Sup>th</Sup> + 8<Sup>th</Sup> 2019</DatesAndSocialsItem>
+          <DatesAndSocialsItem>
+            Feb 7<Sup>th</Sup> + 8<Sup>th</Sup> 2019
+          </DatesAndSocialsItem>
           <DatesAndSocialsItem>Honolulu, HI</DatesAndSocialsItem>
           <DatesAndSocialsItem style={{ flexShrink: 0 }}>
             <SocialLink
@@ -125,9 +127,6 @@ const IndexPage = () => (
             </SocialLink>
           </DatesAndSocialsItem>
         </DatesAndSocials>
-        <Button isPrimary style={{ gridArea: 'tickets' }} to="/attend/">
-          Buy Tickets
-        </Button>
       </HeroContent>
     </Hero>
     <Columns>
@@ -135,26 +134,27 @@ const IndexPage = () => (
         <H2>Call for Speakers</H2>
         <p>Our call for speakers is now open!</p>
         <p>
-          Read more about our CFP process, presenting at JSConf:Hawaiʻi, and apply to speak now.
+          Read more about our CFP process, presenting at JSConf:Hawaiʻi, and
+          apply to speak now.
         </p>
         <Button to="/call-for-speakers">Learn More</Button>
       </Column>
       <Column>
         <H2>Sponsorships</H2>
         <p>
-          We are currently offering <LightLink href="/sponsors">sponsorship</LightLink> packages
-          for the inauguaral JSConf Hawaii coming February 2019. We’re looking
-          forward to working with our sponsors to find the best way
-          to connect each of you with our attendees in unique and meaningful
-          ways.
+          We are currently offering{" "}
+          <LightLink href="/sponsors">sponsorship</LightLink> packages for the
+          inauguaral JSConf Hawaii coming February 2019. We’re looking forward
+          to working with our sponsors to find the best way to connect each of
+          you with our attendees in unique and meaningful ways.
         </p>
         <p>
-          <LightLink href="mailto:sponsor@jsconfhi.com">Contact us</LightLink> to learn more
-          about our available packages!
+          <LightLink href="mailto:sponsor@jsconfhi.com">Contact us</LightLink>{" "}
+          to learn more about our available packages!
         </p>
       </Column>
     </Columns>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

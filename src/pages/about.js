@@ -1,55 +1,59 @@
-import Button from '../components/Button'
+import Button from "../components/Button";
 import InfoBlock, {
   InfoBlockH2,
-  InfoBlockH3,
-} from '../components/LargeInfoBlock'
-import Columns, { Column } from '../components/Columns'
-import Hero from '../components/Hero'
-import HeroContentLabel from '../components/Hero/contentLabel'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faPhone, faUsers } from '@fortawesome/free-solid-svg-icons'
-import React from 'react'
-import Layout from '../components/layout'
-import Profile from '../components/Profile'
-import styled from 'styled-components'
-import kellyAvatar from '../img/kng.jpg'
-import jonAvatar from '../img/jkup.jpeg'
-import jadeAvatar from '../img/jade.jpg'
-import charlieAvatar from '../img/charlie.jpeg'
-import tracyAvatar from '../img/tracy.jpg'
-import mylesAvatar from '../img/myles.jpg'
-import julesAvatar from '../img/jules.jpg'
-import patrickAvatar from '../img/patrick.jpg'
-import jasonAvatar from '../img/jason.jpg'
-import jamieAvatar from '../img/jamie.png'
-import theme from '../theme'
+  InfoBlockH3
+} from "../components/LargeInfoBlock";
+import Columns, { Column } from "../components/Columns";
+import Hero from "../components/Hero";
+import HeroContentLabel from "../components/Hero/contentLabel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faPhone,
+  faUsers
+} from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+import Layout from "../components/layout";
+import Profile from "../components/Profile";
+import styled from "styled-components";
+import kellyAvatar from "../img/kng.jpg";
+import jonAvatar from "../img/jkup.jpeg";
+import jadeAvatar from "../img/jade.jpg";
+import charlieAvatar from "../img/charlie.jpeg";
+import tracyAvatar from "../img/tracy.jpg";
+import mylesAvatar from "../img/myles.jpg";
+import julesAvatar from "../img/jules.jpg";
+import patrickAvatar from "../img/patrick.jpg";
+import jasonAvatar from "../img/jason.jpg";
+import jamieAvatar from "../img/jamie.png";
+import theme from "../theme";
 
 const Profiles = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: ${theme.spaces.large};
-`
+`;
 const H3 = styled.h3`
   font-weight: bold;
   text-align: center;
-`
+`;
 const Centered = styled.div`
   text-align: center;
-`
+`;
 
 const ReportOptions = styled.ul`
   display: inline-block;
   margin: 0 auto;
   text-align: left;
-`
+`;
 
 const Li = styled.li`
   list-style-type: none;
-`
+`;
 
 const FAIcon = styled(FontAwesomeIcon)`
   width: 1.3em !important;
-`
+`;
 
 const Organizers = () => (
   <Layout>
@@ -117,15 +121,28 @@ const Organizers = () => (
     <Columns title="Values">
       <Column>
         <H3>Community</H3>
-        <p>We hope to create an environment that encourages new connections and invigorates old ones, where individuals can come together to discuss JavaScript as a technology and grow it as a community.</p>
+        <p>
+          We hope to create an environment that encourages new connections and
+          invigorates old ones, where individuals can come together to discuss
+          JavaScript as a technology and grow it as a community.
+        </p>
       </Column>
       <Column>
         <H3>Diversity</H3>
-        <p>Our mission is to provide a space that is welcoming and inclusive of all identities and backgrounds, to support under-represented communities, and bring together all the supporters of the JavaScript community.</p>
+        <p>
+          Our mission is to provide a space that is welcoming and inclusive of
+          all identities and backgrounds, to support under-represented
+          communities, and bring together all the supporters of the JavaScript
+          community.
+        </p>
       </Column>
       <Column>
         <H3>Fun</H3>
-        <p>We don’t take ourselves too seriously. We believe a fun and authentic atmosphere is the most reflective of our community and our passion. It is our hope that our lively and honest nature shines through.</p>
+        <p>
+          We don’t take ourselves too seriously. We believe a fun and authentic
+          atmosphere is the most reflective of our community and our passion. It
+          is our hope that our lively and honest nature shines through.
+        </p>
       </Column>
     </Columns>
     <InfoBlock id="coc" title="Code of Conduct">
@@ -210,7 +227,7 @@ const Organizers = () => (
           shirts.
         </li>
         <li>
-          Emailing us:{' '}
+          Emailing us:{" "}
           <a href="mailto:report@jsconfhi.com">report@jsconfhi.com</a>.
         </li>
         <li>
@@ -267,7 +284,7 @@ const Organizers = () => (
       </p>
 
       <p>
-        To find out more about ableism and replacement terms please read{' '}
+        To find out more about ableism and replacement terms please read{" "}
         <a
           href="https://www.autistichoya.com/p/ableist-words-and-terms-to-avoid.html"
           target="_blank"
@@ -286,7 +303,7 @@ const Organizers = () => (
       </p>
 
       <p>
-        For more information please familiarise yourself with{' '}
+        For more information please familiarise yourself with{" "}
         <a
           href="http://geekfeminism.wikia.com/wiki/Nonsexist_language"
           target="_blank"
@@ -298,16 +315,16 @@ const Organizers = () => (
 
       <InfoBlockH2>Attribution</InfoBlockH2>
       <p>
-        This Code of Conduct was based on{' '}
-        <a href="https://2018.jsconf.eu/">JS Conf EU</a>,{' '}
-        <a href="http://jsconfau.com">CSSConf / JSConf AU</a>,{' '}
+        This Code of Conduct was based on{" "}
+        <a href="https://2018.jsconf.eu/">JS Conf EU</a>,{" "}
+        <a href="http://jsconfau.com">CSSConf / JSConf AU</a>,{" "}
         <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">
           The Geek Feminism wiki
-        </a>, the work of{' '}
+        </a>, the work of{" "}
         <a href="https://frameshiftconsulting.com/code-of-conduct-training/">
           Valerie Aurora
-        </a>{' '}
-        and{' '}
+        </a>{" "}
+        and{" "}
         <a href="http://confcodeofconduct.com/">Conference Code of Conduct</a>.
       </p>
     </InfoBlock>
@@ -319,17 +336,16 @@ const Organizers = () => (
       >
         <Column>
           <H3>Anonymous report</H3>
-          <p>Use this form to file a code of conduct violation anonymously</p>
-          <Button color="dark" to="#">
-            File a report
-          </Button>
+          {/*<p>Use this form to file a code of conduct violation anonymously</p>*/}
+          <Button color="dark">Coming soon</Button>
         </Column>
         <Column>
           <H3>Personal report</H3>
           <p>You can file a personal report using one of the below methods:</p>
           <ReportOptions>
             <Li>
-              <FAIcon icon={faEnvelope} /> <a href="mailto:report@jsconfhi.com">report@jsconfhi.com</a>
+              <FAIcon icon={faEnvelope} />{" "}
+              <a href="mailto:report@jsconfhi.com">report@jsconfhi.com</a>
             </Li>
             <Li>
               <FAIcon icon={faUsers} /> Report to a STAFF member
@@ -342,6 +358,6 @@ const Organizers = () => (
       </Columns>
     </Centered>
   </Layout>
-)
+);
 
-export default Organizers
+export default Organizers;

@@ -1,27 +1,27 @@
-import Button from '../components/Button'
+import Button from "../components/Button";
 import InfoBlock, {
   InfoBlockH2,
-  InfoBlockH3,
-} from '../components/LargeInfoBlock'
-import Hero from '../components/Hero'
-import HeroContentLabel from '../components/Hero/contentLabel'
-import Layout from '../components/layout'
-import React from 'react'
-import styled from 'styled-components'
-import theme from '../theme'
+  InfoBlockH3
+} from "../components/LargeInfoBlock";
+import Hero from "../components/Hero";
+import HeroContentLabel from "../components/Hero/contentLabel";
+import Layout from "../components/layout";
+import React from "react";
+import styled from "styled-components";
+import theme from "../theme";
 
 const AccomodationsContainer = styled.div`
   background-color: ${theme.colors.background};
   display: flex;
   justify-content: space-around;
-`
+`;
 
 const AccomodationsBlock = styled.div`
   color: ${theme.colors.textYellow};
   width: ${theme.containerWidth};
   max-width: 100%;
   margin: ${theme.spaces.large};
-`
+`;
 
 const AccomodationsBlockLabel = styled.h1`
   color: ${theme.colors.textWhite};
@@ -30,7 +30,7 @@ const AccomodationsBlockLabel = styled.h1`
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-`
+`;
 
 const AccomodationsContentContainer = styled.div`
   align-items: flex-start;
@@ -39,7 +39,7 @@ const AccomodationsContentContainer = styled.div`
     align-items: center;
     flex-direction: column;
   }
-`
+`;
 
 const GMap = styled.iframe`
   border: 0;
@@ -49,20 +49,21 @@ const GMap = styled.iframe`
     margin-left: 0;
     max-width: 100%;
   }
-`
+`;
 
 const H2 = styled.h2`
   font-size: ${theme.fontSizes.large};
   font-weight: bold;
-`
+`;
 
 const TicketContainer = styled.div`
   background-color: white;
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: ${theme.spaces.large};
   padding: 0 ${theme.spaces.medium};
-`
+`;
 
 const Ticket = styled.div`
   align-items: center;
@@ -75,7 +76,7 @@ const Ticket = styled.div`
   & + & {
     border-top: 1px dashed ${theme.colors.textYellow};
   }
-`
+`;
 
 const TicketMini = styled.div`
   background-color: white;
@@ -85,7 +86,7 @@ const TicketMini = styled.div`
   flex: 1;
   padding: ${theme.spaces.medium};
   margin: ${theme.spaces.medium};
-`
+`;
 
 const TicketName = styled.div`
   color: ${theme.colors.background};
@@ -94,7 +95,7 @@ const TicketName = styled.div`
   @media (max-width: ${theme.breakpoints.small}) {
     font-size: ${theme.fontSizes.medium};
   }
-`
+`;
 
 const TicketCost = styled.div`
   margin-right: ${theme.spaces.medium};
@@ -102,14 +103,14 @@ const TicketCost = styled.div`
   @media (max-width: ${theme.breakpoints.small}) {
     font-size: ${theme.fontSizes.medium};
   }
-`
+`;
 
 const ComingSoonOrPurchase = styled.div`
   font-size: ${theme.fontSizes.small};
   font-weight: bold;
   text-align: center;
   width: 110px;
-`
+`;
 
 const Attend = () => (
   <Layout>
@@ -189,7 +190,7 @@ const Attend = () => (
             </p>
           </div>
           <TicketMini>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
               <TicketName>Diversity</TicketName>
               <TicketCost>$0</TicketCost>
             </div>
@@ -223,7 +224,7 @@ const Attend = () => (
               the link below to book and receive the special rate for the
               upgraded Ocean View room.
             </p>
-            <ul style={{ color: 'white' }}>
+            <ul style={{ color: "white" }}>
               <li>$209 + tax (~25%) per night</li>
               <li>Discounted $15/night Resort Fee</li>
               <li>Includes an Ocean View Room upgrade</li>
@@ -256,55 +257,63 @@ const Attend = () => (
     <InfoBlock title="About the Conference">
       <InfoBlockH2>What is it?</InfoBlockH2>
       <p>
-        JSConf Hawaiʻi is the newest in the family of JSConf events.
-        For our inaugaral year, we're planning to bring about 300 people
-        together for a two-day single track conference. Our goal is that by
-        the time you leave, you'll have seen some new ideas, learned some more
-        JavaScript, and made new friends to keep in touch with.
+        JSConf Hawaiʻi is the newest in the family of JSConf events. For our
+        inaugaral year, we're planning to bring about 300 people together for a
+        two-day single track conference. Our goal is that by the time you leave,
+        you'll have seen some new ideas, learned some more JavaScript, and made
+        new friends to keep in touch with.
       </p>
 
       <InfoBlockH2>Being at the conference</InfoBlockH2>
       <p>
-        The small, single-track nature of the conference means that it's easy to figure out what to do!
-        We'll have lots of time to meet your fellow attendees and share ideas outside of the sessions.
+        The small, single-track nature of the conference means that it's easy to
+        figure out what to do! We'll have lots of time to meet your fellow
+        attendees and share ideas outside of the sessions.
       </p>
 
       <InfoBlockH3>Schedule</InfoBlockH3>
-      <p>We won't have an exact schedule ready until after we've finalized our speaker lineup.
-        But for travel planning purposes, a high level overview is included.</p>
       <p>
-        On Wednesday night, we'll have check-in and badge pickup in the late-evening along with
-        a casual meetup for you to meet your fellow attendees as they arrive.
+        We won't have an exact schedule ready until after we've finalized our
+        speaker lineup. But for travel planning purposes, a high level overview
+        is included.
       </p>
       <p>
-        Don't forget to get some rest as each day will start around 8:00am.
-        We plan on finishing around 5pm, with a few short breaks in the morning and afternoon,
-        along with a longer hour-long break for lunch in the middle; plenty of time to
-        hop in the ocean if you are so inclined.
+        On Wednesday night, we'll have check-in and badge pickup in the
+        late-evening along with a casual meetup for you to meet your fellow
+        attendees as they arrive.
       </p>
       <p>
-        Thursday evening, post-dinner, we'll have a party for all attendees. We haven't finalized plans
-        yet, so more info closer to the date. We know many of you may be travelling with a companion,
-        and we'll let you know closer to the date if this event will be open to them as well.
+        Don't forget to get some rest as each day will start around 8:00am. We
+        plan on finishing around 5pm, with a few short breaks in the morning and
+        afternoon, along with a longer hour-long break for lunch in the middle;
+        plenty of time to hop in the ocean if you are so inclined.
+      </p>
+      <p>
+        Thursday evening, post-dinner, we'll have a party for all attendees. We
+        haven't finalized plans yet, so more info closer to the date. We know
+        many of you may be travelling with a companion, and we'll let you know
+        closer to the date if this event will be open to them as well.
       </p>
 
       <InfoBlockH3>Amenities</InfoBlockH3>
       <p>
-        You can read more about the resort further on, but the location is fairly
-        central to the tourist area of Honolulu, meaning there's a beach across the street,
-        and a Hard Rock Cafe just a few blocks away. Anyone travelling with you will have tons
-        of options available to them nearby from surf lessons, to shopping, to spas.
+        You can read more about the resort further on, but the location is
+        fairly central to the tourist area of Honolulu, meaning there's a beach
+        across the street, and a Hard Rock Cafe just a few blocks away. Anyone
+        travelling with you will have tons of options available to them nearby
+        from surf lessons, to shopping, to spas.
       </p>
       <p>
-        If you are staying at the venue using our discounted rates, you room will be just an
-        elevator ride away should you need to step out and take a break. In addition, we'll
-        have the theater area sectioned off from our "lounge" area, so if you need snacks, coffee,
-        or just want to meet up with a friend, we'll have space for that
+        If you are staying at the venue using our discounted rates, you room
+        will be just an elevator ride away should you need to step out and take
+        a break. In addition, we'll have the theater area sectioned off from our
+        "lounge" area, so if you need snacks, coffee, or just want to meet up
+        with a friend, we'll have space for that
       </p>
       <p>
-        There's still a lot of specifics to figure out, but live captioning of the sessions
-        will be available. And on request, we'll have childcare available either on-site or nearby
-        for children.
+        There's still a lot of specifics to figure out, but live captioning of
+        the sessions will be available. And on request, we'll have childcare
+        available either on-site or nearby for children.
       </p>
     </InfoBlock>
     <InfoBlock title="About the Venue">
@@ -330,7 +339,7 @@ const Attend = () => (
       </p>
 
       <p>
-        {' '}
+        {" "}
         A multitude of rental car companies are also available at the airport,
         as well as both Enterprise and Dollar having offices in the conference
         hotel.
@@ -370,6 +379,6 @@ const Attend = () => (
       </p>
     </InfoBlock>
   </Layout>
-)
+);
 
-export default Attend
+export default Attend;

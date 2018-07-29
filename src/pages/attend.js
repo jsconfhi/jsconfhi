@@ -1,27 +1,27 @@
-import Button from "../components/Button";
+import Button from '../components/Button'
 import InfoBlock, {
   InfoBlockH2,
-  InfoBlockH3
-} from "../components/LargeInfoBlock";
-import Hero from "../components/Hero";
-import HeroContentLabel from "../components/Hero/contentLabel";
-import Layout from "../components/layout";
-import React from "react";
-import styled from "styled-components";
-import theme from "../theme";
+  InfoBlockH3,
+} from '../components/LargeInfoBlock'
+import Hero from '../components/Hero'
+import HeroContentLabel from '../components/Hero/contentLabel'
+import Layout from '../components/layout'
+import React from 'react'
+import styled from 'styled-components'
+import theme from '../theme'
 
 const AccomodationsContainer = styled.div`
   background-color: ${theme.colors.background};
   display: flex;
   justify-content: space-around;
-`;
+`
 
 const AccomodationsBlock = styled.div`
   color: ${theme.colors.textYellow};
   width: ${theme.containerWidth};
   max-width: 100%;
   margin: ${theme.spaces.large};
-`;
+`
 
 const AccomodationsBlockLabel = styled.h1`
   color: ${theme.colors.textWhite};
@@ -30,7 +30,7 @@ const AccomodationsBlockLabel = styled.h1`
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-`;
+`
 
 const AccomodationsContentContainer = styled.div`
   align-items: flex-start;
@@ -39,7 +39,7 @@ const AccomodationsContentContainer = styled.div`
     align-items: center;
     flex-direction: column;
   }
-`;
+`
 
 const GMap = styled.iframe`
   border: 0;
@@ -49,12 +49,12 @@ const GMap = styled.iframe`
     margin-left: 0;
     max-width: 100%;
   }
-`;
+`
 
 const H2 = styled.h2`
   font-size: ${theme.fontSizes.large};
   font-weight: bold;
-`;
+`
 
 const TicketContainer = styled.div`
   background-color: white;
@@ -63,7 +63,7 @@ const TicketContainer = styled.div`
   width: 100%;
   margin-bottom: ${theme.spaces.large};
   padding: 0 ${theme.spaces.medium};
-`;
+`
 
 const Ticket = styled.div`
   align-items: center;
@@ -76,7 +76,7 @@ const Ticket = styled.div`
   & + & {
     border-top: 1px dashed ${theme.colors.textYellow};
   }
-`;
+`
 
 const TicketMini = styled.div`
   background-color: white;
@@ -86,7 +86,7 @@ const TicketMini = styled.div`
   flex: 1;
   padding: ${theme.spaces.medium};
   margin: ${theme.spaces.medium};
-`;
+`
 
 const TicketName = styled.div`
   color: ${theme.colors.background};
@@ -95,7 +95,7 @@ const TicketName = styled.div`
   @media (max-width: ${theme.breakpoints.small}) {
     font-size: ${theme.fontSizes.medium};
   }
-`;
+`
 
 const TicketCost = styled.div`
   margin-right: ${theme.spaces.medium};
@@ -103,14 +103,14 @@ const TicketCost = styled.div`
   @media (max-width: ${theme.breakpoints.small}) {
     font-size: ${theme.fontSizes.medium};
   }
-`;
+`
 
 const ComingSoonOrPurchase = styled.div`
   font-size: ${theme.fontSizes.small};
   font-weight: bold;
   text-align: center;
   width: 110px;
-`;
+`
 
 const Attend = () => (
   <Layout>
@@ -120,9 +120,7 @@ const Attend = () => (
         <Ticket>
           <TicketName>Early Bird</TicketName>
           <TicketCost>$500</TicketCost>
-          <ComingSoonOrPurchase>
-            Sold Out
-          </ComingSoonOrPurchase>
+          <ComingSoonOrPurchase>Sold Out</ComingSoonOrPurchase>
         </Ticket>
         <Ticket>
           <TicketName>Kamaʻaina</TicketName>
@@ -184,7 +182,7 @@ const Attend = () => (
             </p>
           </div>
           <TicketMini>
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <TicketName>Diversity</TicketName>
               <TicketCost>$0</TicketCost>
             </div>
@@ -218,7 +216,7 @@ const Attend = () => (
               the link below to book and receive the special rate for the
               upgraded Ocean View room.
             </p>
-            <ul style={{ color: "white" }}>
+            <ul style={{ color: 'white' }}>
               <li>$209 + tax (~25%) per night</li>
               <li>Discounted $15/night Resort Fee</li>
               <li>Includes an Ocean View Room upgrade</li>
@@ -333,7 +331,7 @@ const Attend = () => (
       </p>
 
       <p>
-        {" "}
+        {' '}
         A multitude of rental car companies are also available at the airport,
         as well as both Enterprise and Dollar having offices in the conference
         hotel.
@@ -373,6 +371,6 @@ const Attend = () => (
       </p>
     </InfoBlock>
   </Layout>
-);
+)
 
-export default Attend;
+export default Attend

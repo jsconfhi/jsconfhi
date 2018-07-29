@@ -68,11 +68,6 @@ const SocialLink = styled.a`
   margin: 0 ${theme.spaces.micro};
 `;
 
-const LightLink = styled.a`
-  color: ${theme.colors.textYellow};
-  text-decoration: underline;
-`;
-
 const Sup = styled.sup`
   vertical-align: super;
   font-size: 0.6em;
@@ -152,11 +147,10 @@ const IndexPage = () => (
       <Column>
         <H2>Sponsorships</H2>
         <p>
-          We are currently offering{" "}
-          sponsorship packages for the
-          inauguaral JSConf Hawaiʻi coming February 2019. We’re looking forward
-          to working with our sponsors to find the best way to connect each of
-          you with our attendees in unique and meaningful ways.
+          We are currently offering sponsorship packages for the inauguaral
+          JSConf Hawaiʻi coming February 2019. We’re looking forward to working
+          with our sponsors to find the best way to connect each of you with our
+          attendees in unique and meaningful ways.
         </p>
         <Button to="/sponsors">Learn More</Button>
       </Column>

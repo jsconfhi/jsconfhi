@@ -26,7 +26,10 @@ const Sup = styled.sup`
 
 const Header = () => (
   <HeaderWrapper>
-    <span>JSConf Hawaiʻi &nbsp;|&nbsp; Feb 7<Sup>th</Sup> + 8<Sup>th</Sup> 2019 &nbsp;|&nbsp; Honolulu, HI</span>
+    <span>
+      JSConf Hawaiʻi &nbsp;|&nbsp; Feb 7<Sup>th</Sup> + 8<Sup>th</Sup> 2019
+      &nbsp;|&nbsp; Honolulu, HI
+    </span>
   </HeaderWrapper>
 )
 

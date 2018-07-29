@@ -22,8 +22,6 @@ import jadeAvatar from "../img/jade.jpg";
 import charlieAvatar from "../img/charlie.jpeg";
 import tracyAvatar from "../img/tracy.jpg";
 import mylesAvatar from "../img/myles.jpg";
-import julesAvatar from "../img/jules.jpg";
-import patrickAvatar from "../img/patrick.jpg";
 import jasonAvatar from "../img/jason.jpg";
 import jamieAvatar from "../img/jamie.png";
 import theme from "../theme";

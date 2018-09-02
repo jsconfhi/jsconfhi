@@ -85,31 +85,13 @@ const CFP = () => (
       <Callout>
         <CalloutRail>
           <CalloutTitle>Present in Hawaiʻi</CalloutTitle>
-          <div>
-            <div>
-              <Button
-                color="dark"
-                href="https://sessionize.com/jsconf-hawaii-2019/"
-              >
-                Apply Now
-              </Button>
-            </div>
-            <B>Open until Aug 10</B>
-          </div>
         </CalloutRail>
         <CalloutText>
-          <H2>Speaking</H2>
+          <p><I>Our call for speakers is now closed. We will notify selected speakers in September!
+          </I></p><br />
+          <H2>Selected Speakers</H2>
           <p>
-            JSConf Hawaiʻi does not have a specific themes for talks. Our goal
-            in this process is to select a broad range of topics that would
-            appeal to as many JavaScript developers as possible. We welcome
-            unusual, strange, non-traditional, or even non-JS presentations as
-            long as they remain within the boundaries of our{' '}
-            <Link to="/about#coc">Code of Conduct</Link>.
-          </p>
-
-          <p>
-            Selected speakers will have the full cost of attending covered if
+            Speakers will have the full cost of attending covered if
             their companies does not fund events, including ticket, hotel and
             airfare, along with taxi to/from airport. Certain incidentals or
             outside meals may be at your own expense.
@@ -123,15 +105,6 @@ const CFP = () => (
               purchase your ticket first if you plan to{' '}
               <Link to="/attend">attend</Link>.
             </I>
-          </p>
-
-          <H2>Nominate a Speaker</H2>
-          <p>
-            If you want to nominate a person and idea that you would like to
-            see, you can email{' '}
-            <a href="mailto:speakers@jsconfhi.com">speakers@jsconfhi.com</a>.
-            Please be sure to include valid contact information so that we can
-            reach out to your suggested speaker.
           </p>
 
           <H2>Selection Process</H2>

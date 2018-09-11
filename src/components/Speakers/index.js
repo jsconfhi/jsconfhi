@@ -5,9 +5,9 @@ import speakerData from '../../data/speakers';
 import styled from "styled-components";
 import theme from "../../theme";
 
-const largeProfileSize = 125;
-const mediumProfileSize = 100;
-const smallProfileSize = 80;
+const largeProfileSize = 120;
+const mediumProfileSize = 90;
+const smallProfileSize = 75;
 
 const Container = styled.div`
   align-self: stretch;
@@ -23,7 +23,7 @@ const Container = styled.div`
 
 // NOTE: Is this too complicated? makes it span edge to edge
 const ImagesScrollPlaceholder = styled.div`
-  height: ${smallProfileSize}px;
+  height: ${smallProfileSize + 10}px;
   margin-bottom: ${theme.spaces.medium};
   display: none;
   @media (max-width: ${theme.breakpoints.small}) {
@@ -33,8 +33,15 @@ const ImagesScrollPlaceholder = styled.div`
 const ImagesScrollContainer = styled.div`
   flex: 1;
   overflow-x: hidden;
+  overflow-y auto;
+  max-height: 100vh;
+  margin-right: ${theme.spaces.medium};
+  padding-right: -17px;
   @media (max-width: ${theme.breakpoints.small}) {
+    overflow-x: auto;
+    overflow-y: hidden;
     position: absolute;
+    max-width: 100vw;
     left: 0;
     flex-basis: auto;
     flex-grow: 0;
@@ -48,15 +55,17 @@ const Images = styled.div`
   justify-content: space-between;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(${largeProfileSize + 15}px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(${largeProfileSize}px, 1fr));
   grid-gap: ${theme.spaces.small};
 
   @media (max-width: ${theme.breakpoints.small}) {
     display: flex;
     flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
   }
   @media (max-width: ${theme.breakpoints.medium}) {
-    grid-template-columns: repeat(auto-fill, minmax(${mediumProfileSize + 10}px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(${mediumProfileSize}px, 1fr));
   }
 `
 
@@ -64,6 +73,7 @@ const SelectedSpeaker = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
+  line-height: 1.5em;
 `
 
 const Info = styled.div`
@@ -93,8 +103,9 @@ const Image = styled.img`
   height: ${largeProfileSize}px;
   width: ${largeProfileSize}px;
   margin-bottom: ${theme.spaces.medium};
+  flex-shrink: 0;
   &:hover {
-    border: 4px solid ${ theme.colors.background90 };
+    border: 4px solid ${ theme.colors.textYellow };
   }
   ${props => props.focused ? `border: 4px solid ${theme.colors.textYellow} !important` : undefined};
   @media (max-width: ${theme.breakpoints.medium}) {
@@ -104,6 +115,7 @@ const Image = styled.img`
   @media (max-width: ${theme.breakpoints.small}) {
     height: ${smallProfileSize}px;
     width: ${smallProfileSize}px;
+    margin-bottom: 0;
   }
 `
 
@@ -149,7 +161,7 @@ class Speakers extends React.Component {
         <ImagesScrollPlaceholder />
         <ImagesScrollContainer>
           <Images>
-            {this._orderedData.map(item => <Image alt={item.name} focused={item.name === currentName} onClick={this._handleImageClick(item.name)} src={item.avatar} />)}
+            {this._orderedData.map(item => <Image alt={item.name} focused={item.name === currentName} key={item.name} onClick={this._handleImageClick(item.name)} src={item.avatar} />)}
           </Images>
         </ImagesScrollContainer>
         <SelectedSpeaker>

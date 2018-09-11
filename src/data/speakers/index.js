@@ -1,4 +1,5 @@
 import charlieAvatar from '../organizers/avatars/charlie.jpeg';
+import organizers from '../organizers';
 
 export default [
   {
@@ -15,6 +16,7 @@ export default [
     talk: "Sample talk topic",
     twitter: "charliecroom"
   },
+  ...organizers,
   {
     avatar: charlieAvatar,
     bio: "Charlie is one of the organizers for this website and love doing stuff",

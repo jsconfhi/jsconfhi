@@ -6,7 +6,7 @@ module.exports = {
     textGray: '#565656',
     textYellow: '#f2dc1a',
     textWhite: '#FFFFFF',
-    text: '#000',
+    text: '#000'
   },
   fontSizes: {
     small: '.875rem',

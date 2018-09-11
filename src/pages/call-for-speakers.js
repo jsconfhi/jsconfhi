@@ -1,4 +1,3 @@
-import Button from '../components/Button'
 import Hero from '../components/Hero'
 import HeroLabel from '../components/Hero/contentLabel'
 import React from 'react'
@@ -68,9 +67,6 @@ const H1 = styled.h1`
 `
 
 const H2 = styled.h2`
-  font-weight: bold;
-`
-const B = styled.b`
   font-weight: bold;
 `
 

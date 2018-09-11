@@ -136,11 +136,12 @@ const IndexPage = () => (
     </Hero>
     <Columns>
       <Column>
-        <H2>Call for Speakers</H2>
-        <p>Our call for speakers is now open!</p>
+        <H2>Speakers</H2>
+        <p>We've started to select our incredible lineup of speakers!</p>
         <p>
-          Read more about our CFP process, presenting at JSConf: Hawaiʻi, and
-          apply to speak now.
+          There's something for everyone! From intro talks and deep dives to
+          cool projects and new ways to think about how we interact with the communities around us,
+          you won't want to miss hearing from any of our awesome speakers from around the globe.
         </p>
         <Button to="/call-for-speakers">Learn More</Button>
       </Column>

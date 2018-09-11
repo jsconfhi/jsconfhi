@@ -1,4 +1,4 @@
-import charlieAvatar from '../../img/charlie.jpeg';
+import charlieAvatar from '../organizers/avatars/charlie.jpeg';
 
 export default [
   {

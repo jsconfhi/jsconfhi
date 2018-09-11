@@ -125,7 +125,7 @@ const FAIcon = styled(FontAwesomeIcon)`
 class Speakers extends React.Component {
   constructor(props) {
     super(props);
-    this._orderedData = speakerData.sort((a, b) => a.name == b.name ? 0 : (a.name > b.name ? -1 : 1 ));
+    this._orderedData = speakerData.sort((a, b) => a.name === b.name ? 0 : (a.name > b.name ? -1 : 1 ));
     this.state = {
       currentName: this._orderedData[0] && this._orderedData[0].name
     };

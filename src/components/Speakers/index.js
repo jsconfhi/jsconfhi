@@ -1,5 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import Mousetrap from 'mousetrap';
 import React from "react";
 import speakerData from '../../data/speakers';
 import styled from "styled-components";
@@ -122,6 +123,7 @@ const Image = styled.img`
 const Name = styled.h2`
   font-size: ${theme.fontSizes.jumbo};
   font-weight: bold;
+  line-height: 1.2em;
   color: ${theme.colors.textYellow};
   margin-bottom: ${theme.spaces.medium};
 `
@@ -137,6 +139,7 @@ const FAIcon = styled(FontAwesomeIcon)`
 class Speakers extends React.Component {
   constructor(props) {
     super(props);
+    this._imagesRef = React.createRef();
     this._orderedData = speakerData.sort((a, b) => a.name === b.name ? 0 : (a.name > b.name ? -1 : 1 ));
     this.state = {
       currentName: this._orderedData[0] && this._orderedData[0].name
@@ -145,10 +148,12 @@ class Speakers extends React.Component {
 
   componentDidMount() {
     // Bind mousetrap?
+    Mousetrap.bind(['down', 'right'], this._focus(1));
+    Mousetrap.bind(['up', 'left'], this._focus(-1));
   }
 
   componentWillUnmount() {
-    // Unbind Mousetrap?
+    Mousetrap.reset();
   }
 
   render() {
@@ -160,7 +165,7 @@ class Speakers extends React.Component {
       <Container>
         <ImagesScrollPlaceholder />
         <ImagesScrollContainer>
-          <Images>
+          <Images innerRef={this._imagesRef}>
             {this._orderedData.map(item => <Image alt={item.name} focused={item.name === currentName} key={item.name} onClick={this._handleImageClick(item.name)} src={item.avatar} />)}
           </Images>
         </ImagesScrollContainer>
@@ -185,7 +190,15 @@ class Speakers extends React.Component {
     );
   }
 
+  _setImagesRef = (ref) => this._imagesRef = ref;
   _handleImageClick = (name) => () => this.setState({ currentName: name });
+  _focus = (amount) => (e) => {
+    e.preventDefault();
+    const currentIndex = this._orderedData.findIndex(item => item.name === this.state.currentName);
+    const newIndex = Math.min(Math.max(0, currentIndex + amount), this._orderedData.length - 1);
+    this.setState({ currentName: this._orderedData[newIndex].name });
+    this._imagesRef && this._imagesRef.current.children[newIndex].scrollIntoView({ block: "nearest" });
+  }
 }
 
 export default Speakers;

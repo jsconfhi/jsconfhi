@@ -94,7 +94,7 @@ const InfoLabel = styled.h3`
   font-size: ${theme.fontSizes.xLarge};
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: ${theme.spaces.micro};
+  margin-bottom: ${theme.spaces.medium};
   @media (max-width: ${theme.breakpoints.small}) {
     font-size: ${theme.fontSizes.large};
   }

@@ -1,5 +1,6 @@
 import Button from '../components/Button';
 import FontAwesomeIcon from '../components/FontAwesomeIcon';
+
 import {
   faFacebook,
   faInstagram,
@@ -144,7 +145,7 @@ const IndexPage = () => (
           communities around us, you won't want to miss hearing from any of our
           awesome speakers from around the globe.
         </p>
-        <Button to="/call-for-speakers">Learn More</Button>
+        <Button to="/speakers">Learn More</Button>
       </Column>
       <Column>
         <H2>Sponsorships</H2>

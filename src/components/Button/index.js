@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import theme from '../../theme'
+import React from 'react';
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import theme from '../../theme';
 
 const style = `
   cursor: pointer;
@@ -18,10 +18,10 @@ const style = `
   &:hover {
     outline: 1px solid ${theme.colors.background};
   }
-`
+`;
 
-const Button = styled(Link)([style])
-const ExternalButton = styled.a([style])
+const Button = styled(Link)([style]);
+const ExternalButton = styled.a([style]);
 
 const ButtonComponent = ({
   children,
@@ -29,28 +29,28 @@ const ButtonComponent = ({
   to,
   isPrimary,
   color,
-  style = {},
+  style = {}
 }) => {
-  const Component = to ? Button : ExternalButton
+  const Component = to ? Button : ExternalButton;
 
   const styleColor = isPrimary
     ? theme.colors.background
     : color === 'dark'
       ? theme.colors.background
-      : theme.colors.textYellow
+      : theme.colors.textYellow;
   const styleBorderColor = isPrimary
     ? 'transparent'
     : color === 'dark'
       ? theme.colors.background
-      : theme.colors.textYellow
-  const styleBgColor = isPrimary ? theme.colors.textYellow : 'transparent'
+      : theme.colors.textYellow;
+  const styleBgColor = isPrimary ? theme.colors.textYellow : 'transparent';
   const props = {
     color,
     isPrimary,
     href,
     target: href ? '_blank' : undefined,
-    to,
-  }
+    to
+  };
   return (
     <Component
       {...props}
@@ -58,17 +58,17 @@ const ButtonComponent = ({
         color: styleColor,
         backgroundColor: styleBgColor,
         borderColor: styleBorderColor,
-        ...style,
+        ...style
       }}
     >
       {children}
     </Component>
-  )
-}
+  );
+};
 
 ButtonComponent.propTypes = {
   isPrimary: PropTypes.bool,
-  color: PropTypes.oneOf(['dark', 'light']),
-}
+  color: PropTypes.oneOf(['dark', 'light'])
+};
 
-export default ButtonComponent
+export default ButtonComponent;

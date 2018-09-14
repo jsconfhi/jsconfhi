@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import theme from '../../theme'
+import React from 'react';
+import styled from 'styled-components';
+import theme from '../../theme';
 
-export const headerHeight = 30
+export const headerHeight = 30;
 
 const HeaderWrapper = styled.div`
   background: ${theme.colors.background};
@@ -17,12 +17,12 @@ const HeaderWrapper = styled.div`
   padding: 0;
   height: ${headerHeight}px;
   width: 100%;
-`
+`;
 
 const Sup = styled.sup`
   vertical-align: super;
   font-size: 0.6em;
-`
+`;
 
 const Header = () => (
   <HeaderWrapper>
@@ -31,6 +31,6 @@ const Header = () => (
       &nbsp;|&nbsp; Honolulu, HI
     </span>
   </HeaderWrapper>
-)
+);
 
-export default Header
+export default Header;

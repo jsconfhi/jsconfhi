@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { injectGlobal } from 'styled-components'
-import reset from 'styled-reset'
-import styled from 'styled-components'
-import theme from '../theme'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { injectGlobal } from 'styled-components';
+import reset from 'styled-reset';
+import styled from 'styled-components';
+import theme from '../theme';
 
-import Header, { headerHeight } from '../components/Header'
-import Footer, { footerHeight } from '../components/Footer'
+import Header, { headerHeight } from '../components/Header';
+import Footer, { footerHeight } from '../components/Footer';
 injectGlobal`
   ${reset}
   body {
@@ -26,11 +26,11 @@ injectGlobal`
     padding: 0;
     box-sizing: inherit;
   }
-`
+`;
 
 const Wrapper = styled.div`
   height: 100vh;
-}`
+}`;
 
 const MainContent = styled.div`
   display: flex;
@@ -38,7 +38,7 @@ const MainContent = styled.div`
   min-height: 100%;
   padding-top: ${headerHeight}px;
   padding-bottom: ${footerHeight}px;
-`
+`;
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -48,11 +48,11 @@ const TemplateWrapper = ({ children }) => (
         {
           name: 'description',
           content:
-            'A two day, single track conference dedicated to web development, JavaScript and building a community. February 7th + 8th 2019 in Honolulu, Hawaiʻi.',
+            'A two day, single track conference dedicated to web development, JavaScript and building a community. February 7th + 8th 2019 in Honolulu, Hawaiʻi.'
         },
         {
           name: 'keywords',
-          content: 'JS, JavaScript, Conference, Hawaii, Tech, Web',
+          content: 'JS, JavaScript, Conference, Hawaii, Tech, Web'
         },
         { name: 'theme-color', content: '#03282c' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -62,12 +62,12 @@ const TemplateWrapper = ({ children }) => (
         {
           name: 'og:description',
           content:
-            'A two day, single track conference dedicated to web development, JavaScript and building a community. February 7th + 8th 2019 in Honolulu, Hawaiʻi.',
+            'A two day, single track conference dedicated to web development, JavaScript and building a community. February 7th + 8th 2019 in Honolulu, Hawaiʻi.'
         },
         {
           name: 'og:image',
-          content: 'https://www.jsconfhi.com/android-chrome-512x512.png',
-        },
+          content: 'https://www.jsconfhi.com/android-chrome-512x512.png'
+        }
       ]}
     >
       <html lang="en" />
@@ -101,13 +101,13 @@ const TemplateWrapper = ({ children }) => (
       <Footer style={{ flex: 1 }} />
     </Wrapper>
   </div>
-)
+);
 
 TemplateWrapper.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element),
-  ]).isRequired,
-}
+    PropTypes.arrayOf(PropTypes.element)
+  ]).isRequired
+};
 
-export default TemplateWrapper
+export default TemplateWrapper;

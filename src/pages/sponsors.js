@@ -1,11 +1,11 @@
-import Button from "../components/Button";
-import Hero from "../components/Hero";
-import HeroLabel from "../components/Hero/contentLabel";
-import React from "react";
-import { withPrefix } from "gatsby-link";
-import Layout from "../components/layout";
-import styled from "styled-components";
-import theme from "../theme";
+import Button from '../components/Button';
+import Hero from '../components/Hero';
+import HeroLabel from '../components/Hero/contentLabel';
+import React from 'react';
+import { withPrefix } from 'gatsby-link';
+import Layout from '../components/layout';
+import styled from 'styled-components';
+import theme from '../theme';
 
 const Callout = styled.div`
   background-color: white;
@@ -60,13 +60,13 @@ const ContactLink = styled.a`
 const Sponsors = () => (
   <Layout>
     <Hero navTitle="Sponsors">
-      <HeroLabel> Sponsorship Opportunities </HeroLabel>{" "}
+      <HeroLabel> Sponsorship Opportunities </HeroLabel>{' '}
       <Callout>
         <CalloutRail>
-          <CalloutTitle> Join us as a Sponsor </CalloutTitle>{" "}
+          <CalloutTitle> Join us as a Sponsor </CalloutTitle>{' '}
           <Button color="dark">
             <ContactLink
-              href={withPrefix("/JS-Conf-Hawaii-2019-Sponsorship-Info.pdf")}
+              href={withPrefix('/JS-Conf-Hawaii-2019-Sponsorship-Info.pdf')}
             >
               Learn more
             </ContactLink>
@@ -78,7 +78,7 @@ const Sponsors = () => (
             With over 300 developers from around the world attending, and
             hundreds more following along at home, sponsoring the conference is
             one of the best ways to connect with Javascript developers.
-          </p>{" "}
+          </p>{' '}
           <p>
             There are a variety of sponsorship packages available for small and
             large companies alike! From setting up a developer lounge on-site,
@@ -90,12 +90,13 @@ const Sponsors = () => (
           </p>
           <p>
             For more information, and to explore the full range of options, to
-            view our{" "}
-            <a href={withPrefix("/JS-Conf-Hawaii-2019-Sponsorship-Info.pdf")}>
+            view our{' '}
+            <a href={withPrefix('/JS-Conf-Hawaii-2019-Sponsorship-Info.pdf')}>
               prospectus
-            </a>. And if you have a unique idea, we're excited to work with you
-            to make your vision a reality, so please feel free to contact us for
-            more information.{" "}
+            </a>
+            . And if you have a unique idea, we're excited to work with you to
+            make your vision a reality, so please feel free to contact us for
+            more information.{' '}
           </p>
         </CalloutText>
       </Callout>

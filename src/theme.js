@@ -13,18 +13,18 @@ module.exports = {
     medium: '1.125rem',
     large: '1.875rem',
     xLarge: '2.25rem',
-    jumbo: '2.25rem',
+    jumbo: '2.25rem'
   },
   spaces: {
     micro: '0.3rem',
     small: '0.5rem',
     medium: '1rem',
     large: '2rem',
-    xLarge: '4rem',
+    xLarge: '4rem'
   },
   breakpoints: {
     small: '500px',
-    medium: '800px',
+    medium: '800px'
   },
-  containerWidth: '1080px',
-}
+  containerWidth: '1080px'
+};

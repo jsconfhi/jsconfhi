@@ -1,10 +1,10 @@
-import Hero from '../components/Hero'
-import HeroLabel from '../components/Hero/contentLabel'
-import React from 'react'
-import Layout from '../components/layout'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
-import theme from '../theme'
+import Hero from '../components/Hero';
+import HeroLabel from '../components/Hero/contentLabel';
+import React from 'react';
+import Layout from '../components/layout';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
+import theme from '../theme';
 
 const Callout = styled.div`
   background-color: white;
@@ -15,13 +15,13 @@ const Callout = styled.div`
   @media (max-width: ${theme.breakpoints.medium}) {
     flex-direction: column;
   }
-`
+`;
 
 const Guidelines = styled.div`
   background-color: ${theme.colors.background};
   color: ${theme.colors.textYellow};
   padding: ${theme.spaces.large};
-`
+`;
 const GuidelinesContainer = styled.div`
   column-count: 2;
   column-gap: ${theme.spaces.xLarge};
@@ -30,13 +30,13 @@ const GuidelinesContainer = styled.div`
   @media (max-width: ${theme.breakpoints.medium}) {
     column-count: 1;
   }
-`
+`;
 
 const CalloutTitle = styled.div`
   font-size: ${theme.fontSizes.jumbo};
   font-weight: bold;
   color: ${theme.colors.background};
-`
+`;
 
 const CalloutRail = styled.div`
   align-items: flex-start;
@@ -49,13 +49,13 @@ const CalloutRail = styled.div`
   @media (max-width: ${theme.breakpoints.medium}) {
     flex-basis: auto;
   }
-`
+`;
 
 const CalloutText = styled.div`
   flex-basis: 0;
   flex-grow: 3;
   flex-shrink: 1;
-`
+`;
 
 const H1 = styled.h1`
   font-size: ${theme.fontSizes.jumbo};
@@ -64,15 +64,15 @@ const H1 = styled.h1`
   color: ${theme.colors.textWhite};
   margin-bottom: ${theme.spaces.large};
   text-transform: uppercase;
-`
+`;
 
 const H2 = styled.h2`
   font-weight: bold;
-`
+`;
 
 const I = styled.i`
   font-style: italic;
-`
+`;
 
 const CFP = () => (
   <Layout style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
@@ -83,14 +83,19 @@ const CFP = () => (
           <CalloutTitle>Present in Hawaiʻi</CalloutTitle>
         </CalloutRail>
         <CalloutText>
-          <p><I>Our call for speakers is now closed. We will notify selected speakers in September!
-          </I></p><br />
+          <p>
+            <I>
+              Our call for speakers is now closed. We will notify selected
+              speakers in September!
+            </I>
+          </p>
+          <br />
           <H2>Selected Speakers</H2>
           <p>
-            Speakers will have the full cost of attending covered if
-            their companies does not fund events, including ticket, hotel and
-            airfare, along with taxi to/from airport. Certain incidentals or
-            outside meals may be at your own expense.
+            Speakers will have the full cost of attending covered if their
+            companies does not fund events, including ticket, hotel and airfare,
+            along with taxi to/from airport. Certain incidentals or outside
+            meals may be at your own expense.
           </p>
           <p>
             <I>
@@ -229,6 +234,6 @@ const CFP = () => (
       </GuidelinesContainer>
     </Guidelines>
   </Layout>
-)
+);
 
-export default CFP
+export default CFP;

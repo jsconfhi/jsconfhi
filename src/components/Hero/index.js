@@ -1,8 +1,8 @@
-import React from 'react'
-import Nav from '../Nav'
-import styled from 'styled-components'
-import hawaiiImage from '../../img/header.jpg'
-import theme from '../../theme'
+import React from 'react';
+import Nav from '../Nav';
+import styled from 'styled-components';
+import hawaiiImage from '../../img/header.jpg';
+import theme from '../../theme';
 
 const ImageContainer = styled.div`
   display: flex;
@@ -12,7 +12,7 @@ const ImageContainer = styled.div`
   background-size: cover;
   background-position: center center;
   flex-grow: 1;
-`
+`;
 
 const Container = styled.div`
   align-items: center;
@@ -22,7 +22,7 @@ const Container = styled.div`
   width: 100%;
   max-width: ${theme.containerWidth};
   margin: ${theme.spaces.medium} ${theme.spaces.large};
-`
+`;
 
 const PageTitle = styled.h2`
   align-self: flex-start;
@@ -34,7 +34,7 @@ const PageTitle = styled.h2`
   @media (max-width: ${theme.breakpoints.small}) {
     font-size: ${theme.fontSizes.medium};
   }
-`
+`;
 
 const Hero = ({ children, navTitle }) => (
   <ImageContainer>
@@ -44,5 +44,5 @@ const Hero = ({ children, navTitle }) => (
       {children}
     </Container>
   </ImageContainer>
-)
-export default Hero
+);
+export default Hero;

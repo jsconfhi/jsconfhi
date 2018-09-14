@@ -1,36 +1,36 @@
-import React from 'react'
-import Layout from '../components/layout'
-import styled from 'styled-components'
-import theme from '../theme'
+import React from 'react';
+import Layout from '../components/layout';
+import styled from 'styled-components';
+import theme from '../theme';
 
 const Container = styled.div`
   max-width: ${theme.containerWidth};
   margin: 0 auto;
-`
+`;
 
 const DayHeading = styled.h2`
   color: black;
   font-size: 1.2em;
-`
+`;
 const Table = styled.table`
   width: 600px;
   margin-bottom: 3em;
-`
+`;
 
 const TableHeading = styled.thead`
   font-weight: bold;
-`
+`;
 
 const Row = styled.tr`
   &:nth-child(odd) {
     background: #eee;
   }
-`
+`;
 
 const Cell = styled.td`
   border: 1px solid #ccc;
   padding: 0.5em;
-`
+`;
 
 const Schedule = () => (
   <Layout>
@@ -116,6 +116,6 @@ const Schedule = () => (
       </Table>
     </Container>
   </Layout>
-)
+);
 
-export default Schedule
+export default Schedule;

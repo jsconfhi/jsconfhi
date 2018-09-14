@@ -1,13 +1,13 @@
-import Button from '../Button'
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
-import PropTypes from 'prop-types'
-import logo from '../../img/logo.png'
-import theme from '../../theme'
+import Button from '../Button';
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import logo from '../../img/logo.png';
+import theme from '../../theme';
 
 // Needs to collapse based on text-size not screen width
-const navWidthBreak = '620px'
+const navWidthBreak = '620px';
 
 const NavLink = styled(Link)`
   color: ${theme.colors.textYellow};
@@ -21,7 +21,7 @@ const NavLink = styled(Link)`
   @media (max-width: ${theme.breakpoints.medium}) {
     margin: 0 ${theme.spaces.small};
   }
-`
+`;
 
 const PrimaryNavContainer = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ const PrimaryNavContainer = styled.div`
   @media (max-width: ${navWidthBreak}) {
     justify-content: space-between;
   }
-`
+`;
 
 const Logo = styled.img`
   height: 60px;
@@ -41,7 +41,7 @@ const Logo = styled.img`
     height: 50px;
     width: 50px;
   }
-`
+`;
 
 // Use Grid to move things better, fallback to flexbox
 const NavRoot = styled.nav`
@@ -60,7 +60,7 @@ const NavRoot = styled.nav`
       'logo 1 tickets'
       'menu menu menu';
   }
-`
+`;
 
 const Nav = ({ withBorder }) => (
   <NavRoot
@@ -83,10 +83,10 @@ const Nav = ({ withBorder }) => (
       Buy Tickets
     </Button>
   </NavRoot>
-)
+);
 
 Nav.propTypes = {
-  navTitle: PropTypes.string,
-}
+  navTitle: PropTypes.string
+};
 
-export default Nav
+export default Nav;

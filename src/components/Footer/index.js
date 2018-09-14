@@ -1,15 +1,15 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
   faInstagram,
-  faTwitterSquare,
-} from '@fortawesome/free-brands-svg-icons'
-import theme from '../../theme'
+  faTwitterSquare
+} from '@fortawesome/free-brands-svg-icons';
+import theme from '../../theme';
 
-export const footerHeight = 40
+export const footerHeight = 40;
 
 // Note the footer is inverted coloring
 const FooterWrapper = styled.div`
@@ -31,17 +31,17 @@ const FooterWrapper = styled.div`
   @media (max-width: ${theme.breakpoints.small}) {
     font-size: ${theme.fontSizes.small};
   }
-`
+`;
 
 const FooterLinks = styled.ul`
   display: flex;
   flex-grow: 1;
   list-style: none;
-`
+`;
 
 const FooterSocials = styled.div`
   font-size: 2em;
-`
+`;
 
 const FooterLink = styled(Link)`
   color: #03282c;
@@ -53,7 +53,7 @@ const FooterLink = styled(Link)`
   @media (max-width: ${theme.breakpoints.small}) {
     padding: 0 ${theme.spaces.small};
   }
-`
+`;
 
 const FooterSocialLink = styled.a`
   color: #03282c;
@@ -62,7 +62,7 @@ const FooterSocialLink = styled.a`
   &:hover {
     text-decoration: underline;
   }
-`
+`;
 
 const Footer = () => (
   <FooterWrapper>
@@ -94,6 +94,6 @@ const Footer = () => (
       </FooterSocialLink>
     </FooterSocials>
   </FooterWrapper>
-)
+);
 
-export default Footer
+export default Footer;

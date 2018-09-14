@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import Mousetrap from 'mousetrap';
-import React from "react";
+import React from 'react';
 import speakerData from '../../data/speakers';
-import styled from "styled-components";
-import theme from "../../theme";
+import styled from 'styled-components';
+import theme from '../../theme';
 
 const largeProfileSize = 120;
 const mediumProfileSize = 90;
@@ -20,7 +20,7 @@ const Container = styled.div`
   @media (max-width: ${theme.breakpoints.small}) {
     flex-direction: column;
   }
-`
+`;
 
 // NOTE: Is this too complicated? makes it span edge to edge
 const ImagesScrollPlaceholder = styled.div`
@@ -47,9 +47,8 @@ const ImagesScrollContainer = styled.div`
     flex-basis: auto;
     flex-grow: 0;
   }
-`
+`;
 const Images = styled.div`
-
   align-content: flex-start;
   display: flex;
   flex-wrap: wrap;
@@ -66,16 +65,19 @@ const Images = styled.div`
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
   @media (max-width: ${theme.breakpoints.medium}) {
-    grid-template-columns: repeat(auto-fill, minmax(${mediumProfileSize}px, 1fr));
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(${mediumProfileSize}px, 1fr)
+    );
   }
-`
+`;
 
 const SelectedSpeaker = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
   line-height: 1.5em;
-`
+`;
 
 const Info = styled.div`
   background-color: ${theme.colors.textWhite};
@@ -86,7 +88,7 @@ const Info = styled.div`
   @media (max-width: ${theme.breakpoints.small}) {
     padding: ${theme.spaces.medium};
   }
-`
+`;
 
 const InfoLabel = styled.h3`
   font-size: ${theme.fontSizes.xLarge};
@@ -106,9 +108,12 @@ const Image = styled.img`
   margin-bottom: ${theme.spaces.medium};
   flex-shrink: 0;
   &:hover {
-    border: 4px solid ${ theme.colors.textYellow };
+    border: 4px solid ${theme.colors.textYellow};
   }
-  ${props => props.focused ? `border: 4px solid ${theme.colors.textYellow} !important` : undefined};
+  ${props =>
+    props.focused
+      ? `border: 4px solid ${theme.colors.textYellow} !important`
+      : undefined};
   @media (max-width: ${theme.breakpoints.medium}) {
     height: ${mediumProfileSize}px;
     width: ${mediumProfileSize}px;
@@ -118,7 +123,7 @@ const Image = styled.img`
     width: ${smallProfileSize}px;
     margin-bottom: 0;
   }
-`
+`;
 
 const Name = styled.h2`
   font-size: ${theme.fontSizes.jumbo};
@@ -126,21 +131,25 @@ const Name = styled.h2`
   line-height: 1.2em;
   color: ${theme.colors.textYellow};
   margin-bottom: ${theme.spaces.medium};
-`
+`;
 
-const Socials = styled.span` margin: ${theme.spaces.medium} 0 ${theme.spaces.large};`
+const Socials = styled.span`
+  margin: ${theme.spaces.medium} 0 ${theme.spaces.large};
+`;
 const SocialLink = styled.a`
   text-decoration: none;
-`
+`;
 const FAIcon = styled(FontAwesomeIcon)`
   width: 1.3em !important;
-`
+`;
 
 class Speakers extends React.Component {
   constructor(props) {
     super(props);
     this._imagesRef = React.createRef();
-    this._orderedData = speakerData.sort((a, b) => a.name === b.name ? 0 : (a.name > b.name ? -1 : 1 ));
+    this._orderedData = speakerData.sort(
+      (a, b) => (a.name === b.name ? 0 : a.name > b.name ? -1 : 1)
+    );
     this.state = {
       currentName: this._orderedData[0] && this._orderedData[0].name
     };
@@ -159,14 +168,24 @@ class Speakers extends React.Component {
   render() {
     const { currentName } = this.state;
 
-    const selectedSpeaker = this._orderedData.find(item => item.name === currentName);
+    const selectedSpeaker = this._orderedData.find(
+      item => item.name === currentName
+    );
 
     return (
       <Container>
         <ImagesScrollPlaceholder />
         <ImagesScrollContainer>
           <Images innerRef={this._imagesRef}>
-            {this._orderedData.map(item => <Image alt={item.name} focused={item.name === currentName} key={item.name} onClick={this._handleImageClick(item.name)} src={item.avatar} />)}
+            {this._orderedData.map(item => (
+              <Image
+                alt={item.name}
+                focused={item.name === currentName}
+                key={item.name}
+                onClick={this._handleImageClick(item.name)}
+                src={item.avatar}
+              />
+            ))}
           </Images>
         </ImagesScrollContainer>
         <SelectedSpeaker>
@@ -177,7 +196,10 @@ class Speakers extends React.Component {
 
             <Socials>
               <FAIcon icon={faTwitter} />{' '}
-              <SocialLink href={`https://twitter.com/${selectedSpeaker.twitter}`} target="_blank">
+              <SocialLink
+                href={`https://twitter.com/${selectedSpeaker.twitter}`}
+                target="_blank"
+              >
                 @{selectedSpeaker.twitter}
               </SocialLink>
             </Socials>
@@ -190,15 +212,23 @@ class Speakers extends React.Component {
     );
   }
 
-  _setImagesRef = (ref) => this._imagesRef = ref;
-  _handleImageClick = (name) => () => this.setState({ currentName: name });
-  _focus = (amount) => (e) => {
+  _setImagesRef = ref => (this._imagesRef = ref);
+  _handleImageClick = name => () => this.setState({ currentName: name });
+  _focus = amount => e => {
     e.preventDefault();
-    const currentIndex = this._orderedData.findIndex(item => item.name === this.state.currentName);
-    const newIndex = Math.min(Math.max(0, currentIndex + amount), this._orderedData.length - 1);
+    const currentIndex = this._orderedData.findIndex(
+      item => item.name === this.state.currentName
+    );
+    const newIndex = Math.min(
+      Math.max(0, currentIndex + amount),
+      this._orderedData.length - 1
+    );
     this.setState({ currentName: this._orderedData[newIndex].name });
-    this._imagesRef && this._imagesRef.current.children[newIndex].scrollIntoView({ block: "nearest" });
-  }
+    this._imagesRef &&
+      this._imagesRef.current.children[newIndex].scrollIntoView({
+        block: 'nearest'
+      });
+  };
 }
 
 export default Speakers;

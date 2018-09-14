@@ -15,7 +15,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex: 1;
-  margin-top: ${theme.spaces.medium};
+  margin-top: ${theme.spaces.large};
 
   @media (max-width: ${theme.breakpoints.small}) {
     flex-direction: column;
@@ -61,6 +61,7 @@ const Images = styled.div`
   @media (max-width: ${theme.breakpoints.small}) {
     display: flex;
     flex-wrap: nowrap;
+    margin: 0 ${theme.spaces.large};
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }

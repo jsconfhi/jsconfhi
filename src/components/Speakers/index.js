@@ -104,12 +104,14 @@ const InfoLabel = styled.h3`
 const Image = styled.img`
   border-radius: 50%;
   border: 4px solid transparent;
+  cursor: pointer;
   height: ${largeProfileSize}px;
   width: ${largeProfileSize}px;
   margin-bottom: ${theme.spaces.medium};
   flex-shrink: 0;
-  &:hover {
+  &:hover, &:focus {
     border: 4px solid ${theme.colors.textYellow};
+    outline: none;
   }
   ${props =>
     props.focused
@@ -142,6 +144,29 @@ const SocialLink = styled.a`
 `;
 const FAIcon = styled(FontAwesomeIcon)`
   width: 1.3em !important;
+`;
+const More = styled.div`
+  color: ${theme.colors.textWhite};
+  background-color: ${theme.colors.background90};
+  display: flex;
+  padding: ${theme.spaces.medium};
+  border-radius: 50%;
+  border: 4px solid transparent;
+  height: ${largeProfileSize}px;
+  width: ${largeProfileSize}px;
+  text-align: center;
+  flex-shrink: 0;
+  @media (max-width: ${theme.breakpoints.medium}) {
+    height: ${mediumProfileSize}px;
+    width: ${mediumProfileSize}px;
+  }
+  @media (max-width: ${theme.breakpoints.small}) {
+    font-size: ${theme.fontSizes.small};
+    height: ${smallProfileSize}px;
+    width: ${smallProfileSize}px;
+    margin-bottom: 0;
+    padding: ${theme.spaces.small};
+  }
 `;
 
 class Speakers extends React.Component {
@@ -187,6 +212,7 @@ class Speakers extends React.Component {
                 src={item.avatar}
               />
             ))}
+            <More>More speakers coming soon!</More>
           </Images>
         </ImagesScrollContainer>
         <SelectedSpeaker>

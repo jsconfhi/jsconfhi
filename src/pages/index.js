@@ -1,5 +1,5 @@
 import Button from "../components/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import FontAwesomeIcon from "../components/FontAwesomeIcon";
 import {
   faFacebook,
   faInstagram,

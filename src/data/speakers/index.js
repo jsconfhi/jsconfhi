@@ -14,9 +14,7 @@ import wibowoAvatar from '../speakers/avatars/Amy_Wibowo.jpg';
 export default [
   {
     avatar: hallidayAvatar,
-    bio: `off-grid technologist. member of bits.coop
-
-      I'm a member of bits.coop and I live off-grid in puna district. I work on computer graphics projects using webgl, I make maps, I plant fruit trees, I build custom databases, I grow vegetables, and I research how to design decentralized tools that work on the margins.
+    bio: `I'm a member of bits.coop and I live off-grid in puna district. I work on computer graphics projects using webgl, I make maps, I plant fruit trees, I build custom databases, I grow vegetables, and I research how to design decentralized tools that work on the margins.
 
       https://substack.net`,
     name: 'James Halliday',

@@ -1,11 +1,15 @@
 import angAvatar from '../speakers/avatars/Trish_Ang.jpg';
+import barrettAvatar from '../speakers/avatars/Louisa_Barrett.jpg';
 import clarkAvatar from '../speakers/avatars/Lin_Clark.jpg';
 import cuervoAvatar from '../speakers/avatars/Andres_Cuervo.png';
+import drasnerAvatar from '../speakers/avatars/Sarah_Drasner.jpg';
 import hallidayAvatar from '../speakers/avatars/James_Halliday.jpg';
 import martinsAvatar from '../speakers/avatars/Willian_Martins.jpg';
+import obaAvatar from '../speakers/avatars/Kyle_Oba.jpg';
 import pitiyanuvathAvatar from '../speakers/avatars/Visnu_Pitiyanuvath.jpg';
 import schneidereitAvatar from '../speakers/avatars/Till_Schneidereit.jpg';
 import vlaevaAvatar from '../speakers/avatars/Stanimira_Vlaeva.jpg';
+import wangAvatar from '../speakers/avatars/Shawn_swyx_Wang.jpg';
 import wibowoAvatar from '../speakers/avatars/Amy_Wibowo.jpg';
 
 // const example = {
@@ -81,5 +85,34 @@ export default [
     name: "Visnu Pitiyanuvath",
     talk: "How to cheat at life, with JavaScript, computer vision, and augmented reality",
     twitter: "visnup"
+  },
+  // Set 3
+  {
+    avatar: drasnerAvatar,
+    bio: `Sarah Drasner is a Vue core team member, Senior Developer Advocate at Microsoft, and Staff Writer at CSS-Tricks. Sarah is also the co-founder of Web Animation Workshops, with Val Head. She’s the author of SVG Animations from O’Reilly and has given Frontend Masters workshops on Vue.js and Advanced SVG Animations. Sarah is formerly Manager of UX Design & Engineering at Trulia (Zillow).`,
+    name: "Sarah Drasner",
+    talk: "The Art of Code Comments",
+    twitter: "sarah_edo"
+  },
+  {
+    avatar: obaAvatar,
+    bio: `Kyle develops software at a design-research focused, software consultancy. He has experience building large-scale web and systems development projects, data analytics tools, and mobile applications, including several apps in the iTunes App Store Hall of Fame. Collaborative learning excites him, and he has initiated community projects, such as workshops, artist talks, and data visualization efforts. One good way to get him to not stop talking is to ask him about his experience teaching programming at the high school level.`,
+    name: "Kyle Oba",
+    talk: "HI and AI",
+    twitter: "mudphone"
+  },
+  {
+    avatar: wangAvatar,
+    bio: `Shawn is an Infinite Builder and DX Engineer at Netlify. He enjoys helping the community online at /r/reactjs and getting first-timers started doing their first talks in the New York tech scene!`,
+    name: "Shawn Wang",
+    talk: "I Can Babel Macros (and So Can You!)",
+    twitter: "swyx"
+  },
+  {
+    avatar: barrettAvatar,
+    bio: `Louisa is the Director of the Front-End Engineering program at the Turing School of Software and Design. She is the former director of Colorado for Women Who Code and past chapter leader for Girl Develop It Denver/Boulder. She began her career as an illustrator and graphic designer, and a passion for understanding people lead her to programming. She has a soft spot for UX, typography, and correcting students when they refer to an assignment operator as an ‘equals sign’.`,
+    name: "Louisa Barrett",
+    talk: "The Teenage Mutant Ninja Turtle Guide to Color Theory",
+    twitter: "weesie_b"
   },
 ];

@@ -138,12 +138,24 @@ const Attend = () => (
         <Ticket>
           <TicketName>Bulk 4-Pack</TicketName>
           <TicketCost>$550</TicketCost>
-          <ComingSoonOrPurchase>Coming Soon</ComingSoonOrPurchase>
+          <ComingSoonOrPurchase><Button
+              color="dark"
+              href="https://ti.to/jsconf-hawaii/2019"
+              style={{ margin: 0 }}
+            >
+              Buy Now!
+            </Button></ComingSoonOrPurchase>
         </Ticket>
         <Ticket>
           <TicketName>Regular</TicketName>
           <TicketCost>$650</TicketCost>
-          <ComingSoonOrPurchase>Coming Soon</ComingSoonOrPurchase>
+          <ComingSoonOrPurchase><Button
+              color="dark"
+              href="https://ti.to/jsconf-hawaii/2019"
+              style={{ margin: 0 }}
+            >
+              Buy Now!
+            </Button></ComingSoonOrPurchase>
         </Ticket>
         <Ticket>
           <TicketName>Diversity Supporter</TicketName>

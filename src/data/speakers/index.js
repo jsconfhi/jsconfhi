@@ -1,16 +1,20 @@
-import angAvatar from '../speakers/avatars/Trish_Ang.jpg';
-import barrettAvatar from '../speakers/avatars/Louisa_Barrett.jpg';
-import clarkAvatar from '../speakers/avatars/Lin_Clark.jpg';
-import cuervoAvatar from '../speakers/avatars/Andres_Cuervo.png';
-import drasnerAvatar from '../speakers/avatars/Sarah_Drasner.jpg';
-import hallidayAvatar from '../speakers/avatars/James_Halliday.jpg';
-import martinsAvatar from '../speakers/avatars/Willian_Martins.jpg';
-import obaAvatar from '../speakers/avatars/Kyle_Oba.jpg';
-import pitiyanuvathAvatar from '../speakers/avatars/Visnu_Pitiyanuvath.jpg';
-import schneidereitAvatar from '../speakers/avatars/Till_Schneidereit.jpg';
-import vlaevaAvatar from '../speakers/avatars/Stanimira_Vlaeva.jpg';
-import wangAvatar from '../speakers/avatars/Shawn_swyx_Wang.jpg';
-import wibowoAvatar from '../speakers/avatars/Amy_Wibowo.jpg';
+import angAvatar from './avatars/Trish_Ang.jpg';
+import barrettAvatar from './avatars/Louisa_Barrett.jpg';
+import clarkAvatar from './avatars/Lin_Clark.jpg';
+import creightonAvatar from './avatars/Jenn_Creighton.jpg';
+import cuervoAvatar from './avatars/Andres_Cuervo.png';
+import drasnerAvatar from './avatars/Sarah_Drasner.jpg';
+import hallidayAvatar from './avatars/James_Halliday.jpg';
+import jackAvatar from './avatars/Olivia_Jack.jpg';
+import krauseAvatar from './avatars/Hilary_Stohs-Krause.jpg';
+import martinsAvatar from './avatars/Willian_Martins.jpg';
+import obaAvatar from './avatars/Kyle_Oba.jpg';
+import pitiyanuvathAvatar from './avatars/Visnu_Pitiyanuvath.jpg';
+import raevAvatar from './avatars/Konstantin_Raev.jpg';
+import schneidereitAvatar from './avatars/Till_Schneidereit.jpg';
+import vlaevaAvatar from './avatars/Stanimira_Vlaeva.jpg';
+import wangAvatar from './avatars/Shawn_swyx_Wang.jpg';
+import wibowoAvatar from './avatars/Amy_Wibowo.jpg';
 
 // const example = {
 //   avatar: charlieAvatar,
@@ -115,4 +119,40 @@ export default [
     talk: "The Teenage Mutant Ninja Turtle Guide to Color Theory",
     twitter: "weesie_b"
   },
+  // Set 4
+  {
+    avatar: raevAvatar,
+    bio: `Originally from New Zealand. Worked at Facebook in: React Native team, Yarn, Marketplace. Currently, tech lead in Marketplace Performance project, everything related to making it load faster and smoother.`,
+    name: "Konstantin Raev",
+    talk: "Hitting performance goals for the biggest Mobile JS App at Facebook",
+    twitter: "https://twitter.com/bestander_nz"
+  },
+  {
+    avatar: creightonAvatar,
+    bio: `Jenn Creighton is a senior front end engineer at ClassPass where she writes code between workouts. She is likely to talk your ear off about React, JavaScript, or her hatred of CSS floats. She lives in New York City with her 2 cats & 1 dog & an Orphanage for Succulents.`,
+    name: "Jenn Creighton",
+    talk: "What Tamagotchis can teach you about ES6 generators",
+    twitter: "gurlcode"
+  },
+  {
+    avatar: krauseAvatar,
+    bio: `Hilary Stohs-Krause is currently based in Madison, WI, working as a full-stack software developer at Ten Forward Consulting. She came to tech by way of childhood website-building (a "Buffy the Vampire Slayer" fansite, to be exact). She volunteers regularly with several tech and community organizations, and co-runs Madison Women in Tech, a local group with more than 1,500 members. She tweets feminism, puns and tech at @hilarysk.`,
+    name: "Hilary Stohs-Krause",
+    talk: "How to Make Your Website Not Ugly: Basic UX for Programmers",
+    twitter: "hilarysk"
+  },
+  {
+    avatar: jackAvatar,
+    bio: `Olivia Jack is a programmer and artist who works frequently with open-source software, cartography, live coding, and experimental interfaces. Recent projects include media development for the experimental dance performance Nodos: Cuerpos en Expansión, part of the Festival de Danza en La Ciudad in Bogotá; as well as the Laboratory of Possibilities, a participatory media installation at the Oakland Museum of California. She is the developer of Hydra, a browser-based platform for networked visuals that is inspired by analog modular synthesis. Originally from San Francisco, she currently lives and works in Bogotá, Colombia. `,
+    name: "Olivia Jack",
+    talk: "The browser as a modular, networked video synthesizer",
+    twitter: "_ojack_"
+  },
+  // {
+  //   avatar: charlieAvatar,
+  //   bio: `This is a bit about me`,
+  //   name: "Alexandra Cárdenas",
+  //   talk: "The browser as a modular, networked video synthesizer",
+  //   twitter: "charlieCroom"
+  // },
 ];

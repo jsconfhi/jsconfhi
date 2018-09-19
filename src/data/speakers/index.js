@@ -5,8 +5,10 @@ import creightonAvatar from './avatars/Jenn_Creighton.jpg';
 import cuervoAvatar from './avatars/Andres_Cuervo.png';
 import drasnerAvatar from './avatars/Sarah_Drasner.jpg';
 import hallidayAvatar from './avatars/James_Halliday.jpg';
+import hensonAvatar from './avatars/Garth_Henson.jpg';
 import jackAvatar from './avatars/Olivia_Jack.jpg';
 import krauseAvatar from './avatars/Hilary_Stohs-Krause.jpg';
+import lordAvatar from './avatars/Jessica_Lord.jpg';
 import martinAvatar from './avatars/Crystal_Martin.jpg';
 import martinsAvatar from './avatars/Willian_Martins.jpg';
 import obaAvatar from './avatars/Kyle_Oba.jpg';
@@ -15,6 +17,7 @@ import raevAvatar from './avatars/Konstantin_Raev.jpg';
 import schneidereitAvatar from './avatars/Till_Schneidereit.jpg';
 import vlaevaAvatar from './avatars/Stanimira_Vlaeva.jpg';
 import wangAvatar from './avatars/Shawn_swyx_Wang.jpg';
+import wattAvatar from './avatars/Anna_Watt.jpg';
 import wibowoAvatar from './avatars/Amy_Wibowo.jpg';
 
 // const example = {
@@ -149,18 +152,40 @@ export default [
     talk: "JavaScript is AsynchroWAT?",
     twitter: "codermeow"
   },
-  // {
-  //   avatar: jackAvatar,
-  //   bio: `Olivia Jack is a programmer and artist who works frequently with open-source software, cartography, live coding, and experimental interfaces. Recent projects include media development for the experimental dance performance Nodos: Cuerpos en Expansión, part of the Festival de Danza en La Ciudad in Bogotá; as well as the Laboratory of Possibilities, a participatory media installation at the Oakland Museum of California. She is the developer of Hydra, a browser-based platform for networked visuals that is inspired by analog modular synthesis. Originally from San Francisco, she currently lives and works in Bogotá, Colombia. `,
-  //   name: "Olivia Jack",
-  //   talk: "The browser as a modular, networked video synthesizer",
-  //   twitter: "_ojack_"
-  // },
-  // {
-  //   avatar: charlieAvatar,
-  //   bio: `This is a bit about me`,
-  //   name: "Alexandra Cárdenas",
-  //   talk: "The browser as a modular, networked video synthesizer",
-  //   twitter: "charlieCroom"
-  // },
+  // batch 5
+  {
+    avatar: lordAvatar,
+    bio: `Jessica is a backend engineer at Splice in New York City. Her background is in architecture and she made her way into tech after a fellowship at Code for America. Between then and now she was an engineer at GitHub where she built up the Electron team. She loves building open source tools to make the web approachable.`,
+    name: "Jessica Lord",
+    talk: "Building up the Electron Project: Team and Community Engineering",
+    twitter: "jllord"
+  },
+  {
+    avatar: hensonAvatar,
+    bio: `Garth is as a lead engineer at The Walt Disney Company, specializing in JavaScript applications, cloud architecture and mentoring/training. He lives near Raleigh, NC with his beautiful wife and five children.`,
+    name: "Garth Henson",
+    talk: "The browser as a modular, networked video synthesizer",
+    twitter: "guahanweb"
+  },
+  {
+    avatar: wattAvatar,
+    bio: `Anna Watt has 8+ years in the tech and creative industries and is currently working as a Web Project Manager for Stanford University building accessible, user-centered websites and web products. Anna is an expert in leading dev teams and collaborating with technologists to execute wild right-brain ideas with a left-brain expertise. Anna lives and works remotely from Seattle and co-founded a Stanford Community of Practice for Distributed & Remote Workers. Anna’s third shift includes being a diversity & inclusion advocate as an organizer of the Write/Speak/Code Seattle chapter hosting monthly meetups to increase the visibility and leadership of women and non-binary people in tech. When she’s not obsessing over documentation and sweating all the small details, you can find her hiking in the rain and exploring the Pacific Northwest with her mini-australian shepherd puppy named River.`,
+    name: "Anna Watt",
+    talk: "Collaborative remote design working sessions",
+    twitter: "annalynnwatt"
+  },
+  {
+    avatar: jackAvatar,
+    bio: `Olivia Jack is a programmer and artist who works frequently with open-source software, cartography, live coding, and experimental interfaces. Recent projects include media development for the experimental dance performance Nodos: Cuerpos en Expansión, part of the Festival de Danza en La Ciudad in Bogotá; as well as the Laboratory of Possibilities, a participatory media installation at the Oakland Museum of California. She is the developer of Hydra, a browser-based platform for networked visuals that is inspired by analog modular synthesis. Originally from San Francisco, she currently lives and works in Bogotá, Colombia. `,
+    name: "Olivia Jack",
+    talk: "The browser as a modular, networked video synthesizer",
+    twitter: "_ojack_"
+  },
+  {
+    avatar: null,
+    name: "Alexandra Cárdenas",
+    talk: "The browser as a modular, networked video synthesizer",
+    twitter: "tiemposdelruido"
+  },
+  // batch 6
 ];

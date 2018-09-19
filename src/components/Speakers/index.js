@@ -108,6 +108,7 @@ const Image = styled.img`
   height: ${largeProfileSize}px;
   width: ${largeProfileSize}px;
   margin-bottom: ${theme.spaces.medium};
+  object-fit: cover;
   flex-shrink: 0;
   &:hover, &:focus {
     border: 4px solid ${theme.colors.textYellow};
@@ -204,13 +205,13 @@ class Speakers extends React.Component {
         <ImagesScrollContainer>
           <Images innerRef={this._imagesRef}>
             {this._orderedData.map(item => (
-              <Image
+              item.avatar ? <Image
                 alt={item.name}
                 focused={item.name === currentName}
                 key={item.name}
                 onClick={this._handleImageClick(item.name)}
                 src={item.avatar}
-              />
+              /> : <More onClick={this._handleImageClick(item.name)}>{item.name}</More>
             ))}
             <More>More speakers coming soon!</More>
           </Images>

@@ -7,6 +7,7 @@ import drasnerAvatar from './avatars/Sarah_Drasner.jpg';
 import hallidayAvatar from './avatars/James_Halliday.jpg';
 import jackAvatar from './avatars/Olivia_Jack.jpg';
 import krauseAvatar from './avatars/Hilary_Stohs-Krause.jpg';
+import martinAvatar from './avatars/Crystal_Martin.jpg';
 import martinsAvatar from './avatars/Willian_Martins.jpg';
 import obaAvatar from './avatars/Kyle_Oba.jpg';
 import pitiyanuvathAvatar from './avatars/Visnu_Pitiyanuvath.jpg';
@@ -142,12 +143,19 @@ export default [
     twitter: "hilarysk"
   },
   {
-    avatar: jackAvatar,
-    bio: `Olivia Jack is a programmer and artist who works frequently with open-source software, cartography, live coding, and experimental interfaces. Recent projects include media development for the experimental dance performance Nodos: Cuerpos en Expansión, part of the Festival de Danza en La Ciudad in Bogotá; as well as the Laboratory of Possibilities, a participatory media installation at the Oakland Museum of California. She is the developer of Hydra, a browser-based platform for networked visuals that is inspired by analog modular synthesis. Originally from San Francisco, she currently lives and works in Bogotá, Colombia. `,
-    name: "Olivia Jack",
-    talk: "The browser as a modular, networked video synthesizer",
-    twitter: "_ojack_"
+    avatar: martinAvatar,
+    bio: `Crystal is a Salesforce Developer working as a consultant at Slalom, a co-organizer of Strange Loop Conference, and diversity in tech/business advocate. As a Detroit Public Schools graduate, Crystal is passionate about equal access to education at all levels. She’s a lifetime learner and is currently digging into JavaScript and Salesforce and fighting the patriarchy and imposter syndrome one key stroke at a time. She holds a B.S. in Nutritional Sciences from Michigan State University and an M.Ed. in Secondary Education from the University of Missouri-St. Louis, which goes to show, college degrees matter, but they really don’t.`,
+    name: "Crystal Martin",
+    talk: "JavaScript is AsynchroWAT?",
+    twitter: "codermeow"
   },
+  // {
+  //   avatar: jackAvatar,
+  //   bio: `Olivia Jack is a programmer and artist who works frequently with open-source software, cartography, live coding, and experimental interfaces. Recent projects include media development for the experimental dance performance Nodos: Cuerpos en Expansión, part of the Festival de Danza en La Ciudad in Bogotá; as well as the Laboratory of Possibilities, a participatory media installation at the Oakland Museum of California. She is the developer of Hydra, a browser-based platform for networked visuals that is inspired by analog modular synthesis. Originally from San Francisco, she currently lives and works in Bogotá, Colombia. `,
+  //   name: "Olivia Jack",
+  //   talk: "The browser as a modular, networked video synthesizer",
+  //   twitter: "_ojack_"
+  // },
   // {
   //   avatar: charlieAvatar,
   //   bio: `This is a bit about me`,

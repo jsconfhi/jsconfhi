@@ -1,5 +1,7 @@
 import angAvatar from './avatars/Trish_Ang.jpg';
+import azimiAvatar from './avatars/Mohsen_Azimi.jpg';
 import barrettAvatar from './avatars/Louisa_Barrett.jpg';
+import bungeAvatar from './avatars/Brie_Bunge.jpg';
 import clarkAvatar from './avatars/Lin_Clark.jpg';
 import creightonAvatar from './avatars/Jenn_Creighton.jpg';
 import cuervoAvatar from './avatars/Andres_Cuervo.png';
@@ -8,6 +10,7 @@ import hallidayAvatar from './avatars/James_Halliday.jpg';
 import hensonAvatar from './avatars/Garth_Henson.jpg';
 import jackAvatar from './avatars/Olivia_Jack.jpg';
 import krauseAvatar from './avatars/Hilary_Stohs-Krause.jpg';
+import lencioniAvatar from './avatars/Joe_Lencioni.jpg';
 import lordAvatar from './avatars/Jessica_Lord.jpg';
 import martinAvatar from './avatars/Crystal_Martin.jpg';
 import martinsAvatar from './avatars/Willian_Martins.jpg';
@@ -174,6 +177,30 @@ export default [
     talk: "Collaborative remote design working sessions",
     twitter: "annalynnwatt"
   },
+  {
+    avatar: azimiAvatar,
+    bio: `Mohsen is a senior software engineer at Airbnb (previously Lyft), is a long-time TypeScript enthusiast and has written and open-sourced a TypeScript transformer for React components. Mohsen is one of the co-authors of Swagger (OpenAPI) specifications and built Swagger tools including Swagger Editor. He has given talks at meetups about React and TypeScript and last year, presented his project, m.lyft.com, at Chrome Dev Summit.`,
+    name: "Mohsen Azimi",
+    talk: "TBA",
+    twitter: "mohsen____"
+  },
+  {
+    avatar: lencioniAvatar,
+    bio: `Web infrastructure at Airbnb, obsessing over webperf. Level 20 introvert. he/him Minnesotan, liberal, dad.`,
+    name: "Joe Lencioni",
+    talk: "TBA",
+    twitter: "lencioni"
+  },
+  {
+    avatar: bungeAvatar,
+    bio: `Frontend Software Engineer at Airbnb. Passionate about developer productivity and building quality products quickly.`,
+    name: "Brie Bunge",
+    talk: "TBA",
+    twitter: "briebunge"
+  },
+
+  /// Mohsen Azimi, Joe Lencioni, and Brie Bunge
+
   // {
   //   avatar: jackAvatar,
   //   bio: `Olivia Jack is a programmer and artist who works frequently with open-source software, cartography, live coding, and experimental interfaces. Recent projects include media development for the experimental dance performance Nodos: Cuerpos en Expansión, part of the Festival de Danza en La Ciudad in Bogotá; as well as the Laboratory of Possibilities, a participatory media installation at the Oakland Museum of California. She is the developer of Hydra, a browser-based platform for networked visuals that is inspired by analog modular synthesis. Originally from San Francisco, she currently lives and works in Bogotá, Colombia. `,

@@ -174,18 +174,18 @@ export default [
     talk: "Collaborative remote design working sessions",
     twitter: "annalynnwatt"
   },
-  {
-    avatar: jackAvatar,
-    bio: `Olivia Jack is a programmer and artist who works frequently with open-source software, cartography, live coding, and experimental interfaces. Recent projects include media development for the experimental dance performance Nodos: Cuerpos en Expansión, part of the Festival de Danza en La Ciudad in Bogotá; as well as the Laboratory of Possibilities, a participatory media installation at the Oakland Museum of California. She is the developer of Hydra, a browser-based platform for networked visuals that is inspired by analog modular synthesis. Originally from San Francisco, she currently lives and works in Bogotá, Colombia. `,
-    name: "Olivia Jack",
-    talk: "The browser as a modular, networked video synthesizer",
-    twitter: "_ojack_"
-  },
-  {
-    avatar: null,
-    name: "Alexandra Cárdenas",
-    talk: "The browser as a modular, networked video synthesizer",
-    twitter: "tiemposdelruido"
-  },
+  // {
+  //   avatar: jackAvatar,
+  //   bio: `Olivia Jack is a programmer and artist who works frequently with open-source software, cartography, live coding, and experimental interfaces. Recent projects include media development for the experimental dance performance Nodos: Cuerpos en Expansión, part of the Festival de Danza en La Ciudad in Bogotá; as well as the Laboratory of Possibilities, a participatory media installation at the Oakland Museum of California. She is the developer of Hydra, a browser-based platform for networked visuals that is inspired by analog modular synthesis. Originally from San Francisco, she currently lives and works in Bogotá, Colombia. `,
+  //   name: "Olivia Jack",
+  //   talk: "The browser as a modular, networked video synthesizer",
+  //   twitter: "_ojack_"
+  // },
+  // {
+  //   avatar: null,
+  //   name: "Alexandra Cárdenas",
+  //   talk: "The browser as a modular, networked video synthesizer",
+  //   twitter: "tiemposdelruido"
+  // },
   // batch 6
 ];

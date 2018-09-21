@@ -167,7 +167,7 @@ export default [
     avatar: hensonAvatar,
     bio: `Garth is as a lead engineer at The Walt Disney Company, specializing in JavaScript applications, cloud architecture and mentoring/training. He lives near Raleigh, NC with his beautiful wife and five children.`,
     name: "Garth Henson",
-    talk: "The browser as a modular, networked video synthesizer",
+    talk: "Where Did All My Servers Go?",
     twitter: "guahanweb"
   },
   {

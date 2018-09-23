@@ -213,7 +213,6 @@ class Speakers extends React.Component {
                 src={item.avatar}
               /> : <More onClick={this._handleImageClick(item.name)}>{item.name}</More>
             ))}
-            <More>More speakers coming soon!</More>
           </Images>
         </ImagesScrollContainer>
         <SelectedSpeaker>

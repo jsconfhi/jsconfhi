@@ -3,13 +3,16 @@ import azimiAvatar from './avatars/Mohsen_Azimi.jpg';
 import barrettAvatar from './avatars/Louisa_Barrett.jpg';
 import bungeAvatar from './avatars/Brie_Bunge.jpg';
 import clarkAvatar from './avatars/Lin_Clark.jpg';
+import collinaAvatar from './avatars/Matteo_Collina.jpg';
 import creightonAvatar from './avatars/Jenn_Creighton.jpg';
 import cuervoAvatar from './avatars/Andres_Cuervo.png';
 import drasnerAvatar from './avatars/Sarah_Drasner.jpg';
 import hallidayAvatar from './avatars/James_Halliday.jpg';
 import hensonAvatar from './avatars/Garth_Henson.jpg';
 import jackAvatar from './avatars/Olivia_Jack.jpg';
+import kearneyAvatar from './avatars/Emily_Kearney.jpg';
 import krauseAvatar from './avatars/Hilary_Stohs-Krause.jpg';
+import laneyAvatar from './avatars/Thais_Laney.jpg';
 import lencioniAvatar from './avatars/Joe_Lencioni.jpg';
 import lordAvatar from './avatars/Jessica_Lord.jpg';
 import martinAvatar from './avatars/Crystal_Martin.jpg';
@@ -198,21 +201,39 @@ export default [
     talk: "TBA",
     twitter: "briebunge"
   },
-
-  /// Mohsen Azimi, Joe Lencioni, and Brie Bunge
-
-  // {
-  //   avatar: jackAvatar,
-  //   bio: `Olivia Jack is a programmer and artist who works frequently with open-source software, cartography, live coding, and experimental interfaces. Recent projects include media development for the experimental dance performance Nodos: Cuerpos en Expansión, part of the Festival de Danza en La Ciudad in Bogotá; as well as the Laboratory of Possibilities, a participatory media installation at the Oakland Museum of California. She is the developer of Hydra, a browser-based platform for networked visuals that is inspired by analog modular synthesis. Originally from San Francisco, she currently lives and works in Bogotá, Colombia. `,
-  //   name: "Olivia Jack",
-  //   talk: "The browser as a modular, networked video synthesizer",
-  //   twitter: "_ojack_"
-  // },
-  // {
-  //   avatar: null,
-  //   name: "Alexandra Cárdenas",
-  //   talk: "The browser as a modular, networked video synthesizer",
-  //   twitter: "tiemposdelruido"
-  // },
   // batch 6
+  {
+    avatar: jackAvatar,
+    bio: `Olivia Jack is a programmer and artist who works frequently with open-source software, cartography, live coding, and experimental interfaces. Recent projects include media development for the experimental dance performance Nodos: Cuerpos en Expansión, part of the Festival de Danza en La Ciudad in Bogotá; as well as the Laboratory of Possibilities, a participatory media installation at the Oakland Museum of California. She is the developer of Hydra, a browser-based platform for networked visuals that is inspired by analog modular synthesis. Originally from San Francisco, she currently lives and works in Bogotá, Colombia. `,
+    name: "Olivia Jack",
+    talk: "The browser as a modular, networked video synthesizer",
+    twitter: "_ojack_"
+  },
+  {
+    avatar: null,
+    name: "Alexandra Cárdenas",
+    talk: "The browser as a modular, networked video synthesizer",
+    twitter: "tiemposdelruido"
+  },
+  {
+    avatar: kearneyAvatar,
+    name: "Emily Kearney",
+    bio: "Emily Kearney is the Project Director of Technology at the Unconscious Bias Project. She is also pursuing her PhD in Environmental Science at UC Berkeley and is passionate about data science, open source, and chocolate pollination.",
+    talk: "Navigating Unconscious Bias: a tool-based approach to reprogramming our biases",
+    twitter: "eekearney"
+  },
+  {
+    avatar: laneyAvatar,
+    name: "Thais Laney",
+    bio: "Thais is a Senior Software Engineer at Hustle, building tools that power human conversation. She caught the GraphQL bug during her time at Facebook and has loved watching it take off all across the industry since then. When she's not coding on land, you can find her under the sea, decked out in her scuba gear.",
+    talk: "Designing GraphQL Schemas: Forget your data, focus on your domain",
+    twitter: "isthisthais"
+  },
+  {
+    avatar: collinaAvatar,
+    name: "Matteo Collina",
+    bio: `Matteo is a code pirate and mad scientist. He spends most of his days programming in Node.js, but in the past he worked with Ruby, Java and Objective-C. In 2014, he defended his Ph.D. thesis titled "Application Platforms for the Internet of Things". Now he is a Principal Architect at nearForm, where he consults for the top brands of the world. Matteo is also the author of the Node.js MQTT Broker, Mosca, the fast logger Pino and of the Fastify web framework. Matteo is a member of the Node.js Technical Steering Committee. Matteo spoke at several international conferences: Node.js Interactive, NodeConf.eu, NodeSummit, JSConf.Asia, WebRebels, and JsDay to name a few. He is also co-author of the book "Node.js Cookbook, Third Edition" edited by Packt. In the summer he loves sailing the Sirocco.`,
+    talk: "Bubble Up your Node.js I/O",
+    twitter: "matteocollina"
+  },
 ];

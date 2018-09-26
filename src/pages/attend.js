@@ -135,13 +135,7 @@ const Attend = () => (
         <Ticket>
           <TicketName>Regular</TicketName>
           <TicketCost>$650</TicketCost>
-          <ComingSoonOrPurchase><Button
-              color="dark"
-              href="https://ti.to/jsconf-hawaii/2019"
-              style={{ margin: 0 }}
-            >
-              Almost Gone!
-            </Button></ComingSoonOrPurchase>
+          <ComingSoonOrPurchase>Sold Out</ComingSoonOrPurchase>
         </Ticket>
         <Ticket>
           <TicketName>Late Bird</TicketName>

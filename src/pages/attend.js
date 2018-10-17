@@ -1,14 +1,14 @@
-import Button from '../components/Button';
+import Button from "../components/Button";
 import InfoBlock, {
   InfoBlockH2,
   InfoBlockH3
-} from '../components/LargeInfoBlock';
-import Hero from '../components/Hero';
-import HeroContentLabel from '../components/Hero/contentLabel';
-import Layout from '../components/layout';
-import React from 'react';
-import styled from 'styled-components';
-import theme from '../theme';
+} from "../components/LargeInfoBlock";
+import Hero from "../components/Hero";
+import HeroContentLabel from "../components/Hero/contentLabel";
+import Layout from "../components/layout";
+import React from "react";
+import styled from "styled-components";
+import theme from "../theme";
 
 const AccomodationsContainer = styled.div`
   background-color: ${theme.colors.background};
@@ -125,13 +125,7 @@ const Attend = () => (
         <Ticket>
           <TicketName>Kamaʻaina</TicketName>
           <TicketCost>$500</TicketCost>
-          <ComingSoonOrPurchase><Button
-              color="dark"
-              href="https://ti.to/jsconf-hawaii/2019"
-              style={{ margin: 0 }}
-            >
-              Buy Now!
-            </Button></ComingSoonOrPurchase>
+          <ComingSoonOrPurchase>Sold Out</ComingSoonOrPurchase>
         </Ticket>
         <Ticket>
           <TicketName>Bulk 4-Pack</TicketName>
@@ -146,26 +140,13 @@ const Attend = () => (
         <Ticket>
           <TicketName>Late Bird</TicketName>
           <TicketCost>$800</TicketCost>
-          <ComingSoonOrPurchase><Button
-              color="dark"
-              href="https://ti.to/jsconf-hawaii/2019"
-              style={{ margin: 0 }}
-            >
-              Buy Now!
-            </Button></ComingSoonOrPurchase>
+          <ComingSoonOrPurchase>Sold Out</ComingSoonOrPurchase>
+          </ComingSoonOrPurchase>
         </Ticket>
         <Ticket>
           <TicketName>Diversity Supporter</TicketName>
           <TicketCost>$975</TicketCost>
-          <ComingSoonOrPurchase>
-            <Button
-              color="dark"
-              href="https://ti.to/jsconf-hawaii/2019"
-              style={{ margin: 0 }}
-            >
-              Buy Now!
-            </Button>
-          </ComingSoonOrPurchase>
+          <ComingSoonOrPurchase>Sold Out</ComingSoonOrPurchase>
         </Ticket>
       </TicketContainer>
     </Hero>
@@ -191,7 +172,7 @@ const Attend = () => (
             </p>
           </div>
           <TicketMini>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
               <TicketName>Diversity</TicketName>
               <TicketCost>$0</TicketCost>
             </div>
@@ -225,7 +206,7 @@ const Attend = () => (
               the link below to book and receive the special rate for the
               upgraded Ocean View room.
             </p>
-            <ul style={{ color: 'white' }}>
+            <ul style={{ color: "white" }}>
               <li>$209 + tax (~25%) per night</li>
               <li>Discounted $15/night Resort Fee</li>
               <li>Includes an Ocean View Room upgrade</li>
@@ -340,7 +321,7 @@ const Attend = () => (
       </p>
 
       <p>
-        {' '}
+        {" "}
         A multitude of rental car companies are also available at the airport,
         as well as both Enterprise and Dollar having offices in the conference
         hotel.

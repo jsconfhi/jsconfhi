@@ -189,7 +189,7 @@ export default [
   },
   {
     avatar: lencioniAvatar,
-    bio: `Web infrastructure at Airbnb, obsessing over webperf. Level 20 introvert. he/him Minnesotan, liberal, dad.`,
+    bio: `Web infrastructure at Airbnb, obsessing over webperf. Level 20 introvert. he/him Minnesotan, liberal, dad and co-creator of Happo (happo.io).`,
     name: "Joe Lencioni",
     talk: "TBA",
     twitter: "lencioni"

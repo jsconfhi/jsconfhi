@@ -1,30 +1,30 @@
-import angAvatar from './avatars/Trish_Ang.jpg';
-import azimiAvatar from './avatars/Mohsen_Azimi.jpg';
-import barrettAvatar from './avatars/Louisa_Barrett.jpg';
-import bungeAvatar from './avatars/Brie_Bunge.jpg';
-import clarkAvatar from './avatars/Lin_Clark.jpg';
-import collinaAvatar from './avatars/Matteo_Collina.jpg';
-import creightonAvatar from './avatars/Jenn_Creighton.jpg';
-import cuervoAvatar from './avatars/Andres_Cuervo.png';
-import drasnerAvatar from './avatars/Sarah_Drasner.jpg';
-import hallidayAvatar from './avatars/James_Halliday.jpg';
-import hensonAvatar from './avatars/Garth_Henson.jpg';
-import jackAvatar from './avatars/Olivia_Jack.jpg';
-import kearneyAvatar from './avatars/Emily_Kearney.jpg';
-import krauseAvatar from './avatars/Hilary_Stohs-Krause.jpg';
-import laneyAvatar from './avatars/Thais_Laney.jpg';
-import lencioniAvatar from './avatars/Joe_Lencioni.jpg';
-import lordAvatar from './avatars/Jessica_Lord.jpg';
-import martinAvatar from './avatars/Crystal_Martin.jpg';
-import martinsAvatar from './avatars/Willian_Martins.jpg';
-import obaAvatar from './avatars/Kyle_Oba.jpg';
-import pitiyanuvathAvatar from './avatars/Visnu_Pitiyanuvath.jpg';
-import raevAvatar from './avatars/Konstantin_Raev.jpg';
-import schneidereitAvatar from './avatars/Till_Schneidereit.jpg';
-import vlaevaAvatar from './avatars/Stanimira_Vlaeva.jpg';
-import wangAvatar from './avatars/Shawn_swyx_Wang.jpg';
-import wattAvatar from './avatars/Anna_Watt.jpg';
-import wibowoAvatar from './avatars/Amy_Wibowo.jpg';
+import angAvatar from "./avatars/Trish_Ang.jpg";
+import azimiAvatar from "./avatars/Mohsen_Azimi.jpg";
+import barrettAvatar from "./avatars/Louisa_Barrett.jpg";
+import bungeAvatar from "./avatars/Brie_Bunge.jpg";
+import clarkAvatar from "./avatars/Lin_Clark.jpg";
+import collinaAvatar from "./avatars/Matteo_Collina.jpg";
+import correiaAvatar from "./avatars/Thais_Correia.jpg";
+import creightonAvatar from "./avatars/Jenn_Creighton.jpg";
+import cuervoAvatar from "./avatars/Andres_Cuervo.png";
+import drasnerAvatar from "./avatars/Sarah_Drasner.jpg";
+import hallidayAvatar from "./avatars/James_Halliday.jpg";
+import hensonAvatar from "./avatars/Garth_Henson.jpg";
+import jackAvatar from "./avatars/Olivia_Jack.jpg";
+import kearneyAvatar from "./avatars/Emily_Kearney.jpg";
+import krauseAvatar from "./avatars/Hilary_Stohs-Krause.jpg";
+import lencioniAvatar from "./avatars/Joe_Lencioni.jpg";
+import lordAvatar from "./avatars/Jessica_Lord.jpg";
+import martinAvatar from "./avatars/Crystal_Martin.jpg";
+import martinsAvatar from "./avatars/Willian_Martins.jpg";
+import obaAvatar from "./avatars/Kyle_Oba.jpg";
+import pitiyanuvathAvatar from "./avatars/Visnu_Pitiyanuvath.jpg";
+import raevAvatar from "./avatars/Konstantin_Raev.jpg";
+import schneidereitAvatar from "./avatars/Till_Schneidereit.jpg";
+import vlaevaAvatar from "./avatars/Stanimira_Vlaeva.jpg";
+import wangAvatar from "./avatars/Shawn_swyx_Wang.jpg";
+import wattAvatar from "./avatars/Anna_Watt.jpg";
+import wibowoAvatar from "./avatars/Amy_Wibowo.jpg";
 
 // const example = {
 //   avatar: charlieAvatar,
@@ -40,30 +40,30 @@ export default [
     bio: `I'm a member of bits.coop and I live off-grid in puna district. I work on computer graphics projects using webgl, I make maps, I plant fruit trees, I build custom databases, I grow vegetables, and I research how to design decentralized tools that work on the margins.
 
       https://substack.net`,
-    name: 'James Halliday',
-    talk: 'Offline p2p Mapping',
-    twitter: 'substack'
+    name: "James Halliday",
+    talk: "Offline p2p Mapping",
+    twitter: "substack"
   },
   {
     avatar: wibowoAvatar,
     bio: `Amy has had a ten-year-long career in tech that’s included HCI research, machine learning research, and web development. Most recently, she was a web developer on the growth team at Airbnb for three years before she left to found Bubblesort Zines. Her current focus is making computing more welcoming and inclusive, via writing zines about algorithms, encryption, and data structures with lots of illustrations and creative coding projects that showcase programming as a tool of artistic expression.`,
-    name: 'Amy Wibowo',
-    talk: 'Witchy Algorithms: Writing Code to Calculate the Phases of the Moon',
-    twitter: 'sailorhg'
+    name: "Amy Wibowo",
+    talk: "Witchy Algorithms: Writing Code to Calculate the Phases of the Moon",
+    twitter: "sailorhg"
   },
   {
     avatar: cuervoAvatar,
     bio: `Andrés Cuervo is a web VR/AR/XR artist, developer, & human-computer-interaction researcher. Their work focuses on usability, accessibility, generative design, and pushing the boundaries of narratives through new technologies. You can find more about them at cwervo.com`,
-    name: 'Andrés Cuervo',
-    talk: 'The Immersive Web in 2019',
-    twitter: 'acwervo'
+    name: "Andrés Cuervo",
+    talk: "The Immersive Web in 2019",
+    twitter: "acwervo"
   },
   {
     avatar: vlaevaAvatar,
     bio: `Stanimira is a software engineer on the NativeScript core team focused on the the integration with Angular and performance optimizations. Lately, she’s been working on providing an official way for sharing code between web and mobile Angular via NativeScript schematics and webpack.`,
-    name: 'Stanimira Vlaeva',
-    talk: 'Embedding V8 in the real world',
-    twitter: 'StanimiraVlaeva'
+    name: "Stanimira Vlaeva",
+    talk: "Embedding V8 in the real world",
+    twitter: "StanimiraVlaeva"
   },
   {
     avatar: clarkAvatar,
@@ -95,9 +95,11 @@ export default [
   },
   {
     avatar: pitiyanuvathAvatar,
-    bio: "Visnu has dropped two production databases in his computering career. He currently works at Opendoor on analytics and data visualization. He is a co-organizer of WaffleJS in San Francisco and if you're ever bored and would like to see his face, run `npm visnup`.",
+    bio:
+      "Visnu has dropped two production databases in his computering career. He currently works at Opendoor on analytics and data visualization. He is a co-organizer of WaffleJS in San Francisco and if you're ever bored and would like to see his face, run `npm visnup`.",
     name: "Visnu Pitiyanuvath",
-    talk: "How to cheat at life, with JavaScript, computer vision, and augmented reality",
+    talk:
+      "How to cheat at life, with JavaScript, computer vision, and augmented reality",
     twitter: "visnup"
   },
   // Set 3
@@ -218,14 +220,17 @@ export default [
   {
     avatar: kearneyAvatar,
     name: "Emily Kearney",
-    bio: "Emily Kearney is the Project Director of Technology at the Unconscious Bias Project. She is also pursuing her PhD in Environmental Science at UC Berkeley and is passionate about data science, open source, and chocolate pollination.",
-    talk: "Navigating Unconscious Bias: a tool-based approach to reprogramming our biases",
+    bio:
+      "Emily Kearney is the Project Director of Technology at the Unconscious Bias Project. She is also pursuing her PhD in Environmental Science at UC Berkeley and is passionate about data science, open source, and chocolate pollination.",
+    talk:
+      "Navigating Unconscious Bias: a tool-based approach to reprogramming our biases",
     twitter: "eekearney"
   },
   {
-    avatar: laneyAvatar,
-    name: "Thais Laney",
-    bio: "Thais is a Senior Software Engineer at Hustle, building tools that power human conversation. She caught the GraphQL bug during her time at Facebook and has loved watching it take off all across the industry since then. When she's not coding on land, you can find her under the sea, decked out in her scuba gear.",
+    avatar: correiaAvatar,
+    name: "Thais Correia",
+    bio:
+      "Thais is a Senior Software Engineer at Hustle, building tools that power human conversation. She caught the GraphQL bug during her time at Facebook and has loved watching it take off all across the industry since then. When she's not coding on land, you can find her under the sea, decked out in her scuba gear.",
     talk: "Designing GraphQL Schemas: Forget your data, focus on your domain",
     twitter: "isthisthais"
   },
@@ -235,5 +240,5 @@ export default [
     bio: `Matteo is a code pirate and mad scientist. He spends most of his days programming in Node.js, but in the past he worked with Ruby, Java and Objective-C. In 2014, he defended his Ph.D. thesis titled "Application Platforms for the Internet of Things". Now he is a Principal Architect at nearForm, where he consults for the top brands of the world. Matteo is also the author of the Node.js MQTT Broker, Mosca, the fast logger Pino and of the Fastify web framework. Matteo is a member of the Node.js Technical Steering Committee. Matteo spoke at several international conferences: Node.js Interactive, NodeConf.eu, NodeSummit, JSConf.Asia, WebRebels, and JsDay to name a few. He is also co-author of the book "Node.js Cookbook, Third Edition" edited by Packt. In the summer he loves sailing the Sirocco.`,
     talk: "Bubble Up your Node.js I/O",
     twitter: "matteocollina"
-  },
+  }
 ];

@@ -212,12 +212,6 @@ export default [
     twitter: "_ojack_"
   },
   {
-    avatar: null,
-    name: "Alexandra Cárdenas",
-    talk: "The browser as a modular, networked video synthesizer",
-    twitter: "tiemposdelruido"
-  },
-  {
     avatar: kearneyAvatar,
     name: "Emily Kearney",
     bio:

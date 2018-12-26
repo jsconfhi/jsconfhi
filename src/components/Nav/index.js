@@ -1,13 +1,13 @@
-import Button from '../Button';
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import logo from '../../img/logo.png';
-import theme from '../../theme';
+import Button from "../Button";
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import logo from "../../img/logo.png";
+import theme from "../../theme";
 
 // Needs to collapse based on text-size not screen width
-const navWidthBreak = '620px';
+const navWidthBreak = "620px";
 
 const NavLink = styled(Link)`
   color: ${theme.colors.textYellow};
@@ -50,15 +50,15 @@ const NavRoot = styled.nav`
   flex-wrap: wrap;
   display: grid;
   grid-template-columns: auto 1fr auto;
-  grid-template-areas: 'logo menu tickets';
+  grid-template-areas: "logo menu tickets";
   max-width: ${theme.containerWidth};
   width: 100%;
   @media (max-width: ${navWidthBreak}) {
     grid-template-columns: auto 1fr auto;
     grid-template-rows: 50px 50px;
     grid-template-areas:
-      'logo 1 tickets'
-      'menu menu menu';
+      "logo 1 tickets"
+      "menu menu menu";
   }
 `;
 
@@ -76,10 +76,11 @@ const Nav = ({ withBorder }) => (
     <PrimaryNavContainer>
       <NavLink to="/attend/">Attend</NavLink>
       <NavLink to="/speakers/">Speakers</NavLink>
+      {/* <NavLink to="/schedule/">Schedule</NavLink> */}
       <NavLink to="/sponsors/">Sponsors</NavLink>
       <NavLink to="/about/">About</NavLink>
     </PrimaryNavContainer>
-    <Button isPrimary style={{ gridArea: 'tickets' }} to="/attend/">
+    <Button isPrimary style={{ gridArea: "tickets" }} to="/attend/">
       Buy Tickets
     </Button>
   </NavRoot>

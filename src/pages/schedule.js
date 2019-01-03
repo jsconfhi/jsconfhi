@@ -18,6 +18,9 @@ const DayHeading = styled.h2`
 const Table = styled.table`
   width: 600px;
   margin-bottom: 3em;
+  @media (max-width: 620px) {
+    width: auto;
+  }
 `;
 
 const TableHeading = styled.thead`
@@ -41,7 +44,22 @@ const Schedule = () => (
   <Layout>
     <Hero navTitle="Schedule">
       <Container>
-        <DayHeading>Day 1</DayHeading>
+        <DayHeading>Wednesday, February 6th</DayHeading>
+        <Table>
+          <TableHeading>
+            <Cell>Time</Cell>
+            <Cell>Schedule</Cell>
+          </TableHeading>
+          <Row>
+            <Cell>1:00pm - 6:00pm</Cell>
+            <Cell>Check-in at the beach across from the Marriott</Cell>
+          </Row>
+          <Row>
+            <Cell>6:00pm on</Cell>
+            <Cell>Dinner Roulette</Cell>
+          </Row>
+        </Table>
+        <DayHeading>Thursday, February 7th</DayHeading>
         <Table>
           <TableHeading>
             <Cell>Time</Cell>
@@ -118,7 +136,7 @@ const Schedule = () => (
             <Cell>Embedding V8 in the real world</Cell>
           </Row>
         </Table>
-        <DayHeading>Day 2</DayHeading>
+        <DayHeading>Friday, February 8th</DayHeading>
         <Table>
           <TableHeading>
             <Cell>Time</Cell>

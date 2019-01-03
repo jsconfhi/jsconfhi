@@ -26,6 +26,7 @@ const NavLink = styled(Link)`
 const PrimaryNavContainer = styled.div`
   display: flex;
   flex: 1;
+  flex-wrap: wrap;
   grid-area: menu;
   @media (max-width: ${navWidthBreak}) {
     justify-content: space-between;

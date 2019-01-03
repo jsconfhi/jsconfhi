@@ -76,7 +76,7 @@ const Nav = ({ withBorder }) => (
     <PrimaryNavContainer>
       <NavLink to="/attend/">Attend</NavLink>
       <NavLink to="/speakers/">Speakers</NavLink>
-      {/* <NavLink to="/schedule/">Schedule</NavLink> */}
+      <NavLink to="/schedule/">Schedule</NavLink>
       <NavLink to="/sponsors/">Sponsors</NavLink>
       <NavLink to="/about/">About</NavLink>
     </PrimaryNavContainer>

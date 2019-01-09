@@ -106,18 +106,15 @@ const Schedule = () => (
           </Row>
           <Row>
             <Cell>1:15pm</Cell>
-            <Cell>The Art of Code Comments</Cell>
+            <Cell>Back to the future of JS II: Beyond what we can foresee</Cell>
           </Row>
           <Row>
             <Cell>1:45pm</Cell>
-            <Cell>
-              Navigating Unconscious Bias: a tool-based approach to
-              reprogramming our biases
-            </Cell>
+            <Cell>I Can Babel Macros (and So Can You!)</Cell>
           </Row>
           <Row>
             <Cell>2:15pm</Cell>
-            <Cell>How to Fail at Accessibility</Cell>
+            <Cell>TBA</Cell>
           </Row>
           <Row>
             <Cell>2:45pm</Cell>
@@ -188,15 +185,18 @@ const Schedule = () => (
           </Row>
           <Row>
             <Cell>1:15pm</Cell>
-            <Cell>Back to the future of JS II: Beyond what we can foresee</Cell>
+            <Cell>The Art of Code Comments</Cell>
           </Row>
           <Row>
             <Cell>1:45pm</Cell>
-            <Cell>I Can Babel Macros (and So Can You!)</Cell>
+            <Cell>
+              Navigating Unconscious Bias: a tool-based approach to
+              reprogramming our biases
+            </Cell>
           </Row>
           <Row>
             <Cell>2:15pm</Cell>
-            <Cell>TBA</Cell>
+            <Cell>How to Fail at Accessibility</Cell>
           </Row>
           <Row>
             <Cell>2:45pm</Cell>

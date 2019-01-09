@@ -1,11 +1,11 @@
-const theme = require('./src/theme');
+const theme = require("./src/theme");
 
 module.exports = {
   siteMetadata: {
-    title: 'JSConf Hawaii',
+    title: "JSConf Hawaii"
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -15,8 +15,8 @@ module.exports = {
         // Setting this parameter is optional
         anonymize: false,
         // Setting this parameter is also optional
-        respectDNT: true,
-      },
+        respectDNT: true
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -28,12 +28,12 @@ module.exports = {
         theme_color: theme.colors.background,
         display: "minimal-ui",
         icon: "src/img/logo.png"
-      },
+      }
     },
     {
       resolve: `gatsby-plugin-styled-components`,
-      options: {},
+      options: {}
     },
-    'gatsby-plugin-offline'
-  ],
+    "gatsby-plugin-remove-serviceworker"
+  ]
 };

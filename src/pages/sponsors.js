@@ -50,15 +50,6 @@ const SponsorsLabel = styled.h2`
   text-transform: uppercase;
 `;
 
-const SponsorsContentContainer = styled.div`
-  align-items: flex-start;
-  display: flex;
-  @media (max-width: ${theme.breakpoints.medium}) {
-    align-items: center;
-    flex-direction: column;
-  }
-`;
-
 const Callout = styled.div`
   background-color: white;
   display: flex;

@@ -177,7 +177,7 @@ export default [
   },
   {
     avatar: wattAvatar,
-    bio: `Anna Watt has 8+ years in the tech and creative industries and is currently working as a Web Project Manager for Stanford University building accessible, user-centered websites and web products. Anna is an expert in leading dev teams and collaborating with technologists to execute wild right-brain ideas with a left-brain expertise. Anna lives and works remotely from Seattle and co-founded a Stanford Community of Practice for Distributed & Remote Workers. Anna’s third shift includes being a diversity & inclusion advocate as an organizer of the Write/Speak/Code Seattle chapter hosting monthly meetups to increase the visibility and leadership of women and non-binary people in tech. When she’s not obsessing over documentation and sweating all the small details, you can find her hiking in the rain and exploring the Pacific Northwest with her mini-australian shepherd puppy named River.`,
+    bio: `Anna Watt leads and collaborates with technologists, from engineers and front-end developers to UX researchers and visual designers, in order to bring challenging and technical ideas to life. Most recently, she was working as a Web Project Manager for Stanford University building accessible, user-centered websites and web products and just started a new position at Textio as a Community Marketing Manager. Anna worked remotely for the last 2+ years from Seattle and co-founded a Stanford Community of Practice for Distributed & Remote Workers. She also builds communities of purpose including Women in Tech at Stanford and Write/Speak/Code Seattle.`,
     name: "Anna Watt",
     talk: "Collaborative remote design working sessions",
     twitter: "annalynnwatt"

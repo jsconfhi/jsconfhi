@@ -1,11 +1,63 @@
-import Button from '../components/Button';
-import Hero from '../components/Hero';
-import HeroLabel from '../components/Hero/contentLabel';
-import React from 'react';
-import { withPrefix } from 'gatsby-link';
-import Layout from '../components/layout';
-import styled from 'styled-components';
-import theme from '../theme';
+import Button from "../components/Button";
+import Hero from "../components/Hero";
+import HeroLabel from "../components/Hero/contentLabel";
+import React from "react";
+import { withPrefix } from "gatsby-link";
+import Layout from "../components/layout";
+import styled from "styled-components";
+import theme from "../theme";
+
+import AdobeLogo from "../img/adobe.png";
+import GoogleLogo from "../img/google.png";
+import MozillaLogo from "../img/mozilla.png";
+import SudoKrewLogo from "../img/sudokrew.png";
+
+const SponsorsContainer = styled.div`
+  background-color: ${theme.colors.textWhite};
+  display: flex;
+  justify-content: space-around;
+`;
+
+const SponsorImage = styled.img`
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin: 0 auto 50px auto;
+`;
+
+const SponsorsBlock = styled.div`
+  color: ${theme.colors.textYellow};
+  width: ${theme.containerWidth};
+  max-width: 100%;
+  margin: ${theme.spaces.large};
+`;
+
+const SponsorsBlockLabel = styled.h1`
+  color: ${theme.colors.textYellow};
+  font-size: ${theme.fontSizes.large};
+  margin-bottom: ${theme.spaces.large};
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+`;
+
+const SponsorsLabel = styled.h2`
+  color: ${theme.colors.textGray};
+  font-size: ${theme.fontSizes.large};
+  margin-bottom: ${theme.spaces.large};
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+`;
+
+const SponsorsContentContainer = styled.div`
+  align-items: flex-start;
+  display: flex;
+  @media (max-width: ${theme.breakpoints.medium}) {
+    align-items: center;
+    flex-direction: column;
+  }
+`;
 
 const Callout = styled.div`
   background-color: white;
@@ -60,13 +112,13 @@ const ContactLink = styled.a`
 const Sponsors = () => (
   <Layout>
     <Hero navTitle="Sponsors">
-      <HeroLabel> Sponsorship Opportunities </HeroLabel>{' '}
+      <HeroLabel> Sponsorship Opportunities </HeroLabel>{" "}
       <Callout>
         <CalloutRail>
-          <CalloutTitle> Join us as a Sponsor </CalloutTitle>{' '}
+          <CalloutTitle> Join us as a Sponsor </CalloutTitle>{" "}
           <Button color="dark">
             <ContactLink
-              href={withPrefix('/JS-Conf-Hawaii-2019-Sponsorship-Info.pdf')}
+              href={withPrefix("/JS-Conf-Hawaii-2019-Sponsorship-Info.pdf")}
             >
               Learn more
             </ContactLink>
@@ -78,7 +130,7 @@ const Sponsors = () => (
             With over 300 developers from around the world attending, and
             hundreds more following along at home, sponsoring the conference is
             one of the best ways to connect with Javascript developers.
-          </p>{' '}
+          </p>{" "}
           <p>
             There are a variety of sponsorship packages available for small and
             large companies alike! From setting up a developer lounge on-site,
@@ -90,17 +142,30 @@ const Sponsors = () => (
           </p>
           <p>
             For more information, and to explore the full range of options, to
-            view our{' '}
-            <a href={withPrefix('/JS-Conf-Hawaii-2019-Sponsorship-Info.pdf')}>
+            view our{" "}
+            <a href={withPrefix("/JS-Conf-Hawaii-2019-Sponsorship-Info.pdf")}>
               prospectus
             </a>
             . And if you have a unique idea, we're excited to work with you to
             make your vision a reality, so please feel free to contact us for
-            more information.{' '}
+            more information.{" "}
           </p>
         </CalloutText>
       </Callout>
     </Hero>
+    <SponsorsContainer>
+      <SponsorsBlock>
+        <SponsorsBlockLabel>Sponsors</SponsorsBlockLabel>
+        <SponsorsLabel>Gold</SponsorsLabel>
+        <SponsorImage src={AdobeLogo} />
+        <SponsorsLabel>Diversity</SponsorsLabel>
+        <SponsorImage src={GoogleLogo} />
+        <SponsorsLabel>Caption</SponsorsLabel>
+        <SponsorImage src={MozillaLogo} />
+        <SponsorsLabel>Bronze</SponsorsLabel>
+        <SponsorImage src={SudoKrewLogo} />
+      </SponsorsBlock>
+    </SponsorsContainer>
     <ContactBlock>
       <h2
         style={{

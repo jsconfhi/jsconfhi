@@ -209,7 +209,7 @@ const Schedule = () => (
           <Row>
             <Cell>3:45pm</Cell>
             <Cell>
-              Designing GraphQL Schemas: Forget your data, focus on your domain
+              GraphQL, the Domain Way
             </Cell>
           </Row>
           <Row>

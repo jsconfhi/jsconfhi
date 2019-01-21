@@ -225,7 +225,7 @@ export default [
     name: "Thais Correia",
     bio:
       "Thais is a Senior Software Engineer at Hustle, building tools that power human conversation. She caught the GraphQL bug during her time at Facebook and has loved watching it take off all across the industry since then. When she's not coding on land, you can find her under the sea, decked out in her scuba gear.",
-    talk: "Designing GraphQL Schemas: Forget your data, focus on your domain",
+    talk: "GraphQL, the Domain Way.",
     twitter: "isthisthais"
   },
   {

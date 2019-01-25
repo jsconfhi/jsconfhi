@@ -214,7 +214,7 @@ const Schedule = () => (
           <Row>
             <Cell>2:15pm</Cell>
             <Cell>
-              <Title>TBA</Title>
+              <Title>Adopting TypeScript at Scale</Title>
               <Speaker>by Mohsen Azimi, Joe Lencioni & Brie Bunge</Speaker>
             </Cell>
           </Row>

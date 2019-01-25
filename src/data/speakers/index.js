@@ -186,21 +186,21 @@ export default [
     avatar: azimiAvatar,
     bio: `Mohsen is a senior software engineer at Airbnb (previously Lyft), is a long-time TypeScript enthusiast and has written and open-sourced a TypeScript transformer for React components. Mohsen is one of the co-authors of Swagger (OpenAPI) specifications and built Swagger tools including Swagger Editor. He has given talks at meetups about React and TypeScript and last year, presented his project, m.lyft.com, at Chrome Dev Summit.`,
     name: "Mohsen Azimi",
-    talk: "TBA",
+    talk: "Adopting TypeScript at Scale",
     twitter: "mohsen____"
   },
   {
     avatar: lencioniAvatar,
     bio: `Web infrastructure at Airbnb, obsessing over webperf. Level 20 introvert. he/him Minnesotan, liberal, dad and co-creator of Happo (happo.io).`,
     name: "Joe Lencioni",
-    talk: "TBA",
+    talk: "Adopting TypeScript at Scale",
     twitter: "lencioni"
   },
   {
     avatar: bungeAvatar,
     bio: `Frontend Software Engineer at Airbnb. Passionate about developer productivity and building quality products quickly.`,
     name: "Brie Bunge",
-    talk: "TBA",
+    talk: "Adopting TypeScript at Scale",
     twitter: "briebunge"
   },
   // batch 6

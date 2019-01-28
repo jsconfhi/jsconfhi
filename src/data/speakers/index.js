@@ -134,7 +134,7 @@ export default [
   // Set 4
   {
     avatar: raevAvatar,
-    bio: `Originally from New Zealand. Worked at Facebook in: React Native team, Yarn, Marketplace. Currently, tech lead in Marketplace Performance project, everything related to making it load faster and smoother.`,
+    bio: `Worked at Facebook in: React Native team, Yarn, Marketplace. Currently, tech lead in Marketplace Performance project, everything related to making it load faster and smoother.`,
     name: "Konstantin Raev",
     talk: "Hitting performance goals for the biggest Mobile JS App at Facebook",
     twitter: "https://twitter.com/bestander_nz"

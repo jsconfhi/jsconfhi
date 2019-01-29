@@ -69,7 +69,7 @@ const Schedule = () => (
             <Cell>Schedule</Cell>
           </TableHeading>
           <Row>
-            <Cell>11:00am - 6:00pm</Cell>
+            <Cell>~11:00am - ~5:30pm</Cell>
             <Cell>
               <Title>Arrivals</Title>
               <Location>
@@ -328,6 +328,13 @@ const Schedule = () => (
             <Cell>11:45am</Cell>
             <Cell>Lunch</Cell>
           </RowSpecial>
+          <Row>
+            <Cell>12:30pm</Cell>
+            <Cell>
+              <Title>LIVE Podcast Panel discussion hosted by JSParty</Title>
+              <Speaker>Kevin Ball of JSParty + Friends</Speaker>
+            </Cell>
+          </Row>
           <Row>
             <Cell>1:15pm</Cell>
             <Cell>

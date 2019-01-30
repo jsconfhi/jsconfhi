@@ -137,18 +137,25 @@ const Schedule = () => (
           <RowSpecial>
             <Cell>7:30am - 8:00am</Cell>
             <Cell>
-              <Title>Check-in</Title> <Location>Kona Moku Ballroom</Location>
+              <Title>Check-in and breakfast</Title> <Location>Kona Moku Ballroom Lanai</Location>
             </Cell>
           </RowSpecial>
           <Row>
             <Cell>8:15am</Cell>
+            <Cell>
+              <Title>Conference Welcome and Intro</Title>
+              <Speaker>by Organizers and Hosts</Speaker>
+            </Cell>
+          </Row>
+          <Row>
+            <Cell>8:30am</Cell>
             <Cell>
               <Title>HI and AI</Title>
               <Speaker>by Kyle Oba</Speaker>
             </Cell>
           </Row>
           <Row>
-            <Cell>8:45am</Cell>
+            <Cell>8:00am</Cell>
             <Cell>
               <Title>
                 How to cheat at life, with JavaScript, computer vision, and
@@ -158,25 +165,25 @@ const Schedule = () => (
             </Cell>
           </Row>
           <Row>
-            <Cell>9:15am</Cell>
+            <Cell>9:30am</Cell>
             <Cell>
               <Title>Offline p2p mapping</Title>
               <Speaker>by James Halliday</Speaker>
             </Cell>
           </Row>
           <RowSpecial>
-            <Cell>9:45am</Cell>
+            <Cell>9:00am</Cell>
             <Cell>Break</Cell>
           </RowSpecial>
           <Row>
-            <Cell>10:15am</Cell>
+            <Cell>10:30am</Cell>
             <Cell>
               <Title>The Immersive Web in 2019</Title>
               <Speaker>Andrés Cuervo</Speaker>
             </Cell>
           </Row>
           <Row>
-            <Cell>10:45am</Cell>
+            <Cell>10:00am</Cell>
             <Cell>
               <Title>
                 The browser as a modular, networked video synthesizer
@@ -185,14 +192,14 @@ const Schedule = () => (
             </Cell>
           </Row>
           <Row>
-            <Cell>11:15am</Cell>
+            <Cell>11:30am</Cell>
             <Cell>
               <Title>Collaborative remote design working sessions</Title>
               <Speaker>by Anna Watt</Speaker>
             </Cell>
           </Row>
           <RowSpecial>
-            <Cell>11:45am</Cell>
+            <Cell>12:00pm</Cell>
             <Cell>Lunch</Cell>
           </RowSpecial>
           <Row>

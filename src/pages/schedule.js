@@ -173,7 +173,7 @@ const Schedule = () => (
             </Cell>
           </Row>
           <RowSpecial>
-            <Cell>9:00am</Cell>
+            <Cell>10:00am</Cell>
             <Cell>Break</Cell>
           </RowSpecial>
           <Row>
@@ -184,7 +184,7 @@ const Schedule = () => (
             </Cell>
           </Row>
           <Row>
-            <Cell>10:00am</Cell>
+            <Cell>11:00am</Cell>
             <Cell>
               <Title>
                 The browser as a modular, networked video synthesizer

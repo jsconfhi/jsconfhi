@@ -155,7 +155,7 @@ const Schedule = () => (
             </Cell>
           </Row>
           <Row>
-            <Cell>8:00am</Cell>
+            <Cell>9:00am</Cell>
             <Cell>
               <Title>
                 How to cheat at life, with JavaScript, computer vision, and

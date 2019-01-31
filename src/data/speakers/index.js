@@ -1,5 +1,4 @@
 import angAvatar from "./avatars/Trish_Ang.jpg";
-import azimiAvatar from "./avatars/Mohsen_Azimi.jpg";
 import barrettAvatar from "./avatars/Louisa_Barrett.jpg";
 import bungeAvatar from "./avatars/Brie_Bunge.jpg";
 import clarkAvatar from "./avatars/Lin_Clark.jpg";
@@ -13,7 +12,6 @@ import hensonAvatar from "./avatars/Garth_Henson.jpg";
 import jackAvatar from "./avatars/Olivia_Jack.jpg";
 import kearneyAvatar from "./avatars/Emily_Kearney.jpg";
 import krauseAvatar from "./avatars/Hilary_Stohs-Krause.jpg";
-import lencioniAvatar from "./avatars/Joe_Lencioni.jpg";
 import lordAvatar from "./avatars/Jessica_Lord.jpg";
 import martinAvatar from "./avatars/Crystal_Martin.jpg";
 import martinsAvatar from "./avatars/Willian_Martins.jpg";
@@ -181,20 +179,6 @@ export default [
     name: "Anna Watt",
     talk: "Collaborative remote design working sessions",
     twitter: "annalynnwatt"
-  },
-  {
-    avatar: azimiAvatar,
-    bio: `Mohsen is a senior software engineer at Airbnb (previously Lyft), is a long-time TypeScript enthusiast and has written and open-sourced a TypeScript transformer for React components. Mohsen is one of the co-authors of Swagger (OpenAPI) specifications and built Swagger tools including Swagger Editor. He has given talks at meetups about React and TypeScript and last year, presented his project, m.lyft.com, at Chrome Dev Summit.`,
-    name: "Mohsen Azimi",
-    talk: "Adopting TypeScript at Scale",
-    twitter: "mohsen____"
-  },
-  {
-    avatar: lencioniAvatar,
-    bio: `Web infrastructure at Airbnb, obsessing over webperf. Level 20 introvert. he/him Minnesotan, liberal, dad and co-creator of Happo (happo.io).`,
-    name: "Joe Lencioni",
-    talk: "Adopting TypeScript at Scale",
-    twitter: "lencioni"
   },
   {
     avatar: bungeAvatar,

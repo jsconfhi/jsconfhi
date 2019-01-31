@@ -137,7 +137,8 @@ const Schedule = () => (
           <RowSpecial>
             <Cell>7:30am - 8:00am</Cell>
             <Cell>
-              <Title>Check-in and breakfast</Title> <Location>Kona Moku Ballroom Lanai</Location>
+              <Title>Check-in and breakfast</Title>{" "}
+              <Location>Kona Moku Ballroom Lanai</Location>
             </Cell>
           </RowSpecial>
           <Row>
@@ -222,7 +223,7 @@ const Schedule = () => (
             <Cell>2:15pm</Cell>
             <Cell>
               <Title>Adopting TypeScript at Scale</Title>
-              <Speaker>by Mohsen Azimi, Joe Lencioni & Brie Bunge</Speaker>
+              <Speaker>by Brie Bunge</Speaker>
             </Cell>
           </Row>
           <RowSpecial>
@@ -275,6 +276,13 @@ const Schedule = () => (
             <Cell>Time</Cell>
             <Cell>Schedule</Cell>
           </TableHeading>
+          <RowSpecial>
+            <Cell>7:30am - 8:00am</Cell>
+            <Cell>
+              <Title>Breakfast</Title>{" "}
+              <Location>Kona Moku Ballroom Lanai</Location>
+            </Cell>
+          </RowSpecial>
           <Row>
             <Cell>8:15am</Cell>
             <Cell>
@@ -338,8 +346,8 @@ const Schedule = () => (
           <Row>
             <Cell>12:30pm</Cell>
             <Cell>
-              <Title>LIVE Podcast Panel discussion hosted by JSParty</Title>
-              <Speaker>Kevin Ball of JSParty + Friends</Speaker>
+              <Title>LIVE Podcast Panel discussion hosted by JS Party</Title>
+              <Speaker>Kevin Ball of JS Party + Friends</Speaker>
             </Cell>
           </Row>
           <Row>

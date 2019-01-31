@@ -9,6 +9,7 @@ import theme from "../theme";
 
 import AdobeLogo from "../img/adobe.png";
 import GoogleLogo from "../img/google.png";
+import MicrosoftLogo from "../img/microsoft.png";
 import MozillaLogo from "../img/mozilla.png";
 import SudoKrewLogo from "../img/sudokrew.png";
 
@@ -20,7 +21,14 @@ const SponsorsContainer = styled.div`
 
 const SponsorImage = styled.img`
   width: 100%;
-  max-width: 450px;
+  max-width: 250px;
+  display: block;
+  margin: 0 auto 50px auto;
+`;
+
+const AdobeImage = styled.img`
+  width: 100%;
+  max-width: 200px;
   display: block;
   margin: 0 auto 50px auto;
 `;
@@ -148,7 +156,8 @@ const Sponsors = () => (
       <SponsorsBlock>
         <SponsorsBlockLabel>Sponsors</SponsorsBlockLabel>
         <SponsorsLabel>Gold</SponsorsLabel>
-        <SponsorImage src={AdobeLogo} />
+        <AdobeImage src={AdobeLogo} />
+        <SponsorImage src={MicrosoftLogo} />
         <SponsorsLabel>Diversity</SponsorsLabel>
         <SponsorImage src={GoogleLogo} />
         <SponsorsLabel>Caption</SponsorsLabel>

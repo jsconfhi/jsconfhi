@@ -201,9 +201,9 @@ const Organizers = () => (
         level with being photographed:
       </p>
       <ul>
-        <li>Black: ask beforehand</li>
         <li>Green: fine to photograph</li>
-        <li>Red: do not photograph</li>
+        <li>Yellow: ask beforehand</li>
+        <li>Red: avoid photographing</li>
       </ul>
       <p>
         In case of any doubt, please ask before taking photographs of attendees,

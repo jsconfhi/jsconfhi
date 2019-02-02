@@ -1,4 +1,4 @@
-import Button from '../components/Button';
+import Form from '../components/Form';
 import InfoBlock, {
   InfoBlockH2,
   InfoBlockH3
@@ -283,8 +283,7 @@ const Organizers = () => (
       >
         <Column>
           <H3>Anonymous report</H3>
-          {/*<p>Use this form to file a code of conduct violation anonymously</p>*/}
-          <Button color="dark">Coming soon</Button>
+          <Form />
         </Column>
         <Column>
           <H3>Personal report</H3>

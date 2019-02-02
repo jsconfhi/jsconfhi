@@ -175,8 +175,7 @@ const Organizers = () => (
           <a href="mailto:report@jsconfhi.com">report@jsconfhi.com</a>.
         </li>
         <li>
-          Calling us: We’ll publish a phone number that is staffed during main
-          conference hours.
+          Texting us: + 1 (808) 427-1177 (all reports anonymous proxied to our slack)
         </li>
       </ul>
       <p>
@@ -297,7 +296,7 @@ const Organizers = () => (
               <FAIcon icon={faUsers} /> Report to a STAFF member
             </Li>
             <Li>
-              <FAIcon icon={faPhone} /> To be announced
+              <FAIcon icon={faPhone} /> Text + 1 (808) 427-1177 to anonymously report
             </Li>
           </ReportOptions>
         </Column>

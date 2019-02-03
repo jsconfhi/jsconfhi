@@ -164,6 +164,7 @@ const Organizers = () => (
       </p>
 
       <InfoBlockH3>Personal report</InfoBlockH3>
+
       <p>You can make a personal report by:</p>
       <ul>
         <li>

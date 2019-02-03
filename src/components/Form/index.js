@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import theme from "../../theme";
+import Notifications, { notify } from "react-notify-toast";
 
 const ReportInput = styled.textarea`
   margin-top: 2em;
@@ -25,6 +26,15 @@ const Button = styled.button`
     outline: 1px solid ${theme.colors.background};
   }
 `;
+
+const Toast = styled.div`
+  line-height: 1.5em;
+`;
+
+const toastColors = {
+  text: theme.colors.background,
+  background: theme.colors.textYellow
+};
 
 class Form extends React.Component {
   state = {
@@ -57,32 +67,42 @@ class Form extends React.Component {
         return response.text();
       })
       .then(text => {
-        // TODO this is where we likely want to update the component
-        // The text from the response can be used to let folks
-        // Know if was successful
-        // console.log(text);
+        notify.show(text, "custom", 5000, toastColors);
+        this.setState({ report: "" });
       })
-      .catch(error => console.error("Error:", error));
+      .catch(error => {
+        notify.show(
+          "Oops, looks like your report failed to send. Please try again, or contact an organizer in person!",
+          "custom",
+          5000,
+          toastColors
+        );
+      });
   };
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <ReportInput
-          type="text"
-          name="report"
-          placeholder="Enter details here..."
-          value={this.state.report}
-          onChange={this.handleInputChange}
-        />
-        <p>
-          We’ll review and act on it. If you let us know who you are, we’ll
-          follow up with you.
-        </p>
-        <Button isPrimary type="submit">
-          Submit
-        </Button>
-      </form>
+      <div>
+        <Toast>
+          <Notifications options={{ colors: "red" }} />
+        </Toast>
+        <form onSubmit={this.handleSubmit}>
+          <ReportInput
+            type="text"
+            name="report"
+            placeholder="Enter details here..."
+            value={this.state.report}
+            onChange={this.handleInputChange}
+          />
+          <p>
+            We’ll review and act on it. If you let us know who you are, we’ll
+            follow up with you.
+          </p>
+          <Button isPrimary type="submit">
+            Submit
+          </Button>
+        </form>
+      </div>
     );
   }
 }

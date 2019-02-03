@@ -1,23 +1,23 @@
-import Form from '../components/Form';
+import Form from "../components/Form";
 import InfoBlock, {
   InfoBlockH2,
   InfoBlockH3
-} from '../components/LargeInfoBlock';
-import Columns, { Column } from '../components/Columns';
-import Hero from '../components/Hero';
-import HeroContentLabel from '../components/Hero/contentLabel';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+} from "../components/LargeInfoBlock";
+import Columns, { Column } from "../components/Columns";
+import Hero from "../components/Hero";
+import HeroContentLabel from "../components/Hero/contentLabel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
   faPhone,
   faUsers
-} from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
-import Layout from '../components/layout';
-import organisers from '../data/organizers';
-import Profile from '../components/Profile';
-import styled from 'styled-components';
-import theme from '../theme';
+} from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+import Layout from "../components/layout";
+import organisers from "../data/organizers";
+import Profile from "../components/Profile";
+import styled from "styled-components";
+import theme from "../theme";
 
 const Profiles = styled.div`
   display: grid;
@@ -171,11 +171,12 @@ const Organizers = () => (
           shirts.
         </li>
         <li>
-          Emailing us:{' '}
+          Emailing us:{" "}
           <a href="mailto:report@jsconfhi.com">report@jsconfhi.com</a>.
         </li>
         <li>
-          Texting us: + 1 (808) 427-1177 (all reports anonymous proxied to our slack)
+          Texting us: + 1 (808) 427-1177 (all reports anonymous proxied to our
+          slack)
         </li>
       </ul>
       <p>
@@ -227,7 +228,7 @@ const Organizers = () => (
       </p>
 
       <p>
-        To find out more about ableism and replacement terms please read{' '}
+        To find out more about ableism and replacement terms please read{" "}
         <a
           href="https://www.autistichoya.com/p/ableist-words-and-terms-to-avoid.html"
           target="_blank"
@@ -247,7 +248,7 @@ const Organizers = () => (
       </p>
 
       <p>
-        For more information please familiarise yourself with{' '}
+        For more information please familiarise yourself with{" "}
         <a
           href="http://geekfeminism.wikia.com/wiki/Nonsexist_language"
           target="_blank"
@@ -260,17 +261,17 @@ const Organizers = () => (
 
       <InfoBlockH2>Attribution</InfoBlockH2>
       <p>
-        This Code of Conduct was based on{' '}
-        <a href="https://2018.jsconf.eu/">JS Conf EU</a>,{' '}
-        <a href="http://jsconfau.com">CSSConf / JSConf AU</a>,{' '}
+        This Code of Conduct was based on{" "}
+        <a href="https://2018.jsconf.eu/">JS Conf EU</a>,{" "}
+        <a href="http://jsconfau.com">CSSConf / JSConf AU</a>,{" "}
         <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">
           The Geek Feminism wiki
         </a>
-        , the work of{' '}
+        , the work of{" "}
         <a href="https://frameshiftconsulting.com/code-of-conduct-training/">
           Valerie Aurora
-        </a>{' '}
-        and{' '}
+        </a>{" "}
+        and{" "}
         <a href="http://confcodeofconduct.com/">Conference Code of Conduct</a>.
       </p>
     </InfoBlock>
@@ -289,14 +290,15 @@ const Organizers = () => (
           <p>You can file a personal report using one of the below methods:</p>
           <ReportOptions>
             <Li>
-              <FAIcon icon={faEnvelope} />{' '}
+              <FAIcon icon={faEnvelope} />{" "}
               <a href="mailto:report@jsconfhi.com">report@jsconfhi.com</a>
             </Li>
             <Li>
               <FAIcon icon={faUsers} /> Report to a STAFF member
             </Li>
             <Li>
-              <FAIcon icon={faPhone} /> Text + 1 (808) 427-1177 to anonymously report
+              <FAIcon icon={faPhone} /> Text + 1 (808) 427-1177 to anonymously
+              report
             </Li>
           </ReportOptions>
         </Column>

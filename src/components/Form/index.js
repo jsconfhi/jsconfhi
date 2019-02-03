@@ -56,6 +56,9 @@ class Form extends React.Component {
       report: this.state.report
     };
     event.preventDefault();
+
+    this.setState({ report: "Sending report." });
+
     fetch("https://us-central1-jsconf-hi.cloudfunctions.net/website-receive", {
       method: "POST",
       body: JSON.stringify(body),

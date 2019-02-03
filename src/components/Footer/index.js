@@ -67,8 +67,8 @@ const FooterSocialLink = styled.a`
 const Footer = () => (
   <FooterWrapper>
     <FooterLinks>
-      <FooterLink to="/about#coc">Code of Conduct</FooterLink>
       <FooterLink to="/about">Organizers</FooterLink>
+      <FooterLink to="/about#coc">Code of Conduct</FooterLink>
       <FooterLink to="/about#report">Report</FooterLink>
     </FooterLinks>
     <FooterSocials>

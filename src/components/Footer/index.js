@@ -1,13 +1,13 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faInstagram,
   faTwitterSquare
-} from '@fortawesome/free-brands-svg-icons';
-import theme from '../../theme';
+} from "@fortawesome/free-brands-svg-icons";
+import theme from "../../theme";
 
 export const footerHeight = 40;
 
@@ -69,6 +69,7 @@ const Footer = () => (
     <FooterLinks>
       <FooterLink to="/about#coc">Code of Conduct</FooterLink>
       <FooterLink to="/about">Organizers</FooterLink>
+      <FooterLink to="/about#report">Report</FooterLink>
     </FooterLinks>
     <FooterSocials>
       <FooterSocialLink

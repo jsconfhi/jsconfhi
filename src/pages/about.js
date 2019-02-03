@@ -283,7 +283,7 @@ const Organizers = () => (
         title="Need to file a report?"
       >
         <Column>
-          <H3>Anonymous report</H3>
+          <H3 id="report">Anonymous report</H3>
           <Form />
         </Column>
         <Column>

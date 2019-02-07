@@ -118,6 +118,19 @@ const Attend = () => (
       <HeroContentLabel>Tickets</HeroContentLabel>
       <TicketContainer>
         <Ticket>
+          <TicketName>Add-On Thursday Night Party Ticket</TicketName>
+          <TicketCost>$70</TicketCost>
+          <ComingSoonOrPurchase>
+            <Button
+              color="dark"
+              href="https://ti.to/jsconf-hawaii/2019/with/vqhgkqoy4uu"
+              style={{ margin: 0 }}
+            >
+              Buy Now!
+            </Button>
+          </ComingSoonOrPurchase>
+        </Ticket>
+        <Ticket>
           <TicketName>Early Bird</TicketName>
           <TicketCost>$500</TicketCost>
           <ComingSoonOrPurchase>Sold Out</ComingSoonOrPurchase>

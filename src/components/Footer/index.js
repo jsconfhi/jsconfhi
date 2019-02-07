@@ -79,10 +79,9 @@ const FooterSocialLink = styled.a`
 const Footer = () => (
   <FooterWrapper>
     <FooterLinks>
-      <FooterLink to="/about">Organizers</FooterLink>
+      <FooterA href="https://slack.jsconfhi.com">Slack</FooterA>
       <FooterLink to="/about#coc">Code of Conduct</FooterLink>
       <FooterLink to="/about#report">Report</FooterLink>
-      <FooterA href="https://slack.jsconfhi.com">Slack</FooterA>
     </FooterLinks>
     <FooterSocials>
       <FooterSocialLink

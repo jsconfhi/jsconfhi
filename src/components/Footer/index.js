@@ -55,6 +55,18 @@ const FooterLink = styled(Link)`
   }
 `;
 
+const FooterA = styled.a`
+  color: #03282c;
+  padding: 0 ${theme.spaces.medium};
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: ${theme.breakpoints.small}) {
+    padding: 0 ${theme.spaces.small};
+  }
+`;
+
 const FooterSocialLink = styled.a`
   color: #03282c;
   padding: 0 ${theme.spaces.micro};
@@ -70,6 +82,7 @@ const Footer = () => (
       <FooterLink to="/about">Organizers</FooterLink>
       <FooterLink to="/about#coc">Code of Conduct</FooterLink>
       <FooterLink to="/about#report">Report</FooterLink>
+      <FooterA href="https://slack.jsconfhi.com">Slack</FooterA>
     </FooterLinks>
     <FooterSocials>
       <FooterSocialLink

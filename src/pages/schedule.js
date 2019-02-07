@@ -402,8 +402,11 @@ const Schedule = () => (
             </Cell>
           </Row>
           <RowSpecial>
-            <Cell>Evening</Cell>
-            <Cell>Activities TBA</Cell>
+            <Cell>5pm-6:30pm</Cell>
+            <Cell>
+              <Title>End of Conference Happy Hour</Title>
+              <Location>3rd floor patio between the towers / pools</Location>
+            </Cell>
           </RowSpecial>
         </Table>
       </Container>

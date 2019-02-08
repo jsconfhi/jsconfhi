@@ -344,17 +344,10 @@ const Schedule = () => (
             <Cell>Lunch</Cell>
           </RowSpecial>
           <Row>
-            <Cell>12:30pm</Cell>
+            <Cell>12:45pm</Cell>
             <Cell>
               <Title>LIVE Podcast Panel discussion hosted by JS Party</Title>
               <Speaker>Kevin Ball of JS Party + Friends</Speaker>
-            </Cell>
-          </Row>
-          <Row>
-            <Cell>1:15pm</Cell>
-            <Cell>
-              <Title>The Art of Code Comments</Title>
-              <Speaker>by Sarah Drasner</Speaker>
             </Cell>
           </Row>
           <Row>

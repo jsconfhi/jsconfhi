@@ -7,15 +7,6 @@ import Layout from "../components/layout";
 import styled from "styled-components";
 import theme from "../theme";
 
-const SponsorsLabel = styled.h2`
-  color: ${theme.colors.textGray};
-  font-size: ${theme.fontSizes.large};
-  margin-bottom: ${theme.spaces.large};
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-`;
-
 const Callout = styled.div`
   background-color: white;
   display: flex;

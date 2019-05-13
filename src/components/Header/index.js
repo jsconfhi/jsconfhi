@@ -19,11 +19,6 @@ const HeaderWrapper = styled.div`
   width: 100%;
 `;
 
-const Sup = styled.sup`
-  vertical-align: super;
-  font-size: 0.6em;
-`;
-
 const Header = () => (
   <HeaderWrapper>
     <span>

@@ -69,11 +69,6 @@ const SocialLink = styled.a`
   margin: 0 ${theme.spaces.micro};
 `;
 
-const Sup = styled.sup`
-  vertical-align: super;
-  font-size: 0.6em;
-`;
-
 const IndexPage = () => (
   <Layout>
     <Hero style={{ flexGrow: 1 }}>
@@ -136,14 +131,8 @@ const IndexPage = () => (
     <Columns>
       <Column>
         <H2>Speakers</H2>
-        <p>We've started to select our incredible lineup of speakers!</p>
-        <p>
-          There's something for everyone! From intro talks and deep dives to
-          cool projects and new ways to think about how we interact with the
-          communities around us, you won't want to miss hearing from any of our
-          awesome speakers from around the globe.
-        </p>
-        <Button to="/speakers">Learn More</Button>
+        <p>Our CFP will open this summer!</p>
+        <Button to="/call-for-speakers">Learn More</Button>
       </Column>
       <Column>
         <H2>Sponsorships</H2>

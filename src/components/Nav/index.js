@@ -1,4 +1,4 @@
-import Button from "../Button";
+// import Button from "../Button";
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
@@ -76,7 +76,7 @@ const Nav = ({ withBorder }) => (
     </NavLink>
     <PrimaryNavContainer>
       <NavLink to="/attend/">Attend</NavLink>
-      <NavLink to="/speakers/">Speakers</NavLink>
+      <NavLink to="/call-for-speakers/">Speakers</NavLink>
       <NavLink to="/sponsors/">Sponsors</NavLink>
       <NavLink to="/about/">About</NavLink>
     </PrimaryNavContainer>

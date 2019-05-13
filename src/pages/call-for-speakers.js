@@ -1,10 +1,10 @@
-import Hero from '../components/Hero';
-import HeroLabel from '../components/Hero/contentLabel';
-import React from 'react';
-import Layout from '../components/layout';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import theme from '../theme';
+import Hero from "../components/Hero";
+import HeroLabel from "../components/Hero/contentLabel";
+import React from "react";
+import Layout from "../components/layout";
+import { Link } from "gatsby";
+import styled from "styled-components";
+import theme from "../theme";
 
 const Callout = styled.div`
   background-color: white;
@@ -75,7 +75,7 @@ const I = styled.i`
 `;
 
 const CFP = () => (
-  <Layout style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+  <Layout style={{ display: "flex", flexDirection: "column", flexGrow: 1 }}>
     <Hero navTitle="Speakers">
       <HeroLabel>Call for Speakers</HeroLabel>
       <Callout>
@@ -84,10 +84,7 @@ const CFP = () => (
         </CalloutRail>
         <CalloutText>
           <p>
-            <I>
-              Our call for speakers is now closed. We will notify selected
-              speakers in September!
-            </I>
+            <I>Our call for speakers will open this summer!</I>
           </p>
           <br />
           <H2>Selected Speakers</H2>
@@ -103,7 +100,7 @@ const CFP = () => (
               ticket refunded. In our first year, JS Conf Hawaiʻi will have
               limited speaking opportunities and a smaller audience. To avoid
               missing out on attending the conference, we encourage you to
-              purchase your ticket first if you plan to{' '}
+              purchase your ticket first if you plan to{" "}
               <Link to="/attend">attend</Link>.
             </I>
           </p>
@@ -140,10 +137,10 @@ const CFP = () => (
           this process is to select a broad range of topics that would appeal to
           as many JavaScript developers as possible. We welcome unusual,
           strange, non-traditional, or even non-JS presentations as long as they
-          remain within the boundaries of our{' '}
+          remain within the boundaries of our{" "}
           <Link style={{ color: theme.colors.textYellow }} to="/about#coc">
             Code of Conduct
-          </Link>{' '}
+          </Link>{" "}
           and in general benefit this community.
         </p>
 

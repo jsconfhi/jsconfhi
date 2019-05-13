@@ -7,48 +7,6 @@ import Layout from "../components/layout";
 import styled from "styled-components";
 import theme from "../theme";
 
-import AdobeLogo from "../img/adobe.png";
-import GoogleLogo from "../img/google.png";
-import MicrosoftLogo from "../img/microsoft.png";
-import MozillaLogo from "../img/mozilla.png";
-import SudoKrewLogo from "../img/sudokrew.png";
-
-const SponsorsContainer = styled.div`
-  background-color: ${theme.colors.textWhite};
-  display: flex;
-  justify-content: space-around;
-`;
-
-const SponsorImage = styled.img`
-  width: 100%;
-  max-width: 250px;
-  display: block;
-  margin: 0 auto 50px auto;
-`;
-
-const AdobeImage = styled.img`
-  width: 100%;
-  max-width: 200px;
-  display: block;
-  margin: 0 auto 50px auto;
-`;
-
-const SponsorsBlock = styled.div`
-  color: ${theme.colors.textYellow};
-  width: ${theme.containerWidth};
-  max-width: 100%;
-  margin: ${theme.spaces.large};
-`;
-
-const SponsorsBlockLabel = styled.h1`
-  color: ${theme.colors.textYellow};
-  font-size: ${theme.fontSizes.large};
-  margin-bottom: ${theme.spaces.large};
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-`;
-
 const SponsorsLabel = styled.h2`
   color: ${theme.colors.textGray};
   font-size: ${theme.fontSizes.large};
@@ -152,20 +110,6 @@ const Sponsors = () => (
         </CalloutText>
       </Callout>
     </Hero>
-    <SponsorsContainer>
-      <SponsorsBlock>
-        <SponsorsBlockLabel>Sponsors</SponsorsBlockLabel>
-        <SponsorsLabel>Gold</SponsorsLabel>
-        <AdobeImage src={AdobeLogo} />
-        <SponsorImage src={MicrosoftLogo} />
-        <SponsorsLabel>Diversity</SponsorsLabel>
-        <SponsorImage src={GoogleLogo} />
-        <SponsorsLabel>Caption</SponsorsLabel>
-        <SponsorImage src={MozillaLogo} />
-        <SponsorsLabel>Bronze</SponsorsLabel>
-        <SponsorImage src={SudoKrewLogo} />
-      </SponsorsBlock>
-    </SponsorsContainer>
     <ContactBlock>
       <h2
         style={{

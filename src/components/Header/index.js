@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import theme from '../../theme';
+import React from "react";
+import styled from "styled-components";
+import theme from "../../theme";
 
 export const headerHeight = 30;
 
@@ -27,8 +27,7 @@ const Sup = styled.sup`
 const Header = () => (
   <HeaderWrapper>
     <span>
-      JSConf Hawaiʻi &nbsp;|&nbsp; Feb 7<Sup>th</Sup> + 8<Sup>th</Sup> 2019
-      &nbsp;|&nbsp; Honolulu, HI
+      JSConf Hawaiʻi &nbsp;|&nbsp; Dates TBA &nbsp;|&nbsp; Honolulu, HI
     </span>
   </HeaderWrapper>
 );

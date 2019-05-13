@@ -1,8 +1,8 @@
-import React from 'react';
-import Nav from '../Nav';
-import styled from 'styled-components';
-import hawaiiImage from '../../img/header.jpg';
-import theme from '../../theme';
+import React from "react";
+import Nav from "../Nav";
+import styled from "styled-components";
+import hawaiiImage from "../../img/header.jpg";
+import theme from "../../theme";
 
 const ImageContainer = styled.div`
   display: flex;
@@ -18,7 +18,6 @@ const Container = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  min-height: 280px;
   width: 100%;
   max-width: ${theme.containerWidth};
   margin: ${theme.spaces.medium} ${theme.spaces.large};

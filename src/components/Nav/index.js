@@ -81,9 +81,6 @@ const Nav = ({ withBorder }) => (
       <NavLink to="/sponsors/">Sponsors</NavLink>
       <NavLink to="/about/">About</NavLink>
     </PrimaryNavContainer>
-    <Button isPrimary style={{ gridArea: "tickets" }} to="/attend/">
-      Buy Tickets
-    </Button>
   </NavRoot>
 );
 

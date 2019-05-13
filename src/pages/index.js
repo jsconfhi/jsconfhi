@@ -1,17 +1,17 @@
-import Button from '../components/Button';
-import FontAwesomeIcon from '../components/FontAwesomeIcon';
+import Button from "../components/Button";
+import FontAwesomeIcon from "../components/FontAwesomeIcon";
 
 import {
   faFacebook,
   faInstagram,
   faTwitterSquare
-} from '@fortawesome/free-brands-svg-icons';
-import React from 'react';
-import Layout from '../components/layout';
-import Hero from '../components/Hero';
-import Columns, { Column } from '../components/Columns';
-import styled from 'styled-components';
-import theme from '../theme';
+} from "@fortawesome/free-brands-svg-icons";
+import React from "react";
+import Layout from "../components/layout";
+import Hero from "../components/Hero";
+import Columns, { Column } from "../components/Columns";
+import styled from "styled-components";
+import theme from "../theme";
 
 const H2 = styled.h2`
   color: ${theme.colors.textWhite};
@@ -82,16 +82,16 @@ const IndexPage = () => (
           style={{
             fontSize: theme.fontSizes.large,
             marginBottom: theme.spaces.xSmall,
-            textTransform: 'uppercase'
+            textTransform: "uppercase"
           }}
         >
           Announcing
         </div>
         <h3
           style={{
-            fontSize: '2.5rem',
-            fontWeight: 'bold',
-            textTransform: 'uppercase'
+            fontSize: "2.5rem",
+            fontWeight: "bold",
+            textTransform: "uppercase"
           }}
         >
           JSConf Hawaiʻi
@@ -130,8 +130,12 @@ const IndexPage = () => (
           diversity thrives and attendees can come together to discuss
           JavaScript as a technology and grow it as a community.
         </p>
-        <Button isPrimary style={{ gridArea: 'tickets' }} to="/attend/">
-          Learn more
+        <Button
+          isPrimary
+          style={{ gridArea: "tickets" }}
+          href="https://www.jsconfhi.com"
+        >
+          Coming back 2020!
         </Button>
       </HeroContent>
     </Hero>

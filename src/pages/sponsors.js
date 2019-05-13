@@ -110,51 +110,9 @@ const ContactLink = styled.a`
 
 const Sponsors = () => (
   <Layout>
-    <Hero navTitle="Sponsors">
-      <HeroLabel> Sponsorship Opportunities </HeroLabel>{" "}
-      <Callout>
-        <CalloutRail>
-          <CalloutTitle> Join us as a Sponsor </CalloutTitle>{" "}
-          <Button color="dark">
-            <ContactLink
-              href={withPrefix("/JS-Conf-Hawaii-2019-Sponsorship-Info.pdf")}
-            >
-              Learn more
-            </ContactLink>
-          </Button>
-        </CalloutRail>
-        <CalloutText>
-          <p> Become a founding partner of JSConf Hawaiʻi! </p>
-          <p>
-            With over 300 developers from around the world attending, and
-            hundreds more following along at home, sponsoring the conference is
-            one of the best ways to connect with Javascript developers.
-          </p>{" "}
-          <p>
-            There are a variety of sponsorship packages available for small and
-            large companies alike! From setting up a developer lounge on-site,
-            to hosting a meal, to reaching our eager Twitter audience, to being
-            recognized as one of our "Diversity Sponsors" who help bring
-            attendees to the conference, there's a huge range of benefits to
-            take advantage of, and not all of them require you to attend
-            in-person.
-          </p>
-          <p>
-            For more information, and to explore the full range of options, to
-            view our{" "}
-            <a href={withPrefix("/JS-Conf-Hawaii-2019-Sponsorship-Info.pdf")}>
-              prospectus
-            </a>
-            . And if you have a unique idea, we're excited to work with you to
-            make your vision a reality, so please feel free to contact us for
-            more information.{" "}
-          </p>
-        </CalloutText>
-      </Callout>
-    </Hero>
+    <Hero navTitle="Sponsors" />
     <SponsorsContainer>
       <SponsorsBlock>
-        <SponsorsBlockLabel>Sponsors</SponsorsBlockLabel>
         <SponsorsLabel>Gold</SponsorsLabel>
         <AdobeImage src={AdobeLogo} />
         <SponsorImage src={MicrosoftLogo} />

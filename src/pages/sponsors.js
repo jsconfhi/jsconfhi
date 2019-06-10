@@ -2,7 +2,7 @@ import Button from "../components/Button";
 import Hero from "../components/Hero";
 import HeroLabel from "../components/Hero/contentLabel";
 import React from "react";
-import { withPrefix } from "gatsby-link";
+// import { withPrefix } from "gatsby-link";
 import Layout from "../components/layout";
 import styled from "styled-components";
 import theme from "../theme";
@@ -66,37 +66,27 @@ const Sponsors = () => (
           <CalloutTitle> Join us as a Sponsor </CalloutTitle>{" "}
           <Button color="dark">
             <ContactLink
-              href={withPrefix("/JS-Conf-Hawaii-2019-Sponsorship-Info.pdf")}
+            // href={withPrefix("/JS-Conf-Hawaii-2019-Sponsorship-Info.pdf")}
             >
-              Learn more
+              Coming soon
             </ContactLink>
           </Button>
         </CalloutRail>
         <CalloutText>
-          <p> Become a founding partner of JSConf Hawaiʻi! </p>
+          <p> Become a partner of JSConf Hawaiʻi! </p>
           <p>
-            With over 300 developers from around the world attending, and
+            With over 400 developers from around the world attending, and
             hundreds more following along at home, sponsoring the conference is
             one of the best ways to connect with Javascript developers.
           </p>{" "}
           <p>
-            There are a variety of sponsorship packages available for small and
-            large companies alike! From setting up a developer lounge on-site,
-            to hosting a meal, to reaching our eager Twitter audience, to being
-            recognized as one of our "Diversity Sponsors" who help bring
-            attendees to the conference, there's a huge range of benefits to
-            take advantage of, and not all of them require you to attend
+            There will be a variety of sponsorship packages available for small
+            and large companies alike! From setting up a developer lounge
+            on-site, to hosting a meal, to reaching our eager Twitter audience,
+            to being recognized as one of our "Diversity Sponsors" who help
+            bring attendees to the conference, there's a huge range of benefits
+            to take advantage of, and not all of them require you to attend
             in-person.
-          </p>
-          <p>
-            For more information, and to explore the full range of options, to
-            view our{" "}
-            <a href={withPrefix("/JS-Conf-Hawaii-2019-Sponsorship-Info.pdf")}>
-              prospectus
-            </a>
-            . And if you have a unique idea, we're excited to work with you to
-            make your vision a reality, so please feel free to contact us for
-            more information.{" "}
           </p>
         </CalloutText>
       </Callout>

@@ -137,10 +137,10 @@ const IndexPage = () => (
       <Column>
         <H2>Sponsorships</H2>
         <p>
-          We are currently offering sponsorship packages for the inauguaral
-          JSConf Hawaiʻi coming February 2019. We’re looking forward to working
-          with our sponsors to find the best way to connect each of you with our
-          attendees in unique and meaningful ways.
+          We are currently offering sponsorship packages for the JSConf Hawaiʻi
+          coming in 2020. We’re looking forward to working with our sponsors to
+          find the best way to connect each of you with our attendees in unique
+          and meaningful ways.
         </p>
         <Button to="/sponsors">Learn More</Button>
       </Column>

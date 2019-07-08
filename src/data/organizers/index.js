@@ -5,6 +5,8 @@ import charlieAvatar from "./avatars/charlie.jpeg";
 import tracyAvatar from "./avatars/tracy.jpg";
 import mylesAvatar from "./avatars/myles.jpg";
 import jasonAvatar from "./avatars/jason.jpg";
+import jennAvatar from "./avatars/jenn.png";
+import rominaAvatar from "./avatars/romina.jpeg";
 import edAvatar from "./avatars/edAvatar.jpg";
 
 export default [
@@ -25,12 +27,26 @@ export default [
     avatar: jadeAvatar
   },
   {
+    bio: "Web developer @twitter. Co-organizer of @wafflejs, founded @wscsf",
+    email: "kelly@jsconfhi.com",
+    name: "Kelly King",
+    twitter: "kng",
+    avatar: kellyAvatar
+  },
+  {
+    bio: "JavaScript @Adobe; previously @brave and @twitter.",
+    email: "jon@jsconfhi.com",
+    name: "Jon Kuperman",
+    twitter: "jkup",
+    avatar: jonAvatar
+  },
+  {
     bio:
-      "Internet spelunker. Veteran complex systems analyst. 👨‍🎓 CS && Biz. ❤️ @DallasNagata.Organizer @JSConfHI.Tweets about tech, Hawaii, and nerd stuff. 🇲🇽🇺🇸",
-    name: "Ed White",
-    email: "ed@jsconfhi.com",
-    twitter: "SpyHI",
-    avatar: edAvatar
+      "OSS diplomat | @nodejs + JS | Community behavior specialist | Director Fighting tiny revolutions. Inciting confidence one convo at a time. @SamsungNEXT",
+    name: "Tracy Hinds",
+    twitter: "hackygolucky",
+    email: "tracy@jsconfhi.com",
+    avatar: tracyAvatar
   },
   {
     bio:
@@ -41,18 +57,27 @@ export default [
     avatar: jasonAvatar
   },
   {
-    bio: "JavaScript @Adobe; previously @brave and @twitter.",
-    email: "jon@jsconfhi.com",
-    name: "Jon Kuperman",
-    twitter: "jkup",
-    avatar: jonAvatar
+    bio:
+      "Internet spelunker. Veteran complex systems analyst. 👨‍🎓 CS && Biz. ❤️ @DallasNagata.Organizer @JSConfHI.Tweets about tech, Hawaii, and nerd stuff. 🇲🇽🇺🇸",
+    name: "Ed White",
+    email: "ed@jsconfhi.com",
+    twitter: "SpyHI",
+    avatar: edAvatar
+  },
+   {
+    bio:
+      "Full-Stack Engineer - Flatfile @flatfilers | Wife.Mother | @hoolanapua Volunteer",
+    name: "Jenn Ah",
+    twitter: "jennn_ah",
+    email: "jenn@jsconfhi.com",
+    avatar: jennAvatar
   },
   {
-    bio: "Web developer @twitter. Co-organizer of @wafflejs, founded @wscsf",
-    email: "kelly@jsconfhi.com",
-    name: "Kelly King",
-    twitter: "kng",
-    avatar: kellyAvatar
+    bio:
+      "Designer",
+    name: "Romina Escano",
+    email: "romina@jsconfhi.com",
+    avatar: rominaAvatar
   },
   {
     bio:
@@ -61,13 +86,5 @@ export default [
     twitter: "MylesBorins",
     email: "myles@jsconfhi.com",
     avatar: mylesAvatar
-  },
-  {
-    bio:
-      "OSS diplomat | @nodejs + JS | Community behavior specialist | Director Fighting tiny revolutions. Inciting confidence one convo at a time. @SamsungNEXT",
-    name: "Tracy Hinds",
-    twitter: "hackygolucky",
-    email: "tracy@jsconfhi.com",
-    avatar: tracyAvatar
   }
 ];

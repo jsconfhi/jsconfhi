@@ -57,12 +57,12 @@ const Profile = ({ name, description, email, image, twitter }) => (
     </NameContainer>
     <TextContainer>
       <p>{description}</p>
-      <p>
+      { twitter ? <p>
         <FAIcon icon={faTwitter} />{' '}
-        <SocialLink href={`https://twitter.com/${twitter}`} target="_blank">
+         <SocialLink href={`https://twitter.com/${twitter}`} target="_blank"> 
           @{twitter}
         </SocialLink>
-      </p>
+      </p> : null }
       <p>
         <FAIcon icon={faEnvelope} />{' '}
         <SocialLink href={`mailto:${email}`} target="_blank">

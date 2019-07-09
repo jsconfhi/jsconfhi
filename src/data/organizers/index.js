@@ -6,7 +6,7 @@ import tracyAvatar from "./avatars/tracy.jpg";
 import mylesAvatar from "./avatars/myles.jpg";
 import jasonAvatar from "./avatars/jason.jpg";
 import jennAvatar from "./avatars/jenn.png";
-import rominaAvatar from "./avatars/romina.jpeg";
+import rominaAvatar from "./avatars/romina.jpg";
 import edAvatar from "./avatars/edAvatar.jpg";
 
 export default [
@@ -74,9 +74,10 @@ export default [
   },
   {
     bio:
-      "Designer",
+      "Graphic Designer. Intern @NMGNetwork. You can find me currently gluing my eyes to my computer screen 24/7.",
     name: "Romina Escano",
     email: "romina@jsconfhi.com",
+    twitter: "ramenyaah",
     avatar: rominaAvatar
   },
   {

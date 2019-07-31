@@ -1,0 +1,197 @@
+/** Palette
+  Secondary Color: #831D1D
+  Buttons: #F2DC1A
+  Accent Colors: #D95B5B
+  Background: #3D808F
+  Header/Meta Text: #02292E
+  Secondary Text: #1A7173
+*/
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.button-primary {
+  background: #F2DC1A;
+  color: #1A7173;
+}
+
+.button-secondary {
+  background: #1A7173;
+  color: #fff;
+}
+
+.button-primary, .button-secondary {
+  border-radius: 18px;
+  padding: 6px 12px;
+}
+
+.hero {
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-top {
+  padding: 24px 0;
+}
+
+.nav-top a {
+  color:#000;
+}
+
+.nav-top a:hover, .nav-top a:active {
+  text-decoration: underline;
+}
+
+.about {
+  background: #1A7173;
+  color: white;
+}
+
+.newsletter {
+  background: #D95B5B;
+  color: white;
+}
+
+.speakers {
+  background: #F2DC1A;
+}
+
+.coc {
+  background: #831D1D;
+  color: #fff;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+  min-height: 300px;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.subheading {
+  text-transform: none;
+  font-weight: 500;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+}
+.foo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-footer {
+  display: flex;
+}
+
+.nav-social 
+.nav-contact {
+  flex: 1;
+}
+
+.nav-social {
+  align-self: flex-end;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: #02292E;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.nav-left, 
+.nav-right {
+  display: flex;
+}
+
+.nav-left li {
+  padding-right: 1em;
+}
+
+.nav-right li {
+  padding-left: 1em;
+}
+
+
+/*----- Aloha Mask -----*/
+.text-wrap {
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.text-wrap svg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  font: bold 100px sans-serif;
+  text-transform: uppercase;
+}
+.text-wrap svg .img-layer {
+  fill: url(#p-img);
+}
+
+
+
+/*----- Grid layout -----*/
+.grid {
+  display: grid;
+  grid-template-columns: 1rem repeat(12,minmax(1rem,3.75rem)) 1rem;
+  grid-gap: .25rem;
+}
+
+.grid-item-full {
+  grid-column: 2/span 12;
+}
+
+/*
+@media (min-width: 40rem) .grid {
+  grid-template-columns: 1fr repeat(12,minmax(1rem,3.75rem)) 1fr;
+  grid-gap: 1.25rem;
+}
+
+@media screen and (min-width: 60em)
+.relative-l {
+    position: relative;
+}*/

@@ -8,18 +8,41 @@
 */
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+p {
+  line-height: 1.4em;
+  margin-bottom: 1.4em;
 }
 
 a {
   text-decoration: none;
 }
 
+h1, h2, h3 {
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
 h2 {
+  font-size: 1.5em;
   text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+input {
+  padding: 3px 8px;
 }
 
 main {
@@ -50,19 +73,83 @@ main {
 }
 
 .hero {
-  font-size: 100px;
+  position: relative;
+  margin: 0 0 -100px;
+}
+
+.about {
+  padding-top: 65px;
+  background: #1A7173;
+  color: white;
+}
+
+.newsletter {
+  background: #D95B5B;
+  color: white;
+  text-align: center;
+}
+
+.speakers {
+  position: relative;
+  background: #F2DC1A;
+  text-align: center;
+}
+
+.coc {
+  position: relative;
+  background: #831D1D;
+  color: #fff;
+}
+
+.coc .heading {
+  font-size: 2em;
+  text-align: right;
+}
+
+.section {
+  padding: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 250px;
+}
+
+.heading {
   text-transform: uppercase;
-  font-weight: 900;
+}
+
+.subheading {
+  text-transform: none;
+}
+
+.nav-top, .nav-bottom {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer {
+  background: #02292E;
+}
+
+.footer a {
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.footer .icon {
+  font-size: 1.4em;
 }
 
 .nav {
   list-style: none;
   display: flex;
   justify-content: space-between;
-}
-
-.nav-top {
-  padding: 24px 0;
 }
 
 .nav-top a {
@@ -73,54 +160,6 @@ main {
   text-decoration: underline;
 }
 
-.about {
-  background: #1A7173;
-  color: white;
-}
-
-.newsletter {
-  background: #D95B5B;
-  color: white;
-}
-
-.speakers {
-  background: #F2DC1A;
-}
-
-.coc {
-  background: #831D1D;
-  color: #fff;
-}
-
-.section {
-  display: flex;
-  justify-content: space-around;
-  min-height: 300px;
-}
-
-.heading {
-  text-transform: uppercase;
-  font-weight: 900;
-}
-
-.subheading {
-  text-transform: none;
-  font-weight: 500;
-}
-
-.nav-top {
-  display: flex;
-  justify-content: space-between;
-}
-.foo {
-  display: flex;
-  justify-content: space-around;
-}
-
-.nav-footer {
-  display: flex;
-}
-
 .nav-social 
 .nav-contact {
   flex: 1;
@@ -128,16 +167,6 @@ main {
 
 .nav-social {
   align-self: flex-end;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  background: #02292E;
-}
-
-.footer a {
-  color: #fff;
 }
 
 .nav-left, 
@@ -153,26 +182,39 @@ main {
   padding-left: 1em;
 }
 
+/*----- SVG Art -----*/
 
-/*----- Aloha Mask -----*/
-.text-wrap {
-  margin: 0;
-  position: relative;
-  width: 100%;
-}
-
-.text-wrap svg {
+.aloha, .flipflops, .towel {
   position: absolute;
-  width: 100%;
-  height: auto;
-  font: bold 100px sans-serif;
-  text-transform: uppercase;
-}
-.text-wrap svg .img-layer {
-  fill: url(#p-img);
 }
 
+.aloha {
+  width: 50%;
+}
 
+.towel {
+  width: 150px;
+  -webkit-box-shadow: -7px 5px 11px -1px #545454;
+  box-shadow: -7px 5px 11px -1px 545454;
+}
+
+.towel-green {
+  right: 100px;
+  bottom: 60px;
+  transform: rotate(-10deg);
+}
+
+.towel-red {
+  right: 250px;
+  bottom: -60px;
+  transform: rotate(-10deg);
+}
+
+.flipflops {
+  width: 250px;
+  top: -150px;
+  left: 100px;
+}
 
 /*----- Grid layout -----*/
 .grid {
@@ -181,17 +223,31 @@ main {
   grid-gap: .25rem;
 }
 
-.grid-item-full {
+.grid-full {
   grid-column: 2/span 12;
 }
 
-/*
-@media (min-width: 40rem) .grid {
-  grid-template-columns: 1fr repeat(12,minmax(1rem,3.75rem)) 1fr;
-  grid-gap: 1.25rem;
+.grid-three-quarters {
+  grid-column: 2/span 9;
 }
 
-@media screen and (min-width: 60em)
-.relative-l {
-    position: relative;
-}*/
+.grid-half-first {
+  grid-column-start: 2;
+  grid-column-end: 8;
+  padding-right: 1em;
+  justify-self: end;
+}
+
+.grid-half-second {
+  grid-column-start: 8;
+  grid-column-end: 14;
+}
+
+/*----- Mailchimp signup -----*/
+.signup-form {
+  margin-top: 1em;
+}
+
+.mc-field-group {
+  display: inline-block;
+}

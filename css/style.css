@@ -240,7 +240,7 @@ main {
 
 .grid-half-second {
   grid-column-start: 8;
-  grid-column-end: 14;
+  grid-column-end: 13;
 }
 
 /*----- Mailchimp signup -----*/
@@ -250,4 +250,21 @@ main {
 
 .mc-field-group {
   display: inline-block;
+}
+
+/*----- Media queries -----*/
+@media screen and (max-width: 1300px){
+  .towel-green {
+    right: 0px;
+  }
+
+  .towel-red {
+    right: 150px;
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .towel, .flipflops {
+    display: none;
+  }
 }

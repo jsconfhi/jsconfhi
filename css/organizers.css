@@ -1,0 +1,20 @@
+.organizer {
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+.name {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 50%;
+  float: left;
+  margin: 2em;
+}

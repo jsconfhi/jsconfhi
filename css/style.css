@@ -81,6 +81,7 @@ main {
   padding-top: 65px;
   background: #1A7173;
   color: white;
+  z-index: -2;
 }
 
 .newsletter {
@@ -93,6 +94,21 @@ main {
   position: relative;
   background: #F2DC1A;
   text-align: center;
+}
+
+.speakers::before{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top left;
+  transform: skewY(-3deg);
 }
 
 .coc {
@@ -190,6 +206,7 @@ main {
 
 .aloha {
   width: 50%;
+  max-width: 600px;
 }
 
 .towel {

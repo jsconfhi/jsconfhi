@@ -210,7 +210,7 @@ main {
 }
 
 .towel {
-  width: 150px;
+  width: 120px;
   -webkit-box-shadow: -7px 5px 11px -1px #545454;
   box-shadow: -7px 5px 11px -1px 545454;
 }
@@ -272,7 +272,8 @@ main {
 /*----- Media queries -----*/
 @media screen and (max-width: 1300px){
   .towel-green {
-    right: 0px;
+    right: 5px;
+    bottom: 0px;
   }
 
   .towel-red {

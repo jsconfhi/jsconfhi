@@ -238,27 +238,27 @@ main {
 }
 
 .towel {
-  width: 150px;
+  width: 12%;
   -webkit-box-shadow: -7px 5px 11px -1px #545454;
   box-shadow: -7px 5px 11px -1px 545454;
 }
 
 .towel-green {
-  right: 70px;
-  bottom: 60px;
+  right: 5%;
+  bottom: 20%;
   transform: rotate(-6deg);
 }
 
 .towel-red {
-  right: 250px;
-  bottom: -60px;
+  right: 18%;
+  bottom: -20%;
   transform: rotate(-6deg);
 }
 
 .flipflops {
-  width: 250px;
-  top: -150px;
-  left: 100px;
+  width: 20%;
+  top: -50%;
+  left: 5%;
   transform: rotate(24deg);
 }
 
@@ -299,28 +299,20 @@ main {
 }
 
 /*----- Media queries -----*/
-@media screen and (max-width: 1200px){
-  .towel {
-    width: 120px;
-  }
-
-  .towel-green {
-    right: 0px;
-  }
-
-  .towel-red {
-    width: 180px;
-    right: 130px;
-  }
-
-  .flipflops {
-    left: -30px;
+@media screen and (max-width: 750px){
+  .towel, .flipflops {
+    display: none;
   }
 }
 
-@media screen and (max-width: 700px){
-  .towel, .flipflops {
+@media screen and (max-width: 600px){
+  .towel, .flipflops, .home-text {
     display: none;
+  }
+  .grid-half-first, 
+  .grid-half-second {
+    justify-self: flex-start;
+    grid-column: 2/span 12;
   }
 }
 

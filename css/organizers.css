@@ -1,15 +1,54 @@
 .name {
   font-weight: bold;
+  font-size: 1.1em;
   color: #D95B5B;
+  font-family: Arial Black, Geneva, Verdana, sans-serif;
 }
 
 p {
   margin-bottom: 0.5em;
 }
 
+h1 {
+  color: #1A7173;
+  text-transform: uppercase;
+}
+
 .avatar {
   width: 200px;
   border-radius: 50%;
-  float: left;
-  margin: 2em;
+  margin-bottom: 1em;
+}
+
+.organizer {
+  width: 220px;
+  padding: 0 1em 1em 0;
+}
+
+.grid {
+  grid-template-columns: 1rem repeat(14,minmax(1rem,3.75rem)) 1rem;
+}
+
+.grid-third-1 {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  justify-self: end;
+}
+
+.grid-third-2-3 {
+  padding-left: 1em;
+  grid-column-start: 6;
+  grid-column-end: 16;
+  justify-self: end;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 950px) {
+  .grid-third-1,
+  .grid-third-2-3  {
+    justify-self: flex-start;
+    grid-column: 2/span 14;
+  }
 }

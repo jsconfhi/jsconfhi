@@ -230,11 +230,12 @@ main {
 
 .aloha {
   width: 50%;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .towel {
   width: 12%;
+  max-width: 220px;
   -webkit-box-shadow: -7px 5px 11px -1px #545454;
   box-shadow: -7px 5px 11px -1px 545454;
 }
@@ -253,6 +254,7 @@ main {
 
 .flipflops {
   width: 20%;
+  max-width: 400px;
   top: -50%;
   left: 5%;
   transform: rotate(24deg);
@@ -314,6 +316,7 @@ main {
   .towel, .flipflops, .home-text   {
     display: none;
   }
+
   .grid-half-first, 
   .grid-half-second {
     justify-self: flex-start;

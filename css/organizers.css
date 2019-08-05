@@ -1,11 +1,6 @@
-.organizer {
-  width: 100%;
-  display: block;
-  clear: both;
-}
-
 .name {
   font-weight: bold;
+  color: #D95B5B;
 }
 
 p {

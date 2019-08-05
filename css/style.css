@@ -1,10 +1,10 @@
 /** Palette
-  Secondary Color: #831D1D
-  Buttons: #F2DC1A
-  Accent Colors: #D95B5B
+  Secondary Color (maroon): #831D1D
+  Buttons (yellow): #F2DC1A
+  Accent Colors (pink): #D95B5B
   Background: #3D808F
-  Header/Meta Text: #02292E
-  Secondary Text: #1A7173
+  Header/Meta Text (black): #02292E
+  Secondary Text (teal): #1A7173
 */
 
 body {
@@ -55,6 +55,16 @@ main {
   -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 100vh;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 36px;
+  margin-right: 1.5em;
 }
 
 .button-primary {
@@ -159,6 +169,7 @@ main {
   padding: 24px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .content {

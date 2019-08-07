@@ -92,11 +92,13 @@ main {
   padding-top: 65px;
   background: #1A7173;
   color: white;
+  z-index: -2;
 }
 
 .about a {
   color: white;
   text-decoration: underline;
+  z-index: 1;
 }
 
 .newsletter {
@@ -110,7 +112,6 @@ main {
   background: #F2DC1A;
   text-align: center;
   min-height: 325px;
-  z-index: 1;
 }
 
 .speakers::before{

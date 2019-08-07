@@ -92,7 +92,6 @@ main {
   padding-top: 65px;
   background: #1A7173;
   color: white;
-  z-index: -2;
 }
 
 .about a {
@@ -111,6 +110,7 @@ main {
   background: #F2DC1A;
   text-align: center;
   min-height: 325px;
+  z-index: 1;
 }
 
 .speakers::before{
@@ -169,6 +169,10 @@ main {
   align-items: center;
 }
 
+.hidden {
+  display: none;
+}
+
 .content {
   display: flex;
   justify-content: space-around;
@@ -211,8 +215,26 @@ main {
 }
 
 .nav-left, 
-.nav-right {
+.nav-right,
+.nav-right-expandable {
   display: flex;
+}
+
+.nav-right-expandable {
+  background: #02292E;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2em;
+  padding: 1em;
+}
+
+
+.nav-right-expandable li {
+  padding: 0.3em 0;
+}
+
+.nav-right-expandable a {
+  color: white;
 }
 
 .nav-left li {
@@ -221,6 +243,11 @@ main {
 
 .nav-right li {
   padding-left: 1em;
+}
+
+.nav-hamburger {
+  display: none;
+  font-size: 1.5em;
 }
 
 .code-of-conduct ul {
@@ -317,11 +344,34 @@ main {
   .towel, .flipflops {
     display: none;
   }
+
+  .home-text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .nav-right-expandable {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px){
-  .towel, .flipflops, .home-text   {
+  .towel, .flipflops, .nav-right {
     display: none;
+  }
+
+  .nav-hamburger {
+    display: initial;
+  }
+
+  .nav-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-left li {
+    padding-right: 0;
   }
 
   .grid-half-first, 

@@ -151,7 +151,7 @@ main {
 }
 
 .nav-top, .nav-bottom {
-  padding: 24px 0;
+  padding: 1.5em 0.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -216,7 +216,6 @@ a:hover, a:active {
   padding: 1em;
 }
 
-
 .nav-right-expandable li {
   padding: 0.3em 0;
 }
@@ -253,6 +252,10 @@ a.buy-button-mobile:hover {
   line-height: 1.5em;
   list-style: circle;
   padding-left: 1.5em;
+}
+
+.page-sponsors .footer {
+  margin-top: 2em;
 }
 
 /*----- SVG Art -----*/

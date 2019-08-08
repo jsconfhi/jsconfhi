@@ -97,6 +97,8 @@ main {
   background: #1A7173;
   color: white;
   clip-path: polygon(0 0, 1600px 0, 1600px 63%, 0 100%);
+  display: flex;
+  flex-direction: column;
 }
 
 .about a {
@@ -231,9 +233,20 @@ a:hover, a:active {
   padding-left: 1em;
 }
 
-.nav-hamburger {
+.nav-hamburger, .buy-button-mobile {
   display: none;
   font-size: 1.5em;
+}
+
+a.buy-button-mobile {
+  color: black;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+a.buy-button-mobile:active, 
+a.buy-button-mobile:hover {
+  text-decoration: underline;
 }
 
 .code-of-conduct ul {
@@ -363,7 +376,7 @@ a:hover, a:active {
     display: none;
   }
 
-  .nav-hamburger {
+  .nav-hamburger, .buy-button-mobile {
     display: initial;
   }
 

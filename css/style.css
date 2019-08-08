@@ -70,7 +70,7 @@ main {
 
 .button-primary {
   background: #F2DC1A;
-  color: #1A7173;
+  color: black;
 }
 
 .button-secondary {
@@ -199,7 +199,7 @@ main {
   color:#000;
 }
 
-.nav-top a:hover, .nav-top a:active {
+a:hover, a:active {
   text-decoration: underline;
 }
 
@@ -322,10 +322,16 @@ main {
 /*----- Mailchimp signup -----*/
 .signup-form {
   margin-top: 1em;
+  display: flex;
+  justify-content: center;
 }
 
 .mc-field-group {
   display: inline-block;
+}
+
+.signup-form .button-secondary {
+  align-self: flex-start;
 }
 
 /*----- Media queries -----*/

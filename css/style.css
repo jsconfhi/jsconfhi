@@ -254,6 +254,10 @@ a.buy-button-mobile:hover {
   padding-left: 1.5em;
 }
 
+.page-sponsors .content {
+  padding: 1em;
+}
+
 .page-sponsors .footer {
   margin-top: 2em;
 }

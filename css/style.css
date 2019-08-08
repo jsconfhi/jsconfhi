@@ -251,6 +251,7 @@ a:hover, a:active {
 .aloha {
   width: 50%;
   max-width: 800px;
+  z-index: 1;
 }
 
 .towel {
@@ -283,7 +284,7 @@ a:hover, a:active {
 /*----- Grid layout -----*/
 .grid {
   display: grid;
-  grid-template-columns: 1rem repeat(12,minmax(1.5rem,3.75rem)) 1rem;
+  grid-template-columns: 1fr repeat(12,minmax(1rem,3.75rem)) 1fr;
   grid-gap: .25rem;
 }
 
@@ -401,6 +402,12 @@ a:hover, a:active {
 
   .signup-form .button-secondary {
     margin-top: 1em;
+    width: 100%;
+  }
+
+  .coc .button-secondary {
+    display: block;
+    text-align: center;
   }
 }
 

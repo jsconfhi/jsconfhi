@@ -148,10 +148,7 @@ main {
   min-height: 300px;
 }
 
-.top-section {
-  padding-top: 6em;
-  display: flex;
-  justify-content: space-around;
+.section-top {
   min-height: 400px;
 }
 
@@ -298,7 +295,7 @@ main {
 /*----- Grid layout -----*/
 .grid {
   display: grid;
-  grid-template-columns: 1rem repeat(12,minmax(1rem,3.75rem)) 1rem;
+  grid-template-columns: 1rem repeat(12,minmax(1.5rem,3.75rem)) 1rem;
   grid-gap: .25rem;
 }
 
@@ -336,8 +333,17 @@ main {
   .towel-green {
     bottom: 12%;
   }
+
   .towel-red {
     bottom: -12%;
+  }
+
+  .flipflops {
+    left: 0%;
+  }
+
+  .coc .heading {
+    font-size: 1.5em;
   }
 }
 
@@ -379,6 +385,28 @@ main {
   .grid-half-second {
     justify-self: flex-start;
     grid-column: 2/span 12;
+  }
+
+  .hero {
+    min-height: 120px;
+    margin: 0;
+  }
+
+ .section, .coc .heading  {
+    text-align: left;
+  }
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .signup-form .email {
+    width: 100%;
+  }
+
+  .signup-form .button-secondary {
+    margin-top: 1em;
   }
 }
 

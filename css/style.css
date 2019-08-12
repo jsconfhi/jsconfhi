@@ -428,10 +428,6 @@ a.buy-button-mobile:hover {
     text-align: left;
   }
 
-  .buy-button-mobile {
-    float: left;
-  }
-
   .signup-form {
     display: flex;
     flex-direction: column;
@@ -441,14 +437,12 @@ a.buy-button-mobile:hover {
     width: 100%;
   }
 
-  .signup-form .button-secondary {
-    width: 100%;
-  }
-
-  .coc .button-secondary {
+  .button-secondary {
     display: block;
     text-align: center;
+    width: 100%;
   }
+  
 }
 
 @media (min-width: 40rem) {

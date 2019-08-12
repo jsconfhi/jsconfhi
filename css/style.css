@@ -424,7 +424,12 @@ a.buy-button-mobile:hover {
   }
 
  .section, .coc .heading  {
+    align-items: flex-start;
     text-align: left;
+  }
+
+  .buy-button-mobile {
+    float: left;
   }
 
   .signup-form {

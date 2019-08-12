@@ -228,6 +228,10 @@ a:hover, a:active {
   color: white;
 }
 
+.nav-right-expandable a.button-primary {
+  color: black;
+}
+
 .nav-left li {
   padding-right: 1em;
 }

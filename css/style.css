@@ -19,6 +19,10 @@ p {
   margin-bottom: 1.4em;
 }
 
+strong {
+  font-weight: bold;
+}
+
 a {
   text-decoration: none;
 }
@@ -312,8 +316,8 @@ a.buy-button-mobile:hover {
   grid-column: 2/span 12;
 }
 
-.grid-three-quarters {
-  grid-column: 2/span 9;
+.grid-two-thirds {
+  grid-column: 2/span 8;
 }
 
 .grid-half-first {
@@ -373,6 +377,10 @@ a.buy-button-mobile:hover {
 
   .home-text {
     display: none;
+  }
+
+  .grid-two-thirds {
+    grid-column: 2/span 12;
   }
 }
 

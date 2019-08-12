@@ -339,6 +339,10 @@ a.buy-button-mobile:hover {
   display: inline-block;
 }
 
+.signup-form .email {
+  margin: 0 0.5em 0.5em 0;
+}
+
 .signup-form .button-secondary {
   align-self: flex-start;
 }
@@ -421,7 +425,6 @@ a.buy-button-mobile:hover {
   }
 
   .signup-form .button-secondary {
-    margin-top: 1em;
     width: 100%;
   }
 

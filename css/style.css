@@ -100,7 +100,7 @@ main {
   padding-top: 65px;
   background: #1A7173;
   color: white;
-  clip-path: polygon(0 0, 1600px 0, 1600px 63%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
   display: flex;
   flex-direction: column;
 }
@@ -372,6 +372,10 @@ a.buy-button-mobile:hover {
   .coc .heading {
     font-size: 1.5em;
   }
+
+  .about {
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+  }
 }
 
 @media screen and (max-width: 750px){
@@ -443,6 +447,9 @@ a.buy-button-mobile:hover {
     width: 100%;
   }
   
+  .about {
+    clip-path: initial;
+  }
 }
 
 @media (min-width: 40rem) {

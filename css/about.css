@@ -1,0 +1,25 @@
+.grid-half-first {
+  justify-self: start;
+  grid-column-start: 1;
+}
+
+.grid-half-second {
+  grid-column-end: 14;
+}
+.grid-full-about {
+  grid-column-start: 1;
+  grid-column-end: 16;
+  justify-self: end;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2 {
+  margin-top: 1em;
+}
+
+h4 { 
+  font-weight: bold;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+}

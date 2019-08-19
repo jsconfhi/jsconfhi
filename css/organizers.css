@@ -25,25 +25,18 @@ h1 {
   padding: 0 1em 1em 0;
 }
 
-.grid {
-  grid-template-columns: 1rem repeat(14,minmax(1rem,3.75rem)) 1rem;
-}
-
 .grid-third-1 {
-  grid-column-start: 2;
-  grid-column-end: 6;
+  grid-column: 2/span 3;
   justify-self: end;
 }
 
 .grid-third-2-3 {
   padding-left: 1em;
-  grid-column-start: 6;
-  grid-column-end: 16;
+  grid-column: 5/span 9;
   justify-self: end;
   display: flex;
   flex-wrap: wrap;
 }
-
 
 @media screen and (max-width: 950px) {
   .grid-third-1,

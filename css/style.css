@@ -271,7 +271,7 @@ a.buy-button-mobile:hover {
 }
 
 .page-sponsors .content {
-  padding: 0 1em 1em 1em;
+  padding: 1em;
 }
 
 .page-sponsors .footer {
@@ -323,7 +323,7 @@ a.buy-button-mobile:hover {
   display: -ms-grid;
   grid-template-columns: 1fr repeat(12,minmax(1rem,3.75rem)) 1fr;
   -ms-grid-columns: 1fr repeat(12,minmax(1rem,3.75rem)) 1fr;
-  grid-gap: 1.25rem;
+  grid-gap: .25rem;
 }
 
 .grid-full {
@@ -343,7 +343,7 @@ a.buy-button-mobile:hover {
 
 .grid-half-second {
   grid-column-start: 8;
-  grid-column-end: 14;
+  grid-column-end: 13;
 }
 
 /*----- Mailchimp signup -----*/

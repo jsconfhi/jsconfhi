@@ -1,5 +1,17 @@
-.grid-half-first, .grid-full-text {
+.grid-half-first {
+  justify-self: start;
   grid-column-start: 1;
+}
+
+.grid-half-second {
+  grid-column-end: 14;
+}
+.grid-full-about {
+  grid-column-start: 1;
+  grid-column-end: 16;
+  justify-self: end;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 h2 {

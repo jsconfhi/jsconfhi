@@ -1,14 +1,6 @@
-import Hero from '../components/Hero';
-import React from 'react';
-import Layout from '../components/layout';
-import Speakers from '../components/Speakers';
+import React from "react";
+import Layout from "../components/layout";
 
-const SpeakersPage = () => (
-  <Layout>
-    <Hero navTitle="Speakers">
-      <Speakers />
-    </Hero>
-  </Layout>
-);
+const SpeakersPage = () => <Layout>Hello</Layout>;
 
 export default SpeakersPage;

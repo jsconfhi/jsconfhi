@@ -3,41 +3,67 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-import styled from "styled-components";
-import theme from "../theme";
 
-import Header, { headerHeight } from "../components/Header";
-import Footer, { footerHeight } from "../components/Footer";
 const GlobalStyles = createGlobalStyle`
   ${reset}
   body {
-    background-color: ${theme.colors.background};
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300;
+    font-family: Geneva, Verdana, sans-serif;
     box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
   }
-  a { color: #038091; }
-  p { line-height: 1.5em; margin: 1em 0;}
-  li { list-style-type: disc; margin-left: 2em; margin-top: 0.5em; }
-  *,
-  *::after,
-  *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+
+  p {
+    line-height: 1.4em;
+    margin-bottom: 1.4em;
   }
-`;
 
-const Wrapper = styled.div`
-  height: 100vh;
-}`;
+  strong {
+    font-weight: bold;
+  }
 
-const MainContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  padding-top: ${headerHeight}px;
-  padding-bottom: ${footerHeight}px;
+  i {
+    font-style: italic;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1, h2, h3 {
+    font-family: Arial Black, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding-bottom: 12px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  input {
+    padding: 3px 8px;
+  }
+
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
 `;
 
 const TemplateWrapper = ({ children }) => (
@@ -50,7 +76,7 @@ const TemplateWrapper = ({ children }) => (
           {
             name: "description",
             content:
-              "A two day, single track conference dedicated to web development, JavaScript and building a community. February 7th + 8th 2019 in Honolulu, Hawaiʻi."
+              "A three day, single track conference dedicated to web development, JavaScript and building a community. February 5th-7th in Honolulu, Hawaiʻi."
           },
           {
             name: "keywords",
@@ -96,12 +122,14 @@ const TemplateWrapper = ({ children }) => (
           sizes="16x16"
           href="/favicon-16x16.png"
         />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://css.tito.io/v1.1"
+        />
+        <script src="https://js.tito.io/v1" async />
       </Helmet>
-      <Wrapper>
-        <Header style={{ flex: 1 }} />
-        <MainContent>{children}</MainContent>
-        <Footer style={{ flex: 1 }} />
-      </Wrapper>
+      <div>{children}</div>
     </div>
   </>
 );

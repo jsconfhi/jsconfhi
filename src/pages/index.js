@@ -6,7 +6,9 @@ import AlohaSVG from "../img/aloha.svg";
 const IndexPage = () => (
   <Layout>
     <Header />
-    <AlohaSVG />
+    <div id="content">
+      <AlohaSVG />
+    </div>
   </Layout>
 );
 

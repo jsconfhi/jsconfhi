@@ -1,10 +1,11 @@
 import Layout from "../components/layout";
 import React from "react";
-
+import Header from "../components/header";
 import aloRoomImage from "../img/alo-room.jpg";
 
 const Attend = () => (
   <Layout>
+    <Header />
     <h1>Venue + Hotel Accommodations</h1>
     <p>
       The{" "}

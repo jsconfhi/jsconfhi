@@ -24,7 +24,7 @@ const Header = () => (
               <a href="/attend">Attend</a>
             </li>
             <li>
-              <a href="/#speakers">Speakers</a>
+              <a href="/speakers">Speakers</a>
             </li>
             <li>
               <a href="/sponsors">Sponsors</a>

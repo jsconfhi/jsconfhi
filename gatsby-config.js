@@ -34,6 +34,10 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {}
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {}
+    },
     "gatsby-plugin-remove-serviceworker"
   ]
 };

@@ -5,28 +5,36 @@ import Header from "../components/header";
 const Sponsors = () => (
   <Layout>
     <Header />
-    <h1>Sponsor JSConf Hawaiʻi</h1>
+    <section className="content">
+      <div className="grid">
+        <div className="grid-full">
+          <h1>Sponsor JSConf Hawaiʻi</h1>
+          <div className="sponsor">
+          <p>Become a partner of JSConf Hawaiʻi!</p>
 
-    <div>Become a partner of JSConf Hawaiʻi!</div>
+          <p>
+            With over 400 developers from around the world attending, and
+            hundreds more following along at home, sponsoring the conference is
+            one of the best ways to connect with JavaScript developers.
+          </p>
 
-    <div>
-      With over 400 developers from around the world attending, and hundreds
-      more following along at home, sponsoring the conference is one of the best
-      ways to connect with JavaScript developers.
-    </div>
+          <p>
+            There are a variety of sponsorship packages available for small and
+            large companies alike! From setting up a developer lounge on-site,
+            to hosting a meal, to reaching our eager Twitter audience, to being
+            recognized as one of our "Diversity Sponsors" who help bring
+            attendees to the conference, there's a huge range of benefits to
+            take advantage of, and not all of them require you to attend
+            in-person.
+          </p>
 
-    <div>
-      There are a variety of sponsorship packages available for small and large
-      companies alike! From setting up a developer lounge on-site, to hosting a
-      meal, to reaching our eager Twitter audience, to being recognized as one
-      of our "Diversity Sponsors" who help bring attendees to the conference,
-      there's a huge range of benefits to take advantage of, and not all of them
-      require you to attend in-person.
-    </div>
-
-    <a href="https://www.jsconfhi.com/JS-Conf-Hawaii-2020-Sponsorship-Info.pdf">
-      Download prospectus
-    </a>
+          <a className="button-primary" href="https://www.jsconfhi.com/JS-Conf-Hawaii-2020-Sponsorship-Info.pdf">
+            Download prospectus
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </Layout>
 );
 

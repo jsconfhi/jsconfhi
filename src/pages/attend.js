@@ -12,47 +12,52 @@ const Attend = () => (
           <Header />
           <div className="info">
             <h1>Venue + Hotel Accommodations</h1>
-            <p>
-              The{" "}
-              <a
-                href="https://www.alohilaniresort.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Alohilani Resort
-              </a>{" "}
-              is located on the southern end of Waikiki and will be our home for
-              both the daily sessions and primary accomodations. It features 2
-              restaurants, 2 outdoor pools, an oceanarium, and a fitness center!
-            </p>
-            <p>
-              Attendees for the conference will recieve a special room rate,
-              however, we have limited availability and you MUST use the link
-              below to book and receive the special rate.
-            </p>
-            <ul>
-              <li>$235 + tax (~25%) per night</li>
-              <li>Discounted $15/night Resort Fee (normally $45)</li>
-              <li>Includes a partial Ocean View room upgrade</li>
-              <li>Rate available 3 days before and after event</li>
-            </ul>
-            <p>
-              <a
-                className="button-secondary"
-                href="https://bit.ly/2K0Hi8q"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Reserve hotel
-              </a>
-            </p>
-          </div>
-          <div className="grid-half-second">
-            <img
-              width="100%"
-              src={aloRoomImage}
-              alt="Alohilani guest room with view of diamondhead"
-            />
+            <div class="description grid">
+              <div class="grid-half-first">
+                <p>
+                  The{" "}
+                  <a
+                    href="https://www.alohilaniresort.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Alohilani Resort
+                  </a>{" "}
+                  is located on the southern end of Waikiki and will be our home
+                  for both the daily sessions and primary accomodations. It
+                  features 2 restaurants, 2 outdoor pools, an oceanarium, and a
+                  fitness center!
+                </p>
+                <p>
+                  Attendees for the conference will recieve a special room rate,
+                  however, we have limited availability and you MUST use the
+                  link below to book and receive the special rate.
+                </p>
+                <ul>
+                  <li>$235 + tax (~25%) per night</li>
+                  <li>Discounted $15/night Resort Fee (normally $45)</li>
+                  <li>Includes a partial Ocean View room upgrade</li>
+                  <li>Rate available 3 days before and after event</li>
+                </ul>
+                <p>
+                  <a
+                    className="button-secondary"
+                    href="https://bit.ly/2K0Hi8q"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Reserve hotel
+                  </a>
+                </p>
+              </div>
+              <div className="grid-half-second">
+                <img
+                  width="100%"
+                  src={aloRoomImage}
+                  alt="Alohilani guest room with view of diamondhead"
+                />
+              </div>
+            </div>
           </div>
           <div className="info">
             <h2 className="title">Program</h2>

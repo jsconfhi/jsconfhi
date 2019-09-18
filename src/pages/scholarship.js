@@ -15,7 +15,7 @@ const Scholarship = () => (
             <div class="description grid">
               <div class="grid-half-first">
                 <p>
-                  Diversity and an inclusive environment two of JSConf Hawai'i's
+                  Diversity and an inclusive environment are two of JSConf Hawai'i's
                   core values, because we believe a broader variety of people
                   enriches the conference through a broader variety of
                   perspectives.

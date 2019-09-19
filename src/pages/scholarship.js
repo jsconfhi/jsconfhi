@@ -17,7 +17,7 @@ const Scholarship = () => {
 
   return (
     <Layout>
-      <div className="content">
+      <div className="content" style={{marginBottom : "50px"}}>
         <div className="grid">
           <div className="grid-full">
             <Header />

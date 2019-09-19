@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import React from "react";
 import Header from "../components/header";
+import Footer from "../components/footer";
 import "../styles/attend.css";
 import aloRoomImage from "../img/alo-room.jpg";
 
@@ -249,6 +250,7 @@ const Attend = () => (
         </div>
       </div>
     </div>
+    <Footer />
   </Layout>
 );
 

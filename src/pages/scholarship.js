@@ -69,7 +69,7 @@ const Scholarship = () => {
               <h2 className="title">What Are Scholarship Alums Saying?</h2>
               <div className="grid">
                 <div className="grid-half-first">
-                  <blockquote class="twitter-tweet">
+                  <blockquote className="twitter-tweet">
                     <p lang="en" dir="ltr">
                       Friends, this is how I had the amazing experience of
                       mashing JavaScript and Hawai’i earlier this year. 😱Very
@@ -86,9 +86,22 @@ const Scholarship = () => {
                       September 12, 2019
                     </a>
                   </blockquote>{" "}
+                  <blockquote className="twitter-tweet">
+                    <p lang="en" dir="ltr">
+                      Apply to this. It’s a conference I learned some cool stuff
+                      at and would attend again!{" "}
+                      <a href="https://t.co/XjSUYaRyId">
+                        https://t.co/XjSUYaRyId
+                      </a>
+                    </p>
+                    &mdash; Jenessa (@JNessView){" "}
+                    <a href="https://twitter.com/JNessView/status/1172509579667787776?ref_src=twsrc%5Etfw">
+                      September 13, 2019
+                    </a>
+                  </blockquote>{" "}
                 </div>
                 <div className="grid-half-second">
-                  <blockquote class="twitter-tweet">
+                  <blockquote className="twitter-tweet">
                     <p lang="en" dir="ltr">
                       Thanks to this scholarship, I was able to: 1) learn new
                       things and 2) meet amazing people. APPLY!!!!{" "}

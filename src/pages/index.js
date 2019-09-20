@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import Header from "../components/header";
+import Footer from "../components/footer";
 import AlohaSVG from "../img/aloha.svg";
 import FlipFlops from "../img/flipflops.svg";
 import TowelRed from "../img/towel-red.svg";
@@ -123,60 +124,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <footer className="footer content">
-        <div className="grid">
-          <div className="grid-full">
-            <nav className="nav-bottom">
-              <ul className="nav-left">
-                <li>
-                  <a href="./code-of-conduct">Code of conduct</a>
-                </li>
-                <li>
-                  <a href="https://slack.jsconfhi.com/">Slack</a>
-                </li>
-                <li>
-                  <a href="./organizers">Organizers</a>
-                </li>
-              </ul>
-              <ul className="nav-right">
-                <li>
-                  <a
-                    aria-label="Instagram"
-                    href="https://www.instagram.com/jsconfhi/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="icon"
-                  >
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    aria-label="Twitter"
-                    href="https://www.twitter.com/jsconfhi/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="icon"
-                  >
-                    <i className="fab fa-twitter-square"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    aria-label="Facebook"
-                    href="https://www.facebook.com/JSConfHi/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="icon"
-                  >
-                    <i className="fab fa-facebook"></i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   </Layout>
 );

@@ -1,29 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { FaInstagram, FaTwitterSquare, FaFacebookSquare } from "react-icons/fa";
 
-const SkipLink = styled.a`
-  position: absolute;
-  top: -1000px;
-  left: -1000px;
-  height: 1px;
-  width: 1px;
-  text-align: left;
-  overflow: hidden;
-
-  &:active,
-  &:focus,
-  &:hover {
-    left: 0;
-    top: 0;
-    width: auto;
-    height: auto;
-    overflow: visible;
-  }
-`;
 
 const Footer = () => {
-  const [state, setState] = useState(false);
 
   return (
     <footer className="footer content">

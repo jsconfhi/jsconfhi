@@ -31,7 +31,7 @@ const IndexPage = () => (
             <div className="description grid-half-second">
               <p>
                 Join us for our second annual JavaScript conference, coming
-                February 2020 at the
+                February 2020 at the{" "}
                 <a href="https://www.alohilaniresort.com">Alohilani Resort</a>!
                 <br />
                 <br />
@@ -58,7 +58,7 @@ const IndexPage = () => (
                   <p>
                     Have an idea for a talk, workshop, or panel? The JSConf
                     Hawaiʻi CFP is <strong>open</strong>, and we'd love to hear
-                    from you! Read more about what we're looking for on our
+                    from you! Read more about what we're looking for on our {" "}
                     <a
                       href="https://sessionize.com/jsconf-hawaii-2020"
                       target="_blank"

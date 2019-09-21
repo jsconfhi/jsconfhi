@@ -363,7 +363,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .grid-half-first {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 8;
     padding-right: 1em;
     justify-self: end;

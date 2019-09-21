@@ -33,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
   h1, h2, h3 {
     font-family: Arial Black, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    padding-bottom: 12px;
+    padding-bottom: 30px;
   }
 
   h1 {

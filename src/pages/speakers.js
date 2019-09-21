@@ -6,7 +6,9 @@ import Footer from "../components/footer";
 const SpeakersPage = () => (
   <Layout>
     <Header />
-    <div>Speakers Page</div>
+    <main>
+      <div>Speakers Page</div>
+    </main>
     <Footer />
   </Layout>
 );

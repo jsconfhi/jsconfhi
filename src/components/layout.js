@@ -248,6 +248,13 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1.5em;
   }
 
+  .hamburger-icon {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+  }
+
   a.buy-button-mobile {
     color: black;
     font-size: 1em;

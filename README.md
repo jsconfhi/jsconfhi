@@ -1,16 +1,29 @@
 # JSConf Hi
 
-#### Develop mode
+## Installation
+
+```bash
+git clone https://github.com/jsconfhi/jsconfhi.git
+cd jsconfhi/
+npm install
 ```
-gatsby develop
+
+## Running the app locally
+
+#### Development mode
+
+```
+npm run develop
 ```
 
 #### Build Production Assets
+
 ```
-gatsby build
+npm run build
 ```
 
 #### Serve Production Assets
+
 ```
-gatsby serve
+npm run serve
 ```

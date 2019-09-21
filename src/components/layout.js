@@ -255,6 +255,28 @@ const GlobalStyles = createGlobalStyle`
     font-size: 24px;
   }
 
+  .newsletter .description button {
+    align-self: flex-start;
+    border: 0;
+    border-radius: 18px;
+    padding: 6px 12px;
+    margin: 0 10px;
+    font-size: 100%;
+    background: #1A7173;
+    color: #fff;
+  }
+
+  .newsletter .description button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .newsletter .description input {
+    border: 0;
+    margin: 0 0.5em 0.5em 0;
+    padding: 3px 8px;
+  }
+
   a.buy-button-mobile {
     color: black;
     font-size: 1em;

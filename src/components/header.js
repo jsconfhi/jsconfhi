@@ -43,7 +43,7 @@ const Header = () => {
                 <li className="nav-hamburger">
                   <button
                     aria-label="More"
-                    className="icon"
+                    className="hamburger-icon icon"
                     onClick={() => (state ? setState(false) : setState(true))}
                   >
                     <FaBars />
@@ -53,9 +53,6 @@ const Header = () => {
               <ul className="nav-right">
                 <li>
                   <a href="/attend">Attend</a>
-                </li>
-                <li>
-                  <a href="/speakers">Speakers</a>
                 </li>
                 <li>
                   <a href="/scholarship">Scholarship</a>
@@ -83,7 +80,7 @@ const Header = () => {
               <a href="/attend">Attend</a>
             </li>
             <li>
-              <a href="/#speakers">Speakers</a>
+              <a href="/scholarship">Scholarship</a>
             </li>
             <li>
               <a href="/sponsors">Sponsors</a>

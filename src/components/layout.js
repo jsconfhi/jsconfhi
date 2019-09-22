@@ -33,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
   h1, h2, h3 {
     font-family: Arial Black, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    padding-bottom: 12px;
+    padding-bottom: 30px;
   }
 
   h1 {
@@ -248,6 +248,35 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1.5em;
   }
 
+  .hamburger-icon {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .newsletter .description button {
+    align-self: flex-start;
+    border: 0;
+    border-radius: 18px;
+    padding: 6px 12px;
+    margin: 0 10px;
+    font-size: 100%;
+    background: #1A7173;
+    color: #fff;
+  }
+
+  .newsletter .description button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .newsletter .description input {
+    border: 0;
+    margin: 0 0.5em 0.5em 0;
+    padding: 3px 8px;
+  }
+
   a.buy-button-mobile {
     color: black;
     font-size: 1em;
@@ -334,7 +363,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .grid-half-first {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 8;
     padding-right: 1em;
     justify-self: end;

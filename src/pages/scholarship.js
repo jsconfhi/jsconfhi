@@ -2,7 +2,6 @@ import Layout from "../components/layout";
 import React, { useEffect } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import "../styles/attend.css";
 import afterParty from "../img/after-party.png";
 
 const Scholarship = () => {

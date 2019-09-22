@@ -1,9 +1,7 @@
 import React from "react";
 import { FaInstagram, FaTwitterSquare, FaFacebookSquare } from "react-icons/fa";
 
-
 const Footer = () => {
-
   return (
     <footer className="footer content">
       <div className="grid">
@@ -11,13 +9,13 @@ const Footer = () => {
           <nav className="nav-bottom">
             <ul className="nav-left">
               <li>
-                <a href="./code-of-conduct">Code of conduct</a>
+                <a href="/code-of-conduct">Code of conduct</a>
               </li>
               <li>
                 <a href="https://slack.jsconfhi.com/">Slack</a>
               </li>
               <li>
-                <a href="./organizers">Organizers</a>
+                <a href="/organizers">Organizers</a>
               </li>
             </ul>
             <ul className="nav-right">

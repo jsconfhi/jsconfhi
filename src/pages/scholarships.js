@@ -26,6 +26,8 @@ const GlobalStyles = createGlobalStyle`
     justify-content: center;
   }
 
+  .center-button {}
+
   .map {
     max-width: 100%;
   }
@@ -55,6 +57,12 @@ const GlobalStyles = createGlobalStyle`
 
     .twitter-tweet {
       width: 100vw !important;
+  }
+
+  .center-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   }
@@ -132,8 +140,11 @@ const Scholarship = () => {
                     <blockquote className="twitter-tweet">
                       <p lang="en" dir="ltr">
                         Friends, this is how I had the amazing experience of
-                        mashing JavaScript and Hawai’i earlier this year. 😱Very
-                        grateful for this scholarship.
+                        mashing JavaScript and Hawai’i earlier this year.{" "}
+                        <span role="img" aria-label="Scream">
+                          😱
+                        </span>
+                        Very grateful for this scholarship.
                         <br />
                         <br />
                         APPLY!{" "}
@@ -281,7 +292,7 @@ const Scholarship = () => {
                       </li>
                     </ul>
                     <br></br>
-                    <h3>
+                    <div className="center-button">
                       <a
                         href="https://twitter.com/share?ref_src=twsrc%5Etfw"
                         class="twitter-share-button"
@@ -293,8 +304,8 @@ const Scholarship = () => {
                       >
                         Share the Scholarship
                       </a>{" "}
-                      Share the Opportunity Scholarship on Twitter!
-                    </h3>
+                    </div>
+                    <br></br>
                   </div>
                 </div>
               </div>

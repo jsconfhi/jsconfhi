@@ -53,10 +53,10 @@ const Attend = () => (
   <>
     <GlobalStyles />
     <Layout>
+    <Header />
       <div className="content">
         <div className="grid">
           <div className="grid-full">
-            <Header />
             <h1>About JSConf Hawaiʻi</h1>
             <div className="info">
               <h1>Venue + Hotel Accommodations</h1>

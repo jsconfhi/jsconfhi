@@ -69,10 +69,10 @@ const Scholarship = () => {
   return (
     <Layout>
       <GlobalStyles />
+      <Header />
       <div className="content">
         <div className="grid">
           <div className="grid-full">
-            <Header />
             <main>
               <div className="info">
                 <h1>Opportunity Scholarships</h1>

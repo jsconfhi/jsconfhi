@@ -280,6 +280,21 @@ const Scholarship = () => {
                         who could use it!
                       </li>
                     </ul>
+                    <br></br>
+                    <h3>
+                      <a
+                        href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                        class="twitter-share-button"
+                        data-size="large"
+                        data-text="Friends, opportunity scholarships are open for @JSConfHI! They&#39;re offering a free ticket, flight, and hotel stay. It&#39;s a quick and easy application process so please sign up if you&#39;re eligible!"
+                        data-url="https://www.jsconfhi.com/scholarships/"
+                        data-related="JSConfHI"
+                        data-show-count="false"
+                      >
+                        Share the Scholarship
+                      </a>{" "}
+                      Share the Opportunity Scholarship on Twitter!
+                    </h3>
                   </div>
                 </div>
               </div>

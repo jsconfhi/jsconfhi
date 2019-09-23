@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import afterParty from "../img/after-party.png";
+import { FaTwitter } from "react-icons/fa";
 
 const GlobalStyles = createGlobalStyle`
   .grid-half-first {
@@ -25,8 +26,6 @@ const GlobalStyles = createGlobalStyle`
     align-items: center;
     justify-content: center;
   }
-
-  .center-button {}
 
   .map {
     max-width: 100%;
@@ -57,12 +56,6 @@ const GlobalStyles = createGlobalStyle`
 
     .twitter-tweet {
       width: 100vw !important;
-  }
-
-  .center-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   }
@@ -114,7 +107,7 @@ const Scholarship = () => {
                     </ul>
                     <p>
                       <a
-                        className="button-secondary"
+                        className="button-secondary button-center"
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfifk0on5yj014741vEP2lDWX6DF9ADc6PFZ8nPftfhwba9IQ/viewform?usp=sf_link"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -135,7 +128,7 @@ const Scholarship = () => {
               </div>
               <div className="info">
                 <h2 className="title">What Are Scholarship Alums Saying?</h2>
-                <div className="grid center-item">
+                <div className="grid-full">
                   <div className="grid-first-half">
                     <blockquote className="twitter-tweet">
                       <p lang="en" dir="ltr">
@@ -291,21 +284,15 @@ const Scholarship = () => {
                         who could use it!
                       </li>
                     </ul>
-                    <br></br>
-                    <div className="center-button">
-                      <a
-                        href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-                        class="twitter-share-button"
-                        data-size="large"
-                        data-text="Friends, opportunity scholarships are open for @JSConfHI! They&#39;re offering a free ticket, flight, and hotel stay. It&#39;s a quick and easy application process so please sign up if you&#39;re eligible!"
-                        data-url="https://www.jsconfhi.com/scholarships/"
-                        data-related="JSConfHI"
-                        data-show-count="false"
+                    <br />
+                      <p><a
+                        href="https://twitter.com/intent/tweet?text=Friends%2C+opportunity+scholarships+are+open+for+%40JSConfHI%21+They%27re+offering+a+free+ticket%2C+flight%2C+and+hotel+stay.+It%27s+a+quick+and+easy+application+process+so+please+sign+up+if+you%27re+eligible%21&url=https%3A%2F%2Fwww.jsconfhi.com%2Fscholarships%2F&related=JSConfHI"
+                        class="button-primary button-tweet"
                       >
-                        Share the Scholarship
+                        <FaTwitter /> Share the Scholarship
                       </a>{" "}
-                    </div>
-                    <br></br>
+                      </p>
+                    <br /><br />
                   </div>
                 </div>
               </div>

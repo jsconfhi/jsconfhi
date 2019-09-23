@@ -26,6 +26,8 @@ const GlobalStyles = createGlobalStyle`
     justify-content: center;
   }
 
+  .center-button {}
+
   .map {
     max-width: 100%;
   }
@@ -52,6 +54,16 @@ const GlobalStyles = createGlobalStyle`
     .content {
       padding: 1em;
     }
+
+    .twitter-tweet {
+      width: 100vw !important;
+  }
+
+  .center-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   }
 `;
@@ -128,8 +140,11 @@ const Scholarship = () => {
                     <blockquote className="twitter-tweet">
                       <p lang="en" dir="ltr">
                         Friends, this is how I had the amazing experience of
-                        mashing JavaScript and Hawai’i earlier this year. 😱Very
-                        grateful for this scholarship.
+                        mashing JavaScript and Hawai’i earlier this year.{" "}
+                        <span role="img" aria-label="Scream">
+                          😱
+                        </span>
+                        Very grateful for this scholarship.
                         <br />
                         <br />
                         APPLY!{" "}
@@ -276,6 +291,21 @@ const Scholarship = () => {
                         who could use it!
                       </li>
                     </ul>
+                    <br></br>
+                    <div className="center-button">
+                      <a
+                        href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                        class="twitter-share-button"
+                        data-size="large"
+                        data-text="Friends, opportunity scholarships are open for @JSConfHI! They&#39;re offering a free ticket, flight, and hotel stay. It&#39;s a quick and easy application process so please sign up if you&#39;re eligible!"
+                        data-url="https://www.jsconfhi.com/scholarships/"
+                        data-related="JSConfHI"
+                        data-show-count="false"
+                      >
+                        Share the Scholarship
+                      </a>{" "}
+                    </div>
+                    <br></br>
                   </div>
                 </div>
               </div>

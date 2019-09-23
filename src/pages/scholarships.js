@@ -53,7 +53,7 @@ const GlobalStyles = createGlobalStyle`
       padding: 1em;
     }
 
-    .twitter-timeline {
+    .twitter-tweet {
       width: 100vw !important;
   }
 

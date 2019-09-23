@@ -1,8 +1,60 @@
 import Layout from "../components/layout";
+import { createGlobalStyle } from "styled-components";
 import React, { useEffect } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import afterParty from "../img/after-party.png";
+
+const GlobalStyles = createGlobalStyle`
+  .grid-half-first {
+    justify-self: start;
+    grid-column-start: 1;
+  }
+
+  .grid-half-second {
+    grid-column-end: 14;
+  }
+
+  .grid-full-about {
+    grid-column-start: 1;
+    grid-column-end: 14;
+  }
+
+  .center-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .map {
+    max-width: 100%;
+  }
+
+  h2 {
+    margin-top: 1em;
+  }
+
+  h3 {
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .tito-wrapper {
+    max-width: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    h2 {
+      font-size: 1.5em;
+    }
+
+    .content {
+      padding: 1em;
+    }
+
+  }
+`;
 
 const Scholarship = () => {
   useEffect(() => {
@@ -16,6 +68,7 @@ const Scholarship = () => {
 
   return (
     <Layout>
+      <GlobalStyles />
       <div className="content">
         <div className="grid">
           <div className="grid-full">
@@ -70,8 +123,8 @@ const Scholarship = () => {
               </div>
               <div className="info">
                 <h2 className="title">What Are Scholarship Alums Saying?</h2>
-                <div className="grid">
-                  <div className="grid-half-first">
+                <div className="grid center-item">
+                  <div className="grid-first-half">
                     <blockquote className="twitter-tweet">
                       <p lang="en" dir="ltr">
                         Friends, this is how I had the amazing experience of
@@ -89,21 +142,6 @@ const Scholarship = () => {
                         September 12, 2019
                       </a>
                     </blockquote>{" "}
-                    <blockquote className="twitter-tweet">
-                      <p lang="en" dir="ltr">
-                        Apply to this. It’s a conference I learned some cool
-                        stuff at and would attend again!{" "}
-                        <a href="https://t.co/XjSUYaRyId">
-                          https://t.co/XjSUYaRyId
-                        </a>
-                      </p>
-                      &mdash; Jenessa (@JNessView){" "}
-                      <a href="https://twitter.com/JNessView/status/1172509579667787776?ref_src=twsrc%5Etfw">
-                        September 13, 2019
-                      </a>
-                    </blockquote>{" "}
-                  </div>
-                  <div className="grid-half-second">
                     <blockquote className="twitter-tweet">
                       <p lang="en" dir="ltr">
                         Thanks to this scholarship, I was able to: 1) learn new
@@ -125,7 +163,7 @@ const Scholarship = () => {
                 <h2 className="title">Frequently Asked Questions</h2>
                 <div className="description grid">
                   <div className="grid-full-about">
-                    <h4>Who is Eligible for an Opportunity Scholarship?</h4>
+                    <h3>Who is Eligible for an Opportunity Scholarship?</h3>
                     <p>
                       The JSConf Hawaii Opportunity Scholarships are intended to
                       increase the diversity of perspectives at the conference.
@@ -149,7 +187,7 @@ const Scholarship = () => {
                       we have not identified, please feel free to apply and list
                       it!
                     </p>
-                    <h4>How Much Work is the Application Process?</h4>
+                    <h3>How Much Work is the Application Process?</h3>
                     <p>
                       We have streamlined the application process compared to
                       JSConfHI 2019. This year are only asking for demographic
@@ -159,17 +197,17 @@ const Scholarship = () => {
                       for the two question sections so we can learn about you
                       and how to best meet your needs!
                     </p>
-                    <h4>When Will I Find Out If I Got the Scholarship?</h4>
+                    <h3>When Will I Find Out If I Got the Scholarship?</h3>
                     <p>
                       The JSConfHI team is aiming to announce scholarship
                       recepients in mid-November. We have a policy of informing
                       both those who received the scholarship and those who
                       didn't, so no one is left wondering.
                     </p>
-                    <h4>
+                    <h3>
                       What if I already bought a ticket? What if I really,
                       really want to come?
-                    </h4>
+                    </h3>
                     <p>
                       Opportunity Scholarships are not guaranteed. We will give
                       as much as we can, but it's likely we'll have more
@@ -196,7 +234,7 @@ const Scholarship = () => {
                         Buy tickets
                       </a>
                     </p>
-                    <h4>I Don't Need a Scholarship, but Would Like to Help!</h4>
+                    <h3>I Don't Need a Scholarship, but Would Like to Help!</h3>
                     <p>
                       There are four main ways to help JSConfHI with our
                       Opportunity Scholarship mission:

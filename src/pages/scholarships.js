@@ -53,6 +53,10 @@ const GlobalStyles = createGlobalStyle`
       padding: 1em;
     }
 
+    .twitter-timeline {
+      width: 100vw !important;
+  }
+
   }
 `;
 

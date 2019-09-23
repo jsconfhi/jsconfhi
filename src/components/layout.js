@@ -89,6 +89,11 @@ const GlobalStyles = createGlobalStyle`
     color: #fff;
   }
 
+  .button-tweet {
+    background: #1da1f2;
+    color: #fff;
+  }
+
   .button-primary, .button-secondary {
     border-radius: 18px;
     padding: 6px 12px;

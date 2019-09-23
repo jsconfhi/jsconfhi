@@ -37,12 +37,8 @@ const GlobalStyles = createGlobalStyle`
 
   h3 {
     font-weight: bold;
-    line-height: 1.5em;
-    margin-bottom: 0.5em;
-  }
-
-  .tito-wrapper {
-    max-width: none;
+    line-height: 2.25em;
+    margin-bottom: -1em;
   }
 
   @media screen and (max-width: 600px) {

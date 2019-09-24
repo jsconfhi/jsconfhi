@@ -5,8 +5,8 @@ import Footer from "../components/footer";
 
 const Sponsors = () => (
   <Layout>
-    <Header />
     <main>
+    <Header />
       <section className="content">
         <div className="grid">
           <div className="grid-full">
@@ -40,8 +40,8 @@ const Sponsors = () => (
           </div>
         </div>
       </section>
+      <Footer />
     </main>
-    <Footer />
   </Layout>
 );
 

@@ -353,7 +353,6 @@ const GlobalStyles = createGlobalStyle`
   /*----- Grid layout -----*/
   .grid {
     display: grid;
-    display: -ms-grid;
     grid-template-columns: 1fr repeat(12,minmax(1rem,3.75rem)) 1fr;
     -ms-grid-columns: 1fr repeat(12,minmax(1rem,3.75rem)) 1fr;
     grid-gap: .25rem;

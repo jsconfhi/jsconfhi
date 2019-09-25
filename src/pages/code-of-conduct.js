@@ -161,6 +161,7 @@ const CodeOfConduct = () => (
                 <a
                   href="https://www.autistichoya.com/p/ableist-words-and-terms-to-avoid.html"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   this guide
                 </a>
@@ -180,6 +181,7 @@ const CodeOfConduct = () => (
                 <a
                   href="http://geekfeminism.wikia.com/wiki/Nonsexist_language"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Geek Feminism wiki guide
                 </a>

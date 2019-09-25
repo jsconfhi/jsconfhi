@@ -258,6 +258,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-size: 24px;
+    background-color: transparent;
   }
 
   .newsletter .description button {

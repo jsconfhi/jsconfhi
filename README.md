@@ -1,5 +1,7 @@
 # JSConf Hi
 
+The official website for JSConf Hawai'i
+
 ## Installation
 
 ```bash

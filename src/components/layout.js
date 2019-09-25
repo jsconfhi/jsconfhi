@@ -304,7 +304,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .page-sponsors .content {
-    padding: 1em;
+    padding: 0em;
   }
 
   .page-sponsors .footer {

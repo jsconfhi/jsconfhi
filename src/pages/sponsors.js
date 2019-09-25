@@ -5,8 +5,8 @@ import Footer from "../components/footer";
 
 const Sponsors = () => (
   <Layout>
-    <main>
-    <Header />
+    <main className="page-sponsors">
+      <Header />
       <section className="content">
         <div className="grid">
           <div className="grid-full">
@@ -30,12 +30,14 @@ const Sponsors = () => (
                 you to attend in-person.
               </p>
 
-              <a
-                className="button-primary"
-                href="https://www.jsconfhi.com/JS-Conf-Hawaii-2020-Sponsorship-Info.pdf"
-              >
-                Download prospectus
-              </a>
+              <p>
+                <a
+                  className="button-primary"
+                  href="https://www.jsconfhi.com/JS-Conf-Hawaii-2020-Sponsorship-Info.pdf"
+                >
+                  Download Prospectus
+                </a>
+              </p>
             </div>
           </div>
         </div>

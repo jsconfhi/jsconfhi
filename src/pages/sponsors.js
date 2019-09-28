@@ -33,7 +33,7 @@ const Sponsors = () => (
               <p>
                 <a
                   className="button-primary"
-                  href="https://www.jsconfhi.com/JS-Conf-Hawaii-2020-Sponsorship-Info.pdf"
+                  href="/JS-Conf-Hawaii-2020-Sponsorship-Info.pdf"
                 >
                   Download Prospectus
                 </a>

@@ -130,7 +130,7 @@ const Organizers = () => (
                   JavaScript @Adobe; previously @brave and @twitter.
                 </p>
                 <p className="twitter-handle">
-                  <a href="https://www.twitter.com/jkip">@jkup</a>
+                  <a href="https://www.twitter.com/jkup">@jkup</a>
                 </p>
                 <p className="email">jon@jsconfhi.com</p>
               </div>

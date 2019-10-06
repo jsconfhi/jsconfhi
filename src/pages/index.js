@@ -32,7 +32,8 @@ const IndexPage = () => (
               <p>
                 Join us for our second annual JavaScript conference, coming
                 February 2020 at the{" "}
-                <a href="https://www.alohilaniresort.com">Alohilani Resort</a>!
+                <a href="https://www.alohilaniresort.com"> Alohilani Resort </a>
+                !
                 <br />
                 <br />
                 Listen to our panel of amazing speakers, meet new people, and
@@ -55,30 +56,12 @@ const IndexPage = () => (
                   <h2>Speaker submissions</h2>
                 </div>
                 <div className="description">
+                  <p>Our call for speakers is now closed!</p>
                   <p>
-                    Have an idea for a talk, workshop, or panel? The JSConf
-                    Hawaiʻi CFP is <strong>open</strong>, and we'd love to hear
-                    from you! Read more about what we're looking for on our {" "}
-                    <a
-                      href="https://sessionize.com/jsconf-hawaii-2020"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      application
-                    </a>
-                    !
-                    <br />
-                    <br />
-                    The deadline for talk submissions is September 30th, 2019.
+                    If you applied to give a talk, please stay tuned! We are
+                    currently reviewing submissions and will notify selected
+                    speakers by October 31st.
                   </p>
-                  <a
-                    href="https://sessionize.com/jsconf-hawaii-2020"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="button-secondary"
-                  >
-                    Submit a talk
-                  </a>
                 </div>
               </div>
             </div>

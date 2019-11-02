@@ -60,7 +60,7 @@ const IndexPage = () => (
                   <p>
                     If you applied to give a talk, please stay tuned! We are
                     currently reviewing submissions and will notify selected
-                    speakers by October 31st.
+                    speakers by November 11th.
                   </p>
                 </div>
               </div>

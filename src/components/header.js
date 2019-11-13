@@ -58,6 +58,9 @@ const Header = () => {
                   <a href="/scholarships">Scholarships</a>
                 </li>
                 <li>
+                  <a href="/speakers">Speakers</a>
+                </li>
+                <li>
                   <a href="/sponsors">Sponsors</a>
                 </li>
                 <li>
@@ -81,6 +84,9 @@ const Header = () => {
             </li>
             <li>
               <a href="/scholarships">Scholarships</a>
+            </li>
+            <li>
+              <a href="/speakers">Speakers</a>
             </li>
             <li>
               <a href="/sponsors">Sponsors</a>

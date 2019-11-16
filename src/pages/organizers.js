@@ -169,7 +169,7 @@ const Organizers = () => (
                 <p className="name">Ed White</p>
                 <p className="bio">
                   Internet spelunker. Veteran complex systems analyst. <span role="img" aria-label="man">👨</span><span role="img" aria-label="dracula">🎓</span> CS &&
-                  Biz. <span role="img" aria-label="heart">❤️</span> @DallasNagata.Organizer @JSConfHI.Tweets about tech,
+                  Biz. <span role="img" aria-label="heart">❤️</span> @DallasNagata. Organizer @JSConfHI. Tweets about tech,
                   Hawaii, and nerd stuff. <span role="img" aria-label="Mexican flag">🇲🇽</span><span role="img" aria-label="American flag">🇺🇸</span>
                 </p>
                 <p className="twitter-handle">

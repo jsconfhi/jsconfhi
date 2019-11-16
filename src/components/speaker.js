@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
-const Container = styled.div`
-  cursor: pointer;
-`;
+import { FiUser } from "react-icons/fi";
 
 const SpeakerTitle = styled.div`
   text-align: center;
@@ -20,26 +17,49 @@ const Image = styled.img`
   border-radius: 130px;
   height: 180px;
   width: 180px;
-  margin-right: 20px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
 `;
 
+const SpeakerButtonContainer = styled.button`
+  margin-bottom: 20px;
+  background: white;
+  border: white;
+  font-size: 18px;
+`;
+
+ const SpeakerContainer = styled.div`
+  margin-bottom: 20px;
+ `;
+
 function Speaker(props) {
-  const { speaker, setSpeaker, i } = this.props;
+  const { speaker, onClick } = props;
    const stopPropagation = (e) => {
     // Do not open modal
     e.stopPropagation();
     return false;
   };
 
-  return (
-     <Container key={i} onClick={setSpeaker}>
-      <Image src={speaker.img} alt="" />
+  const isClickable = !!onClick;
+
+  return isClickable ? (
+    <SpeakerButtonContainer className='isClickable' key={speaker.name} onClick={onClick}>
+    <Image src={speaker.img} alt="" />
+    <SpeakerTitle>
+      {speaker.name}{' '}
+      {speaker.handle && <a target="_blank" onClick={stopPropagation} href={`https://twitter.com/${speaker.handle}`}>@{speaker.handle}</a> }
+    </SpeakerTitle>
+  </SpeakerButtonContainer>
+  ) : (
+    <SpeakerContainer key={speaker.name}>
+     { speaker.img ? <Image src={speaker.img} alt="" /> : <FiUser /> }
       <SpeakerTitle>
-        {speaker.name}{' '}
-        <a target="_blank" onClick={stopPropagation} href={`https://twitter.com/${speaker.handle}`}>@{speaker.handle}</a>
+        { speaker.name} {' '}
+        { speaker.handle && <a target="_blank" onClick={stopPropagation} href={`https://twitter.com/${speaker.handle}`}>@{speaker.handle}</a> }
       </SpeakerTitle>
-    </Container>
-  );
+    </SpeakerContainer>
+  )
 }
 
 export default Speaker;

@@ -75,6 +75,10 @@ const GlobalStyles = createGlobalStyle`
     margin-right: 1.5em;
   }
 
+  .isClickable {
+    cursor: pointer;
+  }
+
   .main-content {
     background-color: #F2DC1A;
   }

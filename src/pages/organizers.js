@@ -104,7 +104,7 @@ const Organizers = () => (
                 <p className="name">Jade Loyzaga</p>
                 <p className="bio">
                   Aussie living in San Francisco. Wifey of @csmcgrath. Software
-                  engineer @twitter 👩‍💻
+                  engineer @twitter <span role="img" aria-label="woman programmer">👩‍</span>
                 </p>
                 <p className="twitter-handle">
                   <a href="https://www.twitter.com/jadeloyzaga">@jadeloyzaga</a>
@@ -168,9 +168,9 @@ const Organizers = () => (
                 <img className="avatar" src={avatarEd} alt="Ed" />
                 <p className="name">Ed White</p>
                 <p className="bio">
-                  Internet spelunker. Veteran complex systems analyst. 👨‍🎓 CS &&
-                  Biz. ❤️ @DallasNagata.Organizer @JSConfHI.Tweets about tech,
-                  Hawaii, and nerd stuff. 🇲🇽🇺🇸
+                  Internet spelunker. Veteran complex systems analyst. <span role="img" aria-label="man">👨</span><span role="img" aria-label="dracula">🎓</span> CS &&
+                  Biz. <span role="img" aria-label="heart">❤️</span> @DallasNagata.Organizer @JSConfHI.Tweets about tech,
+                  Hawaii, and nerd stuff. <span role="img" aria-label="Mexican flag">🇲🇽</span><span role="img" aria-label="American flag">🇺🇸</span>
                 </p>
                 <p className="twitter-handle">
                   <a href="https://www.twitter.com/SpyHI">@SpyHI</a>

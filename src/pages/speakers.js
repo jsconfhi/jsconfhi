@@ -1,19 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import { FiUser } from "react-icons/fi";
+import Modal from 'react-modal';
+import speakers from '../data/speakers/data'
 import styled from "styled-components";
 
-/* Speaker Images */
+/* Emcee Images */
 import Cassidy from "../img/cassidy.png";
-import Jenna from "../img/JennaZeigen.jpeg";
-import Dinesh from "../img/dinesh.jpeg";
-import Angie from "../img/angie.jpeg";
-
-const Main = styled.main`
-  text-align: center;
-`;
 
 const SectionHeading = styled.div`
   grid-column: 2/span 4;
@@ -28,9 +23,12 @@ const SectionContent = styled.div`
 `;
 
 const Speaker = styled.div`
-  text-align: center;
-  width: 180px;
+  cursor: pointer;
 `;
+
+const SpeakerWithoutModal = styled.div`
+  cursor: intial`
+;
 
 const SpeakerTitle = styled.div`
   text-align: center;
@@ -41,12 +39,18 @@ const SpeakerTitle = styled.div`
     color: #D95B5B;
     font-weight: bold;
   }
+  @media (max-width: 600px) {
+    width: 100%
+  }
 `;
 
 const Image = styled.img`
   border-radius: 130px;
   height: 180px;
   width: 180px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
 `;
 
 const Gallery = styled.div`
@@ -58,130 +62,119 @@ const Gallery = styled.div`
     background: white;
     padding: 30px 40px 0 40px;
     border-radius: 50px;
+    cursor: initial;
   }
 `;
 
+const FlexContainer = styled.div`
+  display: flex;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+`;
+
+const modalStyle = {
+  content : {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    maxWidth: '800px'
+  }
+};
+
+const renderPlaceholder = (i) => (
+  <SpeakerWithoutModal key={i}>
+    <FiUser />
+    <SpeakerTitle>Coming Soon!</SpeakerTitle>
+  </SpeakerWithoutModal>
+);
+
+const renderSpeakerName = (speaker) => {
+  const stopPropagation = (e) => {
+    // Do not open modal
+    e.stopPropagation();
+    return false;
+  };
+  return (
+    <SpeakerTitle>
+      {speaker.name}{' '}
+      <a onClick={stopPropagation} href={`https://twitter.com/${speaker.handle}`}>@{speaker.handle}</a>
+    </SpeakerTitle>
+  )
+};
 
 const SpeakersPage = () => {
+  const [selectedSpeaker, setSelectedSpeaker] = useState();
+
+  const clearSelection = () => setSelectedSpeaker(null);
+
+  const renderSpeaker = (speaker, i) => {
+    const setSpeaker = () => setSelectedSpeaker(speaker);
+
+    return speaker.title ? (
+      <Speaker key={i} onClick={setSpeaker}>
+        <Image src={speaker.img} alt="" />
+        {renderSpeakerName(speaker)}
+      </Speaker>
+    ) : renderPlaceholder(i);
+  };
+
+  const renderModal = () => {
+    return selectedSpeaker && (
+      <Modal
+        isOpen={selectedSpeaker}
+        style={modalStyle}
+        contentLabel="Speaker Modal"
+        onRequestClose={clearSelection}
+      >
+      <FlexContainer>
+        <div>
+          <Image src={selectedSpeaker.img} alt="" />
+            <SpeakerTitle>
+            {selectedSpeaker.name}{' '}
+            <a href={`https://twitter.com/${selectedSpeaker.handle}`}>@{selectedSpeaker.handle}</a>
+          </SpeakerTitle>
+        </div>
+        <div>
+          <h2>{selectedSpeaker.title}</h2>
+          <p>{selectedSpeaker.description}</p>
+        </div>
+      </FlexContainer>
+    </Modal>
+    )
+  };
+
   return (
     <Layout>
       <Header />
+      { renderModal() }
       <Gallery>
-        <div class="content">
+        <div className="content">
           <div className="grid">
             <SectionHeading>
               <h2>Emcees</h2>
             </SectionHeading>
             <SectionContent>
-              <Speaker>
+              <SpeakerWithoutModal>
                 <Image src={Cassidy} />
                 <SpeakerTitle>
                   Cassidy Williams{" "}
                   <a href="https://twitter.com/cassidoo">@cassidoo</a>
                 </SpeakerTitle>
-              </Speaker>
+              </SpeakerWithoutModal>
             </SectionContent>
           </div>
           </div>
-          <div class="content">
+          <div className="content">
           <div className="grid">
             <SectionHeading>
               <h2>Meet the Speakers</h2>
             </SectionHeading>
             <SectionContent>
-              <Speaker>
-                <Image src={Jenna} />
-                <SpeakerTitle>
-                  Jenna Zeigen{" "}
-                  <a href="https://twitter.com/zeigenvector">@zeigenvector</a>
-                </SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <Image src={Dinesh} />
-                <SpeakerTitle>
-                  Dinesh Pandiyan{" "}
-                  <a href="https://twitter.com/flexdinesh">@flexdinesh</a>
-                </SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <Image src={Angie} />
-                <SpeakerTitle>
-                  Angie Jones{" "}
-                  <a href="https://twitter.com/techgirl1908">@techgirl1908</a>
-                </SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
-              <Speaker>
-                <FiUser />
-                <SpeakerTitle>Coming Soon!</SpeakerTitle>
-              </Speaker>
+              {speakers.map(renderSpeaker)}
             </SectionContent>
           </div>
         </div>

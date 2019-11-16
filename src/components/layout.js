@@ -528,7 +528,7 @@ const TemplateWrapper = ({ children }) => (
           {
             name: "og:description",
             content:
-              "A two day, single track conference dedicated to web development, JavaScript and building a community. February 7th + 8th 2019 in Honolulu, Hawaiʻi."
+              "A three day, single track conference dedicated to web development, JavaScript and building a community. February 5th, 6th and 7th 2019 in Honolulu, Hawaiʻi."
           },
           {
             name: "og:image",

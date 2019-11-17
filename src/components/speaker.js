@@ -4,9 +4,10 @@ import { FiUser } from "react-icons/fi";
 
 const SpeakerTitle = styled.div`
   text-align: center;
-  width: 180px;
   line-height: 22px;
   padding: 10px 20px 20px;
+  margin-right: 1em;
+  width: 180px;
   a {
     color: #D95B5B;
     font-weight: bold;
@@ -27,9 +28,11 @@ const SpeakerButtonContainer = styled.button`
   background: white;
   border: white;
   font-size: 18px;
+  width: 180px;
 `;
 
  const SpeakerContainer = styled.div`
+  width: 180px;
   margin-bottom: 20px;
  `;
 
@@ -45,12 +48,12 @@ function Speaker(props) {
 
   return isClickable ? (
     <SpeakerButtonContainer className='isClickable' key={speaker.name} onClick={onClick}>
-    <Image src={speaker.img} alt="" />
-    <SpeakerTitle>
-      {speaker.name}{' '}
-      {speaker.handle && <a target="_blank" onClick={stopPropagation} href={`https://twitter.com/${speaker.handle}`}>@{speaker.handle}</a> }
-    </SpeakerTitle>
-  </SpeakerButtonContainer>
+      <Image src={speaker.img} alt="" />
+      <SpeakerTitle>
+        {speaker.name}{' '}
+        {speaker.handle && <a target="_blank" onClick={stopPropagation} href={`https://twitter.com/${speaker.handle}`}>@{speaker.handle}</a> }
+      </SpeakerTitle>
+    </SpeakerButtonContainer>
   ) : (
     <SpeakerContainer key={speaker.name}>
      { speaker.img ? <Image src={speaker.img} alt="" /> : <FiUser /> }

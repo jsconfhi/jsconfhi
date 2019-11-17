@@ -15,7 +15,7 @@ const SectionHeading = styled.div`
   grid-column: 2/span 4;
   color: #1A7173;
   @media (max-width: 600px) {
-    grid-column: 1/span 12;
+    grid-column: 1/span 13;
     justify-self: center;
   }
 `;
@@ -25,20 +25,16 @@ const SectionContent = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width: 600px) {
+    grid-column: 1/span 13;
+    justify-self: center;
+  }
 `;
 
 
 const Gallery = styled.div`
   margin: 0 auto;
   padding: 0 25px;
-
-  svg {
-    font-size: 180px;
-    background: white;
-    padding: 30px 40px 0 40px;
-    border-radius: 50px;
-    cursor: initial;
-  }
 `;
 
 const FlexContainer = styled.div`

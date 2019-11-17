@@ -72,7 +72,7 @@ function Person(props) {
       <Image src={person.img} alt="" />
       <Name>
         <div>{person.name}</div>
-        {person.handle && <a target="_blank" onClick={stopPropagation} href={`https://twitter.com/${person.handle}`}>@{person.handle}</a> }
+        {person.handle && <a target="_blank" rel="noopener noreferrer" onClick={stopPropagation} href={`https://twitter.com/${person.handle}`}>@{person.handle}</a> }
       </Name>
     </PersonButtonContainer>
   ) : (
@@ -80,7 +80,7 @@ function Person(props) {
      { person.img ? <Image src={person.img} alt="" /> : <SVGContainer><FiUser /></SVGContainer> }
       <Name>
         <div>{person.name}</div>
-        { person.handle && <a target="_blank" onClick={stopPropagation} href={`https://twitter.com/${person.handle}`}>@{person.handle}</a> }
+        { person.handle && <a target="_blank" rel="noopener noreferrer" onClick={stopPropagation} href={`https://twitter.com/${person.handle}`}>@{person.handle}</a> }
         { person.email && <div><a href={`mailto:${person.email}`}>{person.email}</a></div> }
       </Name>
     </PersonContainer>

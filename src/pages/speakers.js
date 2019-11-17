@@ -62,6 +62,7 @@ const Title = styled.h2`
   margin-right: 0.5em;
 `;
 
+
 const modalStyle = {
   content : {
     top: '50%',
@@ -102,6 +103,14 @@ const SpeakersPage = () => {
           <Title>{selectedSpeaker.title}</Title>
           <p>{selectedSpeaker.description}</p>
         </div>
+      </FlexContainer>
+      <FlexContainer>
+        <a
+          className="buy-button button-primary"
+          href="https://ti.to/jsconf-hawaii/2020/en"
+        >
+          Buy tickets
+        </a>
       </FlexContainer>
     </Modal>
     )

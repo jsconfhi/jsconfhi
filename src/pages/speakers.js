@@ -54,6 +54,7 @@ const CloseButton = styled.button`
   cursor: pointer;
   padding: 0.5em;
   background: linear-gradient(45deg, white, white);
+  border: transparent;
 `;
 
 const Title = styled.h2`

@@ -17,6 +17,7 @@ const SectionHeading = styled.div`
   @media (max-width: 600px) {
     grid-column: 1/span 13;
     justify-self: center;
+    text-align: center;
   }
 `;
 

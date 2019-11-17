@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Modal from 'react-modal';
-import Speaker from '../components/speaker';
+import Person from '../components/person';
 import speakers from '../data/speakers/data'
 import styled from "styled-components";
 import { FiX } from "react-icons/fi";
@@ -81,8 +81,8 @@ const SpeakersPage = () => {
 
   const renderSpeaker = (speaker, i) => {
     return speaker.title ? (
-      <Speaker key={i} speaker={speaker} onClick={() => setSelectedSpeaker(speaker)} />
-    ) : <Speaker key={i} speaker={{ name: 'Coming Soon!' }} />;
+      <Person key={i} person={speaker} onClick={() => setSelectedSpeaker(speaker)} />
+    ) : <Person key={i} person={{ name: 'Coming Soon!' }} />;
   };
 
   const renderModal = () => {
@@ -95,7 +95,7 @@ const SpeakersPage = () => {
       >
       <CloseButton onClick={() => setSelectedSpeaker(null)}><FiX /></CloseButton>
       <FlexContainer>
-        <Speaker speaker={selectedSpeaker} />
+        <Person person={selectedSpeaker} />
         <div>
           <Title>{selectedSpeaker.title}</Title>
           <p>{selectedSpeaker.description}</p>
@@ -116,7 +116,7 @@ const SpeakersPage = () => {
               <h2>Emcees</h2>
             </SectionHeading>
             <SectionContent>
-              <Speaker speaker={{ name: 'Casside Williams', img: Cassidy, handle: 'cassidoo'}} />
+              <Person person={{ name: 'Casside Williams', img: Cassidy, handle: 'cassidoo'}} />
             </SectionContent>
           </div>
           </div>

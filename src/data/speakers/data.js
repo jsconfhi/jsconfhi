@@ -11,7 +11,7 @@ export default [
     description: 'Have you ever wondered how your code goes from being characters in a file to something that the computer can "understand" and do something with? A key part of this is the parser. In this talk, we’ll look at building a search query parser (all in JavaScript, of course). On this journey, we’ll first take a step back and learn about the building blocks of all languages, from letters to grammars, and how they represent meaning. Then, we’ll talk about what a parser is and does and why we might want one for our task. With this new knowledge, we’ll dive into building the parser, from tokenizing to building a data structure that represents the query and lets us build a UI around it.'
   },
   {
-    name: 'Dinesh',
+    name: 'Dinesh Pandiyan',
     handle: 'flexdinesh',
     img: DineshImage,
     title: 'Progressive Rendering — Improve web application performance on slower networks',

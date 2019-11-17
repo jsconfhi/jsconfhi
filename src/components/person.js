@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FiUser } from "react-icons/fi";
 
-const SpeakerTitle = styled.div`
+const Name = styled.div`
   text-align: center;
   line-height: 22px;
   padding: 10px 20px 20px;
@@ -38,7 +38,7 @@ const SVGContainer = styled.div`
   }
 `;
 
-const SpeakerButtonContainer = styled.button`
+const PersonButtonContainer = styled.button`
   margin-bottom: 20px;
   background: white;
   border: white;
@@ -49,7 +49,7 @@ const SpeakerButtonContainer = styled.button`
   }
 `;
 
- const SpeakerContainer = styled.div`
+ const PersonContainer = styled.div`
   width: 200px;
   margin-bottom: 20px;
   @media (max-width: 600px) {
@@ -57,8 +57,8 @@ const SpeakerButtonContainer = styled.button`
   }
  `;
 
-function Speaker(props) {
-  const { speaker, onClick } = props;
+function Person(props) {
+  const { person, onClick } = props;
    const stopPropagation = (e) => {
     // Do not open modal
     e.stopPropagation();
@@ -68,22 +68,23 @@ function Speaker(props) {
   const isClickable = !!onClick;
 
   return isClickable ? (
-    <SpeakerButtonContainer className='isClickable' key={speaker.name} onClick={onClick}>
-      <Image src={speaker.img} alt="" />
-      <SpeakerTitle>
-        <div>{speaker.name}</div>
-        {speaker.handle && <a target="_blank" onClick={stopPropagation} href={`https://twitter.com/${speaker.handle}`}>@{speaker.handle}</a> }
-      </SpeakerTitle>
-    </SpeakerButtonContainer>
+    <PersonButtonContainer className='isClickable' key={person.name} onClick={onClick}>
+      <Image src={person.img} alt="" />
+      <Name>
+        <div>{person.name}</div>
+        {person.handle && <a target="_blank" onClick={stopPropagation} href={`https://twitter.com/${person.handle}`}>@{person.handle}</a> }
+      </Name>
+    </PersonButtonContainer>
   ) : (
-    <SpeakerContainer key={speaker.name}>
-     { speaker.img ? <Image src={speaker.img} alt="" /> : <SVGContainer><FiUser /></SVGContainer> }
-      <SpeakerTitle>
-        <div>{speaker.name}</div>
-        { speaker.handle && <a target="_blank" onClick={stopPropagation} href={`https://twitter.com/${speaker.handle}`}>@{speaker.handle}</a> }
-      </SpeakerTitle>
-    </SpeakerContainer>
+    <PersonContainer key={person.name}>
+     { person.img ? <Image src={person.img} alt="" /> : <SVGContainer><FiUser /></SVGContainer> }
+      <Name>
+        <div>{person.name}</div>
+        { person.handle && <a target="_blank" onClick={stopPropagation} href={`https://twitter.com/${person.handle}`}>@{person.handle}</a> }
+        { person.email && <div><a href={`mailto:${person.email}`}>{person.email}</a></div> }
+      </Name>
+    </PersonContainer>
   )
 }
 
-export default Speaker;
+export default Person;

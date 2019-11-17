@@ -58,7 +58,7 @@ export default [
   },
   {
     bio:
-      "Internet spelunker. Veteran complex systems analyst. 👨‍🎓 CS && Biz. ❤️ @DallasNagata.Organizer @JSConfHI.Tweets about tech, Hawaii, and nerd stuff. 🇲🇽🇺🇸",
+      "Technology advocate and full-stack data scientist living a colorful life of adventure in Honolulu. Veteran nerd and Army veteran, fascinated by internet tech entrepreneurship. Hoping to leave the world a little bit better than I found it",
     name: "Ed White",
     email: "ed@jsconfhi.com",
     twitter: "SpyHI",

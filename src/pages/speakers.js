@@ -6,6 +6,7 @@ import Modal from 'react-modal';
 import Speaker from '../components/speaker';
 import speakers from '../data/speakers/data'
 import styled from "styled-components";
+import { FiX } from "react-icons/fi";
 
 /* Emcee Images */
 import Cassidy from "../img/cassidy.png";
@@ -13,6 +14,10 @@ import Cassidy from "../img/cassidy.png";
 const SectionHeading = styled.div`
   grid-column: 2/span 4;
   color: #1A7173;
+  @media (max-width: 600px) {
+    grid-column: 1/span 12;
+    justify-self: center;
+  }
 `;
 
 const SectionContent = styled.div`
@@ -38,9 +43,25 @@ const Gallery = styled.div`
 
 const FlexContainer = styled.div`
   display: flex;
+  justify-content: space-around;
   @media (max-width: 600px) {
     flex-direction: column;
+    justify-content: top;
+    align-items: center;
   }
+`;
+
+const CloseButton = styled.button`
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+  padding: 0.5em;
+  background: linear-gradient(45deg, white, white);
+`;
+
+const Title = styled.h2`
+  margin-right: 0.5em;
 `;
 
 const modalStyle = {
@@ -51,7 +72,9 @@ const modalStyle = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    maxWidth: '800px'
+    width: '800px',
+    maxWidth: '80%',
+    maxHeight: '80%'
   }
 };
 
@@ -74,12 +97,11 @@ const SpeakersPage = () => {
         contentLabel="Speaker Modal"
         onRequestClose={() => setSelectedSpeaker(null)}
       >
+      <CloseButton onClick={() => setSelectedSpeaker(null)}><FiX /></CloseButton>
       <FlexContainer>
+        <Speaker speaker={selectedSpeaker} />
         <div>
-          <Speaker speaker={selectedSpeaker} />
-        </div>
-        <div>
-          <h2>{selectedSpeaker.title}</h2>
+          <Title>{selectedSpeaker.title}</Title>
           <p>{selectedSpeaker.description}</p>
         </div>
       </FlexContainer>

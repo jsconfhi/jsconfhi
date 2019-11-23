@@ -127,7 +127,7 @@ const SpeakersPage = () => {
               <h2>Emcees</h2>
             </SectionHeading>
             <SectionContent>
-              <Person person={{ name: 'Casside Williams', img: Cassidy, handle: 'cassidoo'}} />
+              <Person person={{ name: 'Cassidy Williams', img: Cassidy, handle: 'cassidoo'}} />
             </SectionContent>
           </div>
           </div>

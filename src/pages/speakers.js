@@ -79,6 +79,8 @@ const modalStyle = {
 
 Modal.setAppElement('#___gatsby')
 
+const addLineBreak = (text) => text.split ('\n').map((paragraph, i) => <p key={i}>{paragraph}</p>);
+
 const SpeakersPage = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState();
 
@@ -101,7 +103,7 @@ const SpeakersPage = () => {
         <Person person={selectedSpeaker} />
         <div>
           <Title>{selectedSpeaker.title}</Title>
-          <p>{selectedSpeaker.description}</p>
+          <p>{addLineBreak(selectedSpeaker.description)}</p>
         </div>
       </FlexContainer>
       <FlexContainer>

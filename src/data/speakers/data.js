@@ -16,6 +16,8 @@ export default [
   {
     name: "Jenna Ziegen",
     handle: "zeigenvector",
+    bio: "Insert Jenna's bio here",
+    id: 1,
     img: JennaImage,
     title: "Parsing Parsers",
     description:
@@ -24,6 +26,8 @@ export default [
   {
     name: "Dinesh Pandiyan",
     handle: "flexdinesh",
+    bio: "Insert Dinesh's bio here",
+    id: 2,
     img: DineshImage,
     title:
       "Progressive Rendering — Improve web application performance on slower networks",
@@ -35,6 +39,8 @@ export default [
   {
     name: "Angie Jones",
     handle: "techgirl1908",
+    bio: "Insert Angie's bio here",
+    id: 3,
     img: AngieImage,
     title: "Your Tests Lack Vision: Adding Eyes to Your Automation Framework",
     description:
@@ -45,6 +51,8 @@ export default [
   {
     name: "Alex Sexton",
     handle: "SlexAxton",
+    bio: "Insert Alex's bio here",
+    id: 4,
     img: AlexImage,
     title: "Advanced Design System Considerations",
     description:
@@ -55,6 +63,8 @@ export default [
   {
     name: "Lindsey Dragun ",
     handle: "techevangelista",
+    bio: "Insert Lindsey's bio here",
+    id: 5,
     img: LindseyImage,
     title: "Impactful Accessibility - The Changes That Mean The Most",
     description:
@@ -64,6 +74,8 @@ export default [
   {
     name: "Taylor Ho",
     handle: "tellaho_",
+    bio: "Insert Taylor's bio here",
+    id: 6,
     img: TaylorImg,
     title: "The power to think like a Native Hawaiian in tech",
     description:
@@ -73,6 +85,8 @@ export default [
   {
     name: "Sarah Drasner",
     handle: "sarah_edo",
+    bio: "Insert Sarah's bio here",
+    id: 7,
     img: SarahImg,
     title: "The Art of Code Comments",
     description:
@@ -83,6 +97,7 @@ export default [
   {
     name: "Leta Keane",
     handle: "LetaCodes",
+    id: 8,
     img: LetaImg,
     title: "React, Vue, & Svelte as Teen Movie Archetypes",
     description:
@@ -92,6 +107,7 @@ export default [
   {
     name: "Sam Bellen",
     handle: "sambego",
+    id: 9,
     img: SamImg,
     title: "No way, JOSE!",
     description:
@@ -102,6 +118,7 @@ export default [
   {
     name: "Erica Stanley",
     handle: "ericastanley",
+    id: 10,
     img: EricaImg,
     title: "A Seat at the Table: Building Inclusive Ecosystems",
     description:
@@ -110,6 +127,7 @@ export default [
   {
     name: "Max Goodhart",
     handle: "chromakode",
+    id: 11,
     img: MaxImg,
     title: "How to Wait",
     description:
@@ -118,6 +136,7 @@ export default [
   {
     name: "Charlie Gerard",
     handle: "devdevcharlie",
+    id: 12,
     img: CharlieImg,
     title:
       "Strike a pose - Gesture recognition in JavaScript with Machine Learning & Arduino.",
@@ -129,6 +148,7 @@ export default [
   {
     name: "Dave Aronson",
     handle: "davearonson",
+    id: 13,
     img: DaveImg,
     title: "Kill All Mutants! (Intro to Mutation Testing)",
     description:
@@ -140,6 +160,7 @@ export default [
   {
     name: "Placeholder",
     handle: null,
+    id: 14,
     img: null,
     title: null,
     description: null
@@ -147,6 +168,7 @@ export default [
   {
     name: "Placeholder",
     handle: null,
+    id: 15,
     img: null,
     title: null,
     description: null
@@ -154,6 +176,7 @@ export default [
   {
     name: "Placeholder",
     handle: null,
+    id: 16,
     img: null,
     title: null,
     description: null
@@ -161,6 +184,7 @@ export default [
   {
     name: "Placeholder",
     handle: null,
+    id: 17,
     img: null,
     title: null,
     description: null
@@ -168,6 +192,31 @@ export default [
   {
     name: "Placeholder",
     handle: null,
+    id: 18,
+    img: null,
+    title: null,
+    description: null
+  },
+  {
+    name: "Placeholder",
+    handle: null,
+    id: 19,
+    img: null,
+    title: null,
+    description: null
+  },
+  {
+    name: "Placeholder",
+    handle: null,
+    id: 20,
+    img: null,
+    title: null,
+    description: null
+  },
+  {
+    name: "Placeholder",
+    handle: null,
+    id: 21,
     img: null,
     title: null,
     description: null

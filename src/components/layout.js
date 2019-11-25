@@ -402,6 +402,10 @@ const GlobalStyles = createGlobalStyle`
     align-self: flex-start;
   }
 
+  tr.highlight {
+    background: #eee;
+    line-height: 3em;
+  }
   /*----- Media queries -----*/
   @media screen and (max-width: 1200px){
     .towel-green {

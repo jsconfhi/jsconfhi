@@ -5,8 +5,9 @@ import Footer from "../components/footer";
 import {
   CloseButton,
   Content,
-  Link,
   FlexContainer,
+  Link,
+  modalStyle,
   SectionContent,
   SectionHeading,
   Title
@@ -52,20 +53,6 @@ const Avatar = styled.img`
   margin-right: 1em;
   float: left;
 `;
-
-const modalStyle = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    width: "800px",
-    maxWidth: "80%",
-    maxHeight: "80%"
-  }
-};
 
 Modal.setAppElement("#___gatsby");
 

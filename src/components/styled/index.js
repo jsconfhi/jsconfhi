@@ -4,6 +4,27 @@ export const Link = styled.a`
   color: #d95b5b;
 `;
 
+export const modalStyle = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    width: "800px",
+    maxWidth: "80%",
+    maxHeight: "80%"
+  }
+};
+
+export const ModalButton = styled.button`
+  cursor: pointer;
+  color: #667;
+  background: linear-gradient(45deg, transparent, transparent);
+  border-color: transparent;
+`;
+
 export const CloseButton = styled.button`
   position: absolute;
   top: 1em;

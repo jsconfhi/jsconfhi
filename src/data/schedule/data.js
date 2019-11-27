@@ -14,7 +14,7 @@ export const day1 = [
     description: "Breakfast & check-in",
     highlight: true
   },
-  { time: "9am", speakerId: 1 },
+  { time: "9am", speakerId: 6 },
   { time: "9:30am", speakerId: 2 },
   { time: "10am", speakerId: 3 },
   {
@@ -33,13 +33,13 @@ export const day1 = [
   { time: "1:30pm", speakerId: 2 },
   { time: "2pm", speakerId: 3 },
   {
-    time: "10:30am",
+    time: "2:30pm",
     description: "Snack break",
     highlight: true
   },
-  { time: "1pm", speakerId: 1 },
-  { time: "1:30pm", speakerId: 2 },
-  { time: "2pm", speakerId: 3 },
+  { time: "3pm", speakerId: 4 },
+  { time: "3:30pm", speakerId: 5 },
+  { time: "4pm", speakerId: 6 },
   {
     time: "6-9pm",
     description: "After-party at the Honolulu Aquarium",
@@ -98,13 +98,13 @@ export const day3 = [
   { time: "1:30pm", speakerId: 2 },
   { time: "2pm", speakerId: 3 },
   {
-    time: "10:30am",
+    time: "2:30pm",
     description: "Snack break",
     highlight: true
   },
-  { time: "1pm", speakerId: 1 },
-  { time: "1:30pm", speakerId: 2 },
-  { time: "2pm", speakerId: 3 },
+  { time: "3pm", speakerId: 1 },
+  { time: "3:30pm", speakerId: 2 },
+  { time: "4pm", speakerId: 3 },
   {
     time: "5pm",
     description: "Group photo and goodbye drinks at the Alohilani pool",

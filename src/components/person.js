@@ -8,15 +8,15 @@ const Name = styled.div`
   padding: 10px 20px 20px;
   margin-right: 1em;
   a {
-    color: #D95B5B;
+    color: #d95b5b;
     font-weight: bold;
   }
 `;
 
 const Image = styled.img`
   border-radius: 130px;
-  height: 180px;
-  width: 180px;
+  height: 170px;
+  width: 170px;
   margin: 0 auto;
   padding: 10px;
   display: flex;
@@ -24,13 +24,13 @@ const Image = styled.img`
 
 const SVGContainer = styled.div`
   border-radius: 130px;
-  height: 180px;
-  width: 180px;
+  height: 170px;
+  width: 170px;
   margin: 0 auto;
   padding: 10px;
   display: flex;
   svg {
-    font-size: 180px;
+    font-size: 170px;
     background: white;
     padding: 30px 40px 0 40px;
     border-radius: 50px;
@@ -49,17 +49,17 @@ const PersonButtonContainer = styled.button`
   }
 `;
 
- const PersonContainer = styled.div`
+const PersonContainer = styled.div`
   width: 200px;
   margin-bottom: 20px;
   @media (max-width: 600px) {
     width: 100%;
   }
- `;
+`;
 
 function Person(props) {
   const { person, onClick } = props;
-   const stopPropagation = (e) => {
+  const stopPropagation = e => {
     // Do not open modal
     e.stopPropagation();
     return false;
@@ -68,23 +68,55 @@ function Person(props) {
   const isClickable = !!onClick;
 
   return isClickable ? (
-    <PersonButtonContainer className='isClickable' key={person.name} onClick={onClick}>
+    <PersonButtonContainer
+      className="isClickable"
+      key={person.name}
+      onClick={onClick}
+    >
       <Image src={person.img} alt="" />
       <Name>
         <div>{person.name}</div>
-        {person.handle && <a target="_blank" rel="noopener noreferrer" onClick={stopPropagation} href={`https://twitter.com/${person.handle}`}>@{person.handle}</a> }
+        {person.handle && (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={stopPropagation}
+            href={`https://twitter.com/${person.handle}`}
+          >
+            @{person.handle}
+          </a>
+        )}
       </Name>
     </PersonButtonContainer>
   ) : (
     <PersonContainer key={person.name}>
-     { person.img ? <Image src={person.img} alt="" /> : <SVGContainer><FiUser /></SVGContainer> }
+      {person.img ? (
+        <Image src={person.img} alt="" />
+      ) : (
+        <SVGContainer>
+          <FiUser />
+        </SVGContainer>
+      )}
       <Name>
         <div>{person.name}</div>
-        { person.handle && <a target="_blank" rel="noopener noreferrer" onClick={stopPropagation} href={`https://twitter.com/${person.handle}`}>@{person.handle}</a> }
-        { person.email && <div><a href={`mailto:${person.email}`}>{person.email}</a></div> }
+        {person.handle && (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={stopPropagation}
+            href={`https://twitter.com/${person.handle}`}
+          >
+            @{person.handle}
+          </a>
+        )}
+        {person.email && (
+          <div>
+            <a href={`mailto:${person.email}`}>{person.email}</a>
+          </div>
+        )}
       </Name>
     </PersonContainer>
-  )
+  );
 }
 
 export default Person;

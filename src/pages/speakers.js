@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import Modal from 'react-modal';
-import Person from '../components/person';
-import speakers from '../data/speakers/data'
+import Modal from "react-modal";
+import Person from "../components/person";
+import speakers from "../data/speakers/data";
 import styled from "styled-components";
 import { FiX } from "react-icons/fi";
 
@@ -12,10 +12,10 @@ import { FiX } from "react-icons/fi";
 import Cassidy from "../img/cassidy.png";
 
 const SectionHeading = styled.div`
-  grid-column: 2/span 4;
-  color: #1A7173;
+  grid-column: 2 / span 4;
+  color: #1a7173;
   @media (max-width: 600px) {
-    grid-column: 1/span 13;
+    grid-column: 1 / span 13;
     justify-self: center;
     text-align: center;
   }
@@ -31,7 +31,6 @@ const SectionContent = styled.div`
     justify-self: center;
   }
 `;
-
 
 const Gallery = styled.div`
   margin: 0 auto;
@@ -62,66 +61,68 @@ const Title = styled.h2`
   margin-right: 0.5em;
 `;
 
-
 const modalStyle = {
-  content : {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    width: '800px',
-    maxWidth: '80%',
-    maxHeight: '80%'
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    width: "800px",
+    maxWidth: "80%",
+    maxHeight: "80%"
   }
 };
 
-Modal.setAppElement('#___gatsby')
+Modal.setAppElement("#___gatsby");
 
-const addLineBreak = (text) => text.split ('\n').map((paragraph, i) => <p key={i}>{paragraph}</p>);
+const addLineBreak = text =>
+  text.split("\n").map((paragraph, i) => <p key={i}>{paragraph}</p>);
 
 const SpeakersPage = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState();
 
   const renderSpeaker = (speaker, i) => {
     return speaker.title ? (
-      <Person key={i} person={speaker} onClick={() => setSelectedSpeaker(speaker)} />
-    ) : <Person key={i} person={{ name: 'Coming Soon!' }} />;
+      <Person
+        key={i}
+        person={speaker}
+        onClick={() => setSelectedSpeaker(speaker)}
+      />
+    ) : (
+      <Person key={i} person={{ name: "Coming Soon!" }} />
+    );
   };
 
   const renderModal = () => {
-    return selectedSpeaker && (
-      <Modal
-        isOpen={!!selectedSpeaker}
-        style={modalStyle}
-        contentLabel="Speaker Modal"
-        onRequestClose={() => setSelectedSpeaker(null)}
-      >
-      <CloseButton onClick={() => setSelectedSpeaker(null)}><FiX /></CloseButton>
-      <FlexContainer>
-        <Person person={selectedSpeaker} />
-        <div>
-          <Title>{selectedSpeaker.title}</Title>
-          <p>{addLineBreak(selectedSpeaker.description)}</p>
-        </div>
-      </FlexContainer>
-      <FlexContainer>
-        <a
-          className="buy-button button-primary"
-          href="https://ti.to/jsconf-hawaii/2020/en"
+    return (
+      selectedSpeaker && (
+        <Modal
+          isOpen={!!selectedSpeaker}
+          style={modalStyle}
+          contentLabel="Speaker Modal"
+          onRequestClose={() => setSelectedSpeaker(null)}
         >
-          Buy tickets
-        </a>
-      </FlexContainer>
-    </Modal>
-    )
+          <CloseButton onClick={() => setSelectedSpeaker(null)}>
+            <FiX />
+          </CloseButton>
+          <FlexContainer>
+            <Person person={selectedSpeaker} />
+            <div style={{ padding: "1em" }}>
+              <Title>About {selectedSpeaker.name}</Title>
+              <p>{selectedSpeaker.bio}</p>
+            </div>
+          </FlexContainer>
+        </Modal>
+      )
+    );
   };
 
   return (
     <Layout>
       <Header />
-      { renderModal() }
+      {renderModal()}
       <Gallery>
         <div className="content">
           <div className="grid">
@@ -129,24 +130,28 @@ const SpeakersPage = () => {
               <h2>Emcees</h2>
             </SectionHeading>
             <SectionContent>
-              <Person person={{ name: 'Cassidy Williams', img: Cassidy, handle: 'cassidoo'}} />
+              <Person
+                person={{
+                  name: "Cassidy Williams",
+                  img: Cassidy,
+                  handle: "cassidoo"
+                }}
+              />
             </SectionContent>
           </div>
-          </div>
-          <div className="content">
+        </div>
+        <div className="content">
           <div className="grid">
             <SectionHeading>
               <h2>Meet the Speakers</h2>
             </SectionHeading>
-            <SectionContent>
-              {speakers.map(renderSpeaker)}
-            </SectionContent>
+            <SectionContent>{speakers.map(renderSpeaker)}</SectionContent>
           </div>
         </div>
       </Gallery>
       <Footer />
     </Layout>
-);
-}
+  );
+};
 
 export default SpeakersPage;

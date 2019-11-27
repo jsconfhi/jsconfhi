@@ -37,12 +37,6 @@ const Gallery = styled.div`
 
 const SpeakerName = styled.div`
   color: #d23636;
-  text-decoration: none;
-  :focus,
-  :active,
-  :hover {
-    text-decoration: underline;
-  }
 `;
 
 const FlexContainer = styled.div`
@@ -118,12 +112,6 @@ Modal.setAppElement("#___gatsby");
 
 const SpeakersPage = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState();
-  const [isBio, setIsBio] = useState();
-
-  const clearModal = () => {
-    setSelectedSpeaker(null);
-    setIsBio(false);
-  };
 
   const renderRow = (
     { time, speakerId = null, description = null, highlight = false },
@@ -142,13 +130,9 @@ const SpeakersPage = () => {
         <SpeakerRow onClick={() => setSelectedSpeaker(speaker)} key={i}>
           <td>{time}</td>
           <td>
-            <a onClick={() => setSelectedSpeaker(speaker)}>
-              <Avatar src={speaker.img} alt="" onClick={() => setIsBio(true)} />
-              <SpeakerName onClick={() => setIsBio(true)}>
-                {speaker.name}
-              </SpeakerName>
-              <p>{speaker.title}</p>
-            </a>
+            <Avatar src={speaker.img} alt="" />
+            <SpeakerName>{speaker.name}</SpeakerName>
+            <p>{speaker.title}</p>
           </td>
         </SpeakerRow>
       );
@@ -161,21 +145,17 @@ const SpeakersPage = () => {
           isOpen={!!selectedSpeaker}
           style={modalStyle}
           contentLabel="Speaker Modal"
-          onRequestClose={clearModal}
+          onRequestClose={() => setSelectedSpeaker(null)}
         >
-          <CloseButton onClick={clearModal}>
+          <CloseButton onClick={() => setSelectedSpeaker(null)}>
             <FiX />
           </CloseButton>
           <FlexContainer>
             <Person person={selectedSpeaker} />
-            {isBio ? (
-              <div>{selectedSpeaker.bio}</div>
-            ) : (
-              <div>
-                <Title>{selectedSpeaker.title}</Title>
-                <p>{selectedSpeaker.description}</p>
-              </div>
-            )}
+            <div style={{ padding: "1em" }}>
+              <Title>{selectedSpeaker.title}</Title>
+              <p>{selectedSpeaker.description}</p>
+            </div>
           </FlexContainer>
           <FlexContainer>
             <a

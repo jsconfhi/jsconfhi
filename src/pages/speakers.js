@@ -2,6 +2,14 @@ import React, { useState } from "react";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import {
+  CloseButton,
+  Content,
+  FlexContainer,
+  SectionContent,
+  SectionHeading,
+  Title
+} from "../components/styled";
 import Modal from "react-modal";
 import Person from "../components/person";
 import speakers from "../data/speakers/data";
@@ -10,56 +18,6 @@ import { FiX } from "react-icons/fi";
 
 /* Emcee Images */
 import Cassidy from "../img/cassidy.png";
-
-const SectionHeading = styled.div`
-  grid-column: 2 / span 4;
-  color: #1a7173;
-  @media (max-width: 600px) {
-    grid-column: 1 / span 13;
-    justify-self: center;
-    text-align: center;
-  }
-`;
-
-const SectionContent = styled.div`
-  grid-column 6/span 8;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  @media (max-width: 600px) {
-    grid-column: 1/span 13;
-    justify-self: center;
-  }
-`;
-
-const Gallery = styled.div`
-  margin: 0 auto;
-  padding: 0 25px;
-`;
-
-const FlexContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  @media (max-width: 600px) {
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-  }
-`;
-
-const CloseButton = styled.button`
-  position: absolute;
-  top: 1em;
-  right: 1em;
-  cursor: pointer;
-  padding: 0.5em;
-  background: linear-gradient(45deg, white, white);
-  border: transparent;
-`;
-
-const Title = styled.h2`
-  margin-right: 0.5em;
-`;
 
 const modalStyle = {
   content: {
@@ -123,7 +81,7 @@ const SpeakersPage = () => {
     <Layout>
       <Header />
       {renderModal()}
-      <Gallery>
+      <Content>
         <div className="content">
           <div className="grid">
             <SectionHeading>
@@ -148,7 +106,7 @@ const SpeakersPage = () => {
             <SectionContent>{speakers.map(renderSpeaker)}</SectionContent>
           </div>
         </div>
-      </Gallery>
+      </Content>
       <Footer />
     </Layout>
   );

@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import {
+  CloseButton,
+  Content,
+  Link,
+  FlexContainer,
+  SectionContent,
+  SectionHeading,
+  Title
+} from "../components/styled";
 import Modal from "react-modal";
 import Person from "../components/person";
 import speakers from "../data/speakers/data";
@@ -9,58 +18,8 @@ import styled from "styled-components";
 import { FiX } from "react-icons/fi";
 import { day0, day1, day2, day3 } from "../data/schedule/data";
 
-const SectionHeading = styled.div`
-  grid-column: 2 / span 4;
-  color: #1a7173;
-  @media (max-width: 600px) {
-    grid-column: 1 / span 13;
-    justify-self: center;
-    text-align: center;
-  }
-`;
-
-const SectionContent = styled.div`
-  grid-column 6/span 8;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  @media (max-width: 600px) {
-    grid-column: 1/span 13;
-    justify-self: center;
-  }
-`;
-
-const Gallery = styled.div`
-  margin: 0 auto;
-  padding: 0 25px;
-`;
-
 const SpeakerName = styled.div`
   color: #d23636;
-`;
-
-const FlexContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  @media (max-width: 600px) {
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-  }
-`;
-
-const CloseButton = styled.button`
-  position: absolute;
-  top: 1em;
-  right: 1em;
-  cursor: pointer;
-  padding: 0.5em;
-  background: linear-gradient(45deg, white, white);
-  border: transparent;
-`;
-
-const Title = styled.h2`
-  margin-right: 0.5em;
 `;
 
 const Schedule = styled.table`
@@ -174,7 +133,7 @@ const SpeakersPage = () => {
     <Layout>
       <Header />
       {renderModal()}
-      <Gallery>
+      <Content>
         <div className="content">
           <div className="grid">
             <SectionHeading>
@@ -225,7 +184,7 @@ const SpeakersPage = () => {
             <SectionContent>
               <p>
                 Each ticket includes one "Gap Day" activity. Sign up{" "}
-                <a href="">here</a>! <br />
+                <Link href="foobar ">here</Link>! <br />
                 <i>
                   (Selections are modifiable until Jan 25th -- 10 days prior to
                   the event)
@@ -260,7 +219,7 @@ const SpeakersPage = () => {
             </SectionContent>
           </div>
         </div>
-      </Gallery>
+      </Content>
       <Footer />
     </Layout>
   );

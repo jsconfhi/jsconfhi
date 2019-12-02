@@ -7,6 +7,8 @@ import TaylorImg from "../../img/taylor.jpeg";
 import SarahImg from "../../img/sarah.jpeg";
 import LetaImg from "../../img/leta.jpeg";
 import SamImg from "../../img/sam.jpeg";
+import EricaImg from "../../img/erica.png";
+import MaxImg from "../../img/max.jpeg";
 
 export default [
   {
@@ -43,9 +45,10 @@ export default [
     handle: "SlexAxton",
     img: AlexImage,
     title: "Advanced Design System Considerations",
-    description: `"Design Systems" and component libraries are a popular solution for abstracting common UI elements and flows to be reusable across many applications.They allow you to spend more time on the details, and reduce the complexity of implementing consistent experiences.There's a good chance that you're using one already!`+
-    `\nScaling these systems to provide value to *lots* of teams across your organization, or in open - source - land, requires solving for each team's different use-cases simultaneously. How do you add in support for internationalization, accessibility, theming (dark mode!), server rendering, or multiple render targets? How do you support the teams that need it in React *and* the teams that need it in Svelte? How do you provide a system that is flexible enough, but doesn't become prohibitively complex? How can you export your components to popular design tools for your designers to build with?`+
-    `\nLet's dive into approaches to solving these problems in scalable ways, and take a look at how Stripe has chosen to tackle some of these issues in the real world. Let's look at how to make sure a design system specifies design choices and allows users to build quickly, but doesn't lock you into specific frameworks or trendy tools out of the gate.`
+    description:
+      `"Design Systems" and component libraries are a popular solution for abstracting common UI elements and flows to be reusable across many applications.They allow you to spend more time on the details, and reduce the complexity of implementing consistent experiences.There's a good chance that you're using one already!` +
+      `\nScaling these systems to provide value to *lots* of teams across your organization, or in open - source - land, requires solving for each team's different use-cases simultaneously. How do you add in support for internationalization, accessibility, theming (dark mode!), server rendering, or multiple render targets? How do you support the teams that need it in React *and* the teams that need it in Svelte? How do you provide a system that is flexible enough, but doesn't become prohibitively complex? How can you export your components to popular design tools for your designers to build with?` +
+      `\nLet's dive into approaches to solving these problems in scalable ways, and take a look at how Stripe has chosen to tackle some of these issues in the real world. Let's look at how to make sure a design system specifies design choices and allows users to build quickly, but doesn't lock you into specific frameworks or trendy tools out of the gate.`
   },
   {
     name: "Lindsey Dragun ",
@@ -62,7 +65,7 @@ export default [
     img: TaylorImg,
     title: "The power to think like a Native Hawaiian in tech",
     description:
-      "Diversity, in both small and large tech companies, is now understood as a critical component to innovation. In the same way individual generalists are able to make connections across disciplines, members of a diverse team contribute perspectives that would have otherwise been unknown. This is perhaps what Steve Jobs was referencing to when he eloquently recited “Think Different”. This talk uses my experiences as a Native Hawaiian programmer and designer working at Twitch as a launching point to discuss the benefits of introducing cultural and thought diversity into an organization." + 
+      "Diversity, in both small and large tech companies, is now understood as a critical component to innovation. In the same way individual generalists are able to make connections across disciplines, members of a diverse team contribute perspectives that would have otherwise been unknown. This is perhaps what Steve Jobs was referencing to when he eloquently recited “Think Different”. This talk uses my experiences as a Native Hawaiian programmer and designer working at Twitch as a launching point to discuss the benefits of introducing cultural and thought diversity into an organization." +
       "\nThis talk will also discuss core concepts I’ve learned from a Hawaiian upbringing that I believe can lead to positive contributions in the tech space, such as the benefits of being kolohe(having a rebellious nature), encouraging ‘imi ‘ike(the pursuit of knowledge), the complementary forces of a‘o aku and a‘o mai(to learn and to teach), committing to aloha(in part the generous spirit of giving without expecting), favoring laulima(group cooperation) over personal gain, the practice aloha ‘aina(the love of one’s environment) and more."
   },
   {
@@ -80,31 +83,35 @@ export default [
     handle: "LetaCodes",
     img: LetaImg,
     title: "React, Vue, & Svelte as Teen Movie Archetypes",
-    description: "Who's the jock? The nerd? The misfit? Who's the type A overachiever, or the moody artist, or the partier? Get to know each of these JavaScript frameworks through the hallowed medium of the teen comedy." +
-    "\nIn this talk, we'll dig into what makes these frameworks unique, as well as the things they have in common. And, as in every good millennial teen movie, you'll leave with a better understanding of each one."
+    description:
+      "Who's the jock? The nerd? The misfit? Who's the type A overachiever, or the moody artist, or the partier? Get to know each of these JavaScript frameworks through the hallowed medium of the teen comedy." +
+      "\nIn this talk, we'll dig into what makes these frameworks unique, as well as the things they have in common. And, as in every good millennial teen movie, you'll leave with a better understanding of each one."
   },
   {
     name: "Sam Bellen",
     handle: "sambego",
     img: SamImg,
     title: "No way, JOSE!",
-    description: `Is your first thought when thinking about cryptography, “nope, that’s not for me!”? There’s no need to. When explained with simple examples, you can see the basics are not that complicated. The Javascript Object Signing and Encryption, or JOSE for short is a framework that helps us deal with encryption. It describes ways to securely transfer data either signed (JWS) or encrypted (JWE). Let’s take a leap of faith and explore the wonderful world of cryptography together, shall we?` +
-    `\nIn this talk, I will try to explain the basics of encryption and hashing through simple examples. We’ll look into how the JOSE standard can help us with encrypted content on the web using JSON Web Encryption (JWE) and JSON Web Keys (JWK). The audience does not need any specific knowledge about cryptography as this talk will go through the basics. Some JavaScript knowledge can be useful but not necessary as code examples will be simple and explained.` +
-    `\nWhy? The times when websites were just simple pieces of information is long gone. These days the web handles more sensitive data than ever before. To securely handle this data, we sometimes need to hash, encrypt or sign it. Sure there are a million tools, libraries and pieces of software that handle this for you, but knowing the basics can certainly come in handy!`
+    description:
+      `Is your first thought when thinking about cryptography, “nope, that’s not for me!”? There’s no need to. When explained with simple examples, you can see the basics are not that complicated. The Javascript Object Signing and Encryption, or JOSE for short is a framework that helps us deal with encryption. It describes ways to securely transfer data either signed (JWS) or encrypted (JWE). Let’s take a leap of faith and explore the wonderful world of cryptography together, shall we?` +
+      `\nIn this talk, I will try to explain the basics of encryption and hashing through simple examples. We’ll look into how the JOSE standard can help us with encrypted content on the web using JSON Web Encryption (JWE) and JSON Web Keys (JWK). The audience does not need any specific knowledge about cryptography as this talk will go through the basics. Some JavaScript knowledge can be useful but not necessary as code examples will be simple and explained.` +
+      `\nWhy? The times when websites were just simple pieces of information is long gone. These days the web handles more sensitive data than ever before. To securely handle this data, we sometimes need to hash, encrypt or sign it. Sure there are a million tools, libraries and pieces of software that handle this for you, but knowing the basics can certainly come in handy!`
   },
   {
-    name: "Placeholder",
-    handle: null,
-    img: null,
-    title: null,
-    description: null
+    name: "Erica Stanley",
+    handle: "ericastanley",
+    img: EricaImg,
+    title: "A Seat at the Table: Building Inclusive Ecosystems",
+    description:
+      "Inclusion doesn't just happen. It has to be intentionally and continuously cultivated. In this session, we'll discuss the ways we can all be responsible for building communities with an inclusion-first mindset. I'll describe my lessons learned and walk through a framework for optimizing for inclusion."
   },
   {
-    name: "Placeholder",
-    handle: null,
-    img: null,
-    title: null,
-    description: null
+    name: "Max Goodhart",
+    handle: "chromakode",
+    img: MaxImg,
+    title: "How to Wait",
+    description:
+      "Our story begins with a humble `await fetch`: your script fires off an HTTP request and settles down to nap, trusting that it'll be awoken when response data is available. While your program does nothing, a cascade of activity is now taking place: in your JS runtime, your operating system, and your hardware. What happens while your code is waiting for something to happen? In this talk, we'll peek behind the layers of the event loop, select/epoll nonblocking I/O, and hardware architecture to answer a simple question: what is waiting, and how does a program wait?"
   },
   {
     name: "Placeholder",

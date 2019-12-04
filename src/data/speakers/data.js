@@ -9,6 +9,8 @@ import LetaImg from "../../img/leta.jpeg";
 import SamImg from "../../img/sam.jpeg";
 import EricaImg from "../../img/erica.png";
 import MaxImg from "../../img/max.jpeg";
+import CharlieImg from "../../img/charlieg.jpeg";
+import DaveImg from "../../img/dave.jpeg";
 
 export default [
   {
@@ -114,18 +116,26 @@ export default [
       "Our story begins with a humble `await fetch`: your script fires off an HTTP request and settles down to nap, trusting that it'll be awoken when response data is available. While your program does nothing, a cascade of activity is now taking place: in your JS runtime, your operating system, and your hardware. What happens while your code is waiting for something to happen? In this talk, we'll peek behind the layers of the event loop, select/epoll nonblocking I/O, and hardware architecture to answer a simple question: what is waiting, and how does a program wait?"
   },
   {
-    name: "Placeholder",
-    handle: null,
-    img: null,
-    title: null,
-    description: null
+    name: "Charlie Gerard",
+    handle: "devdevcharlie",
+    img: CharlieImg,
+    title:
+      "Strike a pose - Gesture recognition in JavaScript with Machine Learning & Arduino.",
+    description:
+      "Most of our interactions with technology aren’t really intuitive. We’ve had to adapt to it by learning to type, swipe, execute specific voice commands, etc… but what if we could train technology to adapt to us?" +
+      "\nProgramming for hardware in JavaScript has already been made accessible with frameworks like Johnny- five, but, combining it with machine learning, we have the opportunity to create new and smarter interactions." +
+      "\nIn this presentation, I will talk about how to build a simple gesture recognition system using JavaScript, Arduino and Machine learning."
   },
   {
-    name: "Placeholder",
-    handle: null,
-    img: null,
-    title: null,
-    description: null
+    name: "Dave Aronson",
+    handle: "davearonson",
+    img: DaveImg,
+    title: "Kill All Mutants! (Intro to Mutation Testing)",
+    description:
+      "How good are your tests? Would they still pass if the tested code was changed? If so, there may be problems with your code, your tests, or both!" +
+      `\nMutation Testing helps reveal these cases.It makes lots of slightly altered versions, called "mutants", of your functions, and runs your functions' unit tests, using each of its mutants instead. If a mutant makes any test fail, that mutant "dies". "Survivors" imply flaws: your code might not be meaningful enough that a slight mutation would change the behavior, your tests might not be strict enough to catch the difference that the mutation made, or both!` +
+      "\nThis talk will tell you how to use mutation testing, its benefits, drawbacks, and pitfalls, and how it works under the hood.There will be several examples(in clear pseudocode), and a list of tools for some popular languages(including of course Javascript)." +
+      "\nYou will come away equipped with a powerful new technique for making sure your tests are strict and your code is meaningful."
   },
   {
     name: "Placeholder",

@@ -118,6 +118,11 @@ const Attend = () => (
                       announce the final activities as the conferences draws
                       nearer.
                     </p>
+                    <p>
+                      Friday we're back with another action-packed day of talks
+                      followed by a casual get together. Check back soon for our
+                      official talk schedule.
+                    </p>
                     <h4>Amenities</h4>
                     <p>
                       You can read more about the resort further on, but the

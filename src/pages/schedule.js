@@ -59,6 +59,10 @@ const BulletedList = styled.ul`
   margin-left: 1em;
 `;
 
+const Disclaimer = styled.p`
+  text-align: center;
+`;
+
 Modal.setAppElement("#___gatsby");
 
 const addLineBreak = text =>
@@ -217,6 +221,9 @@ const SpeakersPage = () => {
             </SectionContent>
           </div>
         </div>
+        <Disclaimer>
+          <i>*Plan is still tentative</i>
+        </Disclaimer>
       </Content>
       <Footer />
     </Layout>

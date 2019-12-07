@@ -5,7 +5,7 @@ export const day0 = [
   },
   {
     time: "6-9pm",
-    description: "Dinner roulette (optional)"
+    description: "Dinner roulette* (optional)"
   }
 ];
 export const day1 = [
@@ -107,7 +107,7 @@ export const day3 = [
   { time: "4pm", speakerId: 21 },
   {
     time: "5pm",
-    description: "Group photo and goodbye drinks at the Alohilani pool",
+    description: "Group photo and goodbye drinks at the Alohilani pool*",
     highlight: true
   }
 ];

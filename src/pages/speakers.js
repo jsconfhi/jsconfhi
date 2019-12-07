@@ -13,12 +13,13 @@ import {
 } from "../components/styled";
 import Modal from "react-modal";
 import Person from "../components/person";
-import speakers from "../data/speakers/data";
+import speakersRaw from "../data/speakers/data";
 import styled from "styled-components";
 import { FiArrowLeft, FiArrowRight, FiX } from "react-icons/fi";
 
 /* Emcee Images */
 import Cassidy from "../img/cassidy.png";
+const speakers = speakersRaw.filter(speaker => !!speaker.description);
 
 const ModalButton = styled.button`
   font-size: 22px;
@@ -86,7 +87,7 @@ const SpeakersPage = () => {
             <Person person={selectedSpeaker} />
             <div style={{ padding: "1em" }}>
               <Title>About {selectedSpeaker.name}</Title>
-              <p>{selectedSpeaker.bio}</p>
+              <p>{addLineBreak(selectedSpeaker.bio)}</p>
             </div>
           </FlexContainer>
           {index > 0 && (

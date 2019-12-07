@@ -54,7 +54,15 @@ const Avatar = styled.img`
   float: left;
 `;
 
+const BulletedList = styled.ul`
+  list-style: inherit;
+  margin-left: 1em;
+`;
+
 Modal.setAppElement("#___gatsby");
+
+const addLineBreak = text =>
+  text.split("\n").map((paragraph, i) => <p key={i}>{paragraph}</p>);
 
 const SpeakersPage = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState();
@@ -73,10 +81,15 @@ const SpeakersPage = () => {
     } else {
       const speaker = speakers.filter(s => s.id === speakerId)[0];
       return (
-        <SpeakerRow onClick={() => setSelectedSpeaker(speaker)} key={i}>
+        <SpeakerRow
+          onClick={
+            speaker.description ? () => setSelectedSpeaker(speaker) : null
+          }
+          key={i}
+        >
           <td>{time}</td>
           <td>
-            <Avatar src={speaker.img} alt="" />
+            {speaker.img && <Avatar src={speaker.img} alt="" />}
             <SpeakerName>{speaker.name}</SpeakerName>
             <p>{speaker.title}</p>
           </td>
@@ -100,7 +113,7 @@ const SpeakersPage = () => {
             <Person person={selectedSpeaker} />
             <div style={{ padding: "1em" }}>
               <Title>{selectedSpeaker.title}</Title>
-              <p>{selectedSpeaker.description}</p>
+              <p>{addLineBreak(selectedSpeaker.description)}</p>
             </div>
           </FlexContainer>
           <FlexContainer>
@@ -170,22 +183,20 @@ const SpeakersPage = () => {
             </SectionHeading>
             <SectionContent>
               <p>
-                Each ticket includes one "Gap Day" activity. Sign up{" "}
-                <Link href="foobar ">here</Link>! <br />
-                <i>
-                  (Selections are modifiable until Jan 25th -- 10 days prior to
-                  the event)
-                </i>
+                Each ticket includes one "Gap Day" activity. In January, we will
+                open up regirstration to a variety of activities. If you already
+                bought a ticket, keep an eye out for the sign up email.
               </p>
-              <Schedule>
-                <thead>
-                  <tr>
-                    <td>Time</td>
-                    <td>Details</td>
-                  </tr>
-                </thead>
-                <tbody>{day2.map(renderRow)}</tbody>
-              </Schedule>
+              <p>
+                Activities are not yet finalized, but are likely to include:
+                <BulletedList>
+                  <li>Snorkeling at Hanauma Bay</li>
+                  <li>Dinner Cruise</li>
+                  <li>Indoor cultural activity TBD</li>
+                  <li>Waterfall hike</li>
+                  <li>and more!</li>
+                </BulletedList>
+              </p>
             </SectionContent>
             <SectionHeading>
               <h2>

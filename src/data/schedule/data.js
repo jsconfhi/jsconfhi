@@ -15,31 +15,31 @@ export const day1 = [
     highlight: true
   },
   { time: "9am", speakerId: 6 },
-  { time: "9:30am", speakerId: 2 },
-  { time: "10am", speakerId: 3 },
+  { time: "9:30am", speakerId: 12 },
+  { time: "10am", speakerId: 20 },
   {
     time: "10:30am",
     description: "Snack break",
     highlight: true
   },
-  { time: "11am", speakerId: 4 },
-  { time: "11:30", speakerId: 5 },
+  { time: "11am", speakerId: 1 },
+  { time: "11:30", speakerId: 21 },
   {
     time: "12pm",
     description: "Lunch",
     highlight: true
   },
-  { time: "1pm", speakerId: 1 },
+  { time: "1pm", speakerId: 9 },
   { time: "1:30pm", speakerId: 2 },
-  { time: "2pm", speakerId: 3 },
+  { time: "2pm", speakerId: 18 },
   {
     time: "2:30pm",
     description: "Snack break",
     highlight: true
   },
-  { time: "3pm", speakerId: 4 },
+  { time: "3pm", speakerId: 19 },
   { time: "3:30pm", speakerId: 5 },
-  { time: "4pm", speakerId: 6 },
+  { time: "4pm", speakerId: 10 },
   {
     time: "6-9pm",
     description: "After-party at the Honolulu Aquarium",
@@ -79,32 +79,32 @@ export const day3 = [
     description: "Breakfast & check-in",
     highlight: true
   },
-  { time: "9am", speakerId: 1 },
-  { time: "9:30am", speakerId: 2 },
-  { time: "10am", speakerId: 3 },
+  { time: "9am", speakerId: 14 },
+  { time: "9:30am", speakerId: 4 },
+  { time: "10am", speakerId: 17 },
   {
     time: "10:30am",
     description: "Snack break",
     highlight: true
   },
-  { time: "11am", speakerId: 4 },
-  { time: "11:30", speakerId: 5 },
+  { time: "11am", speakerId: 3 },
+  { time: "11:30", speakerId: 13 },
   {
     time: "12pm",
     description: "Lunch",
     highlight: true
   },
-  { time: "1pm", speakerId: 1 },
-  { time: "1:30pm", speakerId: 2 },
-  { time: "2pm", speakerId: 3 },
+  { time: "1pm", speakerId: 15 },
+  { time: "1:30pm", speakerId: 11 },
+  { time: "2pm", speakerId: 7 },
   {
     time: "2:30pm",
     description: "Snack break",
     highlight: true
   },
-  { time: "3pm", speakerId: 1 },
-  { time: "3:30pm", speakerId: 2 },
-  { time: "4pm", speakerId: 3 },
+  { time: "3pm", speakerId: 8 },
+  { time: "3:30pm", speakerId: 16 },
+  { time: "4pm", speakerId: 21 },
   {
     time: "5pm",
     description: "Group photo and goodbye drinks at the Alohilani pool",

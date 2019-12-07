@@ -16,7 +16,8 @@ export default [
   {
     name: "Jenna Ziegen",
     handle: "zeigenvector",
-    bio: "Insert Jenna's bio here",
+    bio:
+      "One morning, Jenna awoke to find that she had transformed into a programmer. She's been psyched about coding ever since. When she's not teaching pixels to party or using JavaScript to help you find the important things in Slack, Jenna enjoys climbing, coffee, cognitive science, and cat gifs. Her best party trick is that she wrote the most serious academic paper of her life on puns.",
     id: 1,
     img: JennaImage,
     title: "Parsing Parsers",
@@ -26,7 +27,8 @@ export default [
   {
     name: "Dinesh Pandiyan",
     handle: "flexdinesh",
-    bio: "Insert Dinesh's bio here",
+    bio:
+      "I am a developer at Thinkmill, based in Sydney. In the past 6 years I have worked across the entire spectrum of web development and been pushing the boundaries of web perf by building and breaking things. A few of the npm libraries I maintain have gained some popularity and continue to offer new challenges, you can find me online often sharing my thoughts and writing blog posts on web dev.",
     id: 2,
     img: DineshImage,
     title:
@@ -118,6 +120,9 @@ export default [
   {
     name: "Erica Stanley",
     handle: "ericastanley",
+    bio:
+      "Erica Stanley is a software engineer, entrepreneur and tech diversity & inclusion advocate. She is a Sr. Research Engineering Manager at Mozilla working with the Firefox Reality team. In her 20-year career, she’s worked in Fortune 500 companies, early-stage startups, and academia." +
+      "\nErica is active in the Atlanta technology community. She helps develop and teach youth coding programs, speaks at local conferences, and user groups and mentors entrepreneurs for various incubators and accelerators. She also founded the Atlanta network of Women Who Code, where she organizes conferences, hackathons, developer workshops, monthly tech talks and networking events for women technologists.",
     id: 10,
     img: EricaImg,
     title: "A Seat at the Table: Building Inclusive Ecosystems",

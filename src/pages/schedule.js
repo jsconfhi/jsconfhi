@@ -188,7 +188,7 @@ const SpeakersPage = () => {
             <SectionContent>
               <p>
                 Each ticket includes one "Gap Day" activity. In January, we will
-                open up regirstration to a variety of activities. If you already
+                open up registration to a variety of activities. If you already
                 bought a ticket, keep an eye out for the sign up email.
               </p>
               <p>

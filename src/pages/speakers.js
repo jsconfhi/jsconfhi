@@ -43,6 +43,10 @@ const LeftAligned = styled.div`
   left: 8px;
 `;
 
+const Description = styled.p`
+  word-break: break-word;
+`;
+
 Modal.setAppElement("#___gatsby");
 
 const addLineBreak = text =>
@@ -87,7 +91,7 @@ const SpeakersPage = () => {
             <Person person={selectedSpeaker} />
             <div style={{ padding: "1em" }}>
               <Title>About {selectedSpeaker.name}</Title>
-              <p>{addLineBreak(selectedSpeaker.bio)}</p>
+              <Description>{addLineBreak(selectedSpeaker.bio)}</Description>
             </div>
           </FlexContainer>
           {index > 0 && (

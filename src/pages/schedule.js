@@ -6,7 +6,6 @@ import {
   CloseButton,
   Content,
   FlexContainer,
-  Link,
   modalStyle,
   SectionContent,
   SectionHeading,
@@ -17,7 +16,7 @@ import Person from "../components/person";
 import speakers from "../data/speakers/data";
 import styled from "styled-components";
 import { FiX } from "react-icons/fi";
-import { day0, day1, day2, day3 } from "../data/schedule/data";
+import { day0, day1, day3 } from "../data/schedule/data";
 
 const SpeakerName = styled.div`
   color: #d23636;
@@ -61,6 +60,10 @@ const BulletedList = styled.ul`
 
 const Disclaimer = styled.p`
   text-align: center;
+`;
+
+const Description = styled.p`
+  word-break: break-word;
 `;
 
 Modal.setAppElement("#___gatsby");
@@ -117,7 +120,9 @@ const SpeakersPage = () => {
             <Person person={selectedSpeaker} />
             <div style={{ padding: "1em" }}>
               <Title>{selectedSpeaker.title}</Title>
-              <p>{addLineBreak(selectedSpeaker.description)}</p>
+              <Description>
+                {addLineBreak(selectedSpeaker.description)}
+              </Description>
             </div>
           </FlexContainer>
           <FlexContainer>

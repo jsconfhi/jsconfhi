@@ -17,6 +17,7 @@ import speakers from "../data/speakers/data";
 import styled from "styled-components";
 import { FiX } from "react-icons/fi";
 import { day0, day1, day3 } from "../data/schedule/data";
+import TextWithNewlines from "textwithnewlines";
 
 const SpeakerName = styled.div`
   color: #d23636;
@@ -68,9 +69,6 @@ const Description = styled.p`
 
 Modal.setAppElement("#___gatsby");
 
-const addLineBreak = text =>
-  text.split("\n").map((paragraph, i) => <p key={i}>{paragraph}</p>);
-
 const SpeakersPage = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState();
 
@@ -121,7 +119,9 @@ const SpeakersPage = () => {
             <div style={{ padding: "1em" }}>
               <Title>{selectedSpeaker.title}</Title>
               <Description>
-                {addLineBreak(selectedSpeaker.description)}
+                <TextWithNewlines>
+                  {selectedSpeaker.description}
+                </TextWithNewlines>
               </Description>
             </div>
           </FlexContainer>

@@ -16,6 +16,7 @@ import Person from "../components/person";
 import speakersRaw from "../data/speakers/data";
 import styled from "styled-components";
 import { FiArrowLeft, FiArrowRight, FiX } from "react-icons/fi";
+import TextWithNewlines from "textwithnewlines";
 
 /* Emcee Images */
 import Cassidy from "../img/cassidy.png";
@@ -48,9 +49,6 @@ const Description = styled.p`
 `;
 
 Modal.setAppElement("#___gatsby");
-
-const addLineBreak = text =>
-  text.split("\n").map((paragraph, i) => <p key={i}>{paragraph}</p>);
 
 const SpeakersPage = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState();
@@ -91,7 +89,9 @@ const SpeakersPage = () => {
             <Person person={selectedSpeaker} />
             <div style={{ padding: "1em" }}>
               <Title>About {selectedSpeaker.name}</Title>
-              <Description>{addLineBreak(selectedSpeaker.bio)}</Description>
+              <Description>
+                <TextWithNewlines>{selectedSpeaker.bio}</TextWithNewlines>
+              </Description>
             </div>
           </FlexContainer>
           {index > 0 && (

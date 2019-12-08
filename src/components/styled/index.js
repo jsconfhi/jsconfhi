@@ -73,4 +73,7 @@ export const Content = styled.div`
 
 export const Title = styled.h2`
   margin-right: 0.5em;
+  @media (max-width: 800px) {
+    font-size: 1.4em;
+  }
 `;

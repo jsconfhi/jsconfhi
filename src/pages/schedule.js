@@ -127,7 +127,7 @@ const SpeakersPage = () => {
           </FlexContainer>
           <FlexContainer>
             <a
-              className="buy-button button-primary"
+              className="buy-button button-primary button-modal"
               href="https://ti.to/jsconf-hawaii/2020/en"
             >
               Buy tickets

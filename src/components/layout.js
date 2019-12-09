@@ -83,6 +83,10 @@ const GlobalStyles = createGlobalStyle`
     background-color: #F2DC1A;
   }
 
+  .button-modal {
+    margin-bottom: 1em;
+  }
+
   .button-primary {
     background: #F2DC1A;
     color: black;
@@ -209,7 +213,7 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: underline;
   }
 
-  .nav-social 
+  .nav-social
   .nav-contact {
     flex: 1;
   }
@@ -218,7 +222,7 @@ const GlobalStyles = createGlobalStyle`
     align-self: flex-end;
   }
 
-  .nav-left, 
+  .nav-left,
   .nav-right,
   .nav-right-expandable {
     display: flex;
@@ -293,7 +297,7 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
 
-  a.buy-button-mobile:active, 
+  a.buy-button-mobile:active,
   a.buy-button-mobile:hover {
     text-decoration: underline;
   }
@@ -304,7 +308,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0 0 1em 1.5em;
   }
 
-  .code-of-conduct p + ul, .info p + ul { 
+  .code-of-conduct p + ul, .info p + ul {
     margin-top: -1em;
   }
 
@@ -467,7 +471,7 @@ const GlobalStyles = createGlobalStyle`
       padding-right: 0;
     }
 
-    .grid-half-first, 
+    .grid-half-first,
     .grid-half-second {
       justify-self: flex-start;
       grid-column: 2/span 12;
@@ -497,7 +501,7 @@ const GlobalStyles = createGlobalStyle`
       text-align: center;
       width: 100%;
     }
-    
+
     .about {
       clip-path: initial;
     }

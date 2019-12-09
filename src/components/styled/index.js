@@ -60,6 +60,9 @@ export const SectionContent = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  p:last-child {
+    padding-bottom: 0;
+  }
   @media (max-width: 800px) {
     grid-column: 1/span 13;
     justify-self: center;

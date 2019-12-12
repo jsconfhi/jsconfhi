@@ -17,7 +17,7 @@ import speakers from "../data/speakers/data";
 import styled from "styled-components";
 import { FiX } from "react-icons/fi";
 import { day0, day1, day3 } from "../data/schedule/data";
-import TextWithNewlines from "textwithnewlines";
+import addLineBreaks from "../util/addLineBreaks";
 
 const SpeakerName = styled.div`
   color: #d23636;
@@ -119,9 +119,7 @@ const SpeakersPage = () => {
             <div style={{ padding: "1em" }}>
               <Title>{selectedSpeaker.title}</Title>
               <Description>
-                <TextWithNewlines>
-                  {selectedSpeaker.description}
-                </TextWithNewlines>
+                {addLineBreaks(selectedSpeaker.description)}
               </Description>
             </div>
           </FlexContainer>

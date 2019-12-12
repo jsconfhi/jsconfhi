@@ -16,7 +16,7 @@ import Person from "../components/person";
 import speakersRaw from "../data/speakers/data";
 import styled from "styled-components";
 import { FiArrowLeft, FiArrowRight, FiX } from "react-icons/fi";
-import TextWithNewlines from "textwithnewlines";
+import addLineBreaks from "../util/addLineBreaks";
 
 /* Emcee Images */
 import Cassidy from "../img/cassidy.png";
@@ -89,9 +89,7 @@ const SpeakersPage = () => {
             <Person person={selectedSpeaker} />
             <div style={{ padding: "1em" }}>
               <Title>About {selectedSpeaker.name}</Title>
-              <Description>
-                <TextWithNewlines>{selectedSpeaker.bio}</TextWithNewlines>
-              </Description>
+              <Description>{addLineBreaks(selectedSpeaker.bio)}</Description>
             </div>
           </FlexContainer>
           {index > 0 && (

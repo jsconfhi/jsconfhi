@@ -37,7 +37,6 @@
   },
   "devDependencies": {
     "eslint-plugin-flowtype": "^4.3.0",
-    "prettier": "^1.18.2",
-    "textwithnewlines": "^1.0.1"
+    "prettier": "^1.18.2"
   }
 }

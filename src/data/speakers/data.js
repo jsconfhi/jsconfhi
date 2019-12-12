@@ -318,5 +318,12 @@ export default [
     description: `So you have a great idea for the perfect JS library... but the implementation is only half the battle. You also need to configure infrastructure to develop, test, build and deploy your package. How do you set up Typescript and other static checking? Do you target ESM or CJS builds? Is integration testing even possible? There’s so much extra to consider!
 
     Let’s learn what makes up the “perfect” library tooling. Familiarity with developing JavaScript packages will help you get the most out of this session, but you will gain plenty of helpful insights even if you have yet to build one. Oh, and don’t worry if you don’t understand all of those terms — you soon will after this session!`
+  },
+  {
+    name: 'TBA',
+    handle: '',
+    id: 22,
+    title: '',
+    description: ''
   }
 ];

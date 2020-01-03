@@ -30,7 +30,7 @@ export const day1 = [
     highlight: true
   },
   { time: '1pm', speakerId: 9 },
-  { time: '1:30pm', speakerId: 2 },
+  { time: '1:30pm', speakerId: 22 },
   { time: '2pm', speakerId: 18 },
   {
     time: '2:30pm',
@@ -104,7 +104,7 @@ export const day3 = [
   },
   { time: '3pm', speakerId: 8 },
   { time: '3:30pm', speakerId: 16 },
-  { time: '4pm', speakerId: 22 },
+  { time: '4pm', speakerId: 2 },
   {
     time: '5pm',
     description: 'Group photo and goodbye drinks at the Alohilani pool*',

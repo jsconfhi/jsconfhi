@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Layout from "../components/layout";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import React, { useState } from 'react';
+import Layout from '../components/layout';
+import Header from '../components/header';
+import Footer from '../components/footer';
 import {
   CloseButton,
   Content,
@@ -10,16 +10,17 @@ import {
   SectionContent,
   SectionHeading,
   Title
-} from "../components/styled";
-import Modal from "react-modal";
-import Person from "../components/person";
-import speakersRaw from "../data/speakers/data";
-import styled from "styled-components";
-import { FiArrowLeft, FiArrowRight, FiX } from "react-icons/fi";
-import addLineBreaks from "../util/addLineBreaks";
+} from '../components/styled';
+import Modal from 'react-modal';
+import Person from '../components/person';
+import speakersRaw from '../data/speakers/data';
+import styled from 'styled-components';
+import { FiArrowLeft, FiArrowRight, FiX } from 'react-icons/fi';
+import addLineBreaks from '../util/addLineBreaks';
 
 /* Emcee Images */
-import Cassidy from "../img/cassidy.png";
+import Cassidy from '../img/cassidy.png';
+import Jenna from '../img/jenna.jpeg';
 const speakers = speakersRaw.filter(speaker => !!speaker.description);
 
 const ModalButton = styled.button`
@@ -48,27 +49,21 @@ const Description = styled.p`
   word-break: break-word;
 `;
 
-Modal.setAppElement("#___gatsby");
+Modal.setAppElement('#___gatsby');
 
 const SpeakersPage = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState();
 
   const renderSpeaker = (speaker, i) => {
     return speaker.title ? (
-      <Person
-        key={i}
-        person={speaker}
-        onClick={() => setSelectedSpeaker(speaker)}
-      />
+      <Person key={i} person={speaker} onClick={() => setSelectedSpeaker(speaker)} />
     ) : (
-      <Person key={i} person={{ name: "Coming Soon!" }} />
+      <Person key={i} person={{ name: 'Coming Soon!' }} />
     );
   };
 
   const renderModal = () => {
-    const index = selectedSpeaker
-      ? speakers.findIndex(speaker => speaker.id === selectedSpeaker.id)
-      : -1;
+    const index = selectedSpeaker ? speakers.findIndex(speaker => speaker.id === selectedSpeaker.id) : -1;
     return (
       selectedSpeaker && (
         <Modal
@@ -76,7 +71,7 @@ const SpeakersPage = () => {
           style={{
             content: {
               ...modalStyle.content,
-              padding: "1em 2.5em"
+              padding: '1em 2.5em'
             }
           }}
           contentLabel="Speaker Modal"
@@ -87,25 +82,21 @@ const SpeakersPage = () => {
           </CloseButton>
           <FlexContainer>
             <Person person={selectedSpeaker} />
-            <div style={{ padding: "1em" }}>
+            <div style={{ padding: '1em' }}>
               <Title>About {selectedSpeaker.name}</Title>
               <Description>{addLineBreaks(selectedSpeaker.bio)}</Description>
             </div>
           </FlexContainer>
           {index > 0 && (
             <LeftAligned>
-              <ModalButton
-                onClick={() => setSelectedSpeaker(speakers[index - 1])}
-              >
+              <ModalButton onClick={() => setSelectedSpeaker(speakers[index - 1])}>
                 <FiArrowLeft />
               </ModalButton>
             </LeftAligned>
           )}
           {speakers.length - 1 > index && (
             <RightAligned>
-              <ModalButton
-                onClick={() => setSelectedSpeaker(speakers[index + 1])}
-              >
+              <ModalButton onClick={() => setSelectedSpeaker(speakers[index + 1])}>
                 <FiArrowRight />
               </ModalButton>
             </RightAligned>
@@ -128,9 +119,16 @@ const SpeakersPage = () => {
             <SectionContent>
               <Person
                 person={{
-                  name: "Cassidy Williams",
+                  name: 'Cassidy Williams',
                   img: Cassidy,
-                  handle: "cassidoo"
+                  handle: 'cassidoo'
+                }}
+              />
+              <Person
+                person={{
+                  name: 'Jenna Quindica',
+                  img: Jenna,
+                  handle: 'JennaQuindica'
                 }}
               />
             </SectionContent>

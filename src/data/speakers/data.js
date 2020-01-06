@@ -19,6 +19,7 @@ import BrendanImg from '../../img/brendan.jpeg';
 import MandyImg from '../../img/mandy.jpeg';
 import MalteImg from '../../img/malte.jpeg';
 import BenImg from '../../img/ben.jpeg';
+import RachelImg from '../../img/rachel.jpg';
 
 export default [
   {
@@ -320,10 +321,14 @@ export default [
     Let’s learn what makes up the “perfect” library tooling. Familiarity with developing JavaScript packages will help you get the most out of this session, but you will gain plenty of helpful insights even if you have yet to build one. Oh, and don’t worry if you don’t understand all of those terms — you soon will after this session!`
   },
   {
-    name: 'TBA',
-    handle: '',
+    name: 'Rachel White',
+    handle: 'ohhoe',
+    bio: `Rachel White is a technologist, artist, and pretend-cyborg who is currently a Developer Experience Lead, member of the Node.js Community Committee, and co-host of the Changelog podcast JSParty. She is interested in new uses for old hardware, useless robots, VR/AR/MR, and bots. She has spoken internationally about Node.js, JavaScript, Creative Coding, IoT, Artificial Intelligence, NodeBots, and hardware. She's a previous artist in residence at Pioneer Works where she worked on a series that visualized what modern cybernetic augmentation could look like with todays hardware and special effects makeup. Her other interests include glitch art, 80s horror, and indie games. Her aesthetic is fog machines, laser lights, and broken VHS tapes.`,
     id: 22,
-    title: '',
-    description: ''
+    img: RachelImg,
+    title: 'Look what you MIDI me do!',
+    description: `Who loves pushing buttons? You? And you over there? And the person behind you? Oh wait, everyone loves it?!!? Of course they do, a button is irresistible. Now… what if I told you that you could hook up a LOT of buttons to your computer… and use it to do wild things with the web?
+
+    I’m glad you’re listening! Let’s take a journey into the Web MIDI api where the possibilities of the web aren’t just at your keyboard fingertips anymore, they’re literally any MIDI compatible controller you have connected! Want to make glitchy audio responsive visuals with WebGL shaders? Rad, we can do that. Want to create custom beats and have those input as a drum machine? No problem when you throw a little Web Audio API in the mix. Let’s dive in and find out how!`
   }
 ];

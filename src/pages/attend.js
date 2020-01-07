@@ -44,13 +44,12 @@ const Attend = () => (
                     <li>Rate available 3 days before and after event</li>
                   </ul>
                   <p>
-                    <a
-                      className="button-secondary"
-                      href="https://bit.ly/2K0Hi8q"
+                    Online room blocks are now full, to see if late reservations are still possible, <a
+                      href="mailto:info@jsconfhi.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Reserve hotel
+                      contact us.
                     </a>
                   </p>
                 </div>

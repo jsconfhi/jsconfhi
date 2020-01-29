@@ -20,6 +20,7 @@ import MandyImg from '../../img/mandy.jpeg';
 import MalteImg from '../../img/malte.jpeg';
 import BenImg from '../../img/ben.jpeg';
 import RachelImg from '../../img/rachel.jpg';
+import CassidyImg from '../../img/cassidy.png';
 
 export default [
   {
@@ -330,5 +331,15 @@ export default [
     description: `Who loves pushing buttons? You? And you over there? And the person behind you? Oh wait, everyone loves it?!!? Of course they do, a button is irresistible. Now… what if I told you that you could hook up a LOT of buttons to your computer… and use it to do wild things with the web?
 
     I’m glad you’re listening! Let’s take a journey into the Web MIDI api where the possibilities of the web aren’t just at your keyboard fingertips anymore, they’re literally any MIDI compatible controller you have connected! Want to make glitchy audio responsive visuals with WebGL shaders? Rad, we can do that. Want to create custom beats and have those input as a drum machine? No problem when you throw a little Web Audio API in the mix. Let’s dive in and find out how!`
+  },
+  {
+    name: 'TC39 Panel with Cassidy Williams',
+    id: 23,
+    img: CassidyImg,
+    description: `Join us for a panel discussion with members of TC39, moderated by Cassidy Williams!
+
+    TC39 is a group of JavaScript developers, implementers, academics, and more, collaborating with the community to maintain and evolve the definition of JavaScript.
+
+    Contribute panel questions by emailing info@jsconfhi.com or DMing us on Twitter @jsconfhi!`
   }
 ];

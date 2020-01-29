@@ -55,11 +55,7 @@ const SpeakersPage = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState();
 
   const renderSpeaker = (speaker, i) => {
-    return speaker.title ? (
-      <Person key={i} person={speaker} onClick={() => setSelectedSpeaker(speaker)} />
-    ) : (
-      <Person key={i} person={{ name: 'Coming Soon!' }} />
-    );
+    return speaker.title && <Person key={i} person={speaker} onClick={() => setSelectedSpeaker(speaker)} />;
   };
 
   const renderModal = () => {

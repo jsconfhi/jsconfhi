@@ -106,8 +106,8 @@ export const day3 = [
     description: 'Lunch',
     highlight: true
   },
-  { time: '1pm', speakerId: 15 },
-  { time: '1:30pm', speakerId: 11 },
+  { time: '1pm', speakerId: 11 },
+  { time: '1:30pm', speakerId: 15 },
   { time: '2pm', speakerId: 7 },
   {
     time: '2:30pm',

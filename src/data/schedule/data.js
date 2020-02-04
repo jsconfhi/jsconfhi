@@ -14,16 +14,20 @@ export const day0 = [
 ];
 export const day1 = [
   {
-    time: '8:30am',
+    time: '8:00am',
     description: 'Breakfast & check-in',
     highlight: true
+  },
+  {
+    time: '8:50am',
+    description: 'Welcome from the organizers'
   },
   { time: '9am', speakerId: 6 },
   { time: '9:30am', speakerId: 12 },
   { time: '10am', speakerId: 20 },
   {
     time: '10:30am',
-    description: 'Snack break',
+    description: 'Coffee break',
     highlight: true
   },
   { time: '11am', speakerId: 1 },
@@ -87,7 +91,7 @@ export const day2 = [
 ];
 export const day3 = [
   {
-    time: '8:30am',
+    time: '8:00am',
     description: 'Breakfast & check-in',
     highlight: true
   },
@@ -96,7 +100,7 @@ export const day3 = [
   { time: '10am', speakerId: 17 },
   {
     time: '10:30am',
-    description: 'Snack break',
+    description: 'Coffee break',
     highlight: true
   },
   { time: '11am', speakerId: 3 },
@@ -119,7 +123,7 @@ export const day3 = [
   { time: '4pm', speakerId: 2 },
   { time: '4:30pm', speakerId: 23 },
   {
-    time: '5pm',
+    time: '5:30pm',
     description: 'Group photo and goodbye drinks at the Alohilani pool*',
     highlight: true
   }

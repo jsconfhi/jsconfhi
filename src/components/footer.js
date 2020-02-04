@@ -1,5 +1,29 @@
 import React from "react";
-import { FaInstagram, FaTwitterSquare, FaFacebookSquare } from "react-icons/fa";
+import styled from "styled-components";
+import Form from "../components/form";
+import {
+  FaInstagram,
+  FaTwitterSquare,
+  FaFacebookSquare,
+  FAIcon,
+  FaEnvelope,
+  FaUsers,
+  FaPhone
+} from "react-icons/fa";
+
+const FooterText = styled.div`
+  color: white;
+`;
+const FooterWrapper = styled.div`
+  display: flex;
+  padding-bottom: 25px;
+  p {
+    padding: 10px 0;
+  }
+  li {
+    line-height: 1.5em;
+  }
+`;
 
 const Footer = () => {
   return (
@@ -54,6 +78,28 @@ const Footer = () => {
               </li>
             </ul>
           </nav>
+          <FooterWrapper className="grid">
+            <FooterText className="grid-half-first">
+              <h3>Anonymous report</h3>
+              <Form />
+            </FooterText>
+            <FooterText className="grid-half-second">
+              <h3>Personal report</h3>
+              <p>
+                You can file a personal report using one of the below methods:
+              </p>
+              <li>
+                <FaEnvelope />{" "}
+                <a href="mailto:report@jsconfhi.com">report@jsconfhi.com</a>
+              </li>
+              <li>
+                <FaUsers /> Report to a STAFF member
+              </li>
+              <li>
+                <FaPhone /> Text + 1 (334) 292-4040 to anonymously report
+              </li>
+            </FooterText>
+          </FooterWrapper>
         </div>
       </div>
     </footer>

@@ -24,7 +24,7 @@ import CassidyImg from '../../img/cassidy.png';
 
 export default [
   {
-    name: 'Jenna Ziegen',
+    name: 'Jenna Zeigen',
     handle: 'zeigenvector',
     bio:
       "One morning, Jenna awoke to find that she had transformed into a programmer. She's been psyched about coding ever since. When she's not teaching pixels to party or using JavaScript to help you find the important things in Slack, Jenna enjoys climbing, coffee, cognitive science, and cat gifs. Her best party trick is that she wrote the most serious academic paper of her life on puns.",

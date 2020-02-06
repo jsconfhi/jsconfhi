@@ -16,6 +16,7 @@ const FooterText = styled.div`
 `;
 const FooterWrapper = styled.div`
   display: flex;
+  list-style-type:none;
   padding-bottom: 25px;
   p {
     padding: 10px 0;

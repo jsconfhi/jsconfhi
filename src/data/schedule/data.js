@@ -50,7 +50,7 @@ export const day1 = [
   { time: '4pm', speakerId: 10 },
   {
     time: '6-9pm',
-    description: 'After-party at the Honolulu Aquarium',
+    description: 'After-party at the Waikiki Aquarium',
     highlight: true
   }
 ];

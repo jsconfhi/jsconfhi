@@ -5,10 +5,9 @@ import {
   FaInstagram,
   FaTwitterSquare,
   FaFacebookSquare,
-  FAIcon,
   FaEnvelope,
   FaUsers,
-  FaPhone
+  FaPhone,
 } from "react-icons/fa";
 
 const FooterText = styled.div`
@@ -16,7 +15,7 @@ const FooterText = styled.div`
 `;
 const FooterWrapper = styled.div`
   display: flex;
-  list-style-type:none;
+  list-style-type: none;
   padding-bottom: 25px;
   p {
     padding: 10px 0;
